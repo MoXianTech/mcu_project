@@ -1,0 +1,15 @@
+Removed Pin From Net: NetName=VCC_3V3 Pin=C1-2
+Removed Pin From Net: NetName=VCC_3V3 Pin=C2-2
+Removed Pin From Net: NetName=VCC_3V3 Pin=TP1-1
+Removed Pin From Net: NetName=VCC_3V3 Pin=U1-2
+Removed Pin From Net: NetName=VCC_3V3 Pin=U1-4
+Added Pin To Net: NetName=3V3_MCU Pin=C1-2
+Added Pin To Net: NetName=3V3_MCU Pin=C2-2
+Added Pin To Net: NetName=3V3_MCU Pin=TP1-1
+Added Pin To Net: NetName=3V3_MCU Pin=U1-2
+Added Pin To Net: NetName=3V3_MCU Pin=U1-4
+Added Member To Class: ClassName=Power Member=Component USB1 TYPE-C16PIN
+Added Room: Name=MCU
+Added Room: Name=Measure
+Added Room: Name=Power
+Added Room: Name=Scan

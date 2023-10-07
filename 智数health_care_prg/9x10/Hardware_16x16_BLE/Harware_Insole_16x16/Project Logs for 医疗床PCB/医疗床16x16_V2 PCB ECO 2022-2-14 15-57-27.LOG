@@ -1,0 +1,15 @@
+Removed Pin From Net: NetName=VCC_5V Pin=F1-1
+Removed Pin From Net: NetName=NetD2_1 Pin=USB1-A4B9
+Removed Pin From Net: NetName=NetD2_1 Pin=USB1-B4A9
+Added Pin To Net: NetName=VCC_5V Pin=D2-2
+Added Pin To Net: NetName=NetD2_1 Pin=F1-1
+Added Pin To Net: NetName=NetF1_2 Pin=F1-2
+Added Pin To Net: NetName=NetF1_2 Pin=USB1-A4B9
+Added Pin To Net: NetName=NetF1_2 Pin=USB1-B4A9
+Added Net: Name=NetF1_2
+Added Room: Name=CAN
+Added Room: Name=Connect
+Added Room: Name=MCU
+Added Room: Name=Measure
+Added Room: Name=Power_
+Added Room: Name=Scan

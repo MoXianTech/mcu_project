@@ -1,0 +1,56 @@
+Change Component Footprint: Designator=FPC2 Old Footprint=FPC-SMD_KH-FG1.0-H2.0-16PIN New Footprint=FPC-SMD_16P-P1.00-HDGC_1.0K-FX-16PWB
+Change Component Footprint: Designator=FPC1 Old Footprint=FPC-SMD_KH-FG1.0-H2.0-16PIN New Footprint=FPC-SMD_X10B25U16T
+Change Component Comment : Designator=FPC2 Old Comment=KH-FG1.0-H2.0-16PIN New Comment=1.0K-FX-16PWB
+Change Component Comment : Designator=FPC1 Old Comment=KH-FG1.0-H2.0-16PIN New Comment=X10B25U16T
+Change component parameters: Designator = "FPC1" ("FPC1"); Footprint = "FPC-SMD_KH-FG1.0-H2.0-16PIN"; UniqueID = "\OLEQILYR" ("\OLEQILYR")
+Change component parameters (AddParameter): Name = "Add into BOM"; Value = "yes"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Contact Material"; Value = "磷青铜"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Contact Plating"; Value = "金"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Contact Type"; Value = "上接"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Convert to PCB"; Value = "yes"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Datasheet"; Value = "https://atta.szlcsc.com/upload/public/pdf/source/20211011/E8BDE13A8FA62B089EE070F29D883999.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Device"; Value = "X10B25U16T"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "FFC, FCB Thickness"; Value = "0.3mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Height Above Board"; Value = "2.5mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "JLCPCB Part Class"; Value = "Extended Part"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "LCSC Part Name"; Value = "1mm P数:16 抽屉式 上接 镀锡"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Locking Feature"; Value = "抽屉式"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "XKB Connectivity(中国星坤)"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part"; Value = "X10B25U16T"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mounting Type"; Value = "卧贴"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Name"; Value = "X10B25U16T"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Number of Contacts"; Value = "16"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Operating Temperature Range"; Value = "-40℃~+85℃"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Pitch"; Value = "1mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier"; Value = "LCSC"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Footprint"; Value = "SMD,P=1mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part"; Value = "C500194"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Symbol"; Value = "X10B25U16T"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Welding Temperature (Max)"; Value = "260℃"; VariantName = "[No Variations]"
+Change component parameters: Designator = "FPC2" ("FPC2"); Footprint = "FPC-SMD_KH-FG1.0-H2.0-16PIN"; UniqueID = "\UIRQCGWD" ("\UIRQCGWD")
+Change component parameters (AddParameter): Name = "Add into BOM"; Value = "yes"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Contact Type"; Value = "下接"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Convert to PCB"; Value = "yes"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Datasheet"; Value = "https://atta.szlcsc.com/upload/public/pdf/source/20211102/926C0C24B01018ECCB068402A8A27F57.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Device"; Value = "1.0K-FX-16PWB"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "FFC, FCB Thickness"; Value = "0.3mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Height Above Board"; Value = "2.5mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "JLCPCB Part Class"; Value = "Extended Part"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "LCSC Part Name"; Value = "1mm P数:16 抽屉式 下接"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Locking Feature"; Value = "抽屉式"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "HDGC(华德共创)"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part"; Value = "1.0K-FX-16PWB"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mounting Type"; Value = "卧贴"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Name"; Value = "1.0K-FX-16PWB"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Number of Contacts"; Value = "16"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Operating Temperature Range"; Value = "-20℃~+85℃"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Pitch"; Value = "1mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier"; Value = "LCSC"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Footprint"; Value = "SMD,P=1mm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part"; Value = "C2914075"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Symbol"; Value = "1.0K-FX-16PWB"; VariantName = "[No Variations]"
+Added Member To Class: ClassName=Scan Member=Component FPC2 1.0K-FX-16PWB
+Added Room: Name=MCU
+Added Room: Name=Measure
+Added Room: Name=Power
+Added Room: Name=Scan

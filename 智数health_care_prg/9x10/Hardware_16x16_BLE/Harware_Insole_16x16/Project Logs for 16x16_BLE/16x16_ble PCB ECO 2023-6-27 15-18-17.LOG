@@ -1,0 +1,16 @@
+Removed Pin From Net: NetName=ADC1 Pin=C19-2
+Removed Pin From Net: NetName=ADC2 Pin=C20-2
+Removed Pin From Net: NetName=ADC3 Pin=C21-2
+Removed Pin From Net: NetName=ADC4 Pin=C22-2
+Removed Pin From Net: NetName=ADC1 Pin=R12-2
+Removed Pin From Net: NetName=ADC2 Pin=R14-2
+Removed Pin From Net: NetName=ADC3 Pin=R19-2
+Removed Pin From Net: NetName=ADC4 Pin=R20-2
+Added Pin To Net: NetName=ADC3 Pin=C19-2
+Added Pin To Net: NetName=ADC4 Pin=C20-2
+Added Pin To Net: NetName=ADC2 Pin=C21-2
+Added Pin To Net: NetName=ADC1 Pin=C22-2
+Added Pin To Net: NetName=ADC3 Pin=R12-2
+Added Pin To Net: NetName=ADC4 Pin=R14-2
+Added Pin To Net: NetName=ADC2 Pin=R19-2
+Added Pin To Net: NetName=ADC1 Pin=R20-2

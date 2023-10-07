@@ -1,0 +1,9 @@
+Added Member To Class: ClassName=Power Member=Component C27 100nF (104) 10% 16V
+Added Member To Class: ClassName=Power Member=Component C28 10uF (106) 20% 6.3V
+Added Member To Class: ClassName=Power Member=Component D2 1N5819W
+Added Member To Class: ClassName=Scan Member=Component P2 HDR2.54-WI-16P
+Added Member To Class: ClassName=MCU Member=Component U7 GD32E103CBT6
+Added Room: Name=MCU
+Added Room: Name=Measure
+Added Room: Name=Power
+Added Room: Name=Scan

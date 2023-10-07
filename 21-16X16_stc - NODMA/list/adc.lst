@@ -1,0 +1,262 @@
+C251 COMPILER V5.60.0,  adc                                                                20/09/23  11:04:42  PAGE 1   
+
+
+C251 COMPILER V5.60.0, COMPILATION OF MODULE adc
+OBJECT MODULE PLACED IN .\list\adc.obj
+COMPILER INVOKED BY: D:\Keil_v5\C251\BIN\C251.EXE adc.c LARGE INTR2 ROM(COMPACT) BROWSE DEBUG PRINT(.\list\adc.lst) TABS
+                    -(2) OBJECT(.\list\adc.obj) 
+
+stmt  level    source
+
+    1          #include  "adc.h"
+    2          #include  "config.h"
+    3          #include  "STC32G_GPIO.h"
+    4          #include  "STC32G_ADC.h"
+    5          #include  "STC32G_UART.h"
+    6          #include  "STC32G_DMA.h"
+    7          #include  "STC32G_NVIC.h"
+    8          #include  "STC32G_Delay.h"
+    9          #include  "STC32G_Switch.h"
+   10          #include  "stdio.h"
+   11          #include  <string.h>
+   12          
+   13          
+   14          /*************  本地变量声明  **************/
+   15          
+   16          u16 xdata DmaAdBuffer[ADC_CH][ADC_DATA] = {0};
+   17          u16 adc_value[ADC_CH] = {0};
+   18          Adc_value processe_adc_value;
+   19          
+   20          
+   21          #define ADC_DELAY_TIME (55 * 42) //9 ns * 120
+   22          
+   23          void Hc4051Delay(u32 num)
+   24          {
+   25   1          while(num --);
+   26   1      }
+   27          
+   28          /******************** IO口配置 ********************/
+   29          void  ADC_GPIO_config(void)
+   30          {
+   31   1        P1_MODE_IN_HIZ(GPIO_Pin_0);   //P1.0~P1.7 设置为高阻输入 adc
+   32   1        
+   33   1        P3_MODE_OUT_PP(GPIO_Pin_2 | GPIO_Pin_3 | GPIO_Pin_4 | GPIO_Pin_5 | GPIO_Pin_6 |  GPIO_Pin_7);
+   34   1        P2_MODE_OUT_PP(GPIO_Pin_All);
+   35   1        P0_MODE_OUT_PP(GPIO_Pin_0 | GPIO_Pin_1);
+   36   1        P1_MODE_OUT_PP(GPIO_Pin_6 | GPIO_Pin_7 | GPIO_Pin_3 | GPIO_Pin_2); //16_selector
+   37   1        
+   38   1        P3_PULL_UP_DISABLE(GPIO_Pin_2 | GPIO_Pin_3 | GPIO_Pin_4 | GPIO_Pin_5 | GPIO_Pin_6 |  GPIO_Pin_7);
+   39   1        P2_PULL_UP_DISABLE(GPIO_Pin_All);
+   40   1        P0_PULL_UP_DISABLE(GPIO_Pin_0 | GPIO_Pin_1);
+   41   1        P1_PULL_UP_DISABLE(GPIO_Pin_6 | GPIO_Pin_7 | GPIO_Pin_3 | GPIO_Pin_2);
+   42   1        
+   43   1        P3_DRIVE_HIGH(GPIO_Pin_2 | GPIO_Pin_3 | GPIO_Pin_4 | GPIO_Pin_5 | GPIO_Pin_6 |  GPIO_Pin_7);
+   44   1        P2_DRIVE_HIGH(GPIO_Pin_All);
+   45   1        P0_DRIVE_HIGH(GPIO_Pin_0 | GPIO_Pin_1);
+   46   1        
+   47   1        P3_SPEED_HIGH(GPIO_Pin_2 | GPIO_Pin_3 | GPIO_Pin_4 | GPIO_Pin_5 | GPIO_Pin_6 |  GPIO_Pin_7);
+   48   1        P2_SPEED_HIGH(GPIO_Pin_All);
+   49   1        P0_SPEED_HIGH(GPIO_Pin_0 | GPIO_Pin_1);
+   50   1        P1_SPEED_HIGH(GPIO_Pin_6 | GPIO_Pin_7 | GPIO_Pin_3 | GPIO_Pin_2);
+   51   1        
+   52   1      }
+   53          
+   54          
+   55          /******************** ADC 配置 ********************/
+   56          void ADC_config(void)
+   57          {
+   58   1        ADC_InitTypeDef   ADC_InitStructure;    //结构定义
+C251 COMPILER V5.60.0,  adc                                                                20/09/23  11:04:42  PAGE 2   
+
+   59   1      
+   60   1        ADC_InitStructure.ADC_SMPduty   = 31;   //ADC 模拟信号采样时间控制, 0~31（注意： SMPDUTY 一定不能设置小于
+             - 10）
+   61   1        ADC_InitStructure.ADC_CsSetup   = 0;    //ADC 通道选择时间控制 0(默认),1
+   62   1        ADC_InitStructure.ADC_CsHold    = 1;    //ADC 通道选择保持时间控制 0,1(默认),2,3
+   63   1        ADC_InitStructure.ADC_Speed     = ADC_SPEED_2X16T;    //设置 ADC 工作时钟频率 ADC_SPEED_2X1T~ADC_SPEED_2X1
+             -6T
+   64   1        ADC_InitStructure.ADC_AdjResult = ADC_RIGHT_JUSTIFIED;  //ADC结果调整,  ADC_LEFT_JUSTIFIED,ADC_RIGHT_JUSTI
+             -FIED
+   65   1        ADC_Inilize(&ADC_InitStructure);    //初始化
+   66   1        ADC_PowerControl(ENABLE);           //ADC电源开关, ENABLE或DISABLE
+   67   1        NVIC_ADC_Init(DISABLE,Priority_0);    //中断使能, ENABLE/DISABLE; 优先级(低到高) Priority_0,Priority_1,Pri
+             -ority_2,Priority_3
+   68   1      }
+   69          
+   70          /******************** DMA 配置 ********************/
+   71          void  ADC_DMA_config(void)
+   72          {
+   73   1        DMA_ADC_InitTypeDef   DMA_ADC_InitStructure;    //结构定义
+   74   1      
+   75   1        DMA_ADC_InitStructure.DMA_Enable = ENABLE;      //DMA使能   ENABLE,DISABLE
+   76   1        DMA_ADC_InitStructure.DMA_Channel = 0x0001;     //ADC通道使能寄存器, 1:使能, bit15~bit0 对应 ADC15~ADC0
+   77   1        DMA_ADC_InitStructure.DMA_Buffer = (u16)DmaAdBuffer;  //ADC转换数据存储地址
+   78   1        DMA_ADC_InitStructure.DMA_Times = ADC_4_Times;  //每个通道转换次数, ADC_1_Times,ADC_2_Times,ADC_4_Times,A
+             -DC_8_Times,ADC_16_Times,ADC_32_Times,ADC_64_Times,ADC_128_Times,ADC_256_Times
+   79   1        DMA_ADC_Inilize(&DMA_ADC_InitStructure);    //初始化
+   80   1        NVIC_DMA_ADC_Init(ENABLE,Priority_0,Priority_0);    //中断使能, ENABLE/DISABLE; 优先级(低到高) Priority_0~
+             -Priority_3; 总线优先级(低到高) Priority_0~Priority_3
+   81   1        DMA_ADC_TRIG();   //触发启动转换
+   82   1      }
+   83          
+   84          
+   85          void ADC_DMA_Init(void)
+   86          {
+   87   1        ADC_GPIO_config();
+   88   1        ADC_config();
+   89   1        ADC_DMA_config();
+   90   1      }
+   91          
+   92          
+   93          u16 GetAdcValue(u8 index)
+   94          {
+   95   1          if(index < ADC_CH)
+   96   1          {
+   97   2            return DmaAdBuffer[0][5]; //[i][j] ->i- channel_num / j - adc_4times [0]-[3]; [4]-channel_num; [5] -4t
+             -imes avergr
+   98   2          }
+   99   1          else
+  100   1          {
+  101   2            return 0;
+  102   2          } 
+  103   1      }
+  104          
+  105          
+  106          void AX_scan(u8 index)  
+  107          {
+  108   1          u16  AX_scan_array[16] =  {  0x0001,0x0002,0x0004,0x0008,
+  109   1                                       0x0010,0x0020,0x0040,0x0080,
+  110   1                                       0x0100,0x0200,0x0400,0x0800,
+  111   1                                       0x1000,0x2000,0x4000,0x8000  };
+  112   1          
+  113   1            AX15( AX_scan_array[index] & 0x0001);
+  114   1            AX14((AX_scan_array[index] & 0x0002) >>  1);
+  115   1            AX13((AX_scan_array[index] & 0x0004) >>  2);
+  116   1            AX12((AX_scan_array[index] & 0x0008) >>  3);
+  117   1            AX11((AX_scan_array[index] & 0x0010) >>  4);
+C251 COMPILER V5.60.0,  adc                                                                20/09/23  11:04:42  PAGE 3   
+
+  118   1            AX10((AX_scan_array[index] & 0x0020) >>  5);
+  119   1            AX9 ((AX_scan_array[index] & 0x0040) >>  6);
+  120   1            AX8 ((AX_scan_array[index] & 0x0080) >>  7);
+  121   1            AX7 ((AX_scan_array[index] & 0x0100) >>  8);
+  122   1            AX6 ((AX_scan_array[index] & 0x0200) >>  9);
+  123   1            AX5 ((AX_scan_array[index] & 0x0400) >> 10);
+  124   1            AX4 ((AX_scan_array[index] & 0x0800) >> 11);
+  125   1            AX3 ((AX_scan_array[index] & 0x1000) >> 12);
+  126   1            AX2 ((AX_scan_array[index] & 0x2000) >> 13);
+  127   1            AX1 ((AX_scan_array[index] & 0x4000) >> 14);
+  128   1            AX0 ((AX_scan_array[index] & 0x8000) >> 15);
+  129   1      
+  130   1      }
+  131          
+  132          void AY_scan(u8 index)
+  133          {     
+  134   1            CS0(index  & 0x0001);
+  135   1            CS1((index & 0x0002) >> 1);
+  136   1            CS2((index & 0x0004) >> 2);
+  137   1            CS3((index & 0x0008) >> 3); 
+  138   1      }
+  139          
+  140          void Get_Voltage_Value(Adc_value *process_adc_value)
+  141          {
+  142   1        u8 ax, ay;
+  143   1        u8 adc_rank[16] = {0,1,2,3,4,5,6,7,15,14,13,12,11,10,9,8};
+  144   1      
+  145   1        for(ay = 0; ay < AY_NUM; ay++)
+  146   1        {
+  147   2          AY_scan(ay);
+  148   2          for(ax = 0; ax < AY_NUM; ax++)
+  149   2          {
+  150   3            AX_scan(ax);
+  151   3            Hc4051Delay(ADC_DELAY_TIME);
+  152   3      //      process_adc_value->raw_value[ax][adc_rank[ay]]  = (255 *  (u32)GetAdcValue(0)) / 4096;
+  153   3            process_adc_value->raw_value[ax][adc_rank[ay]]  = GetAdcValue(0) / 2;
+  154   3          }
+  155   2              if(ax >= AX_NUM);
+  156   2              {
+  157   3                ax = 0;
+  158   3              }
+  159   2        }
+  160   1            if(ay >= AY_NUM )
+  161   1            {
+  162   2              ay = 0;
+  163   2            }
+  164   1      //    printf("%u\n",process_adc_value->raw_value[0][0]);
+  165   1      }
+  166          
+  167          void ProcessADCvalue(Adc_value *process_adc_value)
+  168          {
+  169   1          u16 Vref = 4096;
+  170   1          u8 flag_sum = 1;
+  171   1          u8 display_threshold_value = 20;
+  172   1          u8 AX, AY;
+  173   1          u8 i; 
+  174   1          while(flag_sum)
+  175   1          {         
+  176   2              for(AY = 0; AY < AY_NUM; ++AY)
+  177   2              {
+  178   3                  for(AX = 0; AX < AX_NUM; ++AX)
+  179   3                  {
+  180   4                    process_adc_value->sumAX[AY] += process_adc_value->raw_value[AX][AY];
+  181   4                  }
+  182   3              } 
+  183   2              flag_sum = 0;
+C251 COMPILER V5.60.0,  adc                                                                20/09/23  11:04:42  PAGE 4   
+
+  184   2              AX = 0;
+  185   2              AY = 0;
+  186   2          }
+  187   1          
+  188   1          while(flag_sum == 0)
+  189   1          {
+  190   2              
+  191   2              for(AY = 0; AY < AY_NUM; ++AY)
+  192   2              {     
+  193   3                    for(AX = 0; AX < AX_NUM; ++AX)
+  194   3                    { 
+  195   4                      if(process_adc_value->raw_value[AX][AY] > display_threshold_value)
+  196   4                      {                 
+  197   5                        process_adc_value->processed_adc_value[AX][AY] 
+  198   5                          =  (255 * (u32)process_adc_value->raw_value[AX][AY]) 
+  199   5                            / (Vref - (process_adc_value->sumAX[AY] - process_adc_value->raw_value[AX][AY]));
+  200   5                      }
+  201   4                      else
+  202   4                      {
+  203   5                        process_adc_value->processed_adc_value[AX][AY] = 0;
+  204   5                      }
+  205   4                    }
+  206   3              }   
+  207   2              AX = 0;
+  208   2              AY = 0;
+  209   2              memset(process_adc_value->sumAX, 0x0000 , sizeof(process_adc_value->sumAX));
+  210   2              
+  211   2              flag_sum = 1;
+  212   2          }
+  213   1      }
+*** WARNING C47 IN LINE 173 OF adc.c: 'i': unreferenced local variable
+  214          
+
+
+Module Information          Static   Overlayable
+------------------------------------------------
+  code size            =       998     ------
+  ecode size           =    ------     ------
+  data size            =    ------     ------
+  idata size           =    ------     ------
+  pdata size           =    ------     ------
+  xdata size           =       826         61
+  xdata-const size     =    ------     ------
+  edata size           =    ------     ------
+  bit size             =    ------     ------
+  ebit size            =    ------     ------
+  bitaddressable size  =    ------     ------
+  ebitaddressable size =    ------     ------
+  far data size        =    ------     ------
+  huge data size       =    ------     ------
+  const size           =    ------     ------
+  hconst size          =        84     ------
+End of Module Information.
+
+
+C251 COMPILATION COMPLETE.  1 WARNING(S),  0 ERROR(S)

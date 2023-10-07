@@ -1,0 +1,14 @@
+Removed Pin From Net: NetName=M_B Pin=U7-21
+Removed Pin From Net: NetName=R_EN1 Pin=U7-39
+Removed Pin From Net: NetName=R_EN2 Pin=U7-40
+Removed Pin From Net: NetName=M_A Pin=U7-46
+Added Pin To Net: NetName=R_EN1 Pin=U7-21
+Added Pin To Net: NetName=R_EN2 Pin=U7-22
+Added Pin To Net: NetName=M_A Pin=U7-39
+Added Pin To Net: NetName=M_B Pin=U7-40
+Added Room: Name=CAN
+Added Room: Name=Connect
+Added Room: Name=MCU
+Added Room: Name=Measure
+Added Room: Name=Power_
+Added Room: Name=Scan

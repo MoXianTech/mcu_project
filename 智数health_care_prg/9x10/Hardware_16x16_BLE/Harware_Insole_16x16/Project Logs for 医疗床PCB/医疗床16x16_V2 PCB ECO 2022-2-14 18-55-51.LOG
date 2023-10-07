@@ -1,0 +1,8 @@
+Added Pin To Net: NetName=NetC8_1 Pin=C7-2
+Change Net Name : Old Net Name=NetC8_1 New Net Name=NetC7_2
+Added Room: Name=CAN
+Added Room: Name=Connect
+Added Room: Name=MCU
+Added Room: Name=Measure
+Added Room: Name=Power_
+Added Room: Name=Scan

@@ -1,0 +1,16 @@
+Removed Pin From Net: NetName=IN_CH2+ Pin=U6-3
+Removed Pin From Net: NetName=IN_CH1+ Pin=U6-5
+Removed Pin From Net: NetName=IN_CH4+ Pin=U6-10
+Removed Pin From Net: NetName=IN_CH3+ Pin=U6-12
+Removed Pin From Net: NetName=IN_CH1+ Pin=U8-9
+Removed Pin From Net: NetName=IN_CH2+ Pin=U9-9
+Removed Pin From Net: NetName=IN_CH3+ Pin=U10-9
+Removed Pin From Net: NetName=IN_CH4+ Pin=U11-9
+Added Pin To Net: NetName=IN_CH1+ Pin=U6-3
+Added Pin To Net: NetName=IN_CH2+ Pin=U6-5
+Added Pin To Net: NetName=IN_CH3+ Pin=U6-10
+Added Pin To Net: NetName=IN_CH4+ Pin=U6-12
+Added Pin To Net: NetName=IN_CH2+ Pin=U8-9
+Added Pin To Net: NetName=IN_CH1+ Pin=U9-9
+Added Pin To Net: NetName=IN_CH4+ Pin=U10-9
+Added Pin To Net: NetName=IN_CH3+ Pin=U11-9

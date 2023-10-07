@@ -1,0 +1,104 @@
+Removed Pin From Net: NetName=NetR22_1 Pin=R22-1
+Removed Pin From Net: NetName=GND Pin=R22-2
+Removed Pin From Net: NetName=NetR23_1 Pin=R23-1
+Removed Pin From Net: NetName=GND Pin=R23-2
+Removed Pin From Net: NetName=NetR24_1 Pin=R24-1
+Removed Pin From Net: NetName=GND Pin=R24-2
+Removed Pin From Net: NetName=NetR25_1 Pin=R25-1
+Removed Pin From Net: NetName=GND Pin=R25-2
+Removed Pin From Net: NetName=NetR26_1 Pin=R26-1
+Removed Pin From Net: NetName=GND Pin=R26-2
+Removed Pin From Net: NetName=NetR27_1 Pin=R27-1
+Removed Pin From Net: NetName=GND Pin=R27-2
+Removed Pin From Net: NetName=NetR28_1 Pin=R28-1
+Removed Pin From Net: NetName=GND Pin=R28-2
+Removed Pin From Net: NetName=NetR29_1 Pin=R29-1
+Removed Pin From Net: NetName=GND Pin=R29-2
+Removed Pin From Net: NetName=NetR30_1 Pin=R30-1
+Removed Pin From Net: NetName=GND Pin=R30-2
+Removed Pin From Net: NetName=NetR31_1 Pin=R31-1
+Removed Pin From Net: NetName=GND Pin=R31-2
+Removed Pin From Net: NetName=NetR32_1 Pin=R32-1
+Removed Pin From Net: NetName=GND Pin=R32-2
+Removed Pin From Net: NetName=NetR33_1 Pin=R33-1
+Removed Pin From Net: NetName=GND Pin=R33-2
+Removed Pin From Net: NetName=NetR22_1 Pin=U9-2
+Removed Pin From Net: NetName=NetR26_1 Pin=U9-3
+Removed Pin From Net: NetName=NetR30_1 Pin=U9-8
+Removed Pin From Net: NetName=NetR23_1 Pin=U10-2
+Removed Pin From Net: NetName=NetR27_1 Pin=U10-3
+Removed Pin From Net: NetName=NetR31_1 Pin=U10-8
+Removed Pin From Net: NetName=NetR24_1 Pin=U11-2
+Removed Pin From Net: NetName=NetR28_1 Pin=U11-3
+Removed Pin From Net: NetName=NetR32_1 Pin=U11-8
+Removed Pin From Net: NetName=NetR25_1 Pin=U12-2
+Removed Pin From Net: NetName=NetR29_1 Pin=U12-3
+Removed Pin From Net: NetName=NetR33_1 Pin=U12-8
+Change Component Comment : Designator=U1 Old Comment= New Comment=AMS1117-3.3V
+Change Component Comment : Designator=U14 Old Comment= New Comment=CH340N
+Change Component Comment : Designator=U4 Old Comment= New Comment=RS2255XN
+Change Component Comment : Designator=U6 Old Comment= New Comment=RS2255XN
+Change Component Comment : Designator=R22 Old Comment=1K New Comment=1K次 (1001) ㊣1%
+Change Component Comment : Designator=R23 Old Comment=1K New Comment=1K次 (1001) ㊣1%
+Change Component Comment : Designator=R24 Old Comment=1K New Comment=1K次 (1001) ㊣1%
+Change Component Comment : Designator=R25 Old Comment=1K New Comment=1K次 (1001) ㊣1%
+Change Component Comment : Designator=R30 Old Comment=4.7K New Comment=4.7K次 (4701) ㊣1%
+Change Component Comment : Designator=R31 Old Comment=4.7k New Comment=4.7K次 (4701) ㊣1%
+Change Component Comment : Designator=R32 Old Comment=4.7K New Comment=4.7K次 (4701) ㊣1%
+Change Component Comment : Designator=R33 Old Comment=4.7K New Comment=4.7K次 (4701) ㊣1%
+Change Component Comment : Designator=R26 Old Comment=10K New Comment=10K次 (1002) ㊣1%
+Change Component Comment : Designator=R27 Old Comment=10K New Comment=10K次 (1002) ㊣1%
+Change Component Comment : Designator=R28 Old Comment=10K New Comment=10K次 (1002) ㊣1%
+Change Component Comment : Designator=R29 Old Comment=10K New Comment=10K次 (1002) ㊣1%
+Change Component Comment : Designator=R18 Old Comment=200R New Comment=56R
+Change Component Comment : Designator=R19 Old Comment=200R New Comment=56R
+Change Component Comment : Designator=R20 Old Comment=200R New Comment=56R
+Change Component Comment : Designator=R21 Old Comment=200R New Comment=56R
+Added Pin To Net: NetName=GND Pin=R22-1
+Added Pin To Net: NetName=NetR33_1 Pin=R22-2
+Added Pin To Net: NetName=GND Pin=R23-1
+Added Pin To Net: NetName=NetR32_1 Pin=R23-2
+Added Pin To Net: NetName=GND Pin=R24-1
+Added Pin To Net: NetName=NetR31_1 Pin=R24-2
+Added Pin To Net: NetName=GND Pin=R25-1
+Added Pin To Net: NetName=NetR30_1 Pin=R25-2
+Added Pin To Net: NetName=GND Pin=R26-1
+Added Pin To Net: NetName=NetR29_1 Pin=R26-2
+Added Pin To Net: NetName=GND Pin=R27-1
+Added Pin To Net: NetName=NetR28_1 Pin=R27-2
+Added Pin To Net: NetName=GND Pin=R28-1
+Added Pin To Net: NetName=NetR27_1 Pin=R28-2
+Added Pin To Net: NetName=GND Pin=R29-1
+Added Pin To Net: NetName=NetR26_1 Pin=R29-2
+Added Pin To Net: NetName=GND Pin=R30-1
+Added Pin To Net: NetName=NetR25_1 Pin=R30-2
+Added Pin To Net: NetName=GND Pin=R31-1
+Added Pin To Net: NetName=NetR24_1 Pin=R31-2
+Added Pin To Net: NetName=GND Pin=R32-1
+Added Pin To Net: NetName=NetR23_1 Pin=R32-2
+Added Pin To Net: NetName=GND Pin=R33-1
+Added Pin To Net: NetName=NetR22_1 Pin=R33-2
+Added Pin To Net: NetName=NetR33_1 Pin=U9-2
+Added Pin To Net: NetName=NetR29_1 Pin=U9-3
+Added Pin To Net: NetName=NetR25_1 Pin=U9-8
+Added Pin To Net: NetName=NetR32_1 Pin=U10-2
+Added Pin To Net: NetName=NetR28_1 Pin=U10-3
+Added Pin To Net: NetName=NetR24_1 Pin=U10-8
+Added Pin To Net: NetName=NetR31_1 Pin=U11-2
+Added Pin To Net: NetName=NetR27_1 Pin=U11-3
+Added Pin To Net: NetName=NetR23_1 Pin=U11-8
+Added Pin To Net: NetName=NetR30_1 Pin=U12-2
+Added Pin To Net: NetName=NetR26_1 Pin=U12-3
+Added Pin To Net: NetName=NetR22_1 Pin=U12-8
+Change Net Name : Old Net Name=NetR22_1 New Net Name=NetR33_2
+Change Net Name : Old Net Name=NetR23_1 New Net Name=NetR32_2
+Change Net Name : Old Net Name=NetR24_1 New Net Name=NetR31_2
+Change Net Name : Old Net Name=NetR25_1 New Net Name=NetR30_2
+Change Net Name : Old Net Name=NetR26_1 New Net Name=NetR29_2
+Change Net Name : Old Net Name=NetR27_1 New Net Name=NetR28_2
+Change Net Name : Old Net Name=NetR28_1 New Net Name=NetR27_2
+Change Net Name : Old Net Name=NetR29_1 New Net Name=NetR26_2
+Change Net Name : Old Net Name=NetR30_1 New Net Name=NetR25_2
+Change Net Name : Old Net Name=NetR31_1 New Net Name=NetR24_2
+Change Net Name : Old Net Name=NetR32_1 New Net Name=NetR23_2
+Change Net Name : Old Net Name=NetR33_1 New Net Name=NetR22_2

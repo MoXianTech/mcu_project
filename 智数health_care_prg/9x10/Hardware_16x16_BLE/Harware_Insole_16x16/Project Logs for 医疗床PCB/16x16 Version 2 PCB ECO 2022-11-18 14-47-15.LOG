@@ -1,0 +1,3 @@
+Change Component Footprint: Designator=P1 Old Footprint=HDR2.54-WI-16P New Footprint=CONN-SMD_16PINS
+Change Component Footprint: Designator=P2 Old Footprint=HDR2.54-WI-16P New Footprint=CONN-SMD_16PINS
+Added Member To Class: ClassName=Scan Member=Component FPC1 KH-FG1.0-H2.0-16PIN

@@ -1,0 +1,497 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<style type="text/css">
+		h1, h2, h3, h4, h5, h6 { 
+			font-family : segoe ui;
+			color : black;
+			background-color : #EDE7D9;
+			padding: 0.3em;
+		}
+
+		h1 {
+			font-size: 1.2em;
+		}		
+
+		h2 {
+			font-size: 1.2em;
+		}
+
+		body { 
+			font-family : segoe ui;
+		}
+
+		td, th {  
+			padding: 0.5em;
+			text-align : left;
+		}
+		th { 
+			background-color : #EEEEEE;
+		
+		}
+		th.column1, td.column1 { 
+			width : 50%; 
+		}
+
+        th.column2, td.column2 {
+            width : 25%;
+        }
+
+		table { 
+			width : 100%; 
+            font-size: 0.9em;
+		}
+		.front_matter, .front_matter_column1, .front_matter_column2, .front_matter_column3
+		{
+			left : 0;
+			top : 0;
+			padding: 0em;
+			padding-top : 0.1em;
+			border : 0px solid black;
+			width : 100%;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.front_matter_column1 {
+			width : 5em;
+			font-weight: bold;
+		}
+
+		.front_matter_column2 {
+			width: 0.1em;
+		}
+
+		.front_matter_column3 {
+			width : auto;
+		}
+
+		.total_column1, .total_column {
+			font-weight : bold;
+		}
+		.total_column1 {
+			text-align : left;
+		}
+		.warning, .error { 
+			color : red;
+			font-weight : bold;
+		}	
+		tr.onmouseout_odd { 
+			background-color : #white;
+		}
+		tr.onmouseout_even { 
+			background-color : #FAFAFA;
+		}
+		tr.onmouseover_odd, tr.onmouseover_even { 
+			background-color : #EEEEEE;
+		} 
+		a:link, a:visited, .q a:link,.q a:active,.q {
+			color: #21489e; 
+		}
+		a:link.callback, a:visited.callback { 
+			color: #21489e;
+		}
+		a:link.customize, a:visited.customize {
+			color: #C0C0C0;
+			position: absolute; 
+			right: 10px;
+		}	
+		p.contents_level1 {
+			font-weight : bold;
+			font-size : 110%;
+			margin : 0.5em;
+		}
+		p.contents_level2 {
+			position : relative;
+			left : 20px;
+			margin : 0.5em;
+		}
+	</style><script type="text/javascript">
+		function coordToMils(coord) {
+			var number = coord / 10000;
+			
+			if (number != number.toFixed(3))
+				number = number.toFixed(3);
+			
+			return number + 'mil'
+		}
+
+		function coordToMM(coord) {
+			var number = 0.0254 * coord / 10000;
+			
+			if (number != number.toFixed(4))
+				number = number.toFixed(4);
+			
+			return number + 'mm'
+		}
+	
+		function convertCoord(coordNode, units) {
+			for (var i = 0; i < coordNode.childNodes.length; i++) {
+				coordNode.removeChild(coordNode.childNodes[i]);		
+			}
+
+			var coord = coordNode.getAttribute('value');
+			if (coord != null) {
+				if (units == 'mm') {	
+					textNode = document.createTextNode(coordToMM(coord));
+					coordNode.appendChild(textNode);
+				} else if (units == 'mil') {
+					textNode = document.createTextNode(coordToMils(coord));		
+					coordNode.appendChild(textNode);	
+				}
+			}
+		}
+	
+		function convertUnits(unitNode, units) {
+			for (var i = 0; i < unitNode.childNodes.length; i++) {
+				unitNode.removeChild(unitNode.childNodes[i]);		
+			}
+		
+			textNode = document.createTextNode(units); 
+			unitNode.appendChild(textNode);
+		}
+	
+		function changeUnits(radio_input, units) {
+			if (radio_input.checked) {
+			
+				var elements = document.getElementsByName('coordinate');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertCoord(elements[i], units);
+					}
+				}
+	
+				var elements = document.getElementsByName('units');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertUnits(elements[i], units);
+					}
+				}
+			}
+		}	
+	</script><title>Move Component(s) Origin to Grid</title>
+</head>
+<body onload=""><img ALT="Altium" src="
+			file://D:\Users\Public\Documents\Altium\AD22\Templates\AD_logo.png
+		"><a href="dxpprocess://Client:SetupPreferences?Server=PCB|PageName=Reports" class="customize"><acronym title="dxpprocess://Client:SetupPreferences?Server=PCB|PageName=Reports">customize</acronym></a><h1>Move Component(s) Origin to Grid</h1>
+<table class="front_matter">
+<tr class="front_matter">
+<td class="front_matter_column1">Date:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">2022/10/28</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">20:19:17</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Elapsed Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">00:00:00</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Filename:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3"><a href="file:///D:\%E5%A2%A8%E7%8E%B0-%E5%B7%A5%E4%BD%9C%E8%B5%84%E6%96%99\Medical Treatment Bed\16x16 updated.PcbDoc" class="file"><acronym title="D:\墨现-工作资料\Medical Treatment Bed\16x16 updated.PcbDoc">D:\墨现-工作资料\Medical Treatment Bed\16x16 updated.PcbDoc</acronym></a></td>
+</tr>
+</table><a name="IDS5J3YUFBBCTBF3HZCEMFQO5DTPHLTE4KJTTKIAHQTGPRATUQ5IXL"><h2>Components Origin</h2></a><a name="ID13ZVQNKKGOYKO2ZBSG0DOYSKO1MQ0GFLJ1XW4I5YB33RYDMUKGH"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="warning"></th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\%E5%A2%A8%E7%8E%B0-%E5%B7%A5%E4%BD%9C%E8%B5%84%E6%96%99\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3024.292mil|Location2.X=3435.708mil|Location1.Y=3069.292mil|Location2.Y=3535.993mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\墨现-工作资料\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3024.292mil|Location2.X=3435.708mil|Location1.Y=3069.292mil|Location2.Y=3535.993mil|Absolute=True">LCC Component U7-GD32E103CBT6 (940mil,630mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\%E5%A2%A8%E7%8E%B0-%E5%B7%A5%E4%BD%9C%E8%B5%84%E6%96%99\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2356.063mil|Location2.X=3963.937mil|Location1.Y=3570mil|Location2.Y=4000.987mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\墨现-工作资料\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2356.063mil|Location2.X=3963.937mil|Location1.Y=3570mil|Location2.Y=4000.987mil|Absolute=True">SIP Component P2-HDR2.54-WI-16P (870mil,975mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\%E5%A2%A8%E7%8E%B0-%E5%B7%A5%E4%BD%9C%E8%B5%84%E6%96%99\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2351mil|Location2.X=2469.632mil|Location1.Y=2933.425mil|Location2.Y=3058.987mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\墨现-工作资料\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2351mil|Location2.X=2469.632mil|Location1.Y=2933.425mil|Location2.Y=3058.987mil|Absolute=True">SMT Small Component C28-10uF (106) 20% 6.3V (120mil,315mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\%E5%A2%A8%E7%8E%B0-%E5%B7%A5%E4%BD%9C%E8%B5%84%E6%96%99\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2351mil|Location2.X=2469.632mil|Location1.Y=3008.425mil|Location2.Y=3133.987mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\墨现-工作资料\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2351mil|Location2.X=2469.632mil|Location1.Y=3008.425mil|Location2.Y=3133.987mil|Absolute=True">SMT Small Component C27-100nF (104) 10% 16V (120mil,390mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\%E5%A2%A8%E7%8E%B0-%E5%B7%A5%E4%BD%9C%E8%B5%84%E6%96%99\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3224.233mil|Location2.X=3359.153mil|Location1.Y=2879.006mil|Location2.Y=3042.185mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\墨现-工作资料\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3224.233mil|Location2.X=3359.153mil|Location1.Y=2879.006mil|Location2.Y=3042.185mil|Absolute=True">Component Y1-25MHz (958.386mil,312.008mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\%E5%A2%A8%E7%8E%B0-%E5%B7%A5%E4%BD%9C%E8%B5%84%E6%96%99\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2293.2mil|Location2.X=2612.65mil|Location1.Y=3133.2mil|Location2.Y=3516.8mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\墨现-工作资料\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2293.2mil|Location2.X=2612.65mil|Location1.Y=3133.2mil|Location2.Y=3516.8mil|Absolute=True">SIP Component USB1-TYPE-C16PIN (205mil,680mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\%E5%A2%A8%E7%8E%B0-%E5%B7%A5%E4%BD%9C%E8%B5%84%E6%96%99\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2452.544mil|Location2.X=2670.925mil|Location1.Y=2793.463mil|Location2.Y=3168.987mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\墨现-工作资料\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2452.544mil|Location2.X=2670.925mil|Location1.Y=2793.463mil|Location2.Y=3168.987mil|Absolute=True">SOIC Component U14-CH340N (265mil,300mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\%E5%A2%A8%E7%8E%B0-%E5%B7%A5%E4%BD%9C%E8%B5%84%E6%96%99\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4117.15mil|Location2.X=4352mil|Location1.Y=2869.9mil|Location2.Y=3081.987mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\墨现-工作资料\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4117.15mil|Location2.X=4352mil|Location1.Y=2869.9mil|Location2.Y=3081.987mil|Absolute=True">SOIC Component U12-RS2255XN (1945mil,290mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\%E5%A2%A8%E7%8E%B0-%E5%B7%A5%E4%BD%9C%E8%B5%84%E6%96%99\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4117.15mil|Location2.X=4352mil|Location1.Y=3110.5mil|Location2.Y=3321.987mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\墨现-工作资料\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4117.15mil|Location2.X=4352mil|Location1.Y=3110.5mil|Location2.Y=3321.987mil|Absolute=True">SOIC Component U11-RS2255XN (1945mil,530.6mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\%E5%A2%A8%E7%8E%B0-%E5%B7%A5%E4%BD%9C%E8%B5%84%E6%96%99\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5333mil|Location2.X=5567.85mil|Location1.Y=3140.5mil|Location2.Y=3351.987mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\墨现-工作资料\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5333mil|Location2.X=5567.85mil|Location1.Y=3140.5mil|Location2.Y=3351.987mil|Absolute=True">SOIC Component U10-RS2255XN (3160mil,570mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\%E5%A2%A8%E7%8E%B0-%E5%B7%A5%E4%BD%9C%E8%B5%84%E6%96%99\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5333mil|Location2.X=5567.85mil|Location1.Y=2925.5mil|Location2.Y=3136.987mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\墨现-工作资料\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5333mil|Location2.X=5567.85mil|Location1.Y=2925.5mil|Location2.Y=3136.987mil|Absolute=True">SOIC Component U9-RS2255XN (3160mil,355mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\%E5%A2%A8%E7%8E%B0-%E5%B7%A5%E4%BD%9C%E8%B5%84%E6%96%99\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4706.64mil|Location2.X=5003.36mil|Location1.Y=2893.664mil|Location2.Y=3332.987mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\墨现-工作资料\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4706.64mil|Location2.X=5003.36mil|Location1.Y=2893.664mil|Location2.Y=3332.987mil|Absolute=True">SOIC Component U8-LMV324-SR (2565mil,440mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\%E5%A2%A8%E7%8E%B0-%E5%B7%A5%E4%BD%9C%E8%B5%84%E6%96%99\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4092.15mil|Location2.X=4327mil|Location1.Y=3319.9mil|Location2.Y=3531.987mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\墨现-工作资料\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4092.15mil|Location2.X=4327mil|Location1.Y=3319.9mil|Location2.Y=3531.987mil|Absolute=True">SOIC Component U6-RS2255XN (1920mil,740mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\%E5%A2%A8%E7%8E%B0-%E5%B7%A5%E4%BD%9C%E8%B5%84%E6%96%99\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4517.15mil|Location2.X=4752mil|Location1.Y=3319.9mil|Location2.Y=3531.987mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\墨现-工作资料\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4517.15mil|Location2.X=4752mil|Location1.Y=3319.9mil|Location2.Y=3531.987mil|Absolute=True">SOIC Component U5-RS2255XN (2345mil,740mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\%E5%A2%A8%E7%8E%B0-%E5%B7%A5%E4%BD%9C%E8%B5%84%E6%96%99\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4937.15mil|Location2.X=5172mil|Location1.Y=3319.9mil|Location2.Y=3531.987mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\墨现-工作资料\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4937.15mil|Location2.X=5172mil|Location1.Y=3319.9mil|Location2.Y=3531.987mil|Absolute=True">SOIC Component U4-RS2255XN (2765mil,740mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\%E5%A2%A8%E7%8E%B0-%E5%B7%A5%E4%BD%9C%E8%B5%84%E6%96%99\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5362.15mil|Location2.X=5597mil|Location1.Y=3319.9mil|Location2.Y=3531.987mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\墨现-工作资料\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5362.15mil|Location2.X=5597mil|Location1.Y=3319.9mil|Location2.Y=3531.987mil|Absolute=True">SOIC Component U3-RS2255XN (3190mil,740mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\%E5%A2%A8%E7%8E%B0-%E5%B7%A5%E4%BD%9C%E8%B5%84%E6%96%99\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2711.115mil|Location2.X=3074.991mil|Location1.Y=2826.046mil|Location2.Y=3165.987mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\墨现-工作资料\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2711.115mil|Location2.X=3074.991mil|Location1.Y=2826.046mil|Location2.Y=3165.987mil|Absolute=True">Component U1-AMS1117-3.3V (620mil,315mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\%E5%A2%A8%E7%8E%B0-%E5%B7%A5%E4%BD%9C%E8%B5%84%E6%96%99\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4376mil|Location2.X=4494.632mil|Location1.Y=2971.453mil|Location2.Y=3087.987mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\墨现-工作资料\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4376mil|Location2.X=4494.632mil|Location1.Y=2971.453mil|Location2.Y=3087.987mil|Absolute=True">SMT Small Component TP9-TP (-47796mil,50268.638mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\%E5%A2%A8%E7%8E%B0-%E5%B7%A5%E4%BD%9C%E8%B5%84%E6%96%99\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4372mil|Location2.X=4490.632mil|Location1.Y=3202.815mil|Location2.Y=3318.987mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\墨现-工作资料\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4372mil|Location2.X=4490.632mil|Location1.Y=3202.815mil|Location2.Y=3318.987mil|Absolute=True">SMT Small Component TP8-TP (-47800mil,50500mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\%E5%A2%A8%E7%8E%B0-%E5%B7%A5%E4%BD%9C%E8%B5%84%E6%96%99\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5216mil|Location2.X=5334.632mil|Location1.Y=3201.453mil|Location2.Y=3317.987mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\墨现-工作资料\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5216mil|Location2.X=5334.632mil|Location1.Y=3201.453mil|Location2.Y=3317.987mil|Absolute=True">SMT Small Component TP7-TP (-46956mil,50498.638mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\%E5%A2%A8%E7%8E%B0-%E5%B7%A5%E4%BD%9C%E8%B5%84%E6%96%99\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5216mil|Location2.X=5334.632mil|Location1.Y=2941.453mil|Location2.Y=3057.987mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\墨现-工作资料\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5216mil|Location2.X=5334.632mil|Location1.Y=2941.453mil|Location2.Y=3057.987mil|Absolute=True">SMT Small Component TP6-TP (-46956mil,50238.638mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\%E5%A2%A8%E7%8E%B0-%E5%B7%A5%E4%BD%9C%E8%B5%84%E6%96%99\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3648mil|Location2.X=3766.632mil|Location1.Y=3097.263mil|Location2.Y=3213.987mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\墨现-工作资料\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3648mil|Location2.X=3766.632mil|Location1.Y=3097.263mil|Location2.Y=3213.987mil|Absolute=True">SMT Small Component TP5-TP (-48523.898mil,50394.448mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\%E5%A2%A8%E7%8E%B0-%E5%B7%A5%E4%BD%9C%E8%B5%84%E6%96%99\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3648mil|Location2.X=3766.632mil|Location1.Y=3152.263mil|Location2.Y=3268.987mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\墨现-工作资料\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3648mil|Location2.X=3766.632mil|Location1.Y=3152.263mil|Location2.Y=3268.987mil|Absolute=True">SMT Small Component TP4-TP (-48523.898mil,50449.448mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\%E5%A2%A8%E7%8E%B0-%E5%B7%A5%E4%BD%9C%E8%B5%84%E6%96%99\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2872mil|Location2.X=2990.632mil|Location1.Y=2657.815mil|Location2.Y=2773.987mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\墨现-工作资料\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2872mil|Location2.X=2990.632mil|Location1.Y=2657.815mil|Location2.Y=2773.987mil|Absolute=True">SMT Small Component TP2-TP (-49300mil,49955mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\%E5%A2%A8%E7%8E%B0-%E5%B7%A5%E4%BD%9C%E8%B5%84%E6%96%99\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2878mil|Location2.X=2983.303mil|Location1.Y=2712.815mil|Location2.Y=2828.987mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\墨现-工作资料\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2878mil|Location2.X=2983.303mil|Location1.Y=2712.815mil|Location2.Y=2828.987mil|Absolute=True">SMT Small Component TP1-TP (-49300mil,50010mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\%E5%A2%A8%E7%8E%B0-%E5%B7%A5%E4%BD%9C%E8%B5%84%E6%96%99\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2681mil|Location2.X=2799.632mil|Location1.Y=3098.425mil|Location2.Y=3223.987mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\墨现-工作资料\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2681mil|Location2.X=2799.632mil|Location1.Y=3098.425mil|Location2.Y=3223.987mil|Absolute=True">SMT Small Component R42-100Ω (1000) ±1% (450mil,480mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\%E5%A2%A8%E7%8E%B0-%E5%B7%A5%E4%BD%9C%E8%B5%84%E6%96%99\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2682mil|Location2.X=2787.303mil|Location1.Y=3153.425mil|Location2.Y=3278.987mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\墨现-工作资料\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2682mil|Location2.X=2787.303mil|Location1.Y=3153.425mil|Location2.Y=3278.987mil|Absolute=True">SMT Small Component R41-100Ω (1000) ±1% (445mil,535mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\%E5%A2%A8%E7%8E%B0-%E5%B7%A5%E4%BD%9C%E8%B5%84%E6%96%99\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2645.684mil|Location2.X=2764.316mil|Location1.Y=3183.425mil|Location2.Y=3270.993mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\墨现-工作资料\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2645.684mil|Location2.X=2764.316mil|Location1.Y=3183.425mil|Location2.Y=3270.993mil|Absolute=True">SMT Small Component R40-5.1KΩ (5101) ±1% (415mil,565mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\%E5%A2%A8%E7%8E%B0-%E5%B7%A5%E4%BD%9C%E8%B5%84%E6%96%99\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2436mil|Location2.X=2554.632mil|Location1.Y=2657.677mil|Location2.Y=2813.987mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\墨现-工作资料\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2436mil|Location2.X=2554.632mil|Location1.Y=2657.677mil|Location2.Y=2813.987mil|Absolute=True">SMT Small Component R39-100Ω (1000) ±1% (205mil,55mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\%E5%A2%A8%E7%8E%B0-%E5%B7%A5%E4%BD%9C%E8%B5%84%E6%96%99\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2491mil|Location2.X=2609.632mil|Location1.Y=2657.677mil|Location2.Y=2813.987mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\墨现-工作资料\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2491mil|Location2.X=2609.632mil|Location1.Y=2657.677mil|Location2.Y=2813.987mil|Absolute=True">SMT Small Component R38-100Ω (1000) ±1% (260mil,55mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\%E5%A2%A8%E7%8E%B0-%E5%B7%A5%E4%BD%9C%E8%B5%84%E6%96%99\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2682.416mil|Location2.X=2801.048mil|Location1.Y=3293.425mil|Location2.Y=3350.994mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\墨现-工作资料\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2682.416mil|Location2.X=2801.048mil|Location1.Y=3293.425mil|Location2.Y=3350.994mil|Absolute=True">SMT Small Component R37-5.1KΩ (5101) ±1% (440mil,675mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\%E5%A2%A8%E7%8E%B0-%E5%B7%A5%E4%BD%9C%E8%B5%84%E6%96%99\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4001mil|Location2.X=4119.632mil|Location1.Y=2823.425mil|Location2.Y=2948.987mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\墨现-工作资料\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4001mil|Location2.X=4119.632mil|Location1.Y=2823.425mil|Location2.Y=2948.987mil|Absolute=True">SMT Small Component R33-4.7K (1770mil,205mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\%E5%A2%A8%E7%8E%B0-%E5%B7%A5%E4%BD%9C%E8%B5%84%E6%96%99\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4001mil|Location2.X=4119.632mil|Location1.Y=3068.425mil|Location2.Y=3193.987mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\墨现-工作资料\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4001mil|Location2.X=4119.632mil|Location1.Y=3068.425mil|Location2.Y=3193.987mil|Absolute=True">SMT Small Component R32-4.7K (1770mil,450mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\%E5%A2%A8%E7%8E%B0-%E5%B7%A5%E4%BD%9C%E8%B5%84%E6%96%99\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5397mil|Location2.X=5502.303mil|Location1.Y=3088.425mil|Location2.Y=3213.987mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\墨现-工作资料\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5397mil|Location2.X=5502.303mil|Location1.Y=3088.425mil|Location2.Y=3213.987mil|Absolute=True">SMT Small Component R31-4.7k (3160mil,470mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\%E5%A2%A8%E7%8E%B0-%E5%B7%A5%E4%BD%9C%E8%B5%84%E6%96%99\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5391mil|Location2.X=5509.632mil|Location1.Y=2868.425mil|Location2.Y=2993.987mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\墨现-工作资料\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5391mil|Location2.X=5509.632mil|Location1.Y=2868.425mil|Location2.Y=2993.987mil|Absolute=True">SMT Small Component R30-4.7K (3160mil,250mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\%E5%A2%A8%E7%8E%B0-%E5%B7%A5%E4%BD%9C%E8%B5%84%E6%96%99\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4001mil|Location2.X=4119.632mil|Location1.Y=2878.425mil|Location2.Y=3003.987mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\墨现-工作资料\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4001mil|Location2.X=4119.632mil|Location1.Y=2878.425mil|Location2.Y=3003.987mil|Absolute=True">SMT Small Component R29-100R (1770mil,260mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\%E5%A2%A8%E7%8E%B0-%E5%B7%A5%E4%BD%9C%E8%B5%84%E6%96%99\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4001mil|Location2.X=4119.632mil|Location1.Y=3118.425mil|Location2.Y=3243.987mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\墨现-工作资料\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4001mil|Location2.X=4119.632mil|Location1.Y=3118.425mil|Location2.Y=3243.987mil|Absolute=True">SMT Small Component R28-100R (1770mil,500mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\%E5%A2%A8%E7%8E%B0-%E5%B7%A5%E4%BD%9C%E8%B5%84%E6%96%99\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5576mil|Location2.X=5694.632mil|Location1.Y=3133.425mil|Location2.Y=3258.987mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\墨现-工作资料\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5576mil|Location2.X=5694.632mil|Location1.Y=3133.425mil|Location2.Y=3258.987mil|Absolute=True">SMT Small Component R27-100R (3345mil,515mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\%E5%A2%A8%E7%8E%B0-%E5%B7%A5%E4%BD%9C%E8%B5%84%E6%96%99\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5576mil|Location2.X=5694.632mil|Location1.Y=3013.425mil|Location2.Y=3138.987mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\墨现-工作资料\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5576mil|Location2.X=5694.632mil|Location1.Y=3013.425mil|Location2.Y=3138.987mil|Absolute=True">SMT Small Component R26-100R (3345mil,395mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\%E5%A2%A8%E7%8E%B0-%E5%B7%A5%E4%BD%9C%E8%B5%84%E6%96%99\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4001mil|Location2.X=4119.632mil|Location1.Y=2933.425mil|Location2.Y=3058.987mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\墨现-工作资料\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4001mil|Location2.X=4119.632mil|Location1.Y=2933.425mil|Location2.Y=3058.987mil|Absolute=True">SMT Small Component R25-1K (1770mil,315mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\%E5%A2%A8%E7%8E%B0-%E5%B7%A5%E4%BD%9C%E8%B5%84%E6%96%99\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4001mil|Location2.X=4119.632mil|Location1.Y=3168.425mil|Location2.Y=3293.987mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\墨现-工作资料\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4001mil|Location2.X=4119.632mil|Location1.Y=3168.425mil|Location2.Y=3293.987mil|Absolute=True">SMT Small Component R24-1K (1770mil,550mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\%E5%A2%A8%E7%8E%B0-%E5%B7%A5%E4%BD%9C%E8%B5%84%E6%96%99\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5576mil|Location2.X=5694.632mil|Location1.Y=3178.425mil|Location2.Y=3303.987mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\墨现-工作资料\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5576mil|Location2.X=5694.632mil|Location1.Y=3178.425mil|Location2.Y=3303.987mil|Absolute=True">SMT Small Component R23-1K (3345mil,560mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\%E5%A2%A8%E7%8E%B0-%E5%B7%A5%E4%BD%9C%E8%B5%84%E6%96%99\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5576mil|Location2.X=5694.632mil|Location1.Y=2963.425mil|Location2.Y=3088.987mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\墨现-工作资料\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5576mil|Location2.X=5694.632mil|Location1.Y=2963.425mil|Location2.Y=3088.987mil|Absolute=True">SMT Small Component R22-1K (3345mil,345mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\%E5%A2%A8%E7%8E%B0-%E5%B7%A5%E4%BD%9C%E8%B5%84%E6%96%99\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4007mil|Location2.X=4112.303mil|Location1.Y=2988.425mil|Location2.Y=3113.987mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\墨现-工作资料\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4007mil|Location2.X=4112.303mil|Location1.Y=2988.425mil|Location2.Y=3113.987mil|Absolute=True">SMT Small Component R21-200R (1770mil,370mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\%E5%A2%A8%E7%8E%B0-%E5%B7%A5%E4%BD%9C%E8%B5%84%E6%96%99\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4001mil|Location2.X=4119.632mil|Location1.Y=3213.425mil|Location2.Y=3338.987mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\墨现-工作资料\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4001mil|Location2.X=4119.632mil|Location1.Y=3213.425mil|Location2.Y=3338.987mil|Absolute=True">SMT Small Component R20-200R (1770mil,595mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\%E5%A2%A8%E7%8E%B0-%E5%B7%A5%E4%BD%9C%E8%B5%84%E6%96%99\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5579mil|Location2.X=5690.968mil|Location1.Y=3233.425mil|Location2.Y=3358.987mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\墨现-工作资料\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5579mil|Location2.X=5690.968mil|Location1.Y=3233.425mil|Location2.Y=3358.987mil|Absolute=True">SMT Small Component R19-200R (3345mil,615mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\%E5%A2%A8%E7%8E%B0-%E5%B7%A5%E4%BD%9C%E8%B5%84%E6%96%99\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5579mil|Location2.X=5690.968mil|Location1.Y=2913.425mil|Location2.Y=3038.987mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\墨现-工作资料\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5579mil|Location2.X=5690.968mil|Location1.Y=2913.425mil|Location2.Y=3038.987mil|Absolute=True">SMT Small Component R18-200R (3345mil,295mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\%E5%A2%A8%E7%8E%B0-%E5%B7%A5%E4%BD%9C%E8%B5%84%E6%96%99\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4524.331mil|Location2.X=4671.575mil|Location1.Y=3045.315mil|Location2.Y=3206.987mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\墨现-工作资料\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4524.331mil|Location2.X=4671.575mil|Location1.Y=3045.315mil|Location2.Y=3206.987mil|Absolute=True">SMT Small Component R17-0Ω (0R0) ±1% (2307.952mil,445mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\%E5%A2%A8%E7%8E%B0-%E5%B7%A5%E4%BD%9C%E8%B5%84%E6%96%99\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4489mil|Location2.X=4600.968mil|Location1.Y=2932.677mil|Location2.Y=3088.987mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\墨现-工作资料\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4489mil|Location2.X=4600.968mil|Location1.Y=2932.677mil|Location2.Y=3088.987mil|Absolute=True">SMT Small Component R16-470Ω (4700) ±1% (2255mil,330mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\%E5%A2%A8%E7%8E%B0-%E5%B7%A5%E4%BD%9C%E8%B5%84%E6%96%99\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4489mil|Location2.X=4600.968mil|Location1.Y=3162.677mil|Location2.Y=3318.987mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\墨现-工作资料\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4489mil|Location2.X=4600.968mil|Location1.Y=3162.677mil|Location2.Y=3318.987mil|Absolute=True">SMT Small Component R15-470Ω (4700) ±1% (2255mil,560mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\%E5%A2%A8%E7%8E%B0-%E5%B7%A5%E4%BD%9C%E8%B5%84%E6%96%99\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4589mil|Location2.X=4700.968mil|Location1.Y=2932.677mil|Location2.Y=3088.987mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\墨现-工作资料\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4589mil|Location2.X=4700.968mil|Location1.Y=2932.677mil|Location2.Y=3088.987mil|Absolute=True">SMT Small Component R14-1KΩ (1001) ±1% (2355mil,330mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\%E5%A2%A8%E7%8E%B0-%E5%B7%A5%E4%BD%9C%E8%B5%84%E6%96%99\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4589mil|Location2.X=4700.968mil|Location1.Y=3162.677mil|Location2.Y=3318.987mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\墨现-工作资料\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4589mil|Location2.X=4700.968mil|Location1.Y=3162.677mil|Location2.Y=3318.987mil|Absolute=True">SMT Small Component R13-1KΩ (1001) ±1% (2355mil,560mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\%E5%A2%A8%E7%8E%B0-%E5%B7%A5%E4%BD%9C%E8%B5%84%E6%96%99\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4539mil|Location2.X=4650.968mil|Location1.Y=2932.677mil|Location2.Y=3088.987mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\墨现-工作资料\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4539mil|Location2.X=4650.968mil|Location1.Y=2932.677mil|Location2.Y=3088.987mil|Absolute=True">SMT Small Component R12-1KΩ (1001) ±1% (2305mil,330mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\%E5%A2%A8%E7%8E%B0-%E5%B7%A5%E4%BD%9C%E8%B5%84%E6%96%99\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4546mil|Location2.X=4644.639mil|Location1.Y=3162.677mil|Location2.Y=3318.987mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\墨现-工作资料\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4546mil|Location2.X=4644.639mil|Location1.Y=3162.677mil|Location2.Y=3318.987mil|Absolute=True">SMT Small Component R11-1KΩ (1001) ±1% (2305mil,560mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\%E5%A2%A8%E7%8E%B0-%E5%B7%A5%E4%BD%9C%E8%B5%84%E6%96%99\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5109mil|Location2.X=5220.968mil|Location1.Y=3162.677mil|Location2.Y=3318.987mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\墨现-工作资料\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5109mil|Location2.X=5220.968mil|Location1.Y=3162.677mil|Location2.Y=3318.987mil|Absolute=True">SMT Small Component R10-470Ω (4700) ±1% (2875mil,560mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\%E5%A2%A8%E7%8E%B0-%E5%B7%A5%E4%BD%9C%E8%B5%84%E6%96%99\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5026mil|Location2.X=5104.645mil|Location1.Y=3162.677mil|Location2.Y=3318.987mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\墨现-工作资料\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5026mil|Location2.X=5104.645mil|Location1.Y=3162.677mil|Location2.Y=3318.987mil|Absolute=True">SMT Small Component R9-1KΩ (1001) ±1% (2775mil,560mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\%E5%A2%A8%E7%8E%B0-%E5%B7%A5%E4%BD%9C%E8%B5%84%E6%96%99\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5126mil|Location2.X=5204.645mil|Location1.Y=2902.677mil|Location2.Y=3058.987mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\墨现-工作资料\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5126mil|Location2.X=5204.645mil|Location1.Y=2902.677mil|Location2.Y=3058.987mil|Absolute=True">SMT Small Component R8-470Ω (4700) ±1% (2875mil,300mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\%E5%A2%A8%E7%8E%B0-%E5%B7%A5%E4%BD%9C%E8%B5%84%E6%96%99\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5026mil|Location2.X=5104.645mil|Location1.Y=2902.677mil|Location2.Y=3058.987mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\墨现-工作资料\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5026mil|Location2.X=5104.645mil|Location1.Y=2902.677mil|Location2.Y=3058.987mil|Absolute=True">SMT Small Component R7-1KΩ (1001) ±1% (2775mil,300mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\%E5%A2%A8%E7%8E%B0-%E5%B7%A5%E4%BD%9C%E8%B5%84%E6%96%99\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5076mil|Location2.X=5154.645mil|Location1.Y=3162.677mil|Location2.Y=3318.987mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\墨现-工作资料\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5076mil|Location2.X=5154.645mil|Location1.Y=3162.677mil|Location2.Y=3318.987mil|Absolute=True">SMT Small Component R6-1KΩ (1001) ±1% (2825mil,560mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\%E5%A2%A8%E7%8E%B0-%E5%B7%A5%E4%BD%9C%E8%B5%84%E6%96%99\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5076mil|Location2.X=5154.645mil|Location1.Y=2902.677mil|Location2.Y=3058.987mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\墨现-工作资料\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5076mil|Location2.X=5154.645mil|Location1.Y=2902.677mil|Location2.Y=3058.987mil|Absolute=True">SMT Small Component R5-1KΩ (1001) ±1% (2825mil,300mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\%E5%A2%A8%E7%8E%B0-%E5%B7%A5%E4%BD%9C%E8%B5%84%E6%96%99\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5031mil|Location2.X=5109.645mil|Location1.Y=3047.677mil|Location2.Y=3203.987mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\墨现-工作资料\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5031mil|Location2.X=5109.645mil|Location1.Y=3047.677mil|Location2.Y=3203.987mil|Absolute=True">SMT Small Component R4-10Ω (10R0) ±1% (2780mil,445mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\%E5%A2%A8%E7%8E%B0-%E5%B7%A5%E4%BD%9C%E8%B5%84%E6%96%99\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3755.945mil|Location2.X=3840.591mil|Location1.Y=2953.425mil|Location2.Y=3078.987mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\墨现-工作资料\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3755.945mil|Location2.X=3840.591mil|Location1.Y=2953.425mil|Location2.Y=3078.987mil|Absolute=True">SMT Small Component R3-300Ω (3000) ±1% (1508.268mil,335mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\%E5%A2%A8%E7%8E%B0-%E5%B7%A5%E4%BD%9C%E8%B5%84%E6%96%99\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3568.779mil|Location2.X=3653.425mil|Location1.Y=3147.873mil|Location2.Y=3272.987mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\墨现-工作资料\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3568.779mil|Location2.X=3653.425mil|Location1.Y=3147.873mil|Location2.Y=3272.987mil|Absolute=True">SMT Small Component R2-10KΩ (1002) ±1% (1321.102mil,529.448mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\%E5%A2%A8%E7%8E%B0-%E5%B7%A5%E4%BD%9C%E8%B5%84%E6%96%99\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3573.779mil|Location2.X=3658.425mil|Location1.Y=3032.873mil|Location2.Y=3157.987mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\墨现-工作资料\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3573.779mil|Location2.X=3658.425mil|Location1.Y=3032.873mil|Location2.Y=3157.987mil|Absolute=True">SMT Small Component R1-0402-0R (1326.102mil,414.448mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\%E5%A2%A8%E7%8E%B0-%E5%B7%A5%E4%BD%9C%E8%B5%84%E6%96%99\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3990.079mil|Location2.X=4399.843mil|Location1.Y=2320mil|Location2.Y=2830.987mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\墨现-工作资料\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3990.079mil|Location2.X=4399.843mil|Location1.Y=2320mil|Location2.Y=2830.987mil|Absolute=True">SIP Component P5-HC06 (1905mil,60mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\%E5%A2%A8%E7%8E%B0-%E5%B7%A5%E4%BD%9C%E8%B5%84%E6%96%99\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3230.079mil|Location2.X=3639.843mil|Location1.Y=2320mil|Location2.Y=2830.987mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\墨现-工作资料\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3230.079mil|Location2.X=3639.843mil|Location1.Y=2320mil|Location2.Y=2830.987mil|Absolute=True">SIP Component P4-XH2.54 4P (1145mil,60mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\%E5%A2%A8%E7%8E%B0-%E5%B7%A5%E4%BD%9C%E8%B5%84%E6%96%99\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4132.063mil|Location2.X=5739.937mil|Location1.Y=3570mil|Location2.Y=4000.987mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\墨现-工作资料\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4132.063mil|Location2.X=5739.937mil|Location1.Y=3570mil|Location2.Y=4000.987mil|Absolute=True">SIP Component P1-HDR2.54-WI-16P (2646mil,975mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\%E5%A2%A8%E7%8E%B0-%E5%B7%A5%E4%BD%9C%E8%B5%84%E6%96%99\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3562.479mil|Location2.X=3709.723mil|Location1.Y=3394.763mil|Location2.Y=3545.993mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\墨现-工作资料\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3562.479mil|Location2.X=3709.723mil|Location1.Y=3394.763mil|Location2.Y=3545.993mil|Absolute=True">SMT Small Component FB1-100Ω ±25% 100MHz (1346.102mil,794.448mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\%E5%A2%A8%E7%8E%B0-%E5%B7%A5%E4%BD%9C%E8%B5%84%E6%96%99\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2624.008mil|Location2.X=2774.992mil|Location1.Y=3377mil|Location2.Y=3510.994mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\墨现-工作资料\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2624.008mil|Location2.X=2774.992mil|Location1.Y=3377mil|Location2.Y=3510.994mil|Absolute=True">SMT Small Component F1-SL0805150 6V 1.5A (410mil,775mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\%E5%A2%A8%E7%8E%B0-%E5%B7%A5%E4%BD%9C%E8%B5%84%E6%96%99\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2795mil|Location2.X=2873.645mil|Location1.Y=3282.669mil|Location2.Y=3528.987mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\墨现-工作资料\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2795mil|Location2.X=2873.645mil|Location1.Y=3282.669mil|Location2.Y=3528.987mil|Absolute=True">SMT Small Component D2-1N5819W (545mil,725mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\%E5%A2%A8%E7%8E%B0-%E5%B7%A5%E4%BD%9C%E8%B5%84%E6%96%99\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3550.922mil|Location2.X=3755.772mil|Location1.Y=2944.961mil|Location2.Y=3089.987mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\墨现-工作资料\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3550.922mil|Location2.X=3755.772mil|Location1.Y=2944.961mil|Location2.Y=3089.987mil|Absolute=True">SMT Small Component D1-绿灯 0603 (1351.536mil,335mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\%E5%A2%A8%E7%8E%B0-%E5%B7%A5%E4%BD%9C%E8%B5%84%E6%96%99\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2796mil|Location2.X=2914.632mil|Location1.Y=2672.677mil|Location2.Y=2828.987mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\墨现-工作资料\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2796mil|Location2.X=2914.632mil|Location1.Y=2672.677mil|Location2.Y=2828.987mil|Absolute=True">SMT Small Component C29-100nF (104) 10% 16V (565mil,70mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\%E5%A2%A8%E7%8E%B0-%E5%B7%A5%E4%BD%9C%E8%B5%84%E6%96%99\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2546mil|Location2.X=2664.632mil|Location1.Y=2657.677mil|Location2.Y=2813.987mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\墨现-工作资料\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2546mil|Location2.X=2664.632mil|Location1.Y=2657.677mil|Location2.Y=2813.987mil|Absolute=True">SMT Small Component C26-100nF (104) 10% 16V (315mil,55mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\%E5%A2%A8%E7%8E%B0-%E5%B7%A5%E4%BD%9C%E8%B5%84%E6%96%99\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2726mil|Location2.X=2844.632mil|Location1.Y=2672.677mil|Location2.Y=2828.987mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\墨现-工作资料\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2726mil|Location2.X=2844.632mil|Location1.Y=2672.677mil|Location2.Y=2828.987mil|Absolute=True">SMT Small Component C25-10uF (106) 20% 10V (495mil,70mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\%E5%A2%A8%E7%8E%B0-%E5%B7%A5%E4%BD%9C%E8%B5%84%E6%96%99\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4176mil|Location2.X=4294.632mil|Location1.Y=3013.425mil|Location2.Y=3138.987mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\墨现-工作资料\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4176mil|Location2.X=4294.632mil|Location1.Y=3013.425mil|Location2.Y=3138.987mil|Absolute=True">SMT Small Component C24-100nF (104) 10% 16V (1945mil,395mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\%E5%A2%A8%E7%8E%B0-%E5%B7%A5%E4%BD%9C%E8%B5%84%E6%96%99\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4176mil|Location2.X=4294.632mil|Location1.Y=3243.425mil|Location2.Y=3368.987mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\墨现-工作资料\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4176mil|Location2.X=4294.632mil|Location1.Y=3243.425mil|Location2.Y=3368.987mil|Absolute=True">SMT Small Component C23-100nF (104) 10% 16V (1945mil,625mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\%E5%A2%A8%E7%8E%B0-%E5%B7%A5%E4%BD%9C%E8%B5%84%E6%96%99\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5576mil|Location2.X=5694.632mil|Location1.Y=3083.425mil|Location2.Y=3208.987mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\墨现-工作资料\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5576mil|Location2.X=5694.632mil|Location1.Y=3083.425mil|Location2.Y=3208.987mil|Absolute=True">SMT Small Component C22-100nF (104) 10% 16V (3345mil,465mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\%E5%A2%A8%E7%8E%B0-%E5%B7%A5%E4%BD%9C%E8%B5%84%E6%96%99\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5582mil|Location2.X=5687.303mil|Location1.Y=2863.425mil|Location2.Y=2988.987mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\墨现-工作资料\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5582mil|Location2.X=5687.303mil|Location1.Y=2863.425mil|Location2.Y=2988.987mil|Absolute=True">SMT Small Component C21-100nF (104) 10% 16V (3345mil,245mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\%E5%A2%A8%E7%8E%B0-%E5%B7%A5%E4%BD%9C%E8%B5%84%E6%96%99\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4436mil|Location2.X=4554.632mil|Location1.Y=2932.677mil|Location2.Y=3088.987mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\墨现-工作资料\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4436mil|Location2.X=4554.632mil|Location1.Y=2932.677mil|Location2.Y=3088.987mil|Absolute=True">SMT Small Component C20-150pF (151) 10% 50V (2205mil,330mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\%E5%A2%A8%E7%8E%B0-%E5%B7%A5%E4%BD%9C%E8%B5%84%E6%96%99\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4439mil|Location2.X=4550.968mil|Location1.Y=3162.677mil|Location2.Y=3318.987mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\墨现-工作资料\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4439mil|Location2.X=4550.968mil|Location1.Y=3162.677mil|Location2.Y=3318.987mil|Absolute=True">SMT Small Component C19-150pF (151) 10% 50V (2205mil,560mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\%E5%A2%A8%E7%8E%B0-%E5%B7%A5%E4%BD%9C%E8%B5%84%E6%96%99\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5159mil|Location2.X=5270.968mil|Location1.Y=3162.677mil|Location2.Y=3318.987mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\墨现-工作资料\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5159mil|Location2.X=5270.968mil|Location1.Y=3162.677mil|Location2.Y=3318.987mil|Absolute=True">SMT Small Component C18-150pF (151) 10% 50V (2925mil,560mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\%E5%A2%A8%E7%8E%B0-%E5%B7%A5%E4%BD%9C%E8%B5%84%E6%96%99\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5159mil|Location2.X=5270.968mil|Location1.Y=2902.677mil|Location2.Y=3058.987mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\墨现-工作资料\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5159mil|Location2.X=5270.968mil|Location1.Y=2902.677mil|Location2.Y=3058.987mil|Absolute=True">SMT Small Component C17-150pF (151) 10% 50V (2925mil,300mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\%E5%A2%A8%E7%8E%B0-%E5%B7%A5%E4%BD%9C%E8%B5%84%E6%96%99\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5064mil|Location2.X=5175.968mil|Location1.Y=3047.677mil|Location2.Y=3203.987mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\墨现-工作资料\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5064mil|Location2.X=5175.968mil|Location1.Y=3047.677mil|Location2.Y=3203.987mil|Absolute=True">SMT Small Component C16-100nF (104) 10% 16V (2830mil,445mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\%E5%A2%A8%E7%8E%B0-%E5%B7%A5%E4%BD%9C%E8%B5%84%E6%96%99\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3119.016mil|Location2.X=3230.984mil|Location1.Y=2879.006mil|Location2.Y=3042.323mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\墨现-工作资料\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3119.016mil|Location2.X=3230.984mil|Location1.Y=2879.006mil|Location2.Y=3042.323mil|Absolute=True">SMT Small Component C15-20pF (200) 5% 50V (890mil,355mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\%E5%A2%A8%E7%8E%B0-%E5%B7%A5%E4%BD%9C%E8%B5%84%E6%96%99\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3369.016mil|Location2.X=3480.984mil|Location1.Y=2894.006mil|Location2.Y=3044.055mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\墨现-工作资料\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3369.016mil|Location2.X=3480.984mil|Location1.Y=2894.006mil|Location2.Y=3044.055mil|Absolute=True">SMT Small Component C14-20pF (200) 5% 50V (1125mil,356.732mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\%E5%A2%A8%E7%8E%B0-%E5%B7%A5%E4%BD%9C%E8%B5%84%E6%96%99\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3650mil|Location2.X=3761.968mil|Location1.Y=3207.125mil|Location2.Y=3363.987mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\墨现-工作资料\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3650mil|Location2.X=3761.968mil|Location1.Y=3207.125mil|Location2.Y=3363.987mil|Absolute=True">SMT Small Component C13-100nF (104) 10% 16V (1416.102mil,604.448mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\%E5%A2%A8%E7%8E%B0-%E5%B7%A5%E4%BD%9C%E8%B5%84%E6%96%99\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3705mil|Location2.X=3816.968mil|Location1.Y=3207.125mil|Location2.Y=3363.987mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\墨现-工作资料\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3705mil|Location2.X=3816.968mil|Location1.Y=3207.125mil|Location2.Y=3363.987mil|Absolute=True">SMT Small Component C12-100nF (104) 10% 16V (1471.102mil,604.448mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\%E5%A2%A8%E7%8E%B0-%E5%B7%A5%E4%BD%9C%E8%B5%84%E6%96%99\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3562mil|Location2.X=3660.639mil|Location1.Y=3092.873mil|Location2.Y=3217.987mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\墨现-工作资料\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3562mil|Location2.X=3660.639mil|Location1.Y=3092.873mil|Location2.Y=3217.987mil|Absolute=True">SMT Small Component C11-100nF (104) 10% 16V (1321.102mil,474.448mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\%E5%A2%A8%E7%8E%B0-%E5%B7%A5%E4%BD%9C%E8%B5%84%E6%96%99\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3595mil|Location2.X=3706.968mil|Location1.Y=3207.125mil|Location2.Y=3363.987mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\墨现-工作资料\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3595mil|Location2.X=3706.968mil|Location1.Y=3207.125mil|Location2.Y=3363.987mil|Absolute=True">SMT Small Component C10-100nF (104) 10% 16V (1361.102mil,604.448mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\%E5%A2%A8%E7%8E%B0-%E5%B7%A5%E4%BD%9C%E8%B5%84%E6%96%99\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3557mil|Location2.X=3635.645mil|Location1.Y=3207.125mil|Location2.Y=3363.987mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\墨现-工作资料\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3557mil|Location2.X=3635.645mil|Location1.Y=3207.125mil|Location2.Y=3363.987mil|Absolute=True">SMT Small Component C9-100nF (104) 10% 16V (1306.102mil,604.448mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\%E5%A2%A8%E7%8E%B0-%E5%B7%A5%E4%BD%9C%E8%B5%84%E6%96%99\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3612mil|Location2.X=3690.645mil|Location1.Y=3297.125mil|Location2.Y=3453.987mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\墨现-工作资料\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3612mil|Location2.X=3690.645mil|Location1.Y=3297.125mil|Location2.Y=3453.987mil|Absolute=True">SMT Small Component C8-1.0uF (105) 10% 25V (1361.102mil,694.448mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\%E5%A2%A8%E7%8E%B0-%E5%B7%A5%E4%BD%9C%E8%B5%84%E6%96%99\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3557mil|Location2.X=3635.645mil|Location1.Y=3297.125mil|Location2.Y=3453.987mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\墨现-工作资料\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3557mil|Location2.X=3635.645mil|Location1.Y=3297.125mil|Location2.Y=3453.987mil|Absolute=True">SMT Small Component C7-10nF (103) 10% 50V (1306.102mil,694.448mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\%E5%A2%A8%E7%8E%B0-%E5%B7%A5%E4%BD%9C%E8%B5%84%E6%96%99\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4157.677mil|Location2.X=4242.323mil|Location1.Y=3473.425mil|Location2.Y=3598.987mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\墨现-工作资料\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4157.677mil|Location2.X=4242.323mil|Location1.Y=3473.425mil|Location2.Y=3598.987mil|Absolute=True">SMT Small Component C6-100nF (104) 10% 16V (1910mil,855mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\%E5%A2%A8%E7%8E%B0-%E5%B7%A5%E4%BD%9C%E8%B5%84%E6%96%99\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4582.677mil|Location2.X=4667.323mil|Location1.Y=3473.425mil|Location2.Y=3598.987mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\墨现-工作资料\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4582.677mil|Location2.X=4667.323mil|Location1.Y=3473.425mil|Location2.Y=3598.987mil|Absolute=True">SMT Small Component C5-100nF (104) 10% 16V (2335mil,855mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\%E5%A2%A8%E7%8E%B0-%E5%B7%A5%E4%BD%9C%E8%B5%84%E6%96%99\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5002.677mil|Location2.X=5087.323mil|Location1.Y=3468.425mil|Location2.Y=3593.987mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\墨现-工作资料\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5002.677mil|Location2.X=5087.323mil|Location1.Y=3468.425mil|Location2.Y=3593.987mil|Absolute=True">SMT Small Component C4-100nF (104) 10% 16V (2755mil,850mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\%E5%A2%A8%E7%8E%B0-%E5%B7%A5%E4%BD%9C%E8%B5%84%E6%96%99\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5427.677mil|Location2.X=5512.323mil|Location1.Y=3468.425mil|Location2.Y=3593.987mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\墨现-工作资料\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5427.677mil|Location2.X=5512.323mil|Location1.Y=3468.425mil|Location2.Y=3593.987mil|Absolute=True">SMT Small Component C3-100nF (104) 10% 16V (3180mil,850mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\%E5%A2%A8%E7%8E%B0-%E5%B7%A5%E4%BD%9C%E8%B5%84%E6%96%99\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3026mil|Location2.X=3104.645mil|Location1.Y=2672.677mil|Location2.Y=2828.987mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\墨现-工作资料\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=3026mil|Location2.X=3104.645mil|Location1.Y=2672.677mil|Location2.Y=2828.987mil|Absolute=True">SMT Small Component C2-100nF (104) 10% 16V (775mil,70mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\%E5%A2%A8%E7%8E%B0-%E5%B7%A5%E4%BD%9C%E8%B5%84%E6%96%99\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2972mil|Location2.X=3037.316mil|Location1.Y=2672.677mil|Location2.Y=2828.987mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\墨现-工作资料\Medical Treatment Bed\16x16 updated.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=2972mil|Location2.X=3037.316mil|Location1.Y=2672.677mil|Location2.Y=2828.987mil|Absolute=True">SMT Small Component C1-10uF (106) 20% 10V (715mil,70mil) on Top Layer</acronym></a> - Component pads are OFF grid. No action taken.</td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br></body>
+</html>

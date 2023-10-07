@@ -1,0 +1,5 @@
+Change Component Library : Designator=F1 Old Library=chaoning_Integrated_Library.IntLib New Library=Ò½ÁÆ´²PCB.SCHLIB
+Added Room: Name=MCU
+Added Room: Name=Measure
+Added Room: Name=Power
+Added Room: Name=Scan

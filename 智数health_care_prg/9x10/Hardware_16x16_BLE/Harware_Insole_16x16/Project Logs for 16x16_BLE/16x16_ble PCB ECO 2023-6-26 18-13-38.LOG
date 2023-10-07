@@ -1,0 +1,15 @@
+Removed Pin From Net: NetName=C10 Pin=U5-25
+Removed Pin From Net: NetName=C11 Pin=U5-26
+Removed Pin From Net: NetName=C12 Pin=U5-27
+Removed Pin From Net: NetName=C14 Pin=U5-29
+Removed Pin From Net: NetName=C15 Pin=U5-32
+Removed Pin From Net: NetName=C16 Pin=U5-33
+Added Pin To Net: NetName=C16 Pin=U5-25
+Added Pin To Net: NetName=C15 Pin=U5-26
+Added Pin To Net: NetName=C14 Pin=U5-27
+Added Pin To Net: NetName=C12 Pin=U5-29
+Added Pin To Net: NetName=C11 Pin=U5-32
+Added Pin To Net: NetName=C10 Pin=U5-33
+Added Room: Name=Measure
+Added Room: Name=Power
+Added Room: Name=Scan

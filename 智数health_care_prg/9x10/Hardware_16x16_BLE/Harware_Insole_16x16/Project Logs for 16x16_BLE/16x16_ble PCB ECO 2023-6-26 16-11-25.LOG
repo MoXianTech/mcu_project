@@ -1,0 +1,65 @@
+Removed Pin From Net: NetName=VCC_3V3 Pin=TP1-1
+Removed Member From Class: ClassName=MCU Member=C2
+Removed Member From Class: ClassName=MCU Member=C3
+Removed Member From Class: ClassName=MCU Member=C20
+Removed Member From Class: ClassName=MCU Member=C21
+Removed Member From Class: ClassName=Measure Member=C28
+Removed Member From Class: ClassName=Scan Member=C30
+Removed Member From Class: ClassName=Scan Member=C31
+Removed Member From Class: ClassName=Measure Member=C32
+Removed Member From Class: ClassName=MCU Member=R8
+Removed Member From Class: ClassName=MCU Member=R9
+Removed Member From Class: ClassName=MCU Member=R14
+Removed Member From Class: ClassName=MCU Member=R22
+Removed Member From Class: ClassName=Power Member=TP1
+Removed Member From Class: ClassName=MCU Member=U3
+Removed Member From Class: ClassName=Measure Member=U4
+Removed Member From Class: ClassName=Power Member=U10
+Removed Member From Class: ClassName=Scan Member=U13
+Added Member To Class: ClassName=Scan Member=Component C3 100nF (104) 10% 16V
+Added Member To Class: ClassName=Scan Member=Component C4 100nF (104) 10% 16V
+Added Member To Class: ClassName=MCU Member=Component C12 100nF (104) 10% 16V
+Added Member To Class: ClassName=MCU Member=Component C13 100nF (104) 10% 16V
+Added Member To Class: ClassName=MCU Member=Component C14 1.0uF (105) 10% 25V
+Added Member To Class: ClassName=MCU Member=Component C15 100nF (104) 10% 16V
+Added Member To Class: ClassName=MCU Member=Component C16 100nF (104) 10% 16V
+Added Member To Class: ClassName=MCU Member=Component C17 100nF (104) 10% 16V
+Added Member To Class: ClassName=Measure Member=Component C18 100nF (104) 10% 16V
+Added Member To Class: ClassName=Measure Member=Component C19 150pF (151) 10% 50V
+Added Member To Class: ClassName=Measure Member=Component C22 150pF (151) 10% 50V
+Added Member To Class: ClassName=Measure Member=Component C23 100nF (104) 10% 16V
+Added Member To Class: ClassName=Measure Member=Component C24 100nF (104) 10% 16V
+Added Member To Class: ClassName=Measure Member=Component C25 100nF (104) 10% 16V
+Added Member To Class: ClassName=Power Member=Component C27 100nF (104) 10% 16V
+Added Member To Class: ClassName=Power Member=Component C29 10uF (106) 20% 6.3V
+Added Member To Class: ClassName=Scan Member=Component FPC2 X10B25U16T
+Added Member To Class: ClassName=MCU Member=Component R3 10K次 (1002) ㊣1%
+Added Member To Class: ClassName=MCU Member=Component R4 10K次 (1002) ㊣1%
+Added Member To Class: ClassName=MCU Member=Component R5 10K次 (1002) ㊣1%
+Added Member To Class: ClassName=MCU Member=Component R6 10次 (10R0) ㊣1%
+Added Member To Class: ClassName=MCU Member=Component R7 10次 (10R0) ㊣1%
+Added Member To Class: ClassName=Measure Member=Component R8 10次 (10R0) ㊣1%
+Added Member To Class: ClassName=Measure Member=Component R9 1K次 (1001) ㊣1%
+Added Member To Class: ClassName=Measure Member=Component R10 1K次 (1001) ㊣1%
+Added Member To Class: ClassName=Measure Member=Component R11 1K次 (1001) ㊣1%
+Added Member To Class: ClassName=Measure Member=Component R13 1K次 (1001) ㊣1%
+Added Member To Class: ClassName=Measure Member=Component R15 1K次 (1001) ㊣1%
+Added Member To Class: ClassName=Measure Member=Component R16 1K次 (1001) ㊣1%
+Added Member To Class: ClassName=Measure Member=Component R18 1K次 (1001) ㊣1%
+Added Member To Class: ClassName=Measure Member=Component R19 470次 (4700) ㊣1%
+Added Member To Class: ClassName=Measure Member=Component R23 200R
+Added Member To Class: ClassName=Measure Member=Component R24 200R
+Added Member To Class: ClassName=Measure Member=Component R27 1K
+Added Member To Class: ClassName=Measure Member=Component R28 1K
+Added Member To Class: ClassName=Measure Member=Component R29 10K
+Added Member To Class: ClassName=Measure Member=Component R31 10K
+Added Member To Class: ClassName=Measure Member=Component R32 10K
+Added Member To Class: ClassName=Measure Member=Component R33 4.7K
+Added Member To Class: ClassName=Scan Member=Component U1 RS2255XN
+Added Member To Class: ClassName=Scan Member=Component U3 RS2255XN
+Added Member To Class: ClassName=Scan Member=Component U4
+Added Member To Class: ClassName=MCU Member=Component U5 GD32E103CBT6
+Added Member To Class: ClassName=Measure Member=Component U6 LMV324-SR
+Added Member To Class: ClassName=Measure Member=Component U9 RS2255XN
+Added Member To Class: ClassName=Measure Member=Component U11 RS2255XN
+Added Member To Class: ClassName=Power Member=Component U12

@@ -1,0 +1,4 @@
+Removed Pin From Net: NetName=HC04_KEY- Pin=U5-2
+Removed Pin From Net: NetName=HC04_STA Pin=U5-4
+Added Pin To Net: NetName=HC04_STA Pin=U5-2
+Added Pin To Net: NetName=HC04_KEY- Pin=U5-4

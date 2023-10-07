@@ -1,0 +1,99 @@
+Removed Pin From Net: NetName=AGND Pin=R17-2
+Removed Member From Class: ClassName=Measure Member=R17
+Removed Member From Class: ClassName=MCU Member=TP5
+Added Component: Designator=FPC1(FPC-SMD_KH-FG1.0-H2.0-16PIN)
+Add component (AddParameter): Name = "Add into BOM"; Value = "yes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact Type"; Value = "下接"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Convert to PCB"; Value = "yes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet"; Value = "https://atta.szlcsc.com/upload/public/pdf/source/20210409/C2797229_056AD649ACEB4D6EFD02DDA35E120470.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Device"; Value = "KH-FG1.0-H2.0-16PIN"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "FFC, FCB Thickness"; Value = "0.3mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height Above Board"; Value = "2mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "JLCPCB Part Class"; Value = "Extended Part"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LCSC Part Name"; Value = "1mm P数:16 翻盖式 下接"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Locking Feature"; Value = "翻盖式"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "kinghelm(金航标)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part"; Value = "KH-FG1.0-H2.0-16PIN"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mounting Type"; Value = "卧贴"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Name"; Value = "KH-FG1.0-H2.0-16PIN"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Contacts"; Value = "16"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Temperature Range"; Value = "-25℃~+85℃"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pitch"; Value = "1mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier"; Value = "LCSC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Footprint"; Value = "SMD,P=1mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part"; Value = "C2797229"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Symbol"; Value = "KH-FG1.0-H2.0-16PIN"; VariantName = "[No Variations]"
+Added Component: Designator=FPC2(FPC-SMD_KH-FG1.0-H2.0-16PIN)
+Add component (AddParameter): Name = "Add into BOM"; Value = "yes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact Type"; Value = "下接"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Convert to PCB"; Value = "yes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Datasheet"; Value = "https://atta.szlcsc.com/upload/public/pdf/source/20210409/C2797229_056AD649ACEB4D6EFD02DDA35E120470.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Device"; Value = "KH-FG1.0-H2.0-16PIN"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "FFC, FCB Thickness"; Value = "0.3mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Height Above Board"; Value = "2mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "JLCPCB Part Class"; Value = "Extended Part"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "LCSC Part Name"; Value = "1mm P数:16 翻盖式 下接"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Locking Feature"; Value = "翻盖式"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "kinghelm(金航标)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part"; Value = "KH-FG1.0-H2.0-16PIN"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mounting Type"; Value = "卧贴"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Name"; Value = "KH-FG1.0-H2.0-16PIN"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number of Contacts"; Value = "16"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Operating Temperature Range"; Value = "-25℃~+85℃"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pitch"; Value = "1mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier"; Value = "LCSC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Footprint"; Value = "SMD,P=1mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part"; Value = "C2797229"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Symbol"; Value = "KH-FG1.0-H2.0-16PIN"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=AGND Pin=-2
+Added Pin To Net: NetName=AGND Pin=C1-1
+Added Pin To Net: NetName=AGND Pin=C2-1
+Added Pin To Net: NetName=AGND Pin=C7-1
+Added Pin To Net: NetName=AGND Pin=C8-2
+Added Pin To Net: NetName=AGND Pin=C9-2
+Added Pin To Net: NetName=AGND Pin=C10-2
+Added Pin To Net: NetName=AGND Pin=C11-2
+Added Pin To Net: NetName=AGND Pin=C12-2
+Added Pin To Net: NetName=AGND Pin=C13-2
+Added Pin To Net: NetName=AGND Pin=C14-2
+Added Pin To Net: NetName=AGND Pin=C15-2
+Added Pin To Net: NetName=AGND Pin=C25-1
+Added Pin To Net: NetName=AGND Pin=C26-2
+Added Pin To Net: NetName=AGND Pin=C27-1
+Added Pin To Net: NetName=AGND Pin=C28-1
+Added Pin To Net: NetName=AGND Pin=C29-1
+Added Pin To Net: NetName=AGND Pin=FPC1-17
+Added Pin To Net: NetName=AGND Pin=FPC1-18
+Added Pin To Net: NetName=AGND Pin=FPC2-17
+Added Pin To Net: NetName=AGND Pin=FPC2-18
+Added Pin To Net: NetName=AGND Pin=P5-1
+Added Pin To Net: NetName=AGND Pin=R37-2
+Added Pin To Net: NetName=AGND Pin=R40-2
+Added Pin To Net: NetName=AGND Pin=TP2-1
+Added Pin To Net: NetName=AGND Pin=U1-1
+Added Pin To Net: NetName=AGND Pin=U7-8
+Added Pin To Net: NetName=AGND Pin=U7-23
+Added Pin To Net: NetName=AGND Pin=U7-35
+Added Pin To Net: NetName=AGND Pin=U7-44
+Added Pin To Net: NetName=AGND Pin=U7-47
+Added Pin To Net: NetName=AGND Pin=U14-3
+Added Pin To Net: NetName=AGND Pin=USB1-1
+Added Pin To Net: NetName=AGND Pin=USB1-2
+Added Pin To Net: NetName=AGND Pin=USB1-3
+Added Pin To Net: NetName=AGND Pin=USB1-4
+Added Pin To Net: NetName=AGND Pin=USB1-A1B12
+Added Pin To Net: NetName=AGND Pin=USB1-B1A12
+Added Pin To Net: NetName=AGND Pin=Y1-2
+Added Pin To Net: NetName=AGND Pin=Y1-4
+Change Net Name : Old Net Name=AGND New Net Name=GND
+Change Net Name : Old Net Name=CH340_D+ New Net Name=CH340_P
+Change Net Name : Old Net Name=CH340_D- New Net Name=CH340_N
+Added Member To Class: ClassName=Power Member=Component C29 100nF (104) 10% 16V
+Added Member To Class: ClassName=Scan Member=Component FPC1 KH-FG1.0-H2.0-16PIN
+Added Member To Class: ClassName=Scan Member=Component FPC2 KH-FG1.0-H2.0-16PIN
+Added Member To Class: ClassName=MCU Member=Component  XH2.54 4P
+Added Member To Class: ClassName=Scan Member=Component U3 RS2255XN
+Added Room: Name=MCU
+Added Room: Name=Measure
+Added Room: Name=Power
+Added Room: Name=Scan

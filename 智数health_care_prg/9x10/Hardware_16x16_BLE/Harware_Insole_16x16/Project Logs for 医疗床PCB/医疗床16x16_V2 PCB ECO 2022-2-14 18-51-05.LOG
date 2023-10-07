@@ -1,0 +1,19 @@
+Removed Pin From Net: NetName=LEN_GREEN Pin=U7-17
+Added Component: Designator=D11(0603_LED_S1)
+Added Component: Designator=R80(0402_R)
+Added Pin To Net: NetName=1C Pin=R80-1
+Added Pin To Net: NetName=LEN_GREEN Pin=U7-22
+Added Pin To Net: NetName=LEN_RED Pin=D11-K
+Added Pin To Net: NetName=LEN_RED Pin=U7-25
+Added Net: Name=LEN_RED
+Added Pin To Net: NetName=NetD11_A Pin=D11-A
+Added Pin To Net: NetName=NetD11_A Pin=R80-2
+Added Net: Name=NetD11_A
+Added Member To Class: ClassName=MCU Member=Component D11 ºìµÆ 0603
+Added Member To Class: ClassName=MCU Member=Component R80 300¦¸ (3000) ¡À1%
+Added Room: Name=CAN
+Added Room: Name=Connect
+Added Room: Name=MCU
+Added Room: Name=Measure
+Added Room: Name=Power_
+Added Room: Name=Scan

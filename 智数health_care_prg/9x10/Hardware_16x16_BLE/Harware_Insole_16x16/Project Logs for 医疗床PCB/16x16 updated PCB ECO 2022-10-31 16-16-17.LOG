@@ -1,0 +1,11 @@
+Removed Pin From Net: NetName=3V3_MCU Pin=C1-2
+Removed Pin From Net: NetName=3V3_MCU Pin=C2-2
+Removed Pin From Net: NetName=3V3_MCU Pin=TP1-1
+Removed Pin From Net: NetName=3V3_MCU Pin=U1-2
+Removed Pin From Net: NetName=3V3_MCU Pin=U1-4
+Added Pin To Net: NetName=VCC_3V3 Pin=C1-2
+Added Pin To Net: NetName=VCC_3V3 Pin=C2-2
+Added Pin To Net: NetName=VCC_3V3 Pin=TP1-1
+Added Pin To Net: NetName=VCC_3V3 Pin=U1-2
+Added Pin To Net: NetName=VCC_3V3 Pin=U1-4
+Change Room Name: Old Name=Power_1 New Name=Power

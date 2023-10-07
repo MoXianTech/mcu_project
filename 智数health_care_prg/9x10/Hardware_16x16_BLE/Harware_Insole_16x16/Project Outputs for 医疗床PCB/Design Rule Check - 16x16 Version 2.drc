@@ -1,0 +1,74 @@
+Protel Design System Design Rule Check
+PCB File : D:\墨现-工作资料\16x16 Medical Bed\2.Hardware\Medical Treatment Bed\16x16 Version 2.PcbDoc
+Date     : 2022/11/19
+Time     : 15:51:27
+
+Processing Rule : Clearance Constraint (Gap=6mil) (All),(All)
+   Violation between Clearance Constraint: (5.989mil < 6mil) Between Track (455.752mil,610.985mil)(474.905mil,611mil) on Top Layer And Track (458.238mil,596.5mil)(460.737mil,599mil) on Top Layer 
+   Violation between Clearance Constraint: (5.989mil < 6mil) Between Track (455.752mil,610.985mil)(474.905mil,611mil) on Top Layer And Track (460.737mil,599mil)(474.905mil,599mil) on Top Layer 
+Rule Violations :2
+
+Processing Rule : Short-Circuit Constraint (Allowed=No) (All),(All)
+Rule Violations :0
+
+Processing Rule : Un-Routed Net Constraint ( (All) )
+Rule Violations :0
+
+Processing Rule : Modified Polygon (Allow modified: No), (Allow shelved: No)
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=8mil) (Max=100mil) (Preferred=8mil) (All)
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=12mil) (Max=60mil) (Preferred=12mil) (InNetClass('Power'))
+Rule Violations :0
+
+Processing Rule : Width Constraint (Min=8mil) (Max=8mil) (Preferred=8mil) (InNetClass('Column Data'))
+Rule Violations :0
+
+Processing Rule : Routing Layers(All)
+Rule Violations :0
+
+Processing Rule : Routing Via (MinHoleWidth=12mil) (MaxHoleWidth=12mil) (PreferredHoleWidth=12mil) (MinWidth=24mil) (MaxWidth=24mil) (PreferedWidth=24mil) (All)
+Rule Violations :0
+
+Processing Rule : Differential Pairs Uncoupled Length using the Gap Constraints (Min=6mil) (Max=6mil) (Prefered=6mil)  and Width Constraints (Min=6mil) (Max=6mil) (Prefered=6mil) (InDifferentialPair ('D_CH340'))
+Rule Violations :0
+
+Processing Rule : Differential Pairs Uncoupled Length using the Gap Constraints (Min=6mil) (Max=6mil) (Prefered=6mil)  and Width Constraints (Min=6mil) (Max=6mil) (Prefered=6mil) (InDifferentialPair ('USB'))
+Rule Violations :0
+
+Processing Rule : Differential Pairs Uncoupled Length using the Gap Constraints (Min=6mil) (Max=6mil) (Prefered=6mil)  and Width Constraints (Min=6mil) (Max=6mil) (Prefered=6mil) (InDifferentialPair ('CH340'))
+Rule Violations :0
+
+Processing Rule : Differential Pairs Uncoupled Length using the Gap Constraints (Min=6mil) (Max=10mil) (Prefered=6mil)  and Width Constraints (Min=6mil) (Max=15mil) (Prefered=6mil) (InDifferentialPairClass('90OM'))
+Rule Violations :0
+
+Processing Rule : Power Plane Connect Rule(Direct Connect )(Expansion=20mil) (Conductor Width=10mil) (Air Gap=10mil) (Entries=4) (All)
+Rule Violations :0
+
+Processing Rule : Matched Lengths(Tolerance=10mil) (InDifferentialPair ('D_CH340'))
+Rule Violations :0
+
+Processing Rule : Matched Lengths(Tolerance=10mil) (InDifferentialPair ('CH340'))
+Rule Violations :0
+
+Processing Rule : Matched Lengths(Tolerance=10mil) (InDifferentialPair ('USB'))
+Rule Violations :0
+
+Processing Rule : Matched Lengths(Tolerance=1000mil) (InDifferentialPair ('USB'))
+Rule Violations :0
+
+Processing Rule : Matched Lengths(Tolerance=1000mil) (InDifferentialPairClass('90OM'))
+Rule Violations :0
+
+Processing Rule : Matched Lengths(Tolerance=10mil) (InDifferentialPair ('USB'))
+Rule Violations :0
+
+Processing Rule : Height Constraint (Min=0mil) (Max=1000mil) (Prefered=500mil) (All)
+Rule Violations :0
+
+
+Violations Detected : 2
+Waived Violations : 0
+Time Elapsed        : 00:00:02

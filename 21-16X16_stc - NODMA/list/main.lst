@@ -1,0 +1,211 @@
+C251 COMPILER V5.60.0,  main                                                               19/09/23  18:34:05  PAGE 1   
+
+
+C251 COMPILER V5.60.0, COMPILATION OF MODULE main
+OBJECT MODULE PLACED IN .\list\main.obj
+COMPILER INVOKED BY: D:\Keil_v5\C251\BIN\C251.EXE main.c LARGE INTR2 ROM(COMPACT) BROWSE DEBUG PRINT(.\list\main.lst) TA
+                    -BS(2) OBJECT(.\list\main.obj) 
+
+stmt  level    source
+
+    1          /*---------------------------------------------------------------------*/
+    2          /* --- STC MCU Limited ------------------------------------------------*/
+    3          /* --- STC 1T Series MCU Demo Programme -------------------------------*/
+    4          /* --- Mobile: (86)13922805190 ----------------------------------------*/
+    5          /* --- Fax: 86-0513-55012956,55012947,55012969 ------------------------*/
+    6          /* --- Tel: 86-0513-55012928,55012929,55012966 ------------------------*/
+    7          /* --- Web: www.STCAI.com ---------------------------------------------*/
+    8          /* --- Web: www.STCMCUDATA.com  ---------------------------------------*/
+    9          /* --- BBS: www.STCAIMCU.com  -----------------------------------------*/
+   10          /* --- QQ:  800003751 -------------------------------------------------*/
+   11          /* 如果要在程序中使用此代码,请在程序中注明使用了STC的资料及程序            */
+   12          /*---------------------------------------------------------------------*/
+   13          
+   14          #include  "config.h"
+   15          #include  "STC32G_GPIO.h"
+   16          #include  "STC32G_ADC.h"
+   17          #include  "STC32G_UART.h"
+   18          #include  "STC32G_DMA.h"
+   19          #include  "STC32G_NVIC.h"
+   20          #include  "STC32G_Delay.h"
+   21          #include  "STC32G_Switch.h"
+   22          #include  "stdio.h"
+   23          #include  "adc.h"
+   24          #include  "led.h"
+   25          #include "UART_DMA.h"
+   26          
+   27          /*************   功能说明   ***************
+   28          
+   29          本程序演示多路ADC DMA采样.
+   30          
+   31          初始化时先把要ADC转换的引脚设置为高阻输入.
+   32          
+   33          设置数据批量传输(DMA)功能，所有通道一次循环采集的数据自动存放到DMA定义的xdata空间.
+   34          
+   35          通过串口2(P4.6 P4.7)将DMA定义的xdata空间所收到的数据发送给上位机，波特率115200,N,8,1
+   36          
+   37          用定时器做波特率发生器，建议使用1T模式(除非低波特率用12T)，并选择可被波特率整除的时钟频率，以提高精度.
+   38          
+   39          下载时, 选择时钟 22.1184MHz (可以在配置文件"config.h"中修改).
+   40          
+   41          ******************************************/
+   42          
+   43          /*************  本地常量声明  **************/
+   44          #define ADC_value_num (AX_NUM * AY_NUM)
+   45          #define PACK_LEN (8 + ADC_value_num)
+   46          #define sof 0x5aa5
+   47          
+   48          /*************  本地变量声明  **************/
+   49          
+   50          /*************  本地函数声明  **************/
+   51          
+   52          void Uart1SendData(u8 *puts, u32 len);
+   53          u16 CalChecksum(u8 * put_data, u16 len);
+   54          /*************  外部函数和变量声明 *****************/
+   55          Adc_value adc_read;
+   56          /******************** UART配置 ********************/
+   57          void  UART_config(void)
+   58          {
+C251 COMPILER V5.60.0,  main                                                               19/09/23  18:34:05  PAGE 2   
+
+   59   1        COMx_InitDefine   COMx_InitStructure;   //结构定义
+   60   1      
+   61   1        COMx_InitStructure.UART_Mode      = UART_8bit_BRTx;   //模式,   UART_ShiftRight,UART_8bit_BRTx,UART_9bit,
+             -UART_9bit_BRTx
+   62   1        COMx_InitStructure.UART_BRT_Use   = BRT_Timer2;     //选择波特率发生器, BRT_Timer2 (注意: 串口2固定使用BRT
+             -_Timer2, 所以不用选择)
+   63   1        COMx_InitStructure.UART_BaudRate  = 115200ul;     //波特率,     110 ~ 115200
+   64   1        COMx_InitStructure.UART_RxEnable  = ENABLE;       //接收允许,   ENABLE 或 DISABLE
+   65   1        UART_Configuration(UART1, &COMx_InitStructure);   //初始化串口2 UART1,UART2,UART3,UART4
+   66   1        NVIC_UART1_Init(ENABLE,Priority_1);   //中断使能, ENABLE/DISABLE; 优先级(低到高) Priority_0,Priority_1,Pr
+             -iority_2,Priority_3
+   67   1      
+   68   1        UART1_SW(UART1_SW_P30_P31);   //UART2_SW_P10_P11,UART2_SW_P46_P47
+   69   1      }
+   70          
+   71          
+   72          /******************** task A **************************/
+   73          void main(void)
+   74          {
+   75   1      
+   76   1        u8 serial_frame[PACK_LEN] = { 0 };
+   77   1        u8 adc_raw_value[ADC_value_num] = { 0 };
+   78   1        u16 checksum = 0; 
+   79   1        
+   80   1        u32 time_1ms = 0;
+   81   1      
+   82   1        WTST = 0;   //设置程序指令延时参数，赋值为0可将CPU执行指令的速度设置为最快
+   83   1        EAXSFR();   //扩展SFR(XFR)访问使能 
+   84   1        CKCON = 0;      //提高访问XRAM速度
+   85   1        
+   86   1        led_GPIO_config();
+   87   1      
+   88   1        UART_config();
+   89   1        ADC_DMA_Init();
+   90   1      
+   91   1        
+   92   1        EA = 1;
+   93   1        
+   94   1        
+   95   1        while(1)
+   96   1        {
+   97   2          time_1ms ++;
+   98   2      
+   99   2          if(time_1ms % 100 == 0)
+  100   2          {
+  101   3            LED_GREEN = ~ LED_GREEN;    
+  102   3          }
+  103   2        
+  104   2          
+  105   2          if(time_1ms % 4 == 0)
+  106   2          {
+  107   3            Get_Voltage_Value(&adc_read);
+  108   3          }
+  109   2      
+  110   2          if(time_1ms % 4 == 0)
+  111   2          {
+  112   3            u8 ax = 0, ay = 0;
+  113   3            u16 data_index = 0;
+  114   3            
+  115   3            serial_frame[0] = sof;
+  116   3            serial_frame[1] = sof >> 8;
+  117   3            
+  118   3            serial_frame[2] = 0x01;
+  119   3            
+  120   3            serial_frame[3] = (PACK_LEN - 2) & 0x00ff;
+  121   3            serial_frame[4] = (PACK_LEN - 2) >> 8;
+C251 COMPILER V5.60.0,  main                                                               19/09/23  18:34:05  PAGE 3   
+
+  122   3            
+  123   3            serial_frame[5] = 0x01;
+  124   3            ProcessADCvalue(&adc_read);
+  125   3            
+  126   3            for(ax = 0; ax < 16; ++ax)
+  127   3            {
+  128   4              for(ay = 0; ay < 16; ++ay)
+  129   4              {
+  130   5                serial_frame[6 + data_index] = adc_read.processed_adc_value[ax][ay];
+  131   5                data_index ++;
+  132   5              }
+  133   4            }
+  134   3            data_index = 0;
+  135   3            
+  136   3            checksum = CalChecksum(&serial_frame[0], PACK_LEN - 2);
+  137   3            serial_frame[PACK_LEN - 2] = checksum & 0x00ff;
+  138   3            serial_frame[PACK_LEN - 1] = checksum >> 8;
+  139   3          
+  140   3            Uart1SendData(serial_frame, PACK_LEN);
+  141   3          }
+  142   2          
+  143   2          delay_ms(1);
+  144   2        }
+  145   1        
+  146   1      }
+  147          
+  148          
+  149          u16 CalChecksum(u8 * put_data, u16 len)
+  150          {
+  151   1          u16 sum = 0;
+  152   1          u32 i;
+  153   1          for(i = 0; i < len; ++i)
+  154   1          {
+  155   2              sum += put_data[i];
+  156   2          }
+  157   1          return sum;
+  158   1      }
+  159          
+  160          void Uart1SendData(u8 *puts, u32 len)
+  161          {
+  162   1          u32 i = 0;
+  163   1          for(i = 0; i < len; ++i)
+  164   1          {
+  165   2            TX1_write2buff(puts[i]);
+  166   2          }
+  167   1      }
+  168          
+
+
+Module Information          Static   Overlayable
+------------------------------------------------
+  code size            =       525     ------
+  ecode size           =    ------     ------
+  data size            =    ------     ------
+  idata size           =    ------     ------
+  pdata size           =    ------     ------
+  xdata size           =       800        543
+  xdata-const size     =    ------     ------
+  edata size           =    ------     ------
+  bit size             =    ------     ------
+  ebit size            =    ------     ------
+  bitaddressable size  =    ------     ------
+  ebitaddressable size =    ------     ------
+  far data size        =    ------     ------
+  huge data size       =    ------     ------
+  const size           =    ------     ------
+  hconst size          =       520     ------
+C251 COMPILER V5.60.0,  main                                                               19/09/23  18:34:05  PAGE 4   
+
+End of Module Information.
+
+
+C251 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

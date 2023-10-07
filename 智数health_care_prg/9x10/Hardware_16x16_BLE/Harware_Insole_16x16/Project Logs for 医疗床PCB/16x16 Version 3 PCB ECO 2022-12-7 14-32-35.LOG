@@ -1,0 +1,5 @@
+Change Component Designator: OldDesignator=USB1 NewDesignator=USB0
+Added Room: Name=MCU
+Added Room: Name=Measure
+Added Room: Name=Power
+Added Room: Name=Scan

@@ -1,0 +1,15 @@
+Removed Pin From Net: NetName=GND Pin=F1-2
+Removed Pin From Net: NetName=GND Pin=USB1-A4B9
+Removed Pin From Net: NetName=GND Pin=USB1-B4A9
+Change Component Comment : Designator=R26 Old Comment=100R New Comment=10K
+Change Component Comment : Designator=R27 Old Comment=100R New Comment=10K
+Change Component Comment : Designator=R28 Old Comment=100R New Comment=10K
+Change Component Comment : Designator=R29 Old Comment=100R New Comment=10K
+Added Pin To Net: NetName=NetF1_2 Pin=F1-2
+Added Pin To Net: NetName=NetF1_2 Pin=USB1-A4B9
+Added Pin To Net: NetName=NetF1_2 Pin=USB1-B4A9
+Added Net: Name=NetF1_2
+Added Room: Name=MCU
+Added Room: Name=Measure
+Added Room: Name=Power
+Added Room: Name=Scan

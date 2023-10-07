@@ -1,0 +1,5 @@
+Change Component Footprint: Designator=FPC1 Old Footprint=FPC-SMD_KH-FG1.0-H2.0-16PIN(down connect) New Footprint=FPC-SMD_KH-FG1.0-H2.0-16PIN
+Added Room: Name=MCU
+Added Room: Name=Measure
+Added Room: Name=Power
+Added Room: Name=Scan

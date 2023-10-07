@@ -1,0 +1,35 @@
+Remove Pin=FPC1-1 From Net=R1
+Remove Pin=FPC1-2 From Net=R2
+Remove Pin=FPC1-3 From Net=R3
+Remove Pin=FPC1-4 From Net=R4
+Remove Pin=FPC1-5 From Net=R5
+Remove Pin=FPC1-6 From Net=R6
+Remove Pin=FPC1-7 From Net=R7
+Remove Pin=FPC1-8 From Net=R8
+Remove Pin=FPC1-9 From Net=R9
+Remove Pin=FPC1-10 From Net=R10
+Remove Pin=FPC1-11 From Net=R11
+Remove Pin=FPC1-12 From Net=R12
+Remove Pin=FPC1-13 From Net=R13
+Remove Pin=FPC1-14 From Net=R14
+Remove Pin=FPC1-15 From Net=R15
+Remove Pin=FPC1-16 From Net=R16
+Remove Pin=FPC2-1 From Net=C1
+Remove Pin=FPC2-2 From Net=C2
+Remove Pin=FPC2-3 From Net=C3
+Remove Pin=FPC2-4 From Net=C4
+Remove Pin=FPC2-5 From Net=C5
+Remove Pin=FPC2-6 From Net=C6
+Remove Pin=FPC2-7 From Net=C7
+Remove Pin=FPC2-8 From Net=C8
+Remove Pin=FPC2-9 From Net=C9
+Remove Pin=FPC2-10 From Net=C10
+Remove Pin=FPC2-11 From Net=C11
+Remove Pin=FPC2-12 From Net=C12
+Remove Pin=FPC2-13 From Net=C13
+Remove Pin=FPC2-14 From Net=C14
+Remove Pin=FPC2-15 From Net=C15
+Remove Pin=FPC2-16 From Net=C16
+Change Component Footprint: Designator=P1 Old Footprint=CONN-SMD_16PINS New Footprint=HDR2.54-WI-16P
+Change Component Footprint: Designator=P2 Old Footprint=CONN-SMD_16PINS New Footprint=HDR2.54-WI-16P
+Change Component Designator: OldDesignator=P4 NewDesignator=

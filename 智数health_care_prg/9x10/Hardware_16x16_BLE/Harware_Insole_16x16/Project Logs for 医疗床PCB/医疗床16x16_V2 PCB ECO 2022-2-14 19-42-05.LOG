@@ -1,0 +1,14 @@
+Removed Pin From Net: NetName=LEN_GREEN Pin=U7-22
+Removed Pin From Net: NetName=LEN_RED Pin=U7-25
+Removed Pin From Net: NetName=C_A_CONTROL Pin=U7-27
+Removed Pin From Net: NetName=C_B_CONTROL Pin=U7-28
+Added Pin To Net: NetName=C_B_CONTROL Pin=U7-25
+Added Pin To Net: NetName=C_A_CONTROL Pin=U7-26
+Added Pin To Net: NetName=LEN_RED Pin=U7-27
+Added Pin To Net: NetName=LEN_GREEN Pin=U7-28
+Added Room: Name=CAN
+Added Room: Name=Connect
+Added Room: Name=MCU
+Added Room: Name=Measure
+Added Room: Name=Power_
+Added Room: Name=Scan

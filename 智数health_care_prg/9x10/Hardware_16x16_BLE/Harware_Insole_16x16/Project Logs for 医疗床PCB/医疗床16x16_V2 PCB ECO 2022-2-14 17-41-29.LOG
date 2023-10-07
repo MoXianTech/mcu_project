@@ -1,0 +1,32 @@
+Removed Pin From Net: NetName=GND Pin=C1-2
+Removed Pin From Net: NetName=GND Pin=C2-2
+Removed Pin From Net: NetName=GND Pin=C3-2
+Removed Pin From Net: NetName=GND Pin=C4-2
+Removed Pin From Net: NetName=GND Pin=C5-2
+Removed Pin From Net: NetName=GND Pin=C6-2
+Removed Pin From Net: NetName=GND Pin=C21-2
+Removed Pin From Net: NetName=GND Pin=R18-1
+Removed Pin From Net: NetName=GND Pin=R22-2
+Removed Pin From Net: NetName=GND Pin=R26-2
+Removed Pin From Net: NetName=GND Pin=R30-2
+Removed Pin From Net: NetName=GND Pin=U9-4
+Removed Pin From Net: NetName=GND Pin=U9-5
+Added Pin To Net: NetName=AGND Pin=C1-2
+Added Pin To Net: NetName=AGND Pin=C2-2
+Added Pin To Net: NetName=AGND Pin=C3-2
+Added Pin To Net: NetName=AGND Pin=C4-2
+Added Pin To Net: NetName=AGND Pin=C5-2
+Added Pin To Net: NetName=AGND Pin=C6-2
+Added Pin To Net: NetName=AGND Pin=C21-2
+Added Pin To Net: NetName=AGND Pin=R18-1
+Added Pin To Net: NetName=AGND Pin=R22-2
+Added Pin To Net: NetName=AGND Pin=R26-2
+Added Pin To Net: NetName=AGND Pin=R30-2
+Added Pin To Net: NetName=AGND Pin=U9-4
+Added Pin To Net: NetName=AGND Pin=U9-5
+Added Room: Name=CAN
+Added Room: Name=Connect
+Added Room: Name=MCU
+Added Room: Name=Measure
+Added Room: Name=Power_
+Added Room: Name=Scan

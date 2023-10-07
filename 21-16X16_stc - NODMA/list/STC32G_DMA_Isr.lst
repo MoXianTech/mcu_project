@@ -1,0 +1,88 @@
+C251 COMPILER V5.60.0,  STC32G_DMA_Isr                                                     19/09/23  11:04:36  PAGE 1   
+
+
+C251 COMPILER V5.60.0, COMPILATION OF MODULE STC32G_DMA_Isr
+OBJECT MODULE PLACED IN .\list\STC32G_DMA_Isr.obj
+COMPILER INVOKED BY: D:\Keil_v5\C251\BIN\C251.EXE STC32G_DMA_Isr.c LARGE INTR2 ROM(COMPACT) BROWSE DEBUG PRINT(.\list\ST
+                    -C32G_DMA_Isr.lst) TABS(2) OBJECT(.\list\STC32G_DMA_Isr.obj) 
+
+stmt  level    source
+
+    1          /*---------------------------------------------------------------------*/
+    2          /* --- STC MCU Limited ------------------------------------------------*/
+    3          /* --- STC 1T Series MCU Demo Programme -------------------------------*/
+    4          /* --- Mobile: (86)13922805190 ----------------------------------------*/
+    5          /* --- Fax: 86-0513-55012956,55012947,55012969 ------------------------*/
+    6          /* --- Tel: 86-0513-55012928,55012929,55012966 ------------------------*/
+    7          /* --- Web: www.STCAI.com ---------------------------------------------*/
+    8          /* --- Web: www.STCMCUDATA.com  ---------------------------------------*/
+    9          /* --- BBS: www.STCAIMCU.com  -----------------------------------------*/
+   10          /* --- QQ:  800003751 -------------------------------------------------*/
+   11          /* 如果要在程序中使用此代码,请在程序中注明使用了STC的资料及程序            */
+   12          /*---------------------------------------------------------------------*/
+   13          
+   14          #include "STC32G_DMA.h"
+   15          
+   16          bit DmaADCFlag = 0;
+   17          
+   18          //========================================================================
+   19          // 函数: DMA_ADC_ISR_Handler
+   20          // 描述: DMA ADC 中断函数.
+   21          // 参数: none.
+   22          // 返回: none.
+   23          // 版本: V1.0, 2022-03-23
+   24          //========================================================================
+   25          void DMA_ADC_ISR_Handler (void) interrupt DMA_ADC_VECTOR
+   26          {
+   27   1        // TODO: 在此处添加用户代码
+   28   1        if(DMA_ADC_STA & 0x01)  //AD转换完成
+   29   1        {
+   30   2          DMA_ADC_STA &= ~0x01; //清标志位
+   31   2          DMA_ADC_TRIG();   //重新触发启动下一次转换
+   32   2        }
+   33   1      }
+   34          
+   35          //========================================================================
+   36          // 函数: DMA_ISR_Handler
+   37          // 描述: DMA中断函数.
+   38          // 参数: none.
+   39          // 返回: none.
+   40          // 版本: V1.0, 2021-05-25
+   41          //========================================================================
+   42          void DMA_ISR_Handler (void) interrupt 13
+   43          {
+   44   1        // TODO: 在此处添加用户代码
+   45   1        
+   46   1        //----------- DMA ADC --------------
+   47   1        if(DMA_ADC_STA & 0x01)  //AD转换完成
+   48   1        {
+   49   2          DMA_ADC_STA &= ~0x01; //清标志位
+   50   2          DmaADCFlag = 1;
+   51   2        }
+   52   1      }
+
+
+Module Information          Static   Overlayable
+------------------------------------------------
+  code size            =        96     ------
+  ecode size           =    ------     ------
+  data size            =    ------     ------
+C251 COMPILER V5.60.0,  STC32G_DMA_Isr                                                     19/09/23  11:04:36  PAGE 2   
+
+  idata size           =    ------     ------
+  pdata size           =    ------     ------
+  xdata size           =    ------     ------
+  xdata-const size     =    ------     ------
+  edata size           =    ------     ------
+  bit size             =         1     ------
+  ebit size            =    ------     ------
+  bitaddressable size  =    ------     ------
+  ebitaddressable size =    ------     ------
+  far data size        =    ------     ------
+  huge data size       =    ------     ------
+  const size           =    ------     ------
+  hconst size          =    ------     ------
+End of Module Information.
+
+
+C251 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

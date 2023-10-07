@@ -1,0 +1,65 @@
+C251 COMPILER V5.60.0,  STC32G_ADC_Isr                                                     19/09/23  11:04:36  PAGE 1   
+
+
+C251 COMPILER V5.60.0, COMPILATION OF MODULE STC32G_ADC_Isr
+OBJECT MODULE PLACED IN .\list\STC32G_ADC_Isr.obj
+COMPILER INVOKED BY: D:\Keil_v5\C251\BIN\C251.EXE STC32G_ADC_Isr.c LARGE INTR2 ROM(COMPACT) BROWSE DEBUG PRINT(.\list\ST
+                    -C32G_ADC_Isr.lst) TABS(2) OBJECT(.\list\STC32G_ADC_Isr.obj) 
+
+stmt  level    source
+
+    1          /*---------------------------------------------------------------------*/
+    2          /* --- STC MCU Limited ------------------------------------------------*/
+    3          /* --- STC 1T Series MCU Demo Programme -------------------------------*/
+    4          /* --- Mobile: (86)13922805190 ----------------------------------------*/
+    5          /* --- Fax: 86-0513-55012956,55012947,55012969 ------------------------*/
+    6          /* --- Tel: 86-0513-55012928,55012929,55012966 ------------------------*/
+    7          /* --- Web: www.STCAI.com ---------------------------------------------*/
+    8          /* --- Web: www.STCMCUDATA.com  ---------------------------------------*/
+    9          /* --- BBS: www.STCAIMCU.com  -----------------------------------------*/
+   10          /* --- QQ:  800003751 -------------------------------------------------*/
+   11          /* 如果要在程序中使用此代码,请在程序中注明使用了STC的资料及程序            */
+   12          /*---------------------------------------------------------------------*/
+   13          
+   14          #include  "STC32G_ADC.h"
+   15          
+   16          //========================================================================
+   17          // 函数: ADC_ISR_Handler
+   18          // 描述: ADC中断函数.
+   19          // 参数: none.
+   20          // 返回: none.
+   21          // 版本: V1.0, 2020-09-23
+   22          //========================================================================
+   23          void ADC_ISR_Handler (void) interrupt ADC_VECTOR
+   24          {
+   25   1        ADC_FLAG = 0;     //清除中断标志
+   26   1        
+   27   1        // TODO: 在此处添加用户代码
+   28   1        
+   29   1      }
+   30          
+   31          
+
+
+Module Information          Static   Overlayable
+------------------------------------------------
+  code size            =        11     ------
+  ecode size           =    ------     ------
+  data size            =    ------     ------
+  idata size           =    ------     ------
+  pdata size           =    ------     ------
+  xdata size           =    ------     ------
+  xdata-const size     =    ------     ------
+  edata size           =    ------     ------
+  bit size             =    ------     ------
+  ebit size            =    ------     ------
+  bitaddressable size  =    ------     ------
+  ebitaddressable size =    ------     ------
+  far data size        =    ------     ------
+  huge data size       =    ------     ------
+  const size           =    ------     ------
+  hconst size          =    ------     ------
+End of Module Information.
+
+
+C251 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)
