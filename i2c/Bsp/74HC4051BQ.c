@@ -7,7 +7,7 @@
 #include "oled.h"
 
 
-#define ADC_DELAY_TIME (13 * 220) //9 ns * 120
+#define ADC_DELAY_TIME (13 * 120) //9 ns * 120
 
 void rs2251Delay(uint32_t num)
 {

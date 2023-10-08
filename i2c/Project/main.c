@@ -121,28 +121,39 @@ int main(void)
 
         if(time_1ms % 1 == 0)
         {
-            xl9555_io_set(count_x, 0);
+
+            if (count_x > 63)
+            {
+                adc_value_read(&process_handle, count_x - 64);
+            } else {
+                adc_value_read(&process_handle, count_x);
+            }
+            
             count_x ++;
             if (count_x == 128)
                 count_x = 0;
 
-            //adc_value_read(&process_handle, 0);
-
+            xl9555_io_set(count_x, 0);
         }
 
-
 #if 1
-        if(time_1ms % 100 == 0)
+        if(time_1ms % 64 == 0)
         {
-            serial_frame.sof = 0x5aa5;
-            serial_frame.tran_type = 0x01;
-            serial_frame.len = sizeof(serial_frame) - 2;
-            serial_frame.type = 0x01;
+            if (count_x == 64)
+            {
+                serial_frame.sof = 0x5aa5;
+                serial_frame.tran_type = 0x01;
+                serial_frame.len = sizeof(serial_frame) + process_handle.x_max * process_handle.y_max - 2;
+                serial_frame.type = 0x01;
 
-            memcpy((uint8_t *)serial_frame.adc_value, (uint8_t *)process_handle.adc_raw_value, process_handle.x_max * process_handle.y_max);
-            serial_frame.checksum = CalChecksum((uint8_t *)&serial_frame, sizeof(serial_frame) - 2);
-
-            usb_send_buffer(usb_handle, (uint8_t *)&serial_frame, sizeof(serial_frame));
+                memcpy((uint8_t *)serial_frame.adc_value, (uint8_t *)process_handle.adc_raw_value, process_handle.x_max * process_handle.y_max);
+                serial_frame.checksum = CalChecksum((uint8_t *)&serial_frame, sizeof(serial_frame) - 2);
+                usb_send_buffer(usb_handle, (uint8_t *)&serial_frame, sizeof(serial_frame) - 2);
+            } else {
+                memcpy((uint8_t *)serial_frame.adc_value, (uint8_t *)process_handle.adc_raw_value, process_handle.x_max * process_handle.y_max);
+                serial_frame.checksum += CalChecksum((uint8_t *)serial_frame.adc_value, process_handle.x_max * process_handle.y_max);
+                usb_send_buffer(usb_handle, (uint8_t *)serial_frame.adc_value, process_handle.x_max * process_handle.y_max + 2);
+            }
         }
 #else
         if(time_1ms % 10 == 0)
@@ -150,7 +161,7 @@ int main(void)
             usb_send_buffer(usb_handle, process_handle.printf_buffer, strlen(process_handle.printf_buffer));
         }
 #endif	
-        delay_1ms(1);
+        //delay_1ms(1);
     }
 }
 
