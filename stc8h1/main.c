@@ -128,7 +128,8 @@ void UART_config(void)
     UART1_SW(UART1_SW_P30_P31);		//UART1_SW_P30_P31,UART1_SW_P36_P37,UART1_SW_P16_P17,UART1_SW_P43_P44
 }
 
-uint8 value_ladder[5] = {8, 33, 65, 90, 120};
+//uint8 value_ladder[5] = {8, 33, 65, 90, 120};
+uint8 value_ladder[5] = {8, 20, 35, 50, 65};
 
 #define PRINTF_BUFFER_SIZE 32
 #define FLASH_ADDRESS_START 0x00

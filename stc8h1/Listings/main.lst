@@ -1,4 +1,4 @@
-C51 COMPILER V9.60.7.0   MAIN                                                              09/12/2023 18:15:08 PAGE 1   
+C51 COMPILER V9.60.7.0   MAIN                                                              09/25/2023 14:21:22 PAGE 1   
 
 
 C51 COMPILER V9.60.7.0, COMPILATION OF MODULE MAIN
@@ -62,7 +62,7 @@ line level    source
   52          void GPIO_config(void)
   53          {
   54   1          GPIO_InitTypeDef GPIO_InitStructure;        //结构定义
-C51 COMPILER V9.60.7.0   MAIN                                                              09/12/2023 18:15:08 PAGE 2   
+C51 COMPILER V9.60.7.0   MAIN                                                              09/25/2023 14:21:22 PAGE 2   
 
   55   1      
   56   1          GPIO_InitStructure.Pin  = GPIO_Pin_3;     //指定要初始化的IO, GPIO_Pin_0 ~ GPIO_Pin_7, 或操作
@@ -126,7 +126,7 @@ line level    source
  109   1      
  110   1          Exti_InitStructure.EXTI_Mode      = EXT_MODE_Fall;//中断模式,   EXT_MODE_RiseFall,EXT_MODE_Fall
  111   1          Ext_Inilize(EXT_INT1,&Exti_InitStructure);        //初始化
-C51 COMPILER V9.60.7.0   MAIN                                                              09/12/2023 18:15:08 PAGE 3   
+C51 COMPILER V9.60.7.0   MAIN                                                              09/25/2023 14:21:22 PAGE 3   
 
  112   1          NVIC_INT1_Init(ENABLE,Priority_0);    //中断使能, ENABLE/DISABLE; 优先级(低到高) Priority_0,Priority_1,P
              -riority_2,Priority_3
@@ -151,80 +151,81 @@ line level    source
  128   1          UART1_SW(UART1_SW_P30_P31);   //UART1_SW_P30_P31,UART1_SW_P36_P37,UART1_SW_P16_P17,UART1_SW_P43_P44
  129   1      }
  130          
- 131          uint8 value_ladder[5] = {8, 33, 65, 90, 120};
- 132          
- 133          #define PRINTF_BUFFER_SIZE 32
- 134          #define FLASH_ADDRESS_START 0x00
- 135          
- 136          /******************** 主函数***********************/
- 137          void main(void)
- 138          {
- 139   1          uint8 flag = 0;
- 140   1          uint8 printf_buffer[PRINTF_BUFFER_SIZE] = {0x00};
- 141   1          uint8 printf_buffer_len = 0;
- 142   1          int16 plc_flag = 0;
- 143   1          uint16 adc_value = 0;
- 144   1          uint32 time_10 = 0;
- 145   1          uint16 addr = 0x04;
- 146   1      
- 147   1          GPIO_config();
- 148   1          ADC_config();
- 149   1          UART_config();
- 150   1          //  Exti_config();
- 151   1          EA  = 1;    //Enable all interrupt
- 152   1      
+ 131          //uint8 value_ladder[5] = {8, 33, 65, 90, 120};
+ 132          uint8 value_ladder[5] = {8, 20, 35, 50, 65};
+ 133          
+ 134          #define PRINTF_BUFFER_SIZE 32
+ 135          #define FLASH_ADDRESS_START 0x00
+ 136          
+ 137          /******************** 主函数***********************/
+ 138          void main(void)
+ 139          {
+ 140   1          uint8 flag = 0;
+ 141   1          uint8 printf_buffer[PRINTF_BUFFER_SIZE] = {0x00};
+ 142   1          uint8 printf_buffer_len = 0;
+ 143   1          int16 plc_flag = 0;
+ 144   1          uint16 adc_value = 0;
+ 145   1          uint32 time_10 = 0;
+ 146   1          uint16 addr = 0x04;
+ 147   1      
+ 148   1          GPIO_config();
+ 149   1          ADC_config();
+ 150   1          UART_config();
+ 151   1          //  Exti_config();
+ 152   1          EA  = 1;    //Enable all interrupt
  153   1      
- 154   1          P54 = 0;
- 155   1      
- 156   1      #if 0
+ 154   1      
+ 155   1          P54 = 0;
+ 156   1      
+ 157   1      #if 0
                 EEPROM_SectorErase(addr);           //擦除扇区
                 EEPROM_write_n(addr,&RX1_Buffer[9],j);      //写N个字节
                 EEPROM_read_n(addr,tmp,j);
               #endif
- 161   1      
- 162   1          PrintString1("system init finish\r\n");
- 163   1          EEPROM_read_n(FLASH_ADDRESS_START, printf_buffer, 2);
- 164   1      
- 165   1          memcpy(&plc_flag, printf_buffer, 2);
- 166   1      
- 167   1          if (plc_flag < 3 || plc_flag > 1024)
- 168   1              plc_flag = 3;
- 169   1      
-C51 COMPILER V9.60.7.0   MAIN                                                              09/12/2023 18:15:08 PAGE 4   
+ 162   1      
+ 163   1          PrintString1("system init finish\r\n");
+ 164   1          EEPROM_read_n(FLASH_ADDRESS_START, printf_buffer, 2);
+ 165   1      
+ 166   1          memcpy(&plc_flag, printf_buffer, 2);
+ 167   1      
+ 168   1          if (plc_flag < 3 || plc_flag > 1024)
+ 169   1              plc_flag = 3;
+C51 COMPILER V9.60.7.0   MAIN                                                              09/25/2023 14:21:22 PAGE 4   
 
  170   1      
- 171   1          sprintf(printf_buffer, "plc flag %d\r\n", plc_flag);
- 172   1          PrintString1(printf_buffer);
- 173   1          memset(printf_buffer, 0x00, PRINTF_BUFFER_SIZE);
- 174   1      
+ 171   1      
+ 172   1          sprintf(printf_buffer, "plc flag %d\r\n", plc_flag);
+ 173   1          PrintString1(printf_buffer);
+ 174   1          memset(printf_buffer, 0x00, PRINTF_BUFFER_SIZE);
  175   1      
- 176   1          while(1)
- 177   1          {
- 178   2              time_10 ++;
- 179   2              delay_ms(20); //delay 10ms
- 180   2      
- 181   2              Exti_config();
- 182   2      
- 183   2              if(WakeUpSource == 2)
- 184   2              {
- 185   3                  PrintString1("外中断INT1唤醒  \r\n");
- 186   3                  EEPROM_SectorErase(FLASH_ADDRESS_START);
- 187   3                  memset(printf_buffer, 0x00, PRINTF_BUFFER_SIZE);
- 188   3                  sprintf(printf_buffer, "write buffer %d\r\n", adc_value);
- 189   3                  PrintString1(printf_buffer);
- 190   3      
- 191   3                  memset(printf_buffer, 0x00, PRINTF_BUFFER_SIZE);
- 192   3                  memcpy(printf_buffer, &adc_value, 2);
- 193   3                  plc_flag = adc_value;
- 194   3                  
- 195   3                  EEPROM_write_n(FLASH_ADDRESS_START, printf_buffer, 2);
- 196   3              }
- 197   2              WakeUpSource = 0;
- 198   2      
- 199   2              adc_value = Get_ADCResult(10);
- 200   2              if (adc_value > 1024) adc_value = 1024;
- 201   2      
- 202   2      #if 0
+ 176   1      
+ 177   1          while(1)
+ 178   1          {
+ 179   2              time_10 ++;
+ 180   2              delay_ms(20); //delay 10ms
+ 181   2      
+ 182   2              Exti_config();
+ 183   2      
+ 184   2              if(WakeUpSource == 2)
+ 185   2              {
+ 186   3                  PrintString1("外中断INT1唤醒  \r\n");
+ 187   3                  EEPROM_SectorErase(FLASH_ADDRESS_START);
+ 188   3                  memset(printf_buffer, 0x00, PRINTF_BUFFER_SIZE);
+ 189   3                  sprintf(printf_buffer, "write buffer %d\r\n", adc_value);
+ 190   3                  PrintString1(printf_buffer);
+ 191   3      
+ 192   3                  memset(printf_buffer, 0x00, PRINTF_BUFFER_SIZE);
+ 193   3                  memcpy(printf_buffer, &adc_value, 2);
+ 194   3                  plc_flag = adc_value;
+ 195   3                  
+ 196   3                  EEPROM_write_n(FLASH_ADDRESS_START, printf_buffer, 2);
+ 197   3              }
+ 198   2              WakeUpSource = 0;
+ 199   2      
+ 200   2              adc_value = Get_ADCResult(10);
+ 201   2              if (adc_value > 1024) adc_value = 1024;
+ 202   2      
+ 203   2      #if 0
                       if (adc_value > value_ladder[0])
                           P36 = 0;
                       else P36 = 1;
@@ -245,56 +246,56 @@ line level    source
                           P17 = 0;
                       else P17 = 1;
               #else
- 223   2              if (adc_value >= value_ladder[0] && adc_value < value_ladder[1])
- 224   2                  P36 = 0;
- 225   2              else P36 = 1;
- 226   2      
- 227   2              if (adc_value >= value_ladder[1] && adc_value < value_ladder[2])
- 228   2                  P37 = 0;
- 229   2              else P37 = 1;
- 230   2      
- 231   2              if (adc_value >= value_ladder[2] && adc_value < value_ladder[3])
-C51 COMPILER V9.60.7.0   MAIN                                                              09/12/2023 18:15:08 PAGE 5   
+ 224   2              if (adc_value >= value_ladder[0] && adc_value < value_ladder[1])
+ 225   2                  P36 = 0;
+ 226   2              else P36 = 1;
+ 227   2      
+ 228   2              if (adc_value >= value_ladder[1] && adc_value < value_ladder[2])
+ 229   2                  P37 = 0;
+ 230   2              else P37 = 1;
+ 231   2      
+C51 COMPILER V9.60.7.0   MAIN                                                              09/25/2023 14:21:22 PAGE 5   
 
- 232   2                  P15 = 0;
- 233   2              else P15 = 1;
- 234   2      
- 235   2              if (adc_value >= value_ladder[3] && adc_value < value_ladder[4])
- 236   2                  P16 = 0;
- 237   2              else P16 = 1;
- 238   2      
- 239   2              if (adc_value >= value_ladder[4])
- 240   2                  P17 = 0;
- 241   2              else P17 = 1;
- 242   2      
- 243   2      #endif
- 244   2      
- 245   2              if (adc_value > plc_flag)
- 246   2              {
- 247   3                  P54 = 0;
- 248   3                  P34 = 0;
- 249   3              }
- 250   2              else
- 251   2              {
- 252   3                  P54 = 1;
- 253   3                  P34 = 1;
- 254   3              }
- 255   2      
- 256   2              flag = ~flag;
- 257   2           
- 258   2              if (!(time_10 % 20))
- 259   2              {
- 260   3                  //sprintf(printf_buffer, "adc value %d\r\n", adc_value);
- 261   3                  if (printf_buffer_len != 0)
- 262   3                  {
- 263   4                      //memset(printf_buffer, 0x00, PRINTF_BUFFER_SIZE);
- 264   4                      //EEPROM_read_n(FLASH_ADDRESS_START, printf_buffer, printf_buffer_len);
- 265   4                      //PrintString1(printf_buffer);
- 266   4                  }
- 267   3              }
- 268   2          }
- 269   1      }
- 270          
+ 232   2              if (adc_value >= value_ladder[2] && adc_value < value_ladder[3])
+ 233   2                  P15 = 0;
+ 234   2              else P15 = 1;
+ 235   2      
+ 236   2              if (adc_value >= value_ladder[3] && adc_value < value_ladder[4])
+ 237   2                  P16 = 0;
+ 238   2              else P16 = 1;
+ 239   2      
+ 240   2              if (adc_value >= value_ladder[4])
+ 241   2                  P17 = 0;
+ 242   2              else P17 = 1;
+ 243   2      
+ 244   2      #endif
+ 245   2      
+ 246   2              if (adc_value > plc_flag)
+ 247   2              {
+ 248   3                  P54 = 0;
+ 249   3                  P34 = 0;
+ 250   3              }
+ 251   2              else
+ 252   2              {
+ 253   3                  P54 = 1;
+ 254   3                  P34 = 1;
+ 255   3              }
+ 256   2      
+ 257   2              flag = ~flag;
+ 258   2           
+ 259   2              if (!(time_10 % 20))
+ 260   2              {
+ 261   3                  //sprintf(printf_buffer, "adc value %d\r\n", adc_value);
+ 262   3                  if (printf_buffer_len != 0)
+ 263   3                  {
+ 264   4                      //memset(printf_buffer, 0x00, PRINTF_BUFFER_SIZE);
+ 265   4                      //EEPROM_read_n(FLASH_ADDRESS_START, printf_buffer, printf_buffer_len);
+ 266   4                      //PrintString1(printf_buffer);
+ 267   4                  }
+ 268   3              }
+ 269   2          }
+ 270   1      }
+ 271          
 
 
 MODULE INFORMATION:   STATIC OVERLAYABLE
