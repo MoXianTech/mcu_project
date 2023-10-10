@@ -590,8 +590,8 @@ ARM Macro Assembler    Page 10
 
 
 clude --predefine="__UVISION_VERSION SETA 538" --predefine="GD32E10x SETA 1" --
-list=.\list\startup_gd32e10x.lst ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Sour
-ce\ARM\startup_gd32e10x.s
+list=.\list\startup_gd32e10x.lst ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e1
+0x.s
 
 
 
@@ -602,8 +602,7 @@ STACK 00000000
 
 Symbol: STACK
    Definitions
-      At line 43 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\s
-tartup_gd32e10x.s
+      At line 43 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
    Uses
       None
 Comment: STACK unused
@@ -611,23 +610,18 @@ Stack_Mem 00000000
 
 Symbol: Stack_Mem
    Definitions
-      At line 44 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\s
-tartup_gd32e10x.s
+      At line 44 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
    Uses
-      At line 354 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
-      At line 356 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
+      At line 354 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
+      At line 356 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
 
 __initial_sp 00000400
 
 Symbol: __initial_sp
    Definitions
-      At line 45 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\s
-tartup_gd32e10x.s
+      At line 45 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
    Uses
-      At line 68 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\s
-tartup_gd32e10x.s
+      At line 68 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
 Comment: __initial_sp used once
 3 symbols
 
@@ -640,8 +634,7 @@ HEAP 00000000
 
 Symbol: HEAP
    Definitions
-      At line 54 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\s
-tartup_gd32e10x.s
+      At line 54 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
    Uses
       None
 Comment: HEAP unused
@@ -649,20 +642,16 @@ Heap_Mem 00000000
 
 Symbol: Heap_Mem
    Definitions
-      At line 56 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\s
-tartup_gd32e10x.s
+      At line 56 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
    Uses
-      At line 353 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
-      At line 355 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
+      At line 353 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
+      At line 355 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
 
 __heap_base 00000000
 
 Symbol: __heap_base
    Definitions
-      At line 55 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\s
-tartup_gd32e10x.s
+      At line 55 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
    Uses
       None
 Comment: __heap_base unused
@@ -670,8 +659,7 @@ __heap_limit 00000400
 
 Symbol: __heap_limit
    Definitions
-      At line 57 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\s
-tartup_gd32e10x.s
+      At line 57 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
    Uses
       None
 Comment: __heap_limit unused
@@ -686,8 +674,7 @@ RESET 00000000
 
 Symbol: RESET
    Definitions
-      At line 63 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\s
-tartup_gd32e10x.s
+      At line 63 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
    Uses
       None
 Comment: RESET unused
@@ -695,25 +682,19 @@ __Vectors 00000000
 
 Symbol: __Vectors
    Definitions
-      At line 68 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\s
-tartup_gd32e10x.s
+      At line 68 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
    Uses
-      At line 64 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\s
-tartup_gd32e10x.s
-      At line 157 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
+      At line 64 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
+      At line 157 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
 
 __Vectors_End 00000150
 
 Symbol: __Vectors_End
    Definitions
-      At line 155 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
+      At line 155 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
    Uses
-      At line 65 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\s
-tartup_gd32e10x.s
-      At line 157 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
+      At line 65 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
+      At line 157 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
 
 3 symbols
 
@@ -726,8 +707,7 @@ Relocatable symbols
 
 Symbol: .text
    Definitions
-      At line 159 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
+      At line 159 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
    Uses
       None
 Comment: .text unused
@@ -735,206 +715,154 @@ ADC0_1_IRQHandler 0000001A
 
 Symbol: ADC0_1_IRQHandler
    Definitions
-      At line 295 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
+      At line 295 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
    Uses
-      At line 104 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
-      At line 237 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
+      At line 104 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
+      At line 237 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
 
 BusFault_Handler 0000000E
 
 Symbol: BusFault_Handler
    Definitions
-      At line 188 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
+      At line 188 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
    Uses
-      At line 73 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\s
-tartup_gd32e10x.s
-      At line 189 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
+      At line 73 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
+      At line 189 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
 
 DMA0_Channel0_IRQHandler 0000001A
 
 Symbol: DMA0_Channel0_IRQHandler
    Definitions
-      At line 288 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
+      At line 288 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
    Uses
-      At line 97 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\s
-tartup_gd32e10x.s
-      At line 230 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
+      At line 97 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
+      At line 230 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
 
 DMA0_Channel1_IRQHandler 0000001A
 
 Symbol: DMA0_Channel1_IRQHandler
    Definitions
-      At line 289 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
+      At line 289 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
    Uses
-      At line 98 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\s
-tartup_gd32e10x.s
-      At line 231 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
+      At line 98 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
+      At line 231 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
 
 DMA0_Channel2_IRQHandler 0000001A
 
+Symbol: DMA0_Channel2_IRQHandler
+   Definitions
+      At line 290 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
+   Uses
+      At line 99 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
+      At line 232 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
+
+DMA0_Channel3_IRQHandler 0000001A
+
+Symbol: DMA0_Channel3_IRQHandler
+   Definitions
+      At line 291 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
+   Uses
 
 
 
 ARM Macro Assembler    Page 2 Alphabetic symbol ordering
 Relocatable symbols
 
-Symbol: DMA0_Channel2_IRQHandler
-   Definitions
-      At line 290 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
-   Uses
-      At line 99 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\s
-tartup_gd32e10x.s
-      At line 232 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
-
-DMA0_Channel3_IRQHandler 0000001A
-
-Symbol: DMA0_Channel3_IRQHandler
-   Definitions
-      At line 291 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
-   Uses
-      At line 100 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
-      At line 233 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
+      At line 100 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
+      At line 233 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
 
 DMA0_Channel4_IRQHandler 0000001A
 
 Symbol: DMA0_Channel4_IRQHandler
    Definitions
-      At line 292 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
+      At line 292 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
    Uses
-      At line 101 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
-      At line 234 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
+      At line 101 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
+      At line 234 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
 
 DMA0_Channel5_IRQHandler 0000001A
 
 Symbol: DMA0_Channel5_IRQHandler
    Definitions
-      At line 293 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
+      At line 293 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
    Uses
-      At line 102 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
-      At line 235 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
+      At line 102 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
+      At line 235 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
 
 DMA0_Channel6_IRQHandler 0000001A
 
 Symbol: DMA0_Channel6_IRQHandler
    Definitions
-      At line 294 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
+      At line 294 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
    Uses
-      At line 103 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
-      At line 236 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
+      At line 103 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
+      At line 236 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
 
 DMA1_Channel0_IRQHandler 0000001A
+
+Symbol: DMA1_Channel0_IRQHandler
+   Definitions
+      At line 327 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
+   Uses
+      At line 142 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
+      At line 269 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
+
+DMA1_Channel1_IRQHandler 0000001A
+
+Symbol: DMA1_Channel1_IRQHandler
+   Definitions
+      At line 328 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
+   Uses
+      At line 143 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
+      At line 270 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
+
+DMA1_Channel2_IRQHandler 0000001A
+
+Symbol: DMA1_Channel2_IRQHandler
+   Definitions
+      At line 329 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
+   Uses
+      At line 144 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
+      At line 271 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
+
+DMA1_Channel3_IRQHandler 0000001A
+
 
 
 
 ARM Macro Assembler    Page 3 Alphabetic symbol ordering
 Relocatable symbols
 
-
-Symbol: DMA1_Channel0_IRQHandler
-   Definitions
-      At line 327 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
-   Uses
-      At line 142 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
-      At line 269 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
-
-DMA1_Channel1_IRQHandler 0000001A
-
-Symbol: DMA1_Channel1_IRQHandler
-   Definitions
-      At line 328 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
-   Uses
-      At line 143 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
-      At line 270 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
-
-DMA1_Channel2_IRQHandler 0000001A
-
-Symbol: DMA1_Channel2_IRQHandler
-   Definitions
-      At line 329 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
-   Uses
-      At line 144 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
-      At line 271 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
-
-DMA1_Channel3_IRQHandler 0000001A
-
 Symbol: DMA1_Channel3_IRQHandler
    Definitions
-      At line 330 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
+      At line 330 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
    Uses
-      At line 145 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
-      At line 272 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
+      At line 145 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
+      At line 272 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
 
 DMA1_Channel4_IRQHandler 0000001A
 
 Symbol: DMA1_Channel4_IRQHandler
    Definitions
-      At line 331 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
+      At line 331 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
    Uses
-      At line 146 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
-      At line 273 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
-
-
-
-
-ARM Macro Assembler    Page 4 Alphabetic symbol ordering
-Relocatable symbols
+      At line 146 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
+      At line 273 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
 
 DebugMon_Handler 00000014
 
 Symbol: DebugMon_Handler
    Definitions
-      At line 202 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
+      At line 202 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
    Uses
-      At line 80 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\s
-tartup_gd32e10x.s
-      At line 203 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
+      At line 80 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
+      At line 203 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
 
 Default_Handler 0000001A
 
 Symbol: Default_Handler
    Definitions
-      At line 217 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
+      At line 217 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
    Uses
       None
 Comment: Default_Handler unused
@@ -942,235 +870,288 @@ EXMC_IRQHandler 0000001A
 
 Symbol: EXMC_IRQHandler
    Definitions
-      At line 320 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
+      At line 320 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
    Uses
-      At line 134 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
-      At line 262 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
+      At line 134 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
+      At line 262 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
 
 EXTI0_IRQHandler 0000001A
 
 Symbol: EXTI0_IRQHandler
    Definitions
-      At line 283 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
+      At line 283 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
    Uses
-      At line 92 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\s
-tartup_gd32e10x.s
-      At line 225 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
+      At line 92 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
+      At line 225 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
 
 EXTI10_15_IRQHandler 0000001A
 
 Symbol: EXTI10_15_IRQHandler
    Definitions
-      At line 313 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
+      At line 313 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
    Uses
-      At line 126 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
-      At line 255 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
+      At line 126 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
+      At line 255 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
+
+
+
+ARM Macro Assembler    Page 4 Alphabetic symbol ordering
+Relocatable symbols
+
 
 EXTI1_IRQHandler 0000001A
 
+Symbol: EXTI1_IRQHandler
+   Definitions
+      At line 284 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
+   Uses
+      At line 93 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
+      At line 226 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
+
+EXTI2_IRQHandler 0000001A
+
+Symbol: EXTI2_IRQHandler
+   Definitions
+      At line 285 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
+   Uses
+      At line 94 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
+      At line 227 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
+
+EXTI3_IRQHandler 0000001A
+
+Symbol: EXTI3_IRQHandler
+   Definitions
+      At line 286 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
+   Uses
+      At line 95 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
+      At line 228 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
+
+EXTI4_IRQHandler 0000001A
+
+Symbol: EXTI4_IRQHandler
+   Definitions
+      At line 287 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
+   Uses
+      At line 96 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
+      At line 229 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
+
+EXTI5_9_IRQHandler 0000001A
+
+Symbol: EXTI5_9_IRQHandler
+   Definitions
+      At line 296 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
+   Uses
+      At line 109 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
+      At line 238 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
+
+FMC_IRQHandler 0000001A
+
+Symbol: FMC_IRQHandler
+   Definitions
+      At line 281 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
+   Uses
+      At line 90 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
+      At line 223 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
+
+HardFault_Handler 0000000A
+
+Symbol: HardFault_Handler
+   Definitions
 
 
 
 ARM Macro Assembler    Page 5 Alphabetic symbol ordering
 Relocatable symbols
 
-Symbol: EXTI1_IRQHandler
-   Definitions
-      At line 284 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
+      At line 178 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
    Uses
-      At line 93 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\s
-tartup_gd32e10x.s
-      At line 226 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
+      At line 71 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
+      At line 179 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
 
-EXTI2_IRQHandler 0000001A
+I2C0_ER_IRQHandler 0000001A
 
-Symbol: EXTI2_IRQHandler
+Symbol: I2C0_ER_IRQHandler
    Definitions
-      At line 285 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
+      At line 305 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
    Uses
-      At line 94 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\s
-tartup_gd32e10x.s
-      At line 227 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
+      At line 118 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
+      At line 247 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
 
-EXTI3_IRQHandler 0000001A
+I2C0_EV_IRQHandler 0000001A
 
-Symbol: EXTI3_IRQHandler
+Symbol: I2C0_EV_IRQHandler
    Definitions
-      At line 286 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
+      At line 304 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
    Uses
-      At line 95 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\s
-tartup_gd32e10x.s
-      At line 228 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
+      At line 117 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
+      At line 246 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
 
-EXTI4_IRQHandler 0000001A
+I2C1_ER_IRQHandler 0000001A
 
-Symbol: EXTI4_IRQHandler
+Symbol: I2C1_ER_IRQHandler
    Definitions
-      At line 287 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
+      At line 307 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
    Uses
-      At line 96 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\s
-tartup_gd32e10x.s
-      At line 229 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
+      At line 120 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
+      At line 249 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
 
-EXTI5_9_IRQHandler 0000001A
+I2C1_EV_IRQHandler 0000001A
 
-Symbol: EXTI5_9_IRQHandler
+Symbol: I2C1_EV_IRQHandler
    Definitions
-      At line 296 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
+      At line 306 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
    Uses
-      At line 109 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
-      At line 238 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
+      At line 119 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
+      At line 248 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
 
-FMC_IRQHandler 0000001A
+LVD_IRQHandler 0000001A
+
+Symbol: LVD_IRQHandler
+   Definitions
+      At line 278 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
+   Uses
+      At line 87 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
+      At line 220 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
+
+MemManage_Handler 0000000C
+
+Symbol: MemManage_Handler
+   Definitions
+      At line 183 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
+   Uses
+      At line 72 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
+      At line 184 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
+
 
 
 
 ARM Macro Assembler    Page 6 Alphabetic symbol ordering
 Relocatable symbols
 
+NMI_Handler 00000008
 
-Symbol: FMC_IRQHandler
+Symbol: NMI_Handler
    Definitions
-      At line 281 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
+      At line 173 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
    Uses
-      At line 90 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\s
-tartup_gd32e10x.s
-      At line 223 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
+      At line 70 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
+      At line 174 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
 
-HardFault_Handler 0000000A
+PendSV_Handler 00000016
 
-Symbol: HardFault_Handler
+Symbol: PendSV_Handler
    Definitions
-      At line 178 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
+      At line 207 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
    Uses
-      At line 71 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\s
-tartup_gd32e10x.s
-      At line 179 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
+      At line 82 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
+      At line 208 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
 
-I2C0_ER_IRQHandler 0000001A
+RCU_CTC_IRQHandler 0000001A
 
-Symbol: I2C0_ER_IRQHandler
+Symbol: RCU_CTC_IRQHandler
    Definitions
-      At line 305 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
+      At line 282 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
    Uses
-      At line 118 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
-      At line 247 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
+      At line 91 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
+      At line 224 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
 
-I2C0_EV_IRQHandler 0000001A
+RTC_Alarm_IRQHandler 0000001A
 
-Symbol: I2C0_EV_IRQHandler
+Symbol: RTC_Alarm_IRQHandler
    Definitions
-      At line 304 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
+      At line 314 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
    Uses
-      At line 117 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
-      At line 246 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
+      At line 127 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
+      At line 256 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
 
-I2C1_ER_IRQHandler 0000001A
+RTC_IRQHandler 0000001A
 
-Symbol: I2C1_ER_IRQHandler
+Symbol: RTC_IRQHandler
    Definitions
-      At line 307 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
+      At line 280 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
    Uses
-      At line 120 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
-      At line 249 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
+      At line 89 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
+      At line 222 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
 
+Reset_Handler 00000000
+
+Symbol: Reset_Handler
+   Definitions
+      At line 162 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
+   Uses
+      At line 69 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
+      At line 163 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
+
+SPI0_IRQHandler 0000001A
+
+Symbol: SPI0_IRQHandler
+   Definitions
+      At line 308 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
 
 
 
 ARM Macro Assembler    Page 7 Alphabetic symbol ordering
 Relocatable symbols
 
-I2C1_EV_IRQHandler 0000001A
-
-Symbol: I2C1_EV_IRQHandler
-   Definitions
-      At line 306 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
    Uses
-      At line 119 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
-      At line 248 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
+      At line 121 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
+      At line 250 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
 
-LVD_IRQHandler 0000001A
+SPI1_IRQHandler 0000001A
 
-Symbol: LVD_IRQHandler
+Symbol: SPI1_IRQHandler
    Definitions
-      At line 278 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
+      At line 309 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
    Uses
-      At line 87 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\s
-tartup_gd32e10x.s
-      At line 220 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
+      At line 122 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
+      At line 251 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
 
-MemManage_Handler 0000000C
+SPI2_IRQHandler 0000001A
 
-Symbol: MemManage_Handler
+Symbol: SPI2_IRQHandler
    Definitions
-      At line 183 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
+      At line 322 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
    Uses
-      At line 72 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\s
-tartup_gd32e10x.s
-      At line 184 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
+      At line 137 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
+      At line 264 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
 
-NMI_Handler 00000008
+SVC_Handler 00000012
 
-Symbol: NMI_Handler
+Symbol: SVC_Handler
    Definitions
-      At line 173 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
+      At line 197 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
    Uses
-      At line 70 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\s
-tartup_gd32e10x.s
-      At line 174 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
+      At line 79 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
+      At line 198 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
 
-PendSV_Handler 00000016
+SysTick_Handler 00000018
 
-Symbol: PendSV_Handler
+Symbol: SysTick_Handler
    Definitions
-      At line 207 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
+      At line 212 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
    Uses
-      At line 82 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\s
-tartup_gd32e10x.s
-      At line 208 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
+      At line 83 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
+      At line 213 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
+
+TAMPER_IRQHandler 0000001A
+
+Symbol: TAMPER_IRQHandler
+   Definitions
+      At line 279 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
+   Uses
+      At line 88 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
+      At line 221 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
+
+TIMER0_BRK_TIMER8_IRQHandler 0000001A
+
+Symbol: TIMER0_BRK_TIMER8_IRQHandler
+   Definitions
+      At line 297 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
+   Uses
+      At line 110 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
+      At line 239 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
+
+TIMER0_Channel_IRQHandler 0000001A
 
 
 
@@ -1178,447 +1159,227 @@ ARM Macro Assembler    Page 8 Alphabetic symbol ordering
 Relocatable symbols
 
 
-RCU_CTC_IRQHandler 0000001A
-
-Symbol: RCU_CTC_IRQHandler
+Symbol: TIMER0_Channel_IRQHandler
    Definitions
-      At line 282 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
+      At line 300 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
    Uses
-      At line 91 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\s
-tartup_gd32e10x.s
-      At line 224 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
+      At line 113 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
+      At line 242 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
 
-RTC_Alarm_IRQHandler 0000001A
+TIMER0_TRG_CMT_TIMER10_IRQHandler 0000001A
 
-Symbol: RTC_Alarm_IRQHandler
+Symbol: TIMER0_TRG_CMT_TIMER10_IRQHandler
    Definitions
-      At line 314 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
+      At line 299 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
    Uses
-      At line 127 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
-      At line 256 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
+      At line 112 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
+      At line 241 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
 
-RTC_IRQHandler 0000001A
+TIMER0_UP_TIMER9_IRQHandler 0000001A
 
-Symbol: RTC_IRQHandler
+Symbol: TIMER0_UP_TIMER9_IRQHandler
    Definitions
-      At line 280 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
+      At line 298 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
    Uses
-      At line 89 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\s
-tartup_gd32e10x.s
-      At line 222 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
+      At line 111 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
+      At line 240 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
 
-Reset_Handler 00000000
+TIMER1_IRQHandler 0000001A
 
-Symbol: Reset_Handler
+Symbol: TIMER1_IRQHandler
    Definitions
-      At line 162 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
+      At line 301 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
    Uses
-      At line 69 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\s
-tartup_gd32e10x.s
-      At line 163 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
+      At line 114 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
+      At line 243 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
 
-SPI0_IRQHandler 0000001A
+TIMER2_IRQHandler 0000001A
 
-Symbol: SPI0_IRQHandler
+Symbol: TIMER2_IRQHandler
    Definitions
-      At line 308 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
+      At line 302 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
    Uses
-      At line 121 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
-      At line 250 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
+      At line 115 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
+      At line 244 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
+
+TIMER3_IRQHandler 0000001A
+
+Symbol: TIMER3_IRQHandler
+   Definitions
+      At line 303 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
+   Uses
+      At line 116 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
+      At line 245 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
+
+TIMER4_IRQHandler 0000001A
+
+Symbol: TIMER4_IRQHandler
+   Definitions
+      At line 321 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
+   Uses
 
 
 
 ARM Macro Assembler    Page 9 Alphabetic symbol ordering
 Relocatable symbols
 
-startup_gd32e10x.s
+      At line 136 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
+      At line 263 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
 
-SPI1_IRQHandler 0000001A
+TIMER5_IRQHandler 0000001A
 
-Symbol: SPI1_IRQHandler
+Symbol: TIMER5_IRQHandler
    Definitions
-      At line 309 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
+      At line 325 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
    Uses
-      At line 122 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
-      At line 251 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
+      At line 140 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
+      At line 267 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
 
-SPI2_IRQHandler 0000001A
+TIMER6_IRQHandler 0000001A
 
-Symbol: SPI2_IRQHandler
+Symbol: TIMER6_IRQHandler
    Definitions
-      At line 322 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
+      At line 326 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
    Uses
-      At line 137 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
-      At line 264 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
+      At line 141 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
+      At line 268 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
 
-SVC_Handler 00000012
+TIMER7_BRK_TIMER11_IRQHandler 0000001A
 
-Symbol: SVC_Handler
+Symbol: TIMER7_BRK_TIMER11_IRQHandler
    Definitions
-      At line 197 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
+      At line 316 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
    Uses
-      At line 79 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\s
-tartup_gd32e10x.s
-      At line 198 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
+      At line 129 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
+      At line 258 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
 
-SysTick_Handler 00000018
+TIMER7_Channel_IRQHandler 0000001A
 
-Symbol: SysTick_Handler
+Symbol: TIMER7_Channel_IRQHandler
    Definitions
-      At line 212 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
+      At line 319 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
    Uses
-      At line 83 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\s
-tartup_gd32e10x.s
-      At line 213 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
+      At line 132 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
+      At line 261 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
 
-TAMPER_IRQHandler 0000001A
+TIMER7_TRG_CMT_TIMER13_IRQHandler 0000001A
 
-Symbol: TAMPER_IRQHandler
+Symbol: TIMER7_TRG_CMT_TIMER13_IRQHandler
    Definitions
-      At line 279 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
+      At line 318 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
    Uses
-      At line 88 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\s
-tartup_gd32e10x.s
+      At line 131 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
+      At line 260 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
+
+TIMER7_UP_TIMER12_IRQHandler 0000001A
+
+Symbol: TIMER7_UP_TIMER12_IRQHandler
+   Definitions
+      At line 317 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
+   Uses
+      At line 130 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
+      At line 259 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
+
+UART3_IRQHandler 0000001A
+
 
 
 
 ARM Macro Assembler    Page 10 Alphabetic symbol ordering
 Relocatable symbols
 
-      At line 221 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
-
-TIMER0_BRK_TIMER8_IRQHandler 0000001A
-
-Symbol: TIMER0_BRK_TIMER8_IRQHandler
+Symbol: UART3_IRQHandler
    Definitions
-      At line 297 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
+      At line 323 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
    Uses
-      At line 110 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
-      At line 239 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
+      At line 138 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
+      At line 265 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
 
-TIMER0_Channel_IRQHandler 0000001A
+UART4_IRQHandler 0000001A
 
-Symbol: TIMER0_Channel_IRQHandler
+Symbol: UART4_IRQHandler
    Definitions
-      At line 300 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
+      At line 324 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
    Uses
-      At line 113 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
-      At line 242 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
+      At line 139 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
+      At line 266 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
 
-TIMER0_TRG_CMT_TIMER10_IRQHandler 0000001A
+USART0_IRQHandler 0000001A
 
-Symbol: TIMER0_TRG_CMT_TIMER10_IRQHandler
+Symbol: USART0_IRQHandler
    Definitions
-      At line 299 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
+      At line 310 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
    Uses
-      At line 112 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
-      At line 241 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
+      At line 123 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
+      At line 252 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
 
-TIMER0_UP_TIMER9_IRQHandler 0000001A
+USART1_IRQHandler 0000001A
 
-Symbol: TIMER0_UP_TIMER9_IRQHandler
+Symbol: USART1_IRQHandler
    Definitions
-      At line 298 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
+      At line 311 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
    Uses
-      At line 111 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
-      At line 240 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
+      At line 124 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
+      At line 253 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
 
-TIMER1_IRQHandler 0000001A
+USART2_IRQHandler 0000001A
 
-Symbol: TIMER1_IRQHandler
+Symbol: USART2_IRQHandler
    Definitions
-      At line 301 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
+      At line 312 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
    Uses
-      At line 114 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
+      At line 125 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
+      At line 254 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
+
+USBFS_IRQHandler 0000001A
+
+Symbol: USBFS_IRQHandler
+   Definitions
+      At line 332 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
+   Uses
+      At line 153 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
+      At line 274 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
+
+USBFS_WKUP_IRQHandler 0000001A
+
+Symbol: USBFS_WKUP_IRQHandler
+   Definitions
+      At line 315 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
+   Uses
+      At line 128 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
 
 
 
 ARM Macro Assembler    Page 11 Alphabetic symbol ordering
 Relocatable symbols
 
-startup_gd32e10x.s
-      At line 243 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
-
-TIMER2_IRQHandler 0000001A
-
-Symbol: TIMER2_IRQHandler
-   Definitions
-      At line 302 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
-   Uses
-      At line 115 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
-      At line 244 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
-
-TIMER3_IRQHandler 0000001A
-
-Symbol: TIMER3_IRQHandler
-   Definitions
-      At line 303 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
-   Uses
-      At line 116 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
-      At line 245 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
-
-TIMER4_IRQHandler 0000001A
-
-Symbol: TIMER4_IRQHandler
-   Definitions
-      At line 321 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
-   Uses
-      At line 136 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
-      At line 263 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
-
-TIMER5_IRQHandler 0000001A
-
-Symbol: TIMER5_IRQHandler
-   Definitions
-      At line 325 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
-   Uses
-      At line 140 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
-      At line 267 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
-
-TIMER6_IRQHandler 0000001A
-
-Symbol: TIMER6_IRQHandler
-   Definitions
-      At line 326 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
-   Uses
-
-
-
-ARM Macro Assembler    Page 12 Alphabetic symbol ordering
-Relocatable symbols
-
-      At line 141 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
-      At line 268 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
-
-TIMER7_BRK_TIMER11_IRQHandler 0000001A
-
-Symbol: TIMER7_BRK_TIMER11_IRQHandler
-   Definitions
-      At line 316 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
-   Uses
-      At line 129 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
-      At line 258 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
-
-TIMER7_Channel_IRQHandler 0000001A
-
-Symbol: TIMER7_Channel_IRQHandler
-   Definitions
-      At line 319 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
-   Uses
-      At line 132 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
-      At line 261 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
-
-TIMER7_TRG_CMT_TIMER13_IRQHandler 0000001A
-
-Symbol: TIMER7_TRG_CMT_TIMER13_IRQHandler
-   Definitions
-      At line 318 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
-   Uses
-      At line 131 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
-      At line 260 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
-
-TIMER7_UP_TIMER12_IRQHandler 0000001A
-
-Symbol: TIMER7_UP_TIMER12_IRQHandler
-   Definitions
-      At line 317 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
-   Uses
-      At line 130 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
-      At line 259 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
-
-UART3_IRQHandler 0000001A
-
-Symbol: UART3_IRQHandler
-   Definitions
-      At line 323 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
-
-
-
-ARM Macro Assembler    Page 13 Alphabetic symbol ordering
-Relocatable symbols
-
-   Uses
-      At line 138 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
-      At line 265 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
-
-UART4_IRQHandler 0000001A
-
-Symbol: UART4_IRQHandler
-   Definitions
-      At line 324 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
-   Uses
-      At line 139 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
-      At line 266 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
-
-USART0_IRQHandler 0000001A
-
-Symbol: USART0_IRQHandler
-   Definitions
-      At line 310 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
-   Uses
-      At line 123 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
-      At line 252 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
-
-USART1_IRQHandler 0000001A
-
-Symbol: USART1_IRQHandler
-   Definitions
-      At line 311 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
-   Uses
-      At line 124 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
-      At line 253 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
-
-USART2_IRQHandler 0000001A
-
-Symbol: USART2_IRQHandler
-   Definitions
-      At line 312 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
-   Uses
-      At line 125 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
-      At line 254 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
-
-USBFS_IRQHandler 0000001A
-
-Symbol: USBFS_IRQHandler
-   Definitions
-      At line 332 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-
-
-
-ARM Macro Assembler    Page 14 Alphabetic symbol ordering
-Relocatable symbols
-
-startup_gd32e10x.s
-   Uses
-      At line 153 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
-      At line 274 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
-
-USBFS_WKUP_IRQHandler 0000001A
-
-Symbol: USBFS_WKUP_IRQHandler
-   Definitions
-      At line 315 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
-   Uses
-      At line 128 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
-      At line 257 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
+      At line 257 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
 
 UsageFault_Handler 00000010
 
 Symbol: UsageFault_Handler
    Definitions
-      At line 193 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
+      At line 193 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
    Uses
-      At line 74 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\s
-tartup_gd32e10x.s
-      At line 194 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
+      At line 74 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
+      At line 194 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
 
 WWDGT_IRQHandler 0000001A
 
 Symbol: WWDGT_IRQHandler
    Definitions
-      At line 277 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
+      At line 277 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
    Uses
-      At line 86 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\s
-tartup_gd32e10x.s
-      At line 219 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
+      At line 86 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
+      At line 219 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
 
 __user_initial_stackheap 0000001C
 
 Symbol: __user_initial_stackheap
    Definitions
-      At line 352 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
+      At line 352 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
    Uses
-      At line 350 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
+      At line 350 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
 Comment: __user_initial_stackheap used once
 69 symbols
 
@@ -1631,35 +1392,27 @@ Heap_Size 00000400
 
 Symbol: Heap_Size
    Definitions
-      At line 52 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\s
-tartup_gd32e10x.s
+      At line 52 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
    Uses
-      At line 56 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\s
-tartup_gd32e10x.s
-      At line 355 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
+      At line 56 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
+      At line 355 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
 
 Stack_Size 00000400
 
 Symbol: Stack_Size
    Definitions
-      At line 41 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\s
-tartup_gd32e10x.s
+      At line 41 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
    Uses
-      At line 44 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\s
-tartup_gd32e10x.s
-      At line 354 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
+      At line 44 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
+      At line 354 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
 
 __Vectors_Size 00000150
 
 Symbol: __Vectors_Size
    Definitions
-      At line 157 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
+      At line 157 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
    Uses
-      At line 66 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\s
-tartup_gd32e10x.s
+      At line 66 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
 Comment: __Vectors_Size used once
 3 symbols
 
@@ -1672,28 +1425,23 @@ SystemInit 00000000
 
 Symbol: SystemInit
    Definitions
-      At line 164 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
+      At line 164 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
    Uses
-      At line 166 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
+      At line 166 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
 Comment: SystemInit used once
 __main 00000000
 
 Symbol: __main
    Definitions
-      At line 165 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
+      At line 165 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
    Uses
-      At line 168 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
+      At line 168 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
 Comment: __main used once
 __use_two_region_memory 00000000
 
 Symbol: __use_two_region_memory
    Definitions
-      At line 349 in file ..\..\..\..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\
-startup_gd32e10x.s
+      At line 349 in file ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s
    Uses
       None
 Comment: __use_two_region_memory unused
