@@ -155,7 +155,7 @@ int main(void)
             usb_send_buffer(usb_handle, process_handle.printf_buffer, strlen(process_handle.printf_buffer));
         }
 #endif	
-        delay_1ms(1);
+//        delay_1ms(1);
     }
 }
 

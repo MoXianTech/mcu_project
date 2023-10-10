@@ -1,0 +1,301 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+APP_RX_DATA_SIZE	.\inc\usbd_conf.h	57;"	d
+CDC_CMD_EP	.\inc\usbd_conf.h	51;"	d
+CDC_COM_INTERFACE	.\inc\usbd_conf.h	45;"	d
+CDC_DATA_IN_EP	.\inc\usbd_conf.h	49;"	d
+CDC_DATA_OUT_EP	.\inc\usbd_conf.h	50;"	d
+CDC_IN_FRAME_INTERVAL	.\inc\usbd_conf.h	62;"	d
+GD32E10X_IT_H	.\inc\gd32e10x_it.h	38;"	d
+GD32E10X_LIBOPT_H	.\inc\gd32e10x_libopt.h	38;"	d
+RX_FIFO_FS_SIZE	.\inc\usb_conf.h	93;"	d
+TIMER2_IRQHandler_lib	.\src\gd32e10x_it.c	/^void TIMER2_IRQHandler_lib(void)$/;"	f
+TIM_MSEC_DELAY	.\src\gd32e10x_hw.c	40;"	d	file:
+TIM_USEC_DELAY	.\src\gd32e10x_hw.c	41;"	d	file:
+TX0_FIFO_FS_SIZE	.\inc\usb_conf.h	94;"	d
+TX1_FIFO_FS_SIZE	.\inc\usb_conf.h	95;"	d
+TX2_FIFO_FS_SIZE	.\inc\usb_conf.h	96;"	d
+TX3_FIFO_FS_SIZE	.\inc\usb_conf.h	97;"	d
+USBD_CFG_MAX_NUM	.\inc\usbd_conf.h	42;"	d
+USBD_ITF_MAX_NUM	.\inc\usbd_conf.h	43;"	d
+USBFS_IRQHandler_lib	.\src\gd32e10x_it.c	/^void  USBFS_IRQHandler_lib (void)$/;"	f
+USBFS_WKUP_IRQHandler_lib	.\src\gd32e10x_it.c	/^void USBFS_WKUP_IRQHandler_lib(void)$/;"	f
+USB_CDC_CMD_PACKET_SIZE	.\inc\usbd_conf.h	55;"	d
+USB_CDC_DATA_PACKET_SIZE	.\inc\usbd_conf.h	61;"	d
+USB_FS_CORE	.\inc\usb_conf.h	53;"	d
+USB_LOW_POWER	.\inc\usb_conf.h	101;"	d
+USB_SOF_OUTPUT	.\inc\usb_conf.h	100;"	d
+USB_STRING_COUNT	.\inc\usbd_conf.h	53;"	d
+USB_STR_DESC_MAX_SIZE	.\inc\usbd_conf.h	47;"	d
+USE_DEVICE_MODE	.\inc\usb_conf.h	107;"	d
+[0]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[0]"><\/a>__rt_heap_expand<\/STRONG> (Thumb, 2 bytes, Stack size 0 bytes, heapauxi.o(.text), UNUSED)$/;"	a
+[10]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[10]"><\/a>SysTick_Handler<\/STRONG> (Thumb, 2 bytes, Stack size 0 bytes, gd32e10x_it.o(i.SysTick_Handler))$/;"	a
+[11]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[11]"><\/a>WWDGT_IRQHandler<\/STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_gd32e10x.o(.text))$/;"	a
+[12]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[12]"><\/a>LVD_IRQHandler<\/STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_gd32e10x.o(.text))$/;"	a
+[13]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[13]"><\/a>TAMPER_IRQHandler<\/STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_gd32e10x.o(.text))$/;"	a
+[14]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[14]"><\/a>RTC_IRQHandler<\/STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_gd32e10x.o(.text))$/;"	a
+[15]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[15]"><\/a>FMC_IRQHandler<\/STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_gd32e10x.o(.text))$/;"	a
+[16]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[16]"><\/a>RCU_CTC_IRQHandler<\/STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_gd32e10x.o(.text))$/;"	a
+[17]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[17]"><\/a>EXTI0_IRQHandler<\/STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_gd32e10x.o(.text))$/;"	a
+[18]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[18]"><\/a>EXTI1_IRQHandler<\/STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_gd32e10x.o(.text))$/;"	a
+[19]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[19]"><\/a>EXTI2_IRQHandler<\/STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_gd32e10x.o(.text))$/;"	a
+[1]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[1]"><\/a>__rt_heap_escrow<\/STRONG> (Thumb, 2 bytes, Stack size 0 bytes, heapauxi.o(.text), UNUSED)$/;"	a
+[1a]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[1a]"><\/a>EXTI3_IRQHandler<\/STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_gd32e10x.o(.text))$/;"	a
+[1b]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[1b]"><\/a>EXTI4_IRQHandler<\/STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_gd32e10x.o(.text))$/;"	a
+[1c]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[1c]"><\/a>DMA0_Channel0_IRQHandler<\/STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_gd32e10x.o(.text))$/;"	a
+[1d]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[1d]"><\/a>DMA0_Channel1_IRQHandler<\/STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_gd32e10x.o(.text))$/;"	a
+[1e]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[1e]"><\/a>DMA0_Channel2_IRQHandler<\/STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_gd32e10x.o(.text))$/;"	a
+[1f]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[1f]"><\/a>DMA0_Channel3_IRQHandler<\/STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_gd32e10x.o(.text))$/;"	a
+[20]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[20]"><\/a>DMA0_Channel4_IRQHandler<\/STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_gd32e10x.o(.text))$/;"	a
+[21]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[21]"><\/a>DMA0_Channel5_IRQHandler<\/STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_gd32e10x.o(.text))$/;"	a
+[22]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[22]"><\/a>DMA0_Channel6_IRQHandler<\/STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_gd32e10x.o(.text))$/;"	a
+[23]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[23]"><\/a>ADC0_1_IRQHandler<\/STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_gd32e10x.o(.text))$/;"	a
+[24]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[24]"><\/a>EXTI5_9_IRQHandler<\/STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_gd32e10x.o(.text))$/;"	a
+[25]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[25]"><\/a>TIMER0_BRK_TIMER8_IRQHandler<\/STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_gd32e10x.o(.text))$/;"	a
+[26]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[26]"><\/a>TIMER0_UP_TIMER9_IRQHandler<\/STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_gd32e10x.o(.text))$/;"	a
+[27]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[27]"><\/a>TIMER0_TRG_CMT_TIMER10_IRQHandler<\/STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_gd32e10x.o(.text))$/;"	a
+[28]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[28]"><\/a>TIMER0_Channel_IRQHandler<\/STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_gd32e10x.o(.text))$/;"	a
+[29]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[29]"><\/a>TIMER1_IRQHandler<\/STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_gd32e10x.o(.text))$/;"	a
+[2a]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[2a]"><\/a>TIMER2_IRQHandler<\/STRONG> (Thumb, 8 bytes, Stack size 8 bytes, gd32e10x_it.o(i.TIMER2_IRQHandler))$/;"	a
+[2b]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[2b]"><\/a>TIMER3_IRQHandler<\/STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_gd32e10x.o(.text))$/;"	a
+[2c]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[2c]"><\/a>I2C0_EV_IRQHandler<\/STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_gd32e10x.o(.text))$/;"	a
+[2d]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[2d]"><\/a>I2C0_ER_IRQHandler<\/STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_gd32e10x.o(.text))$/;"	a
+[2e]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[2e]"><\/a>I2C1_EV_IRQHandler<\/STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_gd32e10x.o(.text))$/;"	a
+[2f]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[2f]"><\/a>I2C1_ER_IRQHandler<\/STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_gd32e10x.o(.text))$/;"	a
+[30]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[30]"><\/a>SPI0_IRQHandler<\/STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_gd32e10x.o(.text))$/;"	a
+[31]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[31]"><\/a>SPI1_IRQHandler<\/STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_gd32e10x.o(.text))$/;"	a
+[32]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[32]"><\/a>USART0_IRQHandler<\/STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_gd32e10x.o(.text))$/;"	a
+[33]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[33]"><\/a>USART1_IRQHandler<\/STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_gd32e10x.o(.text))$/;"	a
+[34]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[34]"><\/a>USART2_IRQHandler<\/STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_gd32e10x.o(.text))$/;"	a
+[35]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[35]"><\/a>EXTI10_15_IRQHandler<\/STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_gd32e10x.o(.text))$/;"	a
+[36]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[36]"><\/a>RTC_Alarm_IRQHandler<\/STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_gd32e10x.o(.text))$/;"	a
+[37]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[37]"><\/a>USBFS_WKUP_IRQHandler<\/STRONG> (Thumb, 44 bytes, Stack size 8 bytes, gd32e10x_it.o(i.USBFS_WKUP_IRQHandler))$/;"	a
+[38]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[38]"><\/a>TIMER7_BRK_TIMER11_IRQHandler<\/STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_gd32e10x.o(.text))$/;"	a
+[39]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[39]"><\/a>TIMER7_UP_TIMER12_IRQHandler<\/STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_gd32e10x.o(.text))$/;"	a
+[3a]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[3a]"><\/a>TIMER7_TRG_CMT_TIMER13_IRQHandler<\/STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_gd32e10x.o(.text))$/;"	a
+[3b]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[3b]"><\/a>TIMER7_Channel_IRQHandler<\/STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_gd32e10x.o(.text))$/;"	a
+[3c]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[3c]"><\/a>EXMC_IRQHandler<\/STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_gd32e10x.o(.text))$/;"	a
+[3d]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[3d]"><\/a>TIMER4_IRQHandler<\/STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_gd32e10x.o(.text))$/;"	a
+[3e]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[3e]"><\/a>SPI2_IRQHandler<\/STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_gd32e10x.o(.text))$/;"	a
+[3f]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[3f]"><\/a>UART3_IRQHandler<\/STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_gd32e10x.o(.text))$/;"	a
+[40]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[40]"><\/a>UART4_IRQHandler<\/STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_gd32e10x.o(.text))$/;"	a
+[41]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[41]"><\/a>TIMER5_IRQHandler<\/STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_gd32e10x.o(.text))$/;"	a
+[42]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[42]"><\/a>TIMER6_IRQHandler<\/STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_gd32e10x.o(.text))$/;"	a
+[43]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[43]"><\/a>DMA1_Channel0_IRQHandler<\/STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_gd32e10x.o(.text))$/;"	a
+[44]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[44]"><\/a>DMA1_Channel1_IRQHandler<\/STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_gd32e10x.o(.text))$/;"	a
+[45]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[45]"><\/a>DMA1_Channel2_IRQHandler<\/STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_gd32e10x.o(.text))$/;"	a
+[46]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[46]"><\/a>DMA1_Channel3_IRQHandler<\/STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_gd32e10x.o(.text))$/;"	a
+[47]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[47]"><\/a>DMA1_Channel4_IRQHandler<\/STRONG> (Thumb, 0 bytes, Stack size 0 bytes, startup_gd32e10x.o(.text))$/;"	a
+[48]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[48]"><\/a>USBFS_IRQHandler<\/STRONG> (Thumb, 10 bytes, Stack size 8 bytes, gd32e10x_it.o(i.USBFS_IRQHandler))$/;"	a
+[49]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[49]"><\/a>SystemInit<\/STRONG> (Thumb, 166 bytes, Stack size 8 bytes, system_gd32e10x.o(i.SystemInit))$/;"	a
+[4b]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[4b]"><\/a>_usb_std_getstatus<\/STRONG> (Thumb, 192 bytes, Stack size 16 bytes, usbd_enum.o(i._usb_std_getstatus))$/;"	a
+[4c]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[4c]"><\/a>_usb_std_clearfeature<\/STRONG> (Thumb, 116 bytes, Stack size 16 bytes, usbd_enum.o(i._usb_std_clearfeature))$/;"	a
+[4d]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[4d]"><\/a>_usb_std_reserved<\/STRONG> (Thumb, 6 bytes, Stack size 0 bytes, usbd_enum.o(i._usb_std_reserved))$/;"	a
+[4e]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[4e]"><\/a>_usb_std_setfeature<\/STRONG> (Thumb, 104 bytes, Stack size 16 bytes, usbd_enum.o(i._usb_std_setfeature))$/;"	a
+[4f]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[4f]"><\/a>_usb_std_setaddress<\/STRONG> (Thumb, 92 bytes, Stack size 8 bytes, usbd_enum.o(i._usb_std_setaddress))$/;"	a
+[50]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[50]"><\/a>_usb_std_getdescriptor<\/STRONG> (Thumb, 266 bytes, Stack size 32 bytes, usbd_enum.o(i._usb_std_getdescriptor))$/;"	a
+[51]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[51]"><\/a>_usb_std_setdescriptor<\/STRONG> (Thumb, 6 bytes, Stack size 0 bytes, usbd_enum.o(i._usb_std_setdescriptor))$/;"	a
+[52]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[52]"><\/a>_usb_std_getconfiguration<\/STRONG> (Thumb, 64 bytes, Stack size 8 bytes, usbd_enum.o(i._usb_std_getconfiguration))$/;"	a
+[53]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[53]"><\/a>_usb_std_setconfiguration<\/STRONG> (Thumb, 176 bytes, Stack size 16 bytes, usbd_enum.o(i._usb_std_setconfiguration))$/;"	a
+[54]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[54]"><\/a>_usb_std_getinterface<\/STRONG> (Thumb, 60 bytes, Stack size 0 bytes, usbd_enum.o(i._usb_std_getinterface))$/;"	a
+[55]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[55]"><\/a>_usb_std_setinterface<\/STRONG> (Thumb, 68 bytes, Stack size 16 bytes, usbd_enum.o(i._usb_std_setinterface))$/;"	a
+[56]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[56]"><\/a>_usb_std_synchframe<\/STRONG> (Thumb, 6 bytes, Stack size 0 bytes, usbd_enum.o(i._usb_std_synchframe))$/;"	a
+[57]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[57]"><\/a>_usb_dev_desc_get<\/STRONG> (Thumb, 20 bytes, Stack size 0 bytes, usbd_enum.o(i._usb_dev_desc_get))$/;"	a
+[58]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[58]"><\/a>_usb_config_desc_get<\/STRONG> (Thumb, 34 bytes, Stack size 8 bytes, usbd_enum.o(i._usb_config_desc_get))$/;"	a
+[59]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[59]"><\/a>_usb_str_desc_get<\/STRONG> (Thumb, 20 bytes, Stack size 8 bytes, usbd_enum.o(i._usb_str_desc_get))$/;"	a
+[5a]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[5a]"><\/a>cdc_acm_init<\/STRONG> (Thumb, 84 bytes, Stack size 24 bytes, cdc_acm_core.o(i.cdc_acm_init))$/;"	a
+[5b]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[5b]"><\/a>cdc_acm_deinit<\/STRONG> (Thumb, 34 bytes, Stack size 16 bytes, cdc_acm_core.o(i.cdc_acm_deinit))$/;"	a
+[5c]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[5c]"><\/a>cdc_acm_req<\/STRONG> (Thumb, 176 bytes, Stack size 12 bytes, cdc_acm_core.o(i.cdc_acm_req))$/;"	a
+[5d]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[5d]"><\/a>cdc_ctlx_out<\/STRONG> (Thumb, 82 bytes, Stack size 0 bytes, cdc_acm_core.o(i.cdc_ctlx_out))$/;"	a
+[5e]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[5e]"><\/a>cdc_acm_in<\/STRONG> (Thumb, 70 bytes, Stack size 24 bytes, cdc_acm_core.o(i.cdc_acm_in))$/;"	a
+[5f]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[5f]"><\/a>cdc_acm_out<\/STRONG> (Thumb, 32 bytes, Stack size 8 bytes, cdc_acm_core.o(i.cdc_acm_out))$/;"	a
+[60]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[60]"><\/a>__main<\/STRONG> (Thumb, 8 bytes, Stack size 0 bytes, __main.o(!!!main))$/;"	a
+[61]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[61]"><\/a>__scatterload<\/STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __scatter.o(!!!scatter))$/;"	a
+[62]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[62]"><\/a>__rt_entry<\/STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __rtentry.o(.ARM.Collect$$rtentry$$00000000))$/;"	a
+[63]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[63]"><\/a>__scatterload_rt2<\/STRONG> (Thumb, 44 bytes, Stack size unknown bytes, __scatter.o(!!!scatter), UNUSED)$/;"	a
+[64]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[64]"><\/a>__scatterload_copy<\/STRONG> (Thumb, 26 bytes, Stack size unknown bytes, __scatter_copy.o(!!handler_copy), UNUSED)$/;"	a
+[65]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[65]"><\/a>__rt_lib_init_fp_1<\/STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000001))$/;"	a
+[66]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[66]"><\/a>_fp_init<\/STRONG> (Thumb, 10 bytes, Stack size 0 bytes, fpinit.o(x$fpl$fpinit))$/;"	a
+[67]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[67]"><\/a>__rt_entry_sh<\/STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __rtentry4.o(.ARM.Collect$$rtentry$$00000004))$/;"	a
+[68]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[68]"><\/a>__user_setup_stackheap<\/STRONG> (Thumb, 74 bytes, Stack size 8 bytes, sys_stackheap_outer.o(.text))$/;"	a
+[69]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[69]"><\/a>__rt_entry_li<\/STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __rtentry2.o(.ARM.Collect$$rtentry$$0000000A))$/;"	a
+[6a]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[6a]"><\/a>__rt_lib_init<\/STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit.o(.ARM.Collect$$libinit$$00000000))$/;"	a
+[6b]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[6b]"><\/a>__rt_entry_main<\/STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __rtentry2.o(.ARM.Collect$$rtentry$$0000000D))$/;"	a
+[6c]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[6c]"><\/a>main<\/STRONG> (Thumb, 60 bytes, Stack size 0 bytes, app.o(i.main))$/;"	a
+[6d]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[6d]"><\/a>exit<\/STRONG> (Thumb, 18 bytes, Stack size 8 bytes, exit.o(.text))$/;"	a
+[6e]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[6e]"><\/a>__rt_exit_ls<\/STRONG> (Thumb, 0 bytes, Stack size unknown bytes, rtexit2.o(.ARM.Collect$$rtexit$$00000003))$/;"	a
+[6f]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[6f]"><\/a>__rt_lib_shutdown<\/STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown.o(.ARM.Collect$$libshutdown$$00000000))$/;"	a
+[70]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[70]"><\/a>__rt_exit_exit<\/STRONG> (Thumb, 0 bytes, Stack size unknown bytes, rtexit2.o(.ARM.Collect$$rtexit$$00000004))$/;"	a
+[71]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[71]"><\/a>_sys_exit<\/STRONG> (Thumb, 8 bytes, Stack size 0 bytes, sys_exit.o(.text))$/;"	a
+[72]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[72]"><\/a>__user_perproc_libspace<\/STRONG> (Thumb, 0 bytes, Stack size 0 bytes, libspace.o(.text))$/;"	a
+[73]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[73]"><\/a>__user_initial_stackheap<\/STRONG> (Thumb, 10 bytes, Stack size 0 bytes, startup_gd32e10x.o(.text))$/;"	a
+[74]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[74]"><\/a>__rt_exit<\/STRONG> (Thumb, 0 bytes, Stack size unknown bytes, rtexit.o(.ARM.Collect$$rtexit$$00000000))$/;"	a
+[75]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[75]"><\/a>system_clock_config<\/STRONG> (Thumb, 8 bytes, Stack size 8 bytes, system_gd32e10x.o(i.system_clock_config))$/;"	a
+[76]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[76]"><\/a>nvic_vector_table_set<\/STRONG> (Thumb, 16 bytes, Stack size 0 bytes, gd32e10x_misc.o(i.nvic_vector_table_set))$/;"	a
+[77]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[77]"><\/a>usb_timer_irq<\/STRONG> (Thumb, 46 bytes, Stack size 8 bytes, gd32e10x_hw.o(i.usb_timer_irq))$/;"	a
+[78]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[78]"><\/a>usbd_isr<\/STRONG> (Thumb, 222 bytes, Stack size 16 bytes, drv_usbd_int.o(i.usbd_isr))$/;"	a
+[79]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[79]"><\/a>rcu_usb_clock_config<\/STRONG> (Thumb, 18 bytes, Stack size 0 bytes, gd32e10x_rcu.o(i.rcu_usb_clock_config))$/;"	a
+[7]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[7]"><\/a>Reset_Handler<\/STRONG> (Thumb, 8 bytes, Stack size 0 bytes, startup_gd32e10x.o(.text))$/;"	a
+[7a]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[7a]"><\/a>rcu_periph_clock_enable<\/STRONG> (Thumb, 28 bytes, Stack size 0 bytes, gd32e10x_rcu.o(i.rcu_periph_clock_enable))$/;"	a
+[7b]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[7b]"><\/a>usb_clock_active<\/STRONG> (Thumb, 32 bytes, Stack size 0 bytes, drv_usb_dev.o(i.usb_clock_active))$/;"	a
+[7c]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[7c]"><\/a>exti_interrupt_flag_clear<\/STRONG> (Thumb, 6 bytes, Stack size 0 bytes, gd32e10x_exti.o(i.exti_interrupt_flag_clear))$/;"	a
+[7d]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[7d]"><\/a>usbd_ep_stall_clear<\/STRONG> (Thumb, 58 bytes, Stack size 16 bytes, usbd_core.o(i.usbd_ep_stall_clear))$/;"	a
+[7e]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[7e]"><\/a>_usb_bos_desc_get<\/STRONG> (Thumb, 20 bytes, Stack size 0 bytes, usbd_enum.o(i._usb_bos_desc_get))$/;"	a
+[7f]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[7f]"><\/a>usbd_ep_stall<\/STRONG> (Thumb, 58 bytes, Stack size 16 bytes, usbd_core.o(i.usbd_ep_stall))$/;"	a
+[80]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[80]"><\/a>cdc_acm_data_receive<\/STRONG> (Thumb, 28 bytes, Stack size 16 bytes, cdc_acm_core.o(i.cdc_acm_data_receive))$/;"	a
+[81]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[81]"><\/a>usbd_ep_recev<\/STRONG> (Thumb, 52 bytes, Stack size 24 bytes, usbd_core.o(i.usbd_ep_recev))$/;"	a
+[82]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[82]"><\/a>cdc_acm_data_send<\/STRONG> (Thumb, 34 bytes, Stack size 16 bytes, cdc_acm_core.o(i.cdc_acm_data_send))$/;"	a
+[83]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[83]"><\/a>usbd_ep_send<\/STRONG> (Thumb, 52 bytes, Stack size 24 bytes, usbd_core.o(i.usbd_ep_send))$/;"	a
+[84]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[84]"><\/a>usbd_ep_clear<\/STRONG> (Thumb, 52 bytes, Stack size 16 bytes, usbd_core.o(i.usbd_ep_clear))$/;"	a
+[85]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[85]"><\/a>usbd_ep_setup<\/STRONG> (Thumb, 106 bytes, Stack size 24 bytes, usbd_core.o(i.usbd_ep_setup))$/;"	a
+[86]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[86]"><\/a>hw_delay<\/STRONG> (Thumb, 34 bytes, Stack size 16 bytes, gd32e10x_hw.o(i.hw_delay))$/;"	a
+[87]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[87]"><\/a>hw_time_set<\/STRONG> (Thumb, 102 bytes, Stack size 24 bytes, gd32e10x_hw.o(i.hw_time_set))$/;"	a
+[88]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[88]"><\/a>timer_disable<\/STRONG> (Thumb, 10 bytes, Stack size 0 bytes, gd32e10x_timer.o(i.timer_disable))$/;"	a
+[89]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[89]"><\/a>timer_interrupt_disable<\/STRONG> (Thumb, 8 bytes, Stack size 0 bytes, gd32e10x_timer.o(i.timer_interrupt_disable))$/;"	a
+[8]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[8]"><\/a>NMI_Handler<\/STRONG> (Thumb, 2 bytes, Stack size 0 bytes, gd32e10x_it.o(i.NMI_Handler))$/;"	a
+[8a]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[8a]"><\/a>timer_init<\/STRONG> (Thumb, 134 bytes, Stack size 0 bytes, gd32e10x_timer.o(i.timer_init))$/;"	a
+[8b]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[8b]"><\/a>timer_interrupt_flag_clear<\/STRONG> (Thumb, 6 bytes, Stack size 0 bytes, gd32e10x_timer.o(i.timer_interrupt_flag_clear))$/;"	a
+[8c]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[8c]"><\/a>timer_auto_reload_shadow_enable<\/STRONG> (Thumb, 10 bytes, Stack size 0 bytes, gd32e10x_timer.o(i.timer_auto_reload_shadow_enable))$/;"	a
+[8d]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[8d]"><\/a>timer_interrupt_enable<\/STRONG> (Thumb, 8 bytes, Stack size 0 bytes, gd32e10x_timer.o(i.timer_interrupt_enable))$/;"	a
+[8e]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[8e]"><\/a>timer_enable<\/STRONG> (Thumb, 10 bytes, Stack size 0 bytes, gd32e10x_timer.o(i.timer_enable))$/;"	a
+[8f]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[8f]"><\/a>usb_rcu_config<\/STRONG> (Thumb, 112 bytes, Stack size 8 bytes, gd32e10x_hw.o(i.usb_rcu_config))$/;"	a
+[90]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[90]"><\/a>usb_timer_init<\/STRONG> (Thumb, 30 bytes, Stack size 8 bytes, gd32e10x_hw.o(i.usb_timer_init))$/;"	a
+[91]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[91]"><\/a>usbd_init<\/STRONG> (Thumb, 124 bytes, Stack size 24 bytes, usbd_core.o(i.usbd_init))$/;"	a
+[92]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[92]"><\/a>usb_intr_config<\/STRONG> (Thumb, 68 bytes, Stack size 8 bytes, gd32e10x_hw.o(i.usb_intr_config))$/;"	a
+[93]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[93]"><\/a>cdc_acm_check_ready<\/STRONG> (Thumb, 34 bytes, Stack size 0 bytes, cdc_acm_core.o(i.cdc_acm_check_ready))$/;"	a
+[94]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[94]"><\/a>nvic_irq_enable<\/STRONG> (Thumb, 162 bytes, Stack size 24 bytes, gd32e10x_misc.o(i.nvic_irq_enable))$/;"	a
+[95]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[95]"><\/a>nvic_priority_group_set<\/STRONG> (Thumb, 10 bytes, Stack size 0 bytes, gd32e10x_misc.o(i.nvic_priority_group_set))$/;"	a
+[96]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[96]"><\/a>serial_string_get<\/STRONG> (Thumb, 66 bytes, Stack size 20 bytes, usbd_enum.o(i.serial_string_get))$/;"	a
+[97]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[97]"><\/a>int_to_unicode<\/STRONG> (Thumb, 60 bytes, Stack size 12 bytes, usbd_enum.o(i.int_to_unicode))$/;"	a
+[98]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[98]"><\/a>system_clock_120m_hxtal<\/STRONG> (Thumb, 226 bytes, Stack size 0 bytes, system_gd32e10x.o(i.system_clock_120m_hxtal))$/;"	a
+[99]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[99]"><\/a>usb_basic_init<\/STRONG> (Thumb, 218 bytes, Stack size 208 bytes, drv_usb_core.o(i.usb_basic_init))$/;"	a
+[9]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[9]"><\/a>HardFault_Handler<\/STRONG> (Thumb, 4 bytes, Stack size 0 bytes, gd32e10x_it.o(i.HardFault_Handler))$/;"	a
+[9a]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[9a]"><\/a>__aeabi_memclr4<\/STRONG> (Thumb, 0 bytes, Stack size 4 bytes, rt_memclr_w.o(.text))$/;"	a
+[9b]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[9b]"><\/a>__aeabi_memcpy4<\/STRONG> (Thumb, 0 bytes, Stack size 8 bytes, rt_memcpy_w.o(.text))$/;"	a
+[9c]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[9c]"><\/a>usb_core_init<\/STRONG> (Thumb, 146 bytes, Stack size 24 bytes, drv_usb_core.o(i.usb_core_init))$/;"	a
+[9d]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[9d]"><\/a>usb_core_reset<\/STRONG> (Thumb, 38 bytes, Stack size 8 bytes, drv_usb_core.o(i.usb_core_reset))$/;"	a
+[9e]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[9e]"><\/a>usb_mdelay<\/STRONG> (Thumb, 14 bytes, Stack size 8 bytes, gd32e10x_hw.o(i.usb_mdelay))$/;"	a
+[9f]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[9f]"><\/a>usb_udelay<\/STRONG> (Thumb, 14 bytes, Stack size 8 bytes, gd32e10x_hw.o(i.usb_udelay))$/;"	a
+[a0]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[a0]"><\/a>usb_devcore_init<\/STRONG> (Thumb, 330 bytes, Stack size 16 bytes, drv_usb_dev.o(i.usb_devcore_init))$/;"	a
+[a1]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[a1]"><\/a>usb_set_txfifo<\/STRONG> (Thumb, 72 bytes, Stack size 16 bytes, drv_usb_core.o(i.usb_set_txfifo))$/;"	a
+[a2]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[a2]"><\/a>usb_txfifo_flush<\/STRONG> (Thumb, 40 bytes, Stack size 16 bytes, drv_usb_core.o(i.usb_txfifo_flush))$/;"	a
+[a3]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[a3]"><\/a>usb_rxfifo_flush<\/STRONG> (Thumb, 34 bytes, Stack size 8 bytes, drv_usb_core.o(i.usb_rxfifo_flush))$/;"	a
+[a4]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[a4]"><\/a>usb_devint_enable<\/STRONG> (Thumb, 56 bytes, Stack size 0 bytes, drv_usb_dev.o(i.usb_devint_enable))$/;"	a
+[a5]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[a5]"><\/a>exti_init<\/STRONG> (Thumb, 178 bytes, Stack size 8 bytes, gd32e10x_exti.o(i.exti_init))$/;"	a
+[a6]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[a6]"><\/a>exti_interrupt_enable<\/STRONG> (Thumb, 12 bytes, Stack size 0 bytes, gd32e10x_exti.o(i.exti_interrupt_enable))$/;"	a
+[a7]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[a7]"><\/a>rcu_clock_freq_get<\/STRONG> (Thumb, 352 bytes, Stack size 96 bytes, gd32e10x_rcu.o(i.rcu_clock_freq_get))$/;"	a
+[a8]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[a8]"><\/a>timer_interrupt_flag_get<\/STRONG> (Thumb, 24 bytes, Stack size 0 bytes, gd32e10x_timer.o(i.timer_interrupt_flag_get))$/;"	a
+[a9]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[a9]"><\/a>usb_transc_inxfer<\/STRONG> (Thumb, 262 bytes, Stack size 32 bytes, drv_usb_dev.o(i.usb_transc_inxfer))$/;"	a
+[a]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[a]"><\/a>MemManage_Handler<\/STRONG> (Thumb, 4 bytes, Stack size 0 bytes, gd32e10x_it.o(i.MemManage_Handler))$/;"	a
+[aa]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[aa]"><\/a>usb_txfifo_write<\/STRONG> (Thumb, 34 bytes, Stack size 20 bytes, drv_usb_core.o(i.usb_txfifo_write))$/;"	a
+[ab]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[ab]"><\/a>usbd_connect<\/STRONG> (Thumb, 28 bytes, Stack size 8 bytes, usbd_core.o(i.usbd_connect))$/;"	a
+[ac]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[ac]"><\/a>usbd_ctl_recev<\/STRONG> (Thumb, 46 bytes, Stack size 16 bytes, usbd_transc.o(i.usbd_ctl_recev))$/;"	a
+[ad]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[ad]"><\/a>usbd_ctl_send<\/STRONG> (Thumb, 46 bytes, Stack size 16 bytes, usbd_transc.o(i.usbd_ctl_send))$/;"	a
+[ae]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[ae]"><\/a>usbd_ctl_status_recev<\/STRONG> (Thumb, 32 bytes, Stack size 8 bytes, usbd_transc.o(i.usbd_ctl_status_recev))$/;"	a
+[af]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[af]"><\/a>usb_ctlep_startout<\/STRONG> (Thumb, 8 bytes, Stack size 0 bytes, drv_usb_dev.o(i.usb_ctlep_startout))$/;"	a
+[b0]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[b0]"><\/a>usbd_ctl_status_send<\/STRONG> (Thumb, 32 bytes, Stack size 8 bytes, usbd_transc.o(i.usbd_ctl_status_send))$/;"	a
+[b1]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[b1]"><\/a>usbd_disconnect<\/STRONG> (Thumb, 28 bytes, Stack size 8 bytes, usbd_core.o(i.usbd_disconnect))$/;"	a
+[b2]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[b2]"><\/a>usbd_emptytxfifo_write<\/STRONG> (Thumb, 140 bytes, Stack size 24 bytes, drv_usbd_int.o(i.usbd_emptytxfifo_write))$/;"	a
+[b3]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[b3]"><\/a>usbd_enum_error<\/STRONG> (Thumb, 30 bytes, Stack size 16 bytes, usbd_enum.o(i.usbd_enum_error))$/;"	a
+[b4]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[b4]"><\/a>usb_transc_deactivate<\/STRONG> (Thumb, 100 bytes, Stack size 12 bytes, drv_usb_dev.o(i.usb_transc_deactivate))$/;"	a
+[b5]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[b5]"><\/a>usb_transc_outxfer<\/STRONG> (Thumb, 126 bytes, Stack size 20 bytes, drv_usb_dev.o(i.usb_transc_outxfer))$/;"	a
+[b6]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[b6]"><\/a>usb_transc_active<\/STRONG> (Thumb, 142 bytes, Stack size 20 bytes, drv_usb_dev.o(i.usb_transc_active))$/;"	a
+[b7]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[b7]"><\/a>usb_transc_stall<\/STRONG> (Thumb, 66 bytes, Stack size 8 bytes, drv_usb_dev.o(i.usb_transc_stall))$/;"	a
+[b8]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[b8]"><\/a>usb_transc_clrstall<\/STRONG> (Thumb, 68 bytes, Stack size 8 bytes, drv_usb_dev.o(i.usb_transc_clrstall))$/;"	a
+[b9]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[b9]"><\/a>usbd_in_transc<\/STRONG> (Thumb, 146 bytes, Stack size 16 bytes, usbd_transc.o(i.usbd_in_transc))$/;"	a
+[b]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[b]"><\/a>BusFault_Handler<\/STRONG> (Thumb, 4 bytes, Stack size 0 bytes, gd32e10x_it.o(i.BusFault_Handler))$/;"	a
+[ba]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[ba]"><\/a>usb_curmode_set<\/STRONG> (Thumb, 46 bytes, Stack size 0 bytes, drv_usb_core.o(i.usb_curmode_set))$/;"	a
+[bb]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[bb]"><\/a>usbd_int_epin<\/STRONG> (Thumb, 116 bytes, Stack size 24 bytes, drv_usbd_int.o(i.usbd_int_epin))$/;"	a
+[bc]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[bc]"><\/a>usb_iepintr_read<\/STRONG> (Thumb, 42 bytes, Stack size 12 bytes, drv_usb_dev.o(i.usb_iepintr_read))$/;"	a
+[bd]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[bd]"><\/a>usbd_int_epout<\/STRONG> (Thumb, 126 bytes, Stack size 24 bytes, drv_usbd_int.o(i.usbd_int_epout))$/;"	a
+[be]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[be]"><\/a>usbd_out_transc<\/STRONG> (Thumb, 118 bytes, Stack size 16 bytes, usbd_transc.o(i.usbd_out_transc))$/;"	a
+[bf]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[bf]"><\/a>usbd_setup_transc<\/STRONG> (Thumb, 132 bytes, Stack size 24 bytes, usbd_transc.o(i.usbd_setup_transc))$/;"	a
+[c0]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[c0]"><\/a>usbd_int_reset<\/STRONG> (Thumb, 208 bytes, Stack size 64 bytes, drv_usbd_int.o(i.usbd_int_reset))$/;"	a
+[c1]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[c1]"><\/a>usbd_int_rxfifo<\/STRONG> (Thumb, 178 bytes, Stack size 32 bytes, drv_usbd_int.o(i.usbd_int_rxfifo))$/;"	a
+[c2]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[c2]"><\/a>usb_rxfifo_read<\/STRONG> (Thumb, 30 bytes, Stack size 16 bytes, drv_usb_core.o(i.usb_rxfifo_read))$/;"	a
+[c3]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[c3]"><\/a>usbd_int_suspend<\/STRONG> (Thumb, 102 bytes, Stack size 24 bytes, drv_usbd_int.o(i.usbd_int_suspend))$/;"	a
+[c4]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[c4]"><\/a>pmu_to_deepsleepmode<\/STRONG> (Thumb, 170 bytes, Stack size 0 bytes, gd32e10x_pmu.o(i.pmu_to_deepsleepmode))$/;"	a
+[c5]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[c5]"><\/a>usbd_int_enumfinish<\/STRONG> (Thumb, 98 bytes, Stack size 0 bytes, drv_usbd_int.o(i.usbd_int_enumfinish))$/;"	a
+[c6]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[c6]"><\/a>usbd_standard_request<\/STRONG> (Thumb, 22 bytes, Stack size 16 bytes, usbd_enum.o(i.usbd_standard_request))$/;"	a
+[c7]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[c7]"><\/a>usbd_class_request<\/STRONG> (Thumb, 38 bytes, Stack size 16 bytes, usbd_enum.o(i.usbd_class_request))$/;"	a
+[c8]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[c8]"><\/a>usbd_vendor_request<\/STRONG> (Thumb, 6 bytes, Stack size 0 bytes, usbd_enum.o(i.usbd_vendor_request))$/;"	a
+[c9]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[c9]"><\/a>__scatterload_rt2_thumb_only<\/STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __scatter.o(!!!scatter), UNUSED)$/;"	a
+[c]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[c]"><\/a>UsageFault_Handler<\/STRONG> (Thumb, 4 bytes, Stack size 0 bytes, gd32e10x_it.o(i.UsageFault_Handler))$/;"	a
+[ca]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[ca]"><\/a>__scatterload_null<\/STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __scatter.o(!!!scatter), UNUSED)$/;"	a
+[cb]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[cb]"><\/a>__scatterload_zeroinit<\/STRONG> (Thumb, 28 bytes, Stack size unknown bytes, __scatter_zi.o(!!handler_zi), UNUSED)$/;"	a
+[cc]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[cc]"><\/a>__rt_lib_init_alloca_1<\/STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000002E))$/;"	a
+[cd]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[cd]"><\/a>__rt_lib_init_argv_1<\/STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000002C))$/;"	a
+[ce]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[ce]"><\/a>__rt_lib_init_atexit_1<\/STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000001B))$/;"	a
+[cf]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[cf]"><\/a>__rt_lib_init_clock_1<\/STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000021))$/;"	a
+[d0]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[d0]"><\/a>__rt_lib_init_cpp_1<\/STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000032))$/;"	a
+[d1]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[d1]"><\/a>__rt_lib_init_exceptions_1<\/STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000030))$/;"	a
+[d2]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[d2]"><\/a>__rt_lib_init_fp_trap_1<\/STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000001F))$/;"	a
+[d3]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[d3]"><\/a>__rt_lib_init_getenv_1<\/STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000023))$/;"	a
+[d4]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[d4]"><\/a>__rt_lib_init_heap_1<\/STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000000A))$/;"	a
+[d5]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[d5]"><\/a>__rt_lib_init_lc_collate_1<\/STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000011))$/;"	a
+[d6]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[d6]"><\/a>__rt_lib_init_lc_ctype_1<\/STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000013))$/;"	a
+[d7]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[d7]"><\/a>__rt_lib_init_lc_monetary_1<\/STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000015))$/;"	a
+[d8]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[d8]"><\/a>__rt_lib_init_lc_numeric_1<\/STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000017))$/;"	a
+[d9]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[d9]"><\/a>__rt_lib_init_lc_time_1<\/STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000019))$/;"	a
+[d]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[d]"><\/a>SVC_Handler<\/STRONG> (Thumb, 2 bytes, Stack size 0 bytes, gd32e10x_it.o(i.SVC_Handler))$/;"	a
+[da]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[da]"><\/a>__rt_lib_init_preinit_1<\/STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000004))$/;"	a
+[db]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[db]"><\/a>__rt_lib_init_rand_1<\/STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000000E))$/;"	a
+[dc]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[dc]"><\/a>__rt_lib_init_return<\/STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000033))$/;"	a
+[dd]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[dd]"><\/a>__rt_lib_init_signal_1<\/STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000001D))$/;"	a
+[de]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[de]"><\/a>__rt_lib_init_stdio_1<\/STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$00000025))$/;"	a
+[df]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[df]"><\/a>__rt_lib_init_user_alloc_1<\/STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libinit2.o(.ARM.Collect$$libinit$$0000000C))$/;"	a
+[e0]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[e0]"><\/a>__rt_lib_shutdown_cpp_1<\/STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$00000004))$/;"	a
+[e1]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[e1]"><\/a>__rt_lib_shutdown_fini_1<\/STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$00000002))$/;"	a
+[e2]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[e2]"><\/a>__rt_lib_shutdown_fp_trap_1<\/STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$00000009))$/;"	a
+[e3]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[e3]"><\/a>__rt_lib_shutdown_heap_1<\/STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$00000011))$/;"	a
+[e4]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[e4]"><\/a>__rt_lib_shutdown_return<\/STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$00000012))$/;"	a
+[e5]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[e5]"><\/a>__rt_lib_shutdown_signal_1<\/STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$0000000C))$/;"	a
+[e6]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[e6]"><\/a>__rt_lib_shutdown_stdio_1<\/STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$00000006))$/;"	a
+[e7]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[e7]"><\/a>__rt_lib_shutdown_user_alloc_1<\/STRONG> (Thumb, 0 bytes, Stack size unknown bytes, libshutdown2.o(.ARM.Collect$$libshutdown$$0000000E))$/;"	a
+[e8]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[e8]"><\/a>__rt_entry_presh_1<\/STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __rtentry2.o(.ARM.Collect$$rtentry$$00000002))$/;"	a
+[e9]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[e9]"><\/a>__rt_entry_postsh_1<\/STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __rtentry2.o(.ARM.Collect$$rtentry$$00000009))$/;"	a
+[e]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[e]"><\/a>DebugMon_Handler<\/STRONG> (Thumb, 2 bytes, Stack size 0 bytes, gd32e10x_it.o(i.DebugMon_Handler))$/;"	a
+[ea]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[ea]"><\/a>__rt_entry_postli_1<\/STRONG> (Thumb, 0 bytes, Stack size unknown bytes, __rtentry2.o(.ARM.Collect$$rtentry$$0000000C))$/;"	a
+[eb]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[eb]"><\/a>__rt_exit_prels_1<\/STRONG> (Thumb, 0 bytes, Stack size unknown bytes, rtexit2.o(.ARM.Collect$$rtexit$$00000002))$/;"	a
+[ec]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[ec]"><\/a>__aeabi_memcpy8<\/STRONG> (Thumb, 0 bytes, Stack size 8 bytes, rt_memcpy_w.o(.text), UNUSED)$/;"	a
+[ed]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[ed]"><\/a>__rt_memcpy_w<\/STRONG> (Thumb, 100 bytes, Stack size 8 bytes, rt_memcpy_w.o(.text), UNUSED)$/;"	a
+[ee]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[ee]"><\/a>_memcpy_lastbytes_aligned<\/STRONG> (Thumb, 0 bytes, Stack size unknown bytes, rt_memcpy_w.o(.text), UNUSED)$/;"	a
+[ef]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[ef]"><\/a>__aeabi_memclr8<\/STRONG> (Thumb, 0 bytes, Stack size 4 bytes, rt_memclr_w.o(.text), UNUSED)$/;"	a
+[f0]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[f0]"><\/a>__rt_memclr_w<\/STRONG> (Thumb, 78 bytes, Stack size 4 bytes, rt_memclr_w.o(.text), UNUSED)$/;"	a
+[f1]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[f1]"><\/a>_memset_w<\/STRONG> (Thumb, 0 bytes, Stack size unknown bytes, rt_memclr_w.o(.text), UNUSED)$/;"	a
+[f2]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[f2]"><\/a>__use_two_region_memory<\/STRONG> (Thumb, 2 bytes, Stack size 0 bytes, heapauxi.o(.text), UNUSED)$/;"	a
+[f3]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[f3]"><\/a>__user_libspace<\/STRONG> (Thumb, 8 bytes, Stack size 0 bytes, libspace.o(.text), UNUSED)$/;"	a
+[f4]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[f4]"><\/a>__user_perthread_libspace<\/STRONG> (Thumb, 0 bytes, Stack size 0 bytes, libspace.o(.text), UNUSED)$/;"	a
+[f5]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[f5]"><\/a>__I$use$semihosting<\/STRONG> (Thumb, 0 bytes, Stack size 0 bytes, use_no_semi.o(.text), UNUSED)$/;"	a
+[f6]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[f6]"><\/a>__use_no_semihosting_swi<\/STRONG> (Thumb, 2 bytes, Stack size 0 bytes, use_no_semi.o(.text), UNUSED)$/;"	a
+[f7]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[f7]"><\/a>__semihosting_library_function<\/STRONG> (Thumb, 0 bytes, Stack size 8 bytes, indicate_semi.o(.text), UNUSED)$/;"	a
+[f8]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[f8]"><\/a>__fplib_config_fpu_vfp<\/STRONG> (Thumb, 0 bytes, Stack size unknown bytes, fpinit.o(x$fpl$fpinit), UNUSED)$/;"	a
+[f9]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[f9]"><\/a>__fplib_config_pureend_doubles<\/STRONG> (Thumb, 0 bytes, Stack size unknown bytes, fpinit.o(x$fpl$fpinit), UNUSED)$/;"	a
+[f]	.\MDK-ARM\object\cdc_acm.htm	/^<P><STRONG><a name="[f]"><\/a>PendSV_Handler<\/STRONG> (Thumb, 2 bytes, Stack size 0 bytes, gd32e10x_it.o(i.PendSV_Handler))$/;"	a
+__ALIGN_BEGIN	.\inc\usb_conf.h	116;"	d
+__ALIGN_END	.\inc\usb_conf.h	117;"	d
+__USBD_CONF_H	.\inc\usbd_conf.h	38;"	d
+__USB_CONF_H	.\inc\usb_conf.h	38;"	d
+__packed	.\inc\usb_conf.h	122;"	d
+__packed	.\inc\usb_conf.h	125;"	d
+cdc_acm	.\src\app.c	/^usb_core_driver *cdc_acm = NULL;$/;"	v
+cdc_usb_loop	.\src\app.c	/^void cdc_usb_loop(void *usb_handle)$/;"	f
+delay_time	.\src\gd32e10x_hw.c	/^__IO uint32_t delay_time = 0U;$/;"	v
+hw_delay	.\src\gd32e10x_hw.c	/^static void hw_delay(uint32_t ntime, uint8_t unit)$/;"	f	file:
+hw_time_set	.\src\gd32e10x_hw.c	/^static void hw_time_set(uint8_t unit)$/;"	f	file:
+timer_prescaler	.\src\gd32e10x_hw.c	/^__IO uint16_t timer_prescaler = 5U;$/;"	v
+usb_handle_check_receive_lens	.\src\app.c	/^uint8_t usb_handle_check_receive_lens(void *cdc_acm)$/;"	f
+usb_init	.\src\app.c	/^void usb_init(void **usb_handle)$/;"	f
+usb_intr_config	.\src\gd32e10x_hw.c	/^void usb_intr_config(void)$/;"	f
+usb_mdelay	.\src\gd32e10x_hw.c	/^void usb_mdelay (const uint32_t msec)$/;"	f
+usb_rcu_config	.\src\gd32e10x_hw.c	/^void usb_rcu_config(void)$/;"	f
+usb_receive_buffer	.\src\app.c	/^void usb_receive_buffer(void *cdc_acm, uint8_t *cache_buffer, int buffer_len)$/;"	f
+usb_send_buffer	.\src\app.c	/^void usb_send_buffer(void *cdc_acm, uint8_t *respond, int len)$/;"	f
+usb_timer_init	.\src\gd32e10x_hw.c	/^void usb_timer_init (void)$/;"	f
+usb_timer_irq	.\src\gd32e10x_hw.c	/^void usb_timer_irq (void)$/;"	f
+usb_udelay	.\src\gd32e10x_hw.c	/^void usb_udelay (const uint32_t usec)$/;"	f
+usbfs_prescaler	.\src\gd32e10x_hw.c	/^uint32_t usbfs_prescaler = 0U;$/;"	v

@@ -42,14 +42,16 @@ void ic_74hc595_init(void)
 
 void ic_74hc595_thread(void)
 {
-    static uint8_t io_value = 0;
+    static uint8_t io_value = 0, total_value = 0;
     if (io_value)
         DS(0);
     else
         DS(1);
-
     io_value ++;
+		total_value ++;
+
     if (io_value == 128) io_value = 0;
+
 
     STCP(0);
     SHCP(0);

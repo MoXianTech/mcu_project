@@ -1,0 +1,28 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+TIMER2_IRQHandler_lib	.\gd32e10x_it.c	/^void TIMER2_IRQHandler_lib(void)$/;"	f
+TIM_MSEC_DELAY	.\gd32e10x_hw.c	40;"	d	file:
+TIM_USEC_DELAY	.\gd32e10x_hw.c	41;"	d	file:
+USBFS_IRQHandler_lib	.\gd32e10x_it.c	/^void  USBFS_IRQHandler_lib (void)$/;"	f
+USBFS_WKUP_IRQHandler_lib	.\gd32e10x_it.c	/^void USBFS_WKUP_IRQHandler_lib(void)$/;"	f
+cdc_acm	.\app.c	/^usb_core_driver *cdc_acm = NULL;$/;"	v
+cdc_usb_loop	.\app.c	/^void cdc_usb_loop(void *usb_handle)$/;"	f
+delay_time	.\gd32e10x_hw.c	/^__IO uint32_t delay_time = 0U;$/;"	v
+hw_delay	.\gd32e10x_hw.c	/^static void hw_delay(uint32_t ntime, uint8_t unit)$/;"	f	file:
+hw_time_set	.\gd32e10x_hw.c	/^static void hw_time_set(uint8_t unit)$/;"	f	file:
+timer_prescaler	.\gd32e10x_hw.c	/^__IO uint16_t timer_prescaler = 5U;$/;"	v
+usb_handle_check_receive_lens	.\app.c	/^uint8_t usb_handle_check_receive_lens(void *cdc_acm)$/;"	f
+usb_init	.\app.c	/^void usb_init(void **usb_handle)$/;"	f
+usb_intr_config	.\gd32e10x_hw.c	/^void usb_intr_config(void)$/;"	f
+usb_mdelay	.\gd32e10x_hw.c	/^void usb_mdelay (const uint32_t msec)$/;"	f
+usb_rcu_config	.\gd32e10x_hw.c	/^void usb_rcu_config(void)$/;"	f
+usb_receive_buffer	.\app.c	/^void usb_receive_buffer(void *cdc_acm, uint8_t *cache_buffer, int buffer_len)$/;"	f
+usb_send_buffer	.\app.c	/^void usb_send_buffer(void *cdc_acm, uint8_t *respond, int len)$/;"	f
+usb_timer_init	.\gd32e10x_hw.c	/^void usb_timer_init (void)$/;"	f
+usb_timer_irq	.\gd32e10x_hw.c	/^void usb_timer_irq (void)$/;"	f
+usb_udelay	.\gd32e10x_hw.c	/^void usb_udelay (const uint32_t usec)$/;"	f
+usbfs_prescaler	.\gd32e10x_hw.c	/^uint32_t usbfs_prescaler = 0U;$/;"	v
