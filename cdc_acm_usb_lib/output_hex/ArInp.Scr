@@ -1,0 +1,23 @@
+--create ..\output_hex\cdc_acm.lib
+..\output_hex\app.o
+..\output_hex\gd32e10x_hw.o
+..\output_hex\gd32e10x_it.o
+..\output_hex\system_gd32e10x.o
+..\output_hex\gd32e10x_dma.o
+..\output_hex\gd32e10x_exti.o
+..\output_hex\gd32e10x_fmc.o
+..\output_hex\gd32e10x_gpio.o
+..\output_hex\gd32e10x_misc.o
+..\output_hex\gd32e10x_pmu.o
+..\output_hex\gd32e10x_rcu.o
+..\output_hex\gd32e10x_timer.o
+..\output_hex\gd32e10x_usart.o
+..\output_hex\gd32e10x_eval.o
+..\output_hex\drv_usb_core.o
+..\output_hex\drv_usb_dev.o
+..\output_hex\drv_usbd_int.o
+..\output_hex\usbd_core.o
+..\output_hex\usbd_enum.o
+..\output_hex\usbd_transc.o
+..\output_hex\cdc_acm_core.o
+..\output_hex\startup_gd32e10x.o

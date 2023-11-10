@@ -1,0 +1,18 @@
+T5DF0 000:013.892   SEGGER J-Link V7.22b Log File
+T5DF0 000:014.099   DLL Compiled: Jun 17 2021 17:22:49
+T5DF0 000:014.110   Logging started @ 2023-11-01 12:31
+T5DF0 000:014.119 - 14.124ms
+T5DF0 000:014.141 JLINK_SetWarnOutHandler(...)
+T5DF0 000:014.154 - 0.017ms
+T5DF0 000:014.166 JLINK_OpenEx(...)
+T5DF0 000:017.242   Looking for J-Link GUI Server exe at: C:\Keil_v5\ARM\Segger\JLinkGUIServer.exe
+T5DF0 000:017.471   Looking for J-Link GUI Server exe at: C:\Program Files (x86)\SEGGER\JLink_V620h\\JLinkGUIServer.exe
+T5DF0 000:318.937   Failed to connect to J-Link GUI Server.
+T5DF0 002:501.133   
+  ***** Error: 
+T5DF0 002:501.161   Cannot connect to J-Link
+T5DF0 002:508.791 - 2494.637ms returns "Cannot connect to J-Link"
+T5DF0 003:651.302 JLINK_Close()
+T5DF0 003:659.532 - 8.257ms
+T5DF0 003:659.565   
+T5DF0 003:659.573   Closed

@@ -135,7 +135,7 @@ void select_y_control_volt(process_handle_t *process_handle, uint8_t y_value, AD
     }
 }
 
-uint8_t math_max = 80;
+uint8_t math_max = 30;
 void adc_calculation_calibration_once(process_handle_t *process_handle)
 {
     uint8_t count_x = 0, count_y = 0;

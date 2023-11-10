@@ -1,0 +1,164 @@
+C51 COMPILER V9.60.0.0   STC8G_H_TIMER_ISR                                                 10/19/2023 19:42:25 PAGE 1   
+
+
+C51 COMPILER V9.60.0.0, COMPILATION OF MODULE STC8G_H_TIMER_ISR
+OBJECT MODULE PLACED IN .\Objects\STC8G_H_Timer_Isr.obj
+COMPILER INVOKED BY: D:\App\Keil_v5\C51\BIN\C51.EXE ..\Firmware\STC8G_H_Timer_Isr.c OMF2 OPTIMIZE(8,SPEED) BROWSE INCDIR
+                    -(..\Firmware) DEBUG PRINT(.\Listings\STC8G_H_Timer_Isr.lst) TABS(2) OBJECT(.\Objects\STC8G_H_Timer_Isr.obj)
+
+line level    source
+
+   1          /*---------------------------------------------------------------------*/
+   2          /* --- STC MCU Limited ------------------------------------------------*/
+   3          /* --- STC 1T Series MCU Demo Programme -------------------------------*/
+   4          /* --- Mobile: (86)13922805190 ----------------------------------------*/
+   5          /* --- Fax: 86-0513-55012956,55012947,55012969 ------------------------*/
+   6          /* --- Tel: 86-0513-55012928,55012929,55012966 ------------------------*/
+   7          /* --- Web: www.STCAI.com ---------------------------------------------*/
+   8          /* --- BBS: www.STCAIMCU.com  -----------------------------------------*/
+   9          /* --- QQ:  800003751 -------------------------------------------------*/
+  10          /* 如果要在程序中使用此代码,请在程序中注明使用了STC的资料及程序            */
+  11          /*---------------------------------------------------------------------*/
+  12          
+  13          #include  "STC8G_H_Timer.h"
+  14          #include  "STC8H_PWM.h"
+  15          
+  16          /*************  本地变量声明  **************/
+  17          bit PWM1_Flag;
+  18          bit PWM2_Flag;
+  19          bit PWM3_Flag;
+  20          bit PWM4_Flag;
+  21          
+  22          /*************  外部函数和变量声明 *****************/
+  23          extern PWMx_Duty PWMA_Duty;
+  24          
+  25          //========================================================================
+  26          // 函数: Timer0_ISR_Handler
+  27          // 描述: Timer0中断函数.
+  28          // 参数: none.
+  29          // 返回: none.
+  30          // 版本: V1.0, 2020-09-23
+  31          //========================================================================
+  32          void Timer0_ISR_Handler (void) interrupt TMR0_VECTOR    //进中断时已经清除标志
+  33          {
+  34   1        // TODO: 在此处添加用户代码
+  35   1        if(!PWM1_Flag)
+  36   1        {
+  37   2          PWMA_Duty.PWM1_Duty++;
+  38   2          if(PWMA_Duty.PWM1_Duty >= 2047) PWM1_Flag = 1;
+  39   2        }
+  40   1        else
+  41   1        {
+  42   2          PWMA_Duty.PWM1_Duty--;
+  43   2          if(PWMA_Duty.PWM1_Duty <= 0) PWM1_Flag = 0;
+  44   2        }
+  45   1      
+  46   1        if(!PWM2_Flag)
+  47   1        {
+  48   2          PWMA_Duty.PWM2_Duty++;
+  49   2          if(PWMA_Duty.PWM2_Duty >= 2047) PWM2_Flag = 1;
+  50   2        }
+  51   1        else
+  52   1        {
+  53   2          PWMA_Duty.PWM2_Duty--;
+  54   2          if(PWMA_Duty.PWM2_Duty <= 0) PWM2_Flag = 0;
+C51 COMPILER V9.60.0.0   STC8G_H_TIMER_ISR                                                 10/19/2023 19:42:25 PAGE 2   
+
+  55   2        }
+  56   1      
+  57   1        if(!PWM3_Flag)
+  58   1        {
+  59   2          PWMA_Duty.PWM3_Duty++;
+  60   2          if(PWMA_Duty.PWM3_Duty >= 2047) PWM3_Flag = 1;
+  61   2        }
+  62   1        else
+  63   1        {
+  64   2          PWMA_Duty.PWM3_Duty--;
+  65   2          if(PWMA_Duty.PWM3_Duty <= 0) PWM3_Flag = 0;
+  66   2        }
+  67   1      
+  68   1        if(!PWM4_Flag)
+  69   1        {
+  70   2          PWMA_Duty.PWM4_Duty++;
+  71   2          if(PWMA_Duty.PWM4_Duty >= 2047) PWM4_Flag = 1;
+  72   2        }
+  73   1        else
+  74   1        {
+  75   2          PWMA_Duty.PWM4_Duty--;
+  76   2          if(PWMA_Duty.PWM4_Duty <= 0) PWM4_Flag = 0;
+  77   2        }
+  78   1        
+  79   1        UpdatePwm(PWMA, &PWMA_Duty);
+  80   1      }
+  81          
+  82          //========================================================================
+  83          // 函数: Timer1_ISR_Handler
+  84          // 描述: Timer1中断函数.
+  85          // 参数: none.
+  86          // 返回: none.
+  87          // 版本: V1.0, 2020-09-23
+  88          //========================================================================
+  89          void Timer1_ISR_Handler (void) interrupt TMR1_VECTOR    //进中断时已经清除标志
+  90          {
+  91   1        // TODO: 在此处添加用户代码
+  92   1        P66 = ~P66;
+  93   1      }
+  94          
+  95          //========================================================================
+  96          // 函数: Timer2_ISR_Handler
+  97          // 描述: Timer2中断函数.
+  98          // 参数: none.
+  99          // 返回: none.
+ 100          // 版本: V1.0, 2020-09-23
+ 101          //========================================================================
+ 102          void Timer2_ISR_Handler (void) interrupt TMR2_VECTOR    //进中断时已经清除标志
+ 103          {
+ 104   1        // TODO: 在此处添加用户代码
+ 105   1        P65 = ~P65;
+ 106   1      }
+ 107          
+ 108          //========================================================================
+ 109          // 函数: Timer3_ISR_Handler
+ 110          // 描述: Timer3中断函数.
+ 111          // 参数: none.
+ 112          // 返回: none.
+ 113          // 版本: V1.0, 2020-09-23
+ 114          //========================================================================
+ 115          void Timer3_ISR_Handler (void) interrupt TMR3_VECTOR    //进中断时已经清除标志
+ 116          {
+C51 COMPILER V9.60.0.0   STC8G_H_TIMER_ISR                                                 10/19/2023 19:42:25 PAGE 3   
+
+ 117   1        // TODO: 在此处添加用户代码
+ 118   1        P64 = ~P64;
+ 119   1      }
+ 120          
+ 121          //========================================================================
+ 122          // 函数: Timer4_ISR_Handler
+ 123          // 描述: Timer4中断函数.
+ 124          // 参数: none.
+ 125          // 返回: none.
+ 126          // 版本: V1.0, 2020-09-23
+ 127          //========================================================================
+ 128          void Timer4_ISR_Handler (void) interrupt TMR4_VECTOR    //进中断时已经清除标志
+ 129          {
+ 130   1        // TODO: 在此处添加用户代码
+ 131   1        P63 = ~P63;
+ 132   1      }
+
+
+MODULE INFORMATION:   STATIC OVERLAYABLE
+   CODE SIZE        =    274    ----
+   CONSTANT SIZE    =   ----    ----
+   XDATA SIZE       =   ----    ----
+   PDATA SIZE       =   ----    ----
+   DATA SIZE        =   ----    ----
+   IDATA SIZE       =   ----    ----
+   BIT SIZE         =      4    ----
+   EDATA SIZE       =   ----    ----
+   HDATA SIZE       =   ----    ----
+   XDATA CONST SIZE =   ----    ----
+   FAR CONST SIZE   =   ----    ----
+END OF MODULE INFORMATION.
+
+
+C51 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)

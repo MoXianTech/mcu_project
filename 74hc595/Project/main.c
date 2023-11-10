@@ -119,7 +119,7 @@ int main(void)
         {
 						ic_74hc595_thread();
             if (count_x > 63)
-            {
+            { 
                 adc_value_read(&process_handle, count_x - 64);
             } else {
                 adc_value_read(&process_handle, count_x);
@@ -155,7 +155,7 @@ int main(void)
             usb_send_buffer(usb_handle, process_handle.printf_buffer, strlen(process_handle.printf_buffer));
         }
 #endif	
-//        delay_1ms(1);
+        //delay_1ms(1);
     }
 }
 

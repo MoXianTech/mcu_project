@@ -1276,9 +1276,9 @@ Removing Unused input sections from the image.
     Removing at_commit_base.o(i.reverse), (44 bytes).
     Removing ble_hc04.o(.rev16_text), (4 bytes).
     Removing ble_hc04.o(.revsh_text), (4 bytes).
-    Removing ble_hc04.o(i.ble_hc04_init), (220 bytes).
+    Removing ble_hc04.o(i.ble_hc04_init), (176 bytes).
 
-651 unused section(s) (total 31001 bytes) removed from the image.
+651 unused section(s) (total 30957 bytes) removed from the image.
 
 ==============================================================================
 

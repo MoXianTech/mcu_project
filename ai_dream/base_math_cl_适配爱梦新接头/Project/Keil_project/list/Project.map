@@ -2943,30 +2943,30 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
 
-       848         58          0         97          0       6922   74hc4051bq.o
-       606         40          0          0         48       5384   adc.o
-      1522         88          0       2464       8274      16128   aid_agreement.o
-       536         84          0          0          0       3219   ble_type_e104.o
-       420          0          0          0          0       5606   circular_buffer.o
+       848         58          0         97          0       7154   74hc4051bq.o
+       606         40          0          0         48       5644   adc.o
+      1522         88          0       2464       8274      16580   aid_agreement.o
+       536         84          0          0          0       3323   ble_type_e104.o
+       420          0          0          0          0       5818   circular_buffer.o
          0          0          0          0          0       1240   flash.o
-       656         10          0          0          0       9111   gd32e10x_adc.o
-       452          4        192          0          0      20137   gd32e10x_can.o
-      1020          6          0          0          0      18434   gd32e10x_dma.o
-       368          6          0          0          0       5522   gd32e10x_gpio.o
-       200         30          0         14          0       5973   gd32e10x_it.o
-       212         28          0          0          0       2336   gd32e10x_misc.o
-       592         70          0          0          0      20703   gd32e10x_rcu.o
-        72          0          0          0          0       2380   gd32e10x_timer.o
-       482         16          0          0          0      15160   gd32e10x_usart.o
-        60          8          0          0          0        535   led.o
-       506         42          0          9      11532      55586   main.o
-        36          8        336          0       1024        948   startup_gd32e10x.o
-       348         38          0          4          0       2275   system_gd32e10x.o
-       164         24          0          4          0      27630   systick.o
-      2316        350          0         68       6208      20486   uart.o
+       656         10          0          0          0       9415   gd32e10x_adc.o
+       452          4        192          0          0      20237   gd32e10x_can.o
+      1020          6          0          0          0      18874   gd32e10x_dma.o
+       368          6          0          0          0       5702   gd32e10x_gpio.o
+       200         30          0         14          0       6289   gd32e10x_it.o
+       212         28          0          0          0       2412   gd32e10x_misc.o
+       592         70          0          0          0      20859   gd32e10x_rcu.o
+        72          0          0          0          0       2456   gd32e10x_timer.o
+       482         16          0          0          0      15464   gd32e10x_usart.o
+        60          8          0          0          0        563   led.o
+       506         42          0          9      11532      55926   main.o
+        36          8        336          0       1024        972   startup_gd32e10x.o
+       348         38          0          4          0       2375   system_gd32e10x.o
+       164         24          0          4          0      27814   systick.o
+      2316        350          0         68       6208      21238   uart.o
 
     ----------------------------------------------------------------------
-     11436        910        560       2668      27088     245715   Object Totals
+     11436        910        560       2668      27088     250355   Object Totals
          0          0         32          0          0          0   (incl. Generated)
         20          0          0          8          2          0   (incl. Padding)
 
@@ -3029,8 +3029,8 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
 
-     15336       1016        560       2672      27088     233407   Grand Totals
-     15336       1016        560        588      27088     233407   ELF Image Totals (compressed)
+     15336       1016        560       2672      27088     238047   Grand Totals
+     15336       1016        560        588      27088     238047   ELF Image Totals (compressed)
      15336       1016        560        588          0          0   ROM Totals
 
 ==============================================================================

@@ -581,17 +581,17 @@ ARM Macro Assembler    Page 9
               00000400 
               00000000 
 Command Line: --debug --xref --diag_suppress=9931 --cpu=Cortex-M4.fp.sp --apcs=
-interwork --depend=.\object\startup_gd32e10x.d -o.\object\startup_gd32e10x.o -I
-C:\Users\abbott\AppData\Local\Arm\Packs\GigaDevice\GD32E10x_DFP\1.2.1\Device\In
+interwork --depend=..\output_hex\startup_gd32e10x.d -o..\output_hex\startup_gd3
+2e10x.o -IC:\Users\abbott\AppData\Local\Arm\Packs\GigaDevice\GD32E10x_DFP\1.2.1
 
 
 
 ARM Macro Assembler    Page 10 
 
 
-clude --predefine="__UVISION_VERSION SETA 538" --predefine="GD32E10x SETA 1" --
-list=.\list\startup_gd32e10x.lst ..\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e1
-0x.s
+\Device\Include --predefine="__UVISION_VERSION SETA 538" --predefine="GD32E10x 
+SETA 1" --list=.\list\startup_gd32e10x.lst ..\CMSIS\GD\GD32E10x\Source\ARM\star
+tup_gd32e10x.s
 
 
 
