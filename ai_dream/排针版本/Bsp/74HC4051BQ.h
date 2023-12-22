@@ -4,7 +4,8 @@
 #include "string.h"
 #include "systick.h"
 #include "stdbool.h"
-#include "flash.h"		
+#include "flash.h"
+#include "main.h"
 
 #define UART_TX(a)	if (a)	\
     gpio_bit_set(GPIOA, GPIO_PIN_9);\

@@ -124,6 +124,7 @@ int main(void)
             if (count_x == 40)
                 count_x = 0;
         }
+				
 
 #if 1
         if(time_1ms % 40 == 0)

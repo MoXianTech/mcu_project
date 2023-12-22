@@ -1,0 +1,26 @@
+T2610 000:184.657   SEGGER J-Link V7.22b Log File
+T2610 000:184.772   DLL Compiled: Jun 17 2021 17:22:49
+T2610 000:184.778   Logging started @ 2023-10-10 09:14
+T2610 000:184.784 - 184.787ms
+T2610 000:184.796 JLINK_SetWarnOutHandler(...)
+T2610 000:184.803 - 0.010ms
+T2610 000:184.810 JLINK_OpenEx(...)
+T2610 000:187.132   Looking for J-Link GUI Server exe at: C:\Keil_v5\ARM\Segger\JLinkGUIServer.exe
+T2610 000:187.238   Looking for J-Link GUI Server exe at: C:\Program Files (x86)\SEGGER\JLink_V620h\\JLinkGUIServer.exe
+T2610 000:487.916   Failed to connect to J-Link GUI Server.
+T2610 002:798.244   
+  ***** Error: 
+T2610 002:798.277   Cannot connect to J-Link
+T2610 002:804.420 - 2619.624ms returns "Cannot connect to J-Link"
+T2610 002:804.804 
+  ***** 
+T2610 002:804.834 API Error: API JLINK_GetHardwareVersion function called before JLINKARM_Open()
+T2610 002:804.853 JLINK_GetHardwareVersion()
+T2610 002:806.774   Looking for J-Link GUI Server exe at: C:\Keil_v5\ARM\Segger\JLinkGUIServer.exe
+T2610 002:806.877   Looking for J-Link GUI Server exe at: C:\Program Files (x86)\SEGGER\JLink_V620h\\JLinkGUIServer.exe
+T2610 003:107.223   Failed to connect to J-Link GUI Server.
+T2610 004:585.482 - 1780.643ms
+T2610 006:867.003 JLINK_Close()
+T2610 006:879.289 - 12.300ms
+T2610 006:879.306   
+T2610 006:879.312   Closed

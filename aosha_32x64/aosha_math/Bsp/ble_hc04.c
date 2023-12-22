@@ -37,7 +37,7 @@ void ble_hc04_thread_loop(void *handle)
     if (BLE_LINK_GET == 0)
     {
         process_handle->ble_link_state = 1;
-        process_handle->upload_interval = 100;
+        process_handle->upload_interval = 50;
     } else {
         process_handle->ble_link_state = 0;
         process_handle->upload_interval = 50;

@@ -75,6 +75,7 @@ typedef struct {
     uint16_t checksum;
 } SerialFrame_t;
 
+
 #pragma pack ()
 
 //#define DEBUG_MODE

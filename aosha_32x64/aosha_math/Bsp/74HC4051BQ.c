@@ -222,7 +222,7 @@ void adc_calculation_calibration_once(process_handle_t *process_handle)
                 process_handle->adc_cali_value[count_x][count_y] = 0;
             } else {
                 process_handle->adc_cali_value[count_x][count_y]
-                    = 200 * adc_value_2 / (4096 - (process_handle->adc_total_vcc_value[count_y] - adc_value_2));
+                    = 700 * adc_value_2 / (4096 - (process_handle->adc_total_vcc_value[count_y] - adc_value_2));
             }
 
         }

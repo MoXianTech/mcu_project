@@ -1,4 +1,4 @@
-C51 COMPILER V9.60.7.0   MAIN                                                              11/03/2023 18:00:24 PAGE 1   
+C51 COMPILER V9.60.7.0   MAIN                                                              11/10/2023 17:48:53 PAGE 1   
 
 
 C51 COMPILER V9.60.7.0, COMPILATION OF MODULE MAIN
@@ -62,7 +62,7 @@ line level    source
   52            
   53          #if LOG_PRINTF
   54          #else
-C51 COMPILER V9.60.7.0   MAIN                                                              11/03/2023 18:00:24 PAGE 2   
+C51 COMPILER V9.60.7.0   MAIN                                                              11/10/2023 17:48:53 PAGE 2   
 
                 uint16_t cali_value[3][4];
               #endif
@@ -126,7 +126,7 @@ line level    source
              -Ù×÷
  110   1        GPIO_InitStructure.Mode = GPIO_OUT_PP;          //Ö¸¶¨IOµÄÊäÈë»òÊä³ö·½Ê½,GPIO_PullUp,GPIO_HighZ,GPIO_OUT_
              -OD,GPIO_OUT_PP
-C51 COMPILER V9.60.7.0   MAIN                                                              11/03/2023 18:00:24 PAGE 3   
+C51 COMPILER V9.60.7.0   MAIN                                                              11/10/2023 17:48:53 PAGE 3   
 
  111   1        GPIO_Inilize(GPIO_P3,&GPIO_InitStructure);      //³õÊ¼»¯
  112   1        
@@ -186,11 +186,11 @@ line level    source
  156          {
  157   1        static bool led_flag = FALSE;
  158   1          StuAdcValue temp_adc_value;
- 159   1          int32 adc_value = 0, total_value;
+ 159   1          uint32 adc_value = 0, total_value;
  160   1      
  161   1      
  162   1        uint8_t i = 0;
-C51 COMPILER V9.60.7.0   MAIN                                                              11/03/2023 18:00:24 PAGE 4   
+C51 COMPILER V9.60.7.0   MAIN                                                              11/10/2023 17:48:53 PAGE 4   
 
  163   1        
  164   1        EAXSFR();
@@ -236,41 +236,41 @@ line level    source
  203   3      
  204   3                  total_value = temp_adc_value.value[1][0] + temp_adc_value.value[2][0] + temp_adc_value.value[0
              -][0];
- 205   3            sprintf(printf_buffer, "total %ld  ", adc_value);
+ 205   3            sprintf(printf_buffer, "total %lld  ", adc_value);
  206   3      
  207   3            PrintString1(printf_buffer);
  208   3        
  209   3            
- 210   3                        adc_value =  (1024 - total_value) * 1000 / (uint32_t)temp_adc_value.value[0][0];
- 211   3                  sprintf(printf_buffer, "cal = %lld", adc_value);
- 212   3            PrintString1(printf_buffer);
- 213   3            
- 214   3                              adc_value =  (1024 - total_value) * 1000 / (uint32_t)temp_adc_value.value[1][0];
- 215   3                  sprintf(printf_buffer, " %lld", adc_value);
- 216   3            PrintString1(printf_buffer);
- 217   3            
- 218   3                              adc_value =  (1024 - total_value) * 1000 / (uint32_t)temp_adc_value.value[2][0];
- 219   3                  sprintf(printf_buffer, " %lld\r\n", adc_value);
- 220   3            PrintString1(printf_buffer);
+ 210   3      //                  adc_value =  (1024 - total_value) * 1000 / (uint32_t)temp_adc_value.value[0][0];
+ 211   3      //            sprintf(printf_buffer, "cal = %lld", adc_value);
+ 212   3      //      PrintString1(printf_buffer);
+ 213   3      //      
+ 214   3      //                        adc_value =  (1024 - total_value) * 1000 / (uint32_t)temp_adc_value.value[1][0];
+ 215   3      //            sprintf(printf_buffer, " %lld", adc_value);
+ 216   3      //      PrintString1(printf_buffer);
+ 217   3      //      
+ 218   3      //                        adc_value =  (1024 - total_value) * 1000 / (uint32_t)temp_adc_value.value[2][0];
+ 219   3      //            sprintf(printf_buffer, " %lld\r\n", adc_value);
+ 220   3      //      PrintString1(printf_buffer);
  221   3            
  222   3            
-C51 COMPILER V9.60.7.0   MAIN                                                              11/03/2023 18:00:24 PAGE 5   
+C51 COMPILER V9.60.7.0   MAIN                                                              11/10/2023 17:48:53 PAGE 5   
 
- 223   3      //      
- 224   3      //            adc_value = 1024 * (uint32_t)temp_adc_value.value[0][0] / (1024 - (total_value - temp_adc_va
-             -lue.value[0][0]));
- 225   3      //            sprintf(printf_buffer, "cal = %lld\r", adc_value);
- 226   3      //      PrintString1(printf_buffer);
- 227   3      //      
- 228   3      //                  adc_value = 1024 * (uint32_t)temp_adc_value.value[1][0] / (1024 - (total_value - temp_adc
-             -_value.value[1][0]));
- 229   3      //            sprintf(printf_buffer, " %lld\r", adc_value);
- 230   3      //      PrintString1(printf_buffer);
- 231   3      //      
- 232   3      //                  adc_value = 1024 * (uint32_t)temp_adc_value.value[2][0] / (1024 - (total_value - temp_adc
-             -_value.value[2][0]));
- 233   3      //            sprintf(printf_buffer, " %lld\r\n", adc_value);
- 234   3      //      PrintString1(printf_buffer);
+ 223   3            
+ 224   3                  adc_value = 1017 * (uint32_t)temp_adc_value.value[0][0] / (1024 - (total_value - temp_adc_valu
+             -e.value[0][0]));
+ 225   3                  sprintf(printf_buffer, "cal = %lld\r", adc_value);
+ 226   3            PrintString1(printf_buffer);
+ 227   3            
+ 228   3                        adc_value = 1017 * (uint32_t)temp_adc_value.value[1][0] / (1024 - (total_value - temp_adc_v
+             -alue.value[1][0]));
+ 229   3                  sprintf(printf_buffer, " %lld\r", adc_value);
+ 230   3            PrintString1(printf_buffer);
+ 231   3            
+ 232   3                        adc_value = 1017 * (uint32_t)temp_adc_value.value[2][0] / (1024 - (total_value - temp_adc_v
+             -alue.value[2][0]));
+ 233   3                  sprintf(printf_buffer, " %lld\r\n", adc_value);
+ 234   3            PrintString1(printf_buffer);
  235   3      #else     
                     serial_frame.sof = 0xa55a;
                     serial_frame.tran_type = 0x01;
@@ -318,7 +318,7 @@ line level    source
                     serial_frame.checksum = big_to_small(serial_frame.checksum);
                     
                     send_data((uint8_t *)&serial_frame, sizeof(serial_frame));
-C51 COMPILER V9.60.7.0   MAIN                                                              11/03/2023 18:00:24 PAGE 6   
+C51 COMPILER V9.60.7.0   MAIN                                                              11/10/2023 17:48:53 PAGE 6   
 
               #endif
  282   3          }
@@ -359,16 +359,16 @@ line level    source
  317          {
  318   1        X_enum x_sort[3] = {X1,X2,X3};
  319   1        
- 320   1        #if 1
- 321   1        AX1 = (X1==x_sort[dat-1]) ? 0 : 1;
- 322   1        AX2 = (X2==x_sort[dat-1]) ? 0 : 1;
- 323   1        AX3 = (X3==x_sort[dat-1]) ? 0 : 1; 
- 324   1      
- 325   1        #else
-                AX1 = (X1==x_sort[dat-1]) ? 1 : 0;
-                AX2 = (X2==x_sort[dat-1]) ? 1 : 0;
-                AX3 = (X3==x_sort[dat-1]) ? 1 : 0; 
-                #endif
+ 320   1        #if 0
+                AX1 = (X1==x_sort[dat-1]) ? 0 : 1;
+                AX2 = (X2==x_sort[dat-1]) ? 0 : 1;
+                AX3 = (X3==x_sort[dat-1]) ? 0 : 1; 
+              
+                #else
+ 326   1        AX1 = (X1==x_sort[dat-1]) ? 1 : 0;
+ 327   1        AX2 = (X2==x_sort[dat-1]) ? 1 : 0;
+ 328   1        AX3 = (X3==x_sort[dat-1]) ? 1 : 0; 
+ 329   1        #endif
  330   1      }
  331          
  332          /*
@@ -382,7 +382,7 @@ line level    source
  340   1        
  341   1        switch(y_sort[dat-1])
  342   1        {
-C51 COMPILER V9.60.7.0   MAIN                                                              11/03/2023 18:00:24 PAGE 7   
+C51 COMPILER V9.60.7.0   MAIN                                                              11/10/2023 17:48:53 PAGE 7   
 
  343   2          case Y1: AY = AY1;
  344   2            break;
@@ -443,10 +443,10 @@ line level    source
 
 
 MODULE INFORMATION:   STATIC OVERLAYABLE
-   CODE SIZE        =   1177    ----
-   CONSTANT SIZE    =     69    ----
+   CODE SIZE        =   1222    ----
+   CONSTANT SIZE    =     72    ----
    XDATA SIZE       =   ----    ----
-C51 COMPILER V9.60.7.0   MAIN                                                              11/03/2023 18:00:24 PAGE 8   
+C51 COMPILER V9.60.7.0   MAIN                                                              11/10/2023 17:48:53 PAGE 8   
 
    PDATA SIZE       =   ----    ----
    DATA SIZE        =     25      76

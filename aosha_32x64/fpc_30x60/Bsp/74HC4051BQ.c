@@ -231,7 +231,7 @@ void adc_calculation_calibration_once(process_handle_t *process_handle)
         for (count_x = 0; count_x < SENSOR_POS_X; count_x ++)
         {
             adc_value_2 = process_handle->adc_raw_value[count_x][count_y];
-            if (adc_value_2 < 20) {
+            if (adc_value_2 < 1) {
                 process_handle->adc_cali_value[count_x][count_y] = 0;
             } else {
                 process_handle->adc_cali_value[count_x][count_y]

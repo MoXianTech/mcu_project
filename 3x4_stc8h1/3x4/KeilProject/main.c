@@ -156,7 +156,7 @@ void main(void)
 {
 	static bool led_flag = FALSE;
     StuAdcValue temp_adc_value;
-    int32 adc_value = 0, total_value;
+    uint32 adc_value = 0, total_value;
 
 
 	uint8_t i = 0;
@@ -202,36 +202,36 @@ void main(void)
 			PrintString1(printf_buffer);
 
             total_value = temp_adc_value.value[1][0] + temp_adc_value.value[2][0] + temp_adc_value.value[0][0];
-			sprintf(printf_buffer, "total %ld  ", adc_value);
+			sprintf(printf_buffer, "total %lld  ", adc_value);
 
 			PrintString1(printf_buffer);
 	
 			
-			            adc_value =  (1024 - total_value) * 1000 / (uint32_t)temp_adc_value.value[0][0];
-            sprintf(printf_buffer, "cal = %lld", adc_value);
-			PrintString1(printf_buffer);
-			
-						            adc_value =  (1024 - total_value) * 1000 / (uint32_t)temp_adc_value.value[1][0];
-            sprintf(printf_buffer, " %lld", adc_value);
-			PrintString1(printf_buffer);
-			
-						            adc_value =  (1024 - total_value) * 1000 / (uint32_t)temp_adc_value.value[2][0];
-            sprintf(printf_buffer, " %lld\r\n", adc_value);
-			PrintString1(printf_buffer);
-			
-			
-//			
-//            adc_value = 1024 * (uint32_t)temp_adc_value.value[0][0] / (1024 - (total_value - temp_adc_value.value[0][0]));
-//            sprintf(printf_buffer, "cal = %lld\r", adc_value);
+//			            adc_value =  (1024 - total_value) * 1000 / (uint32_t)temp_adc_value.value[0][0];
+//            sprintf(printf_buffer, "cal = %lld", adc_value);
 //			PrintString1(printf_buffer);
 //			
-//			            adc_value = 1024 * (uint32_t)temp_adc_value.value[1][0] / (1024 - (total_value - temp_adc_value.value[1][0]));
-//            sprintf(printf_buffer, " %lld\r", adc_value);
+//						            adc_value =  (1024 - total_value) * 1000 / (uint32_t)temp_adc_value.value[1][0];
+//            sprintf(printf_buffer, " %lld", adc_value);
 //			PrintString1(printf_buffer);
 //			
-//			            adc_value = 1024 * (uint32_t)temp_adc_value.value[2][0] / (1024 - (total_value - temp_adc_value.value[2][0]));
+//						            adc_value =  (1024 - total_value) * 1000 / (uint32_t)temp_adc_value.value[2][0];
 //            sprintf(printf_buffer, " %lld\r\n", adc_value);
 //			PrintString1(printf_buffer);
+			
+			
+			
+            adc_value = 1017 * (uint32_t)temp_adc_value.value[0][0] / (1024 - (total_value - temp_adc_value.value[0][0]));
+            sprintf(printf_buffer, "cal = %lld\r", adc_value);
+			PrintString1(printf_buffer);
+			
+			            adc_value = 1017 * (uint32_t)temp_adc_value.value[1][0] / (1024 - (total_value - temp_adc_value.value[1][0]));
+            sprintf(printf_buffer, " %lld\r", adc_value);
+			PrintString1(printf_buffer);
+			
+			            adc_value = 1017 * (uint32_t)temp_adc_value.value[2][0] / (1024 - (total_value - temp_adc_value.value[2][0]));
+            sprintf(printf_buffer, " %lld\r\n", adc_value);
+			PrintString1(printf_buffer);
 #else			
 			serial_frame.sof = 0xa55a;
 			serial_frame.tran_type = 0x01;
@@ -317,7 +317,7 @@ void ChooseChanneX(uint8_t dat)
 {
 	X_enum x_sort[3] = {X1,X2,X3};
 	
-	#if 1
+	#if 0
 	AX1 = (X1==x_sort[dat-1]) ? 0 : 1;
   AX2 = (X2==x_sort[dat-1]) ? 0 : 1;
 	AX3 = (X3==x_sort[dat-1]) ? 0 : 1; 

@@ -1,0 +1,45 @@
+C251 COMPILER V5.60.0,  led                                                                08/10/23  10:22:23  PAGE 1   
+
+
+C251 COMPILER V5.60.0, COMPILATION OF MODULE led
+OBJECT MODULE PLACED IN .\list\led.obj
+COMPILER INVOKED BY: D:\Keil_v5\C251\BIN\C251.EXE led.c LARGE INTR2 ROM(COMPACT) BROWSE DEBUG PRINT(.\list\led.lst) TABS
+                    -(2) OBJECT(.\list\led.obj) 
+
+stmt  level    source
+
+    1          #include "led.h"
+    2          
+    3          
+    4          
+    5          
+    6          void led_GPIO_config(void)
+    7          {
+    8   1        
+    9   1        P5_MODE_OUT_PP(GPIO_Pin_4);
+   10   1        
+   11   1      }
+
+
+Module Information          Static   Overlayable
+------------------------------------------------
+  code size            =         7     ------
+  ecode size           =    ------     ------
+  data size            =    ------     ------
+  idata size           =    ------     ------
+  pdata size           =    ------     ------
+  xdata size           =    ------     ------
+  xdata-const size     =    ------     ------
+  edata size           =    ------     ------
+  bit size             =    ------     ------
+  ebit size            =    ------     ------
+  bitaddressable size  =    ------     ------
+  ebitaddressable size =    ------     ------
+  far data size        =    ------     ------
+  huge data size       =    ------     ------
+  const size           =    ------     ------
+  hconst size          =    ------     ------
+End of Module Information.
+
+
+C251 COMPILATION COMPLETE.  0 WARNING(S),  0 ERROR(S)
