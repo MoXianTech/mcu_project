@@ -1,0 +1,5 @@
+*.o
+*.crf
+*.d
+*.uvguix.*
+*tags

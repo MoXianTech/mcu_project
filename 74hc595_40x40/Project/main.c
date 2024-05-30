@@ -138,6 +138,7 @@ int main(void)
             memcpy((uint8_t *)serial_frame.adc_value, (uint8_t *)process_handle.adc_cali_value, process_handle.x_max * process_handle.y_max);
             serial_frame.checksum = CalChecksum((uint8_t *)&serial_frame, sizeof(serial_frame) - 2);
             usb_send_buffer(usb_handle, (uint8_t *)&serial_frame, sizeof(serial_frame));
+						usart0_dma_send_data((uint8_t *)&serial_frame, sizeof(serial_frame));
         }
 #else
         if(time_1ms % 10 == 0)
@@ -145,7 +146,7 @@ int main(void)
             usb_send_buffer(usb_handle, process_handle.printf_buffer, strlen(process_handle.printf_buffer));
         }
 #endif	
-//        delay_1ms(1);
+        delay_1ms(1);
     }
 }
 

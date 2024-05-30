@@ -62,7 +62,7 @@ void adc_value_read(process_handle_t *process_handle, uint8_t count_y, ADC_MODE_
                     x_array = count_1 * 8;
                     x_array += adc_channel_choice_num[count];
 
-                    process_handle->adc_raw_value[count_y][x_array] = GetAdcValue(adc_rank[count_1]) / 2;
+                    process_handle->adc_raw_value[count_y][x_array] = GetAdcValue(adc_rank[count_1]);
                 }
             }
             break;
@@ -135,8 +135,8 @@ void select_y_control_volt(process_handle_t *process_handle, uint8_t y_value, AD
     }
 }
 
-uint8_t math_max = 1;
-void adc_calculation_calibration_once(process_handle_t *process_handle)
+uint8_t math_max = 4;
+void adc_calculation_calibration_once(process_handle_t *process_handle, uint8_t enbale_math)
 {
     uint8_t count_x = 0, count_y = 0;	
     uint32_t adc_value_2 = 0;
@@ -156,14 +156,24 @@ void adc_calculation_calibration_once(process_handle_t *process_handle)
         for (count_x = 0; count_x < SENSOR_POS_X; count_x ++)
         {
             adc_value_2 = process_handle->adc_raw_value[count_x][count_y];
-            if (adc_value_2 < math_max) {
-                process_handle->adc_cali_value[count_x][count_y] = 0;
-            } else {
-                process_handle->adc_cali_value[count_x][count_y]
-                    = 255 * adc_value_2 / (4096 - (process_handle->adc_total_vcc_value[count_y] - adc_value_2));
-            }
+						if (enbale_math != 0)
+						{
+							if (adc_value_2 < math_max) {
+									process_handle->adc_cali_value[count_x][count_y] = 0;
+							} else {
+									process_handle->adc_cali_value[count_x][count_y]
+											= 255 * adc_value_2 / (4096 - (process_handle->adc_total_vcc_value[count_y] - adc_value_2));
+							}
+						} else 
+						{
+							if (adc_value_2 < math_max) {
+								process_handle->adc_cali_value[count_x][count_y] = 0;
+							} else
+								process_handle->adc_cali_value[count_x][count_y] = adc_value_2 / 16;
+						}
 
         }
+			
     }
 
     memset(process_handle->adc_total_vcc_value, 0x00, 4 * SENSOR_POS_Y);

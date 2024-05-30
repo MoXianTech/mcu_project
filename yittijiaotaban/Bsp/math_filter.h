@@ -10,7 +10,7 @@
 
 #include "74hc4051bq.h"
 
-void adc_calculation_calibration_once(process_handle_t *process_handle, bool enable);
+void adc_calculation_calibration_once(process_handle_t *process_handle, uint8_t *serial_buffer, bool enable);
 
 #endif
 

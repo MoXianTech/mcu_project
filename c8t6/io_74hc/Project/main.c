@@ -138,11 +138,12 @@ int main(void)
     while(1)
     {
         time_1ms ++;
-        if(time_1ms % 3 == 0)
+        if(time_1ms % 2000 == 0)
         {
             led_flag = !led_flag;
             GREEN_LED(led_flag);
 						DS(led_flag);
+						TEST(led_flag);
         }
 
         if(time_1ms % 50 == 0)
@@ -189,7 +190,7 @@ int main(void)
             }
         }
 #endif	
-        //delay_1ms(1);
+        delay_1ms(1);
     }
 }
 

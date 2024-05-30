@@ -103,7 +103,7 @@
         <bEvRecOn>1</bEvRecOn>
         <bSchkAxf>0</bSchkAxf>
         <bTchkAxf>0</bTchkAxf>
-        <nTsel>4</nTsel>
+        <nTsel>3</nTsel>
         <sDll></sDll>
         <sDllPa></sDllPa>
         <sDlgDll></sDlgDll>
@@ -114,13 +114,13 @@
         <tDlgDll></tDlgDll>
         <tDlgPa></tDlgPa>
         <tIfile></tIfile>
-        <pMon>Segger\JL2CM3.dll</pMon>
+        <pMon>BIN\CMSIS_AGDI.dll</pMon>
       </DebugOpt>
       <TargetDriverDllRegistry>
         <SetRegEntry>
           <Number>0</Number>
           <Key>CMSIS_AGDI</Key>
-          <Name>-X"Any" -UAny -O206 -S8 -C0 -P00 -N00("ARM CoreSight SW-DP") -D00(2BA01477) -L00(0) -TO65554 -TC10000000 -TP20 -TDS8007 -TDT0 -TDC1F -TIEFFFFFFFF -TIP8 -FO15 -FD20000000 -FC1000 -FN1 -FF0GD32E10x.FLM -FS08000000 -FL020000 -FP0($$Device:GD32E103VB$Flash\GD32E10x.FLM)</Name>
+          <Name>-X"ATK-HSWL-CMSIS-DAP" -UATK 20190528 -O206 -S8 -C0 -P00000000 -N00("ARM CoreSight SW-DP") -D00(2BA01477) -L00(0) -TO65554 -TC10000000 -TT10000000 -TP20 -TDS8007 -TDT0 -TDC1F -TIEFFFFFFFF -TIP8 -FO15 -FD20000000 -FC1000 -FN1 -FF0GD32E10x.FLM -FS08000000 -FL020000 -FP0($$Device:GD32E103VB$Flash\GD32E10x.FLM)</Name>
         </SetRegEntry>
         <SetRegEntry>
           <Number>0</Number>
@@ -150,7 +150,7 @@
         <SetRegEntry>
           <Number>0</Number>
           <Key>DLGUARM</Key>
-          <Name>d</Name>
+          <Name></Name>
         </SetRegEntry>
       </TargetDriverDllRegistry>
       <Breakpoint>
@@ -166,7 +166,7 @@
           <SizeOfObject>0</SizeOfObject>
           <BreakByAccess>0</BreakByAccess>
           <BreakIfRCount>1</BreakIfRCount>
-          <Filename>D:\takeoff\mx_project\mcu_project\gd32_e103_project\gd32_e103_vbt6\base_math_cl_閫傞厤鐖辨ⅵ鏂版帴澶確wifi閰嶇疆\Bsp\uart.c</Filename>
+          <Filename>C:\Users\abbott\Desktop\take\takeoff\mx_project\git_project\mcu_project\ai_dream\base_math_cl_閫傞厤鐖辨ⅵ鏂版帴澶確wifi閰嶇疆\Bsp\uart.c</Filename>
           <ExecCommand></ExecCommand>
           <Expression>\\Project\../../Bsp/uart.c\609</Expression>
         </Bp>
@@ -182,7 +182,7 @@
           <SizeOfObject>0</SizeOfObject>
           <BreakByAccess>0</BreakByAccess>
           <BreakIfRCount>1</BreakIfRCount>
-          <Filename>D:\takeoff\mx_project\mcu_project\gd32_e103_project\gd32_e103_vbt6\base_math_cl_閫傞厤鐖辨ⅵ鏂版帴澶確wifi閰嶇疆\Bsp\uart.c</Filename>
+          <Filename>C:\Users\abbott\Desktop\take\takeoff\mx_project\git_project\mcu_project\ai_dream\base_math_cl_閫傞厤鐖辨ⅵ鏂版帴澶確wifi閰嶇疆\Bsp\uart.c</Filename>
           <ExecCommand></ExecCommand>
           <Expression>\\Project\../../Bsp/uart.c\587</Expression>
         </Bp>
@@ -198,28 +198,12 @@
           <SizeOfObject>0</SizeOfObject>
           <BreakByAccess>0</BreakByAccess>
           <BreakIfRCount>1</BreakIfRCount>
-          <Filename>D:\takeoff\mx_project\mcu_project\gd32_e103_project\gd32_e103_vbt6\base_math_cl_閫傞厤鐖辨ⅵ鏂版帴澶確wifi閰嶇疆\Bsp\uart.c</Filename>
+          <Filename>C:\Users\abbott\Desktop\take\takeoff\mx_project\git_project\mcu_project\ai_dream\base_math_cl_閫傞厤鐖辨ⅵ鏂版帴澶確wifi閰嶇疆\Bsp\uart.c</Filename>
           <ExecCommand></ExecCommand>
           <Expression>\\Project\../../Bsp/uart.c\615</Expression>
         </Bp>
         <Bp>
           <Number>3</Number>
-          <Type>0</Type>
-          <LineNumber>117</LineNumber>
-          <EnabledFlag>1</EnabledFlag>
-          <Address>134224412</Address>
-          <ByteObject>0</ByteObject>
-          <HtxType>0</HtxType>
-          <ManyObjects>0</ManyObjects>
-          <SizeOfObject>0</SizeOfObject>
-          <BreakByAccess>0</BreakByAccess>
-          <BreakIfRCount>1</BreakIfRCount>
-          <Filename>D:\takeoff\mx_project\mcu_project\gd32_e103_project\gd32_e103_vbt6\base_math_cl_閫傞厤鐖辨ⅵ鏂版帴澶確wifi閰嶇疆\Project\main.c</Filename>
-          <ExecCommand></ExecCommand>
-          <Expression>\\Project\../main.c\117</Expression>
-        </Bp>
-        <Bp>
-          <Number>4</Number>
           <Type>0</Type>
           <LineNumber>610</LineNumber>
           <EnabledFlag>1</EnabledFlag>
@@ -230,73 +214,89 @@
           <SizeOfObject>0</SizeOfObject>
           <BreakByAccess>0</BreakByAccess>
           <BreakIfRCount>1</BreakIfRCount>
-          <Filename>D:\takeoff\mx_project\mcu_project\gd32_e103_project\gd32_e103_vbt6\base_math_cl_閫傞厤鐖辨ⅵ鏂版帴澶確wifi閰嶇疆\Bsp\uart.c</Filename>
+          <Filename>C:\Users\abbott\Desktop\take\takeoff\mx_project\git_project\mcu_project\ai_dream\base_math_cl_閫傞厤鐖辨ⅵ鏂版帴澶確wifi閰嶇疆\Bsp\uart.c</Filename>
           <ExecCommand></ExecCommand>
           <Expression>\\Project\../../Bsp/uart.c\610</Expression>
         </Bp>
         <Bp>
-          <Number>5</Number>
+          <Number>4</Number>
           <Type>0</Type>
           <LineNumber>119</LineNumber>
           <EnabledFlag>1</EnabledFlag>
-          <Address>134224430</Address>
+          <Address>134224422</Address>
           <ByteObject>0</ByteObject>
           <HtxType>0</HtxType>
           <ManyObjects>0</ManyObjects>
           <SizeOfObject>0</SizeOfObject>
           <BreakByAccess>0</BreakByAccess>
           <BreakIfRCount>1</BreakIfRCount>
-          <Filename>D:\takeoff\mx_project\mcu_project\gd32_e103_project\gd32_e103_vbt6\base_math_cl_閫傞厤鐖辨ⅵ鏂版帴澶確wifi閰嶇疆\Project\main.c</Filename>
+          <Filename>C:\Users\abbott\Desktop\take\takeoff\mx_project\git_project\mcu_project\ai_dream\base_math_cl_閫傞厤鐖辨ⅵ鏂版帴澶確wifi閰嶇疆\Project\main.c</Filename>
           <ExecCommand></ExecCommand>
           <Expression>\\Project\../main.c\119</Expression>
         </Bp>
         <Bp>
-          <Number>6</Number>
+          <Number>5</Number>
           <Type>0</Type>
           <LineNumber>136</LineNumber>
           <EnabledFlag>0</EnabledFlag>
-          <Address>134224476</Address>
+          <Address>134224468</Address>
           <ByteObject>0</ByteObject>
           <HtxType>0</HtxType>
           <ManyObjects>0</ManyObjects>
           <SizeOfObject>0</SizeOfObject>
           <BreakByAccess>0</BreakByAccess>
           <BreakIfRCount>1</BreakIfRCount>
-          <Filename>D:\takeoff\mx_project\mcu_project\gd32_e103_project\gd32_e103_vbt6\base_math_cl_閫傞厤鐖辨ⅵ鏂版帴澶確wifi閰嶇疆\Project\main.c</Filename>
+          <Filename>C:\Users\abbott\Desktop\take\takeoff\mx_project\git_project\mcu_project\ai_dream\base_math_cl_閫傞厤鐖辨ⅵ鏂版帴澶確wifi閰嶇疆\Project\main.c</Filename>
           <ExecCommand></ExecCommand>
           <Expression>\\Project\../main.c\136</Expression>
+        </Bp>
+        <Bp>
+          <Number>6</Number>
+          <Type>0</Type>
+          <LineNumber>117</LineNumber>
+          <EnabledFlag>1</EnabledFlag>
+          <Address>0</Address>
+          <ByteObject>0</ByteObject>
+          <HtxType>0</HtxType>
+          <ManyObjects>0</ManyObjects>
+          <SizeOfObject>0</SizeOfObject>
+          <BreakByAccess>0</BreakByAccess>
+          <BreakIfRCount>0</BreakIfRCount>
+          <Filename>..\main.c</Filename>
+          <ExecCommand></ExecCommand>
+          <Expression></Expression>
         </Bp>
         <Bp>
           <Number>7</Number>
           <Type>0</Type>
           <LineNumber>134</LineNumber>
           <EnabledFlag>1</EnabledFlag>
-          <Address>134224458</Address>
+          <Address>0</Address>
           <ByteObject>0</ByteObject>
           <HtxType>0</HtxType>
           <ManyObjects>0</ManyObjects>
           <SizeOfObject>0</SizeOfObject>
           <BreakByAccess>0</BreakByAccess>
-          <BreakIfRCount>1</BreakIfRCount>
-          <Filename>D:\takeoff\mx_project\mcu_project\gd32_e103_project\gd32_e103_vbt6\base_math_cl_閫傞厤鐖辨ⅵ鏂版帴澶確wifi閰嶇疆\Project\main.c</Filename>
+          <BreakIfRCount>0</BreakIfRCount>
+          <Filename>..\main.c</Filename>
           <ExecCommand></ExecCommand>
-          <Expression>\\Project\../main.c\134</Expression>
+          <Expression></Expression>
         </Bp>
         <Bp>
           <Number>8</Number>
           <Type>0</Type>
           <LineNumber>138</LineNumber>
           <EnabledFlag>1</EnabledFlag>
-          <Address>134224486</Address>
+          <Address>0</Address>
           <ByteObject>0</ByteObject>
           <HtxType>0</HtxType>
           <ManyObjects>0</ManyObjects>
           <SizeOfObject>0</SizeOfObject>
           <BreakByAccess>0</BreakByAccess>
-          <BreakIfRCount>1</BreakIfRCount>
-          <Filename>D:\takeoff\mx_project\mcu_project\gd32_e103_project\gd32_e103_vbt6\base_math_cl_閫傞厤鐖辨ⅵ鏂版帴澶確wifi閰嶇疆\Project\main.c</Filename>
+          <BreakIfRCount>0</BreakIfRCount>
+          <Filename>..\main.c</Filename>
           <ExecCommand></ExecCommand>
-          <Expression>\\Project\../main.c\138</Expression>
+          <Expression></Expression>
         </Bp>
       </Breakpoint>
       <WatchWindow1>

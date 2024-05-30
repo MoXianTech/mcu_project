@@ -38,7 +38,7 @@ Section Cross References
     system_gd32e10x.o(i.SystemCoreClockUpdate) refers to system_gd32e10x.o(.data) for SystemCoreClock
     system_gd32e10x.o(i.SystemInit) refers to system_gd32e10x.o(i.system_clock_config) for system_clock_config
     system_gd32e10x.o(i.SystemInit) refers to gd32e10x_misc.o(i.nvic_vector_table_set) for nvic_vector_table_set
-    system_gd32e10x.o(i.system_clock_config) refers to system_gd32e10x.o(i.system_clock_120m_hxtal) for system_clock_120m_hxtal
+    system_gd32e10x.o(i.system_clock_config) refers to system_gd32e10x.o(i.system_clock_120m_irc8m) for system_clock_120m_irc8m
     gd32e10x_adc.o(i.adc_deinit) refers to gd32e10x_rcu.o(i.rcu_periph_reset_enable) for rcu_periph_reset_enable
     gd32e10x_adc.o(i.adc_deinit) refers to gd32e10x_rcu.o(i.rcu_periph_reset_disable) for rcu_periph_reset_disable
     gd32e10x_bkp.o(i.bkp_deinit) refers to gd32e10x_rcu.o(i.rcu_bkp_reset_enable) for rcu_bkp_reset_enable
@@ -1501,108 +1501,108 @@ Image Symbol Table
     i.rcu_usb_clock_config                   0x08001f6c   Section        0  gd32e10x_rcu.o(i.rcu_usb_clock_config)
     i.read_adc_value                         0x08001f84   Section        0  adc.o(i.read_adc_value)
     i.serial_string_get                      0x08001ffc   Section        0  usbd_enum.o(i.serial_string_get)
-    i.system_clock_120m_hxtal                0x08002048   Section        0  system_gd32e10x.o(i.system_clock_120m_hxtal)
-    system_clock_120m_hxtal                  0x08002049   Thumb Code   226  system_gd32e10x.o(i.system_clock_120m_hxtal)
-    i.system_clock_config                    0x08002144   Section        0  system_gd32e10x.o(i.system_clock_config)
-    system_clock_config                      0x08002145   Thumb Code     8  system_gd32e10x.o(i.system_clock_config)
-    i.systick_config                         0x0800214c   Section        0  systick.o(i.systick_config)
-    i.timer_auto_reload_shadow_enable        0x0800219c   Section        0  gd32e10x_timer.o(i.timer_auto_reload_shadow_enable)
-    i.timer_disable                          0x080021a6   Section        0  gd32e10x_timer.o(i.timer_disable)
-    i.timer_enable                           0x080021b0   Section        0  gd32e10x_timer.o(i.timer_enable)
-    i.timer_init                             0x080021bc   Section        0  gd32e10x_timer.o(i.timer_init)
-    i.timer_interrupt_disable                0x08002260   Section        0  gd32e10x_timer.o(i.timer_interrupt_disable)
-    i.timer_interrupt_enable                 0x08002268   Section        0  gd32e10x_timer.o(i.timer_interrupt_enable)
-    i.timer_interrupt_flag_clear             0x08002270   Section        0  gd32e10x_timer.o(i.timer_interrupt_flag_clear)
-    i.timer_interrupt_flag_get               0x08002276   Section        0  gd32e10x_timer.o(i.timer_interrupt_flag_get)
-    i.usart0_init                            0x08002290   Section        0  uart.o(i.usart0_init)
-    i.usart0_rx_probe                        0x080022c0   Section        0  uart.o(i.usart0_rx_probe)
-    i.usart1_init                            0x080022d0   Section        0  uart.o(i.usart1_init)
-    i.usart1_rx_probe                        0x08002300   Section        0  uart.o(i.usart1_rx_probe)
-    i.usart_baudrate_set                     0x08002310   Section        0  gd32e10x_usart.o(i.usart_baudrate_set)
-    i.usart_deinit                           0x080023a0   Section        0  gd32e10x_usart.o(i.usart_deinit)
-    i.usart_dma_receive_config               0x08002430   Section        0  gd32e10x_usart.o(i.usart_dma_receive_config)
-    i.usart_enable                           0x08002440   Section        0  gd32e10x_usart.o(i.usart_enable)
-    i.usart_interrupt_enable                 0x0800244a   Section        0  gd32e10x_usart.o(i.usart_interrupt_enable)
-    i.usart_interrupt_flag_get               0x08002464   Section        0  gd32e10x_usart.o(i.usart_interrupt_flag_get)
-    i.usart_receive_config                   0x0800249c   Section        0  gd32e10x_usart.o(i.usart_receive_config)
-    i.usart_transmit_config                  0x080024ac   Section        0  gd32e10x_usart.o(i.usart_transmit_config)
-    i.usb_basic_init                         0x080024bc   Section        0  drv_usb_core.o(i.usb_basic_init)
-    i.usb_clock_active                       0x08002596   Section        0  drv_usb_dev.o(i.usb_clock_active)
-    i.usb_core_init                          0x080025b8   Section        0  drv_usb_core.o(i.usb_core_init)
-    i.usb_core_reset                         0x08002650   Section        0  drv_usb_core.o(i.usb_core_reset)
-    usb_core_reset                           0x08002651   Thumb Code    38  drv_usb_core.o(i.usb_core_reset)
-    i.usb_ctlep_startout                     0x08002678   Section        0  drv_usb_dev.o(i.usb_ctlep_startout)
-    i.usb_curmode_set                        0x08002684   Section        0  drv_usb_core.o(i.usb_curmode_set)
-    i.usb_devcore_init                       0x080026b4   Section        0  drv_usb_dev.o(i.usb_devcore_init)
-    i.usb_devint_enable                      0x08002804   Section        0  drv_usb_dev.o(i.usb_devint_enable)
-    i.usb_iepintr_read                       0x08002844   Section        0  drv_usb_dev.o(i.usb_iepintr_read)
-    i.usb_init                               0x08002870   Section        0  app.o(i.usb_init)
-    i.usb_intr_config                        0x080028b0   Section        0  gd32e10x_hw.o(i.usb_intr_config)
-    i.usb_mdelay                             0x080028f4   Section        0  gd32e10x_hw.o(i.usb_mdelay)
-    i.usb_rcu_config                         0x08002904   Section        0  gd32e10x_hw.o(i.usb_rcu_config)
-    i.usb_rxfifo_flush                       0x0800298c   Section        0  drv_usb_core.o(i.usb_rxfifo_flush)
-    i.usb_rxfifo_read                        0x080029ae   Section        0  drv_usb_core.o(i.usb_rxfifo_read)
-    i.usb_send_buffer                        0x080029cc   Section        0  app.o(i.usb_send_buffer)
-    i.usb_set_txfifo                         0x080029e2   Section        0  drv_usb_core.o(i.usb_set_txfifo)
-    i.usb_timer_init                         0x08002a2a   Section        0  gd32e10x_hw.o(i.usb_timer_init)
-    i.usb_timer_irq                          0x08002a48   Section        0  gd32e10x_hw.o(i.usb_timer_irq)
-    i.usb_transc_active                      0x08002a80   Section        0  drv_usb_dev.o(i.usb_transc_active)
-    i.usb_transc_clrstall                    0x08002b18   Section        0  drv_usb_dev.o(i.usb_transc_clrstall)
-    i.usb_transc_deactivate                  0x08002b5c   Section        0  drv_usb_dev.o(i.usb_transc_deactivate)
-    i.usb_transc_inxfer                      0x08002bc0   Section        0  drv_usb_dev.o(i.usb_transc_inxfer)
-    i.usb_transc_outxfer                     0x08002cc6   Section        0  drv_usb_dev.o(i.usb_transc_outxfer)
-    i.usb_transc_stall                       0x08002d44   Section        0  drv_usb_dev.o(i.usb_transc_stall)
-    i.usb_txfifo_flush                       0x08002d86   Section        0  drv_usb_core.o(i.usb_txfifo_flush)
-    i.usb_txfifo_write                       0x08002dae   Section        0  drv_usb_core.o(i.usb_txfifo_write)
-    i.usb_udelay                             0x08002dd0   Section        0  gd32e10x_hw.o(i.usb_udelay)
-    i.usbd_class_request                     0x08002dde   Section        0  usbd_enum.o(i.usbd_class_request)
-    i.usbd_connect                           0x08002e04   Section        0  usbd_core.o(i.usbd_connect)
-    i.usbd_ctl_recev                         0x08002e20   Section        0  usbd_transc.o(i.usbd_ctl_recev)
-    i.usbd_ctl_send                          0x08002e4e   Section        0  usbd_transc.o(i.usbd_ctl_send)
-    i.usbd_ctl_status_recev                  0x08002e7c   Section        0  usbd_transc.o(i.usbd_ctl_status_recev)
-    i.usbd_ctl_status_send                   0x08002e9c   Section        0  usbd_transc.o(i.usbd_ctl_status_send)
-    i.usbd_disconnect                        0x08002ebc   Section        0  usbd_core.o(i.usbd_disconnect)
-    i.usbd_emptytxfifo_write                 0x08002ed8   Section        0  drv_usbd_int.o(i.usbd_emptytxfifo_write)
-    usbd_emptytxfifo_write                   0x08002ed9   Thumb Code   140  drv_usbd_int.o(i.usbd_emptytxfifo_write)
-    i.usbd_enum_error                        0x08002f64   Section        0  usbd_enum.o(i.usbd_enum_error)
-    i.usbd_ep_clear                          0x08002f82   Section        0  usbd_core.o(i.usbd_ep_clear)
-    i.usbd_ep_recev                          0x08002fb6   Section        0  usbd_core.o(i.usbd_ep_recev)
-    i.usbd_ep_send                           0x08002fea   Section        0  usbd_core.o(i.usbd_ep_send)
-    i.usbd_ep_setup                          0x08003020   Section        0  usbd_core.o(i.usbd_ep_setup)
-    i.usbd_ep_stall                          0x08003090   Section        0  usbd_core.o(i.usbd_ep_stall)
-    i.usbd_ep_stall_clear                    0x080030ca   Section        0  usbd_core.o(i.usbd_ep_stall_clear)
-    i.usbd_in_transc                         0x08003104   Section        0  usbd_transc.o(i.usbd_in_transc)
-    i.usbd_init                              0x08003196   Section        0  usbd_core.o(i.usbd_init)
-    i.usbd_int_enumfinish                    0x08003214   Section        0  drv_usbd_int.o(i.usbd_int_enumfinish)
-    usbd_int_enumfinish                      0x08003215   Thumb Code    98  drv_usbd_int.o(i.usbd_int_enumfinish)
-    i.usbd_int_epin                          0x0800327c   Section        0  drv_usbd_int.o(i.usbd_int_epin)
-    usbd_int_epin                            0x0800327d   Thumb Code   116  drv_usbd_int.o(i.usbd_int_epin)
-    i.usbd_int_epout                         0x080032f0   Section        0  drv_usbd_int.o(i.usbd_int_epout)
-    usbd_int_epout                           0x080032f1   Thumb Code   126  drv_usbd_int.o(i.usbd_int_epout)
-    i.usbd_int_reset                         0x08003370   Section        0  drv_usbd_int.o(i.usbd_int_reset)
-    usbd_int_reset                           0x08003371   Thumb Code   208  drv_usbd_int.o(i.usbd_int_reset)
-    i.usbd_int_rxfifo                        0x08003448   Section        0  drv_usbd_int.o(i.usbd_int_rxfifo)
-    usbd_int_rxfifo                          0x08003449   Thumb Code   178  drv_usbd_int.o(i.usbd_int_rxfifo)
-    i.usbd_int_suspend                       0x080034fa   Section        0  drv_usbd_int.o(i.usbd_int_suspend)
-    usbd_int_suspend                         0x080034fb   Thumb Code   102  drv_usbd_int.o(i.usbd_int_suspend)
-    i.usbd_isr                               0x08003560   Section        0  drv_usbd_int.o(i.usbd_isr)
-    i.usbd_out_transc                        0x0800363e   Section        0  usbd_transc.o(i.usbd_out_transc)
-    i.usbd_setup_transc                      0x080036b4   Section        0  usbd_transc.o(i.usbd_setup_transc)
-    i.usbd_standard_request                  0x08003738   Section        0  usbd_enum.o(i.usbd_standard_request)
-    i.usbd_vendor_request                    0x08003754   Section        0  usbd_enum.o(i.usbd_vendor_request)
-    .constdata                               0x0800375c   Section      192  gd32e10x_can.o(.constdata)
-    timing_pts                               0x08003764   Data         184  gd32e10x_can.o(.constdata)
-    .constdata                               0x0800381c   Section        4  drv_usb_dev.o(.constdata)
-    EP0_MAXLEN                               0x0800381c   Data           4  drv_usb_dev.o(.constdata)
-    .constdata                               0x08003820   Section       52  drv_usbd_int.o(.constdata)
-    USB_SPEED                                0x08003820   Data           4  drv_usbd_int.o(.constdata)
-    <Data1>                                  0x08003824   Data          24  drv_usbd_int.o(.constdata)
-    <Data2>                                  0x0800383c   Data          24  drv_usbd_int.o(.constdata)
-    .constdata                               0x08003854   Section       16  usbd_core.o(.constdata)
-    .constdata                               0x08003864   Section      375  cdc_acm_core.o(.constdata)
-    usbd_language_id_desc                    0x080038b9   Data           4  cdc_acm_core.o(.constdata)
-    manufacturer_string                      0x080038bd   Data         130  cdc_acm_core.o(.constdata)
-    product_string                           0x0800393f   Data         130  cdc_acm_core.o(.constdata)
+    i.system_clock_120m_irc8m                0x08002048   Section        0  system_gd32e10x.o(i.system_clock_120m_irc8m)
+    system_clock_120m_irc8m                  0x08002049   Thumb Code   174  system_gd32e10x.o(i.system_clock_120m_irc8m)
+    i.system_clock_config                    0x08002108   Section        0  system_gd32e10x.o(i.system_clock_config)
+    system_clock_config                      0x08002109   Thumb Code     8  system_gd32e10x.o(i.system_clock_config)
+    i.systick_config                         0x08002110   Section        0  systick.o(i.systick_config)
+    i.timer_auto_reload_shadow_enable        0x08002160   Section        0  gd32e10x_timer.o(i.timer_auto_reload_shadow_enable)
+    i.timer_disable                          0x0800216a   Section        0  gd32e10x_timer.o(i.timer_disable)
+    i.timer_enable                           0x08002174   Section        0  gd32e10x_timer.o(i.timer_enable)
+    i.timer_init                             0x08002180   Section        0  gd32e10x_timer.o(i.timer_init)
+    i.timer_interrupt_disable                0x08002224   Section        0  gd32e10x_timer.o(i.timer_interrupt_disable)
+    i.timer_interrupt_enable                 0x0800222c   Section        0  gd32e10x_timer.o(i.timer_interrupt_enable)
+    i.timer_interrupt_flag_clear             0x08002234   Section        0  gd32e10x_timer.o(i.timer_interrupt_flag_clear)
+    i.timer_interrupt_flag_get               0x0800223a   Section        0  gd32e10x_timer.o(i.timer_interrupt_flag_get)
+    i.usart0_init                            0x08002254   Section        0  uart.o(i.usart0_init)
+    i.usart0_rx_probe                        0x08002284   Section        0  uart.o(i.usart0_rx_probe)
+    i.usart1_init                            0x08002294   Section        0  uart.o(i.usart1_init)
+    i.usart1_rx_probe                        0x080022c4   Section        0  uart.o(i.usart1_rx_probe)
+    i.usart_baudrate_set                     0x080022d4   Section        0  gd32e10x_usart.o(i.usart_baudrate_set)
+    i.usart_deinit                           0x08002364   Section        0  gd32e10x_usart.o(i.usart_deinit)
+    i.usart_dma_receive_config               0x080023f4   Section        0  gd32e10x_usart.o(i.usart_dma_receive_config)
+    i.usart_enable                           0x08002404   Section        0  gd32e10x_usart.o(i.usart_enable)
+    i.usart_interrupt_enable                 0x0800240e   Section        0  gd32e10x_usart.o(i.usart_interrupt_enable)
+    i.usart_interrupt_flag_get               0x08002428   Section        0  gd32e10x_usart.o(i.usart_interrupt_flag_get)
+    i.usart_receive_config                   0x08002460   Section        0  gd32e10x_usart.o(i.usart_receive_config)
+    i.usart_transmit_config                  0x08002470   Section        0  gd32e10x_usart.o(i.usart_transmit_config)
+    i.usb_basic_init                         0x08002480   Section        0  drv_usb_core.o(i.usb_basic_init)
+    i.usb_clock_active                       0x0800255a   Section        0  drv_usb_dev.o(i.usb_clock_active)
+    i.usb_core_init                          0x0800257c   Section        0  drv_usb_core.o(i.usb_core_init)
+    i.usb_core_reset                         0x08002614   Section        0  drv_usb_core.o(i.usb_core_reset)
+    usb_core_reset                           0x08002615   Thumb Code    38  drv_usb_core.o(i.usb_core_reset)
+    i.usb_ctlep_startout                     0x0800263c   Section        0  drv_usb_dev.o(i.usb_ctlep_startout)
+    i.usb_curmode_set                        0x08002648   Section        0  drv_usb_core.o(i.usb_curmode_set)
+    i.usb_devcore_init                       0x08002678   Section        0  drv_usb_dev.o(i.usb_devcore_init)
+    i.usb_devint_enable                      0x080027c8   Section        0  drv_usb_dev.o(i.usb_devint_enable)
+    i.usb_iepintr_read                       0x08002808   Section        0  drv_usb_dev.o(i.usb_iepintr_read)
+    i.usb_init                               0x08002834   Section        0  app.o(i.usb_init)
+    i.usb_intr_config                        0x08002874   Section        0  gd32e10x_hw.o(i.usb_intr_config)
+    i.usb_mdelay                             0x080028b8   Section        0  gd32e10x_hw.o(i.usb_mdelay)
+    i.usb_rcu_config                         0x080028c8   Section        0  gd32e10x_hw.o(i.usb_rcu_config)
+    i.usb_rxfifo_flush                       0x08002950   Section        0  drv_usb_core.o(i.usb_rxfifo_flush)
+    i.usb_rxfifo_read                        0x08002972   Section        0  drv_usb_core.o(i.usb_rxfifo_read)
+    i.usb_send_buffer                        0x08002990   Section        0  app.o(i.usb_send_buffer)
+    i.usb_set_txfifo                         0x080029a6   Section        0  drv_usb_core.o(i.usb_set_txfifo)
+    i.usb_timer_init                         0x080029ee   Section        0  gd32e10x_hw.o(i.usb_timer_init)
+    i.usb_timer_irq                          0x08002a0c   Section        0  gd32e10x_hw.o(i.usb_timer_irq)
+    i.usb_transc_active                      0x08002a44   Section        0  drv_usb_dev.o(i.usb_transc_active)
+    i.usb_transc_clrstall                    0x08002adc   Section        0  drv_usb_dev.o(i.usb_transc_clrstall)
+    i.usb_transc_deactivate                  0x08002b20   Section        0  drv_usb_dev.o(i.usb_transc_deactivate)
+    i.usb_transc_inxfer                      0x08002b84   Section        0  drv_usb_dev.o(i.usb_transc_inxfer)
+    i.usb_transc_outxfer                     0x08002c8a   Section        0  drv_usb_dev.o(i.usb_transc_outxfer)
+    i.usb_transc_stall                       0x08002d08   Section        0  drv_usb_dev.o(i.usb_transc_stall)
+    i.usb_txfifo_flush                       0x08002d4a   Section        0  drv_usb_core.o(i.usb_txfifo_flush)
+    i.usb_txfifo_write                       0x08002d72   Section        0  drv_usb_core.o(i.usb_txfifo_write)
+    i.usb_udelay                             0x08002d94   Section        0  gd32e10x_hw.o(i.usb_udelay)
+    i.usbd_class_request                     0x08002da2   Section        0  usbd_enum.o(i.usbd_class_request)
+    i.usbd_connect                           0x08002dc8   Section        0  usbd_core.o(i.usbd_connect)
+    i.usbd_ctl_recev                         0x08002de4   Section        0  usbd_transc.o(i.usbd_ctl_recev)
+    i.usbd_ctl_send                          0x08002e12   Section        0  usbd_transc.o(i.usbd_ctl_send)
+    i.usbd_ctl_status_recev                  0x08002e40   Section        0  usbd_transc.o(i.usbd_ctl_status_recev)
+    i.usbd_ctl_status_send                   0x08002e60   Section        0  usbd_transc.o(i.usbd_ctl_status_send)
+    i.usbd_disconnect                        0x08002e80   Section        0  usbd_core.o(i.usbd_disconnect)
+    i.usbd_emptytxfifo_write                 0x08002e9c   Section        0  drv_usbd_int.o(i.usbd_emptytxfifo_write)
+    usbd_emptytxfifo_write                   0x08002e9d   Thumb Code   140  drv_usbd_int.o(i.usbd_emptytxfifo_write)
+    i.usbd_enum_error                        0x08002f28   Section        0  usbd_enum.o(i.usbd_enum_error)
+    i.usbd_ep_clear                          0x08002f46   Section        0  usbd_core.o(i.usbd_ep_clear)
+    i.usbd_ep_recev                          0x08002f7a   Section        0  usbd_core.o(i.usbd_ep_recev)
+    i.usbd_ep_send                           0x08002fae   Section        0  usbd_core.o(i.usbd_ep_send)
+    i.usbd_ep_setup                          0x08002fe4   Section        0  usbd_core.o(i.usbd_ep_setup)
+    i.usbd_ep_stall                          0x08003054   Section        0  usbd_core.o(i.usbd_ep_stall)
+    i.usbd_ep_stall_clear                    0x0800308e   Section        0  usbd_core.o(i.usbd_ep_stall_clear)
+    i.usbd_in_transc                         0x080030c8   Section        0  usbd_transc.o(i.usbd_in_transc)
+    i.usbd_init                              0x0800315a   Section        0  usbd_core.o(i.usbd_init)
+    i.usbd_int_enumfinish                    0x080031d8   Section        0  drv_usbd_int.o(i.usbd_int_enumfinish)
+    usbd_int_enumfinish                      0x080031d9   Thumb Code    98  drv_usbd_int.o(i.usbd_int_enumfinish)
+    i.usbd_int_epin                          0x08003240   Section        0  drv_usbd_int.o(i.usbd_int_epin)
+    usbd_int_epin                            0x08003241   Thumb Code   116  drv_usbd_int.o(i.usbd_int_epin)
+    i.usbd_int_epout                         0x080032b4   Section        0  drv_usbd_int.o(i.usbd_int_epout)
+    usbd_int_epout                           0x080032b5   Thumb Code   126  drv_usbd_int.o(i.usbd_int_epout)
+    i.usbd_int_reset                         0x08003334   Section        0  drv_usbd_int.o(i.usbd_int_reset)
+    usbd_int_reset                           0x08003335   Thumb Code   208  drv_usbd_int.o(i.usbd_int_reset)
+    i.usbd_int_rxfifo                        0x0800340c   Section        0  drv_usbd_int.o(i.usbd_int_rxfifo)
+    usbd_int_rxfifo                          0x0800340d   Thumb Code   178  drv_usbd_int.o(i.usbd_int_rxfifo)
+    i.usbd_int_suspend                       0x080034be   Section        0  drv_usbd_int.o(i.usbd_int_suspend)
+    usbd_int_suspend                         0x080034bf   Thumb Code   102  drv_usbd_int.o(i.usbd_int_suspend)
+    i.usbd_isr                               0x08003524   Section        0  drv_usbd_int.o(i.usbd_isr)
+    i.usbd_out_transc                        0x08003602   Section        0  usbd_transc.o(i.usbd_out_transc)
+    i.usbd_setup_transc                      0x08003678   Section        0  usbd_transc.o(i.usbd_setup_transc)
+    i.usbd_standard_request                  0x080036fc   Section        0  usbd_enum.o(i.usbd_standard_request)
+    i.usbd_vendor_request                    0x08003718   Section        0  usbd_enum.o(i.usbd_vendor_request)
+    .constdata                               0x08003720   Section      192  gd32e10x_can.o(.constdata)
+    timing_pts                               0x08003728   Data         184  gd32e10x_can.o(.constdata)
+    .constdata                               0x080037e0   Section        4  drv_usb_dev.o(.constdata)
+    EP0_MAXLEN                               0x080037e0   Data           4  drv_usb_dev.o(.constdata)
+    .constdata                               0x080037e4   Section       52  drv_usbd_int.o(.constdata)
+    USB_SPEED                                0x080037e4   Data           4  drv_usbd_int.o(.constdata)
+    <Data1>                                  0x080037e8   Data          24  drv_usbd_int.o(.constdata)
+    <Data2>                                  0x08003800   Data          24  drv_usbd_int.o(.constdata)
+    .constdata                               0x08003818   Section       16  usbd_core.o(.constdata)
+    .constdata                               0x08003828   Section      375  cdc_acm_core.o(.constdata)
+    usbd_language_id_desc                    0x0800387d   Data           4  cdc_acm_core.o(.constdata)
+    manufacturer_string                      0x08003881   Data         130  cdc_acm_core.o(.constdata)
+    product_string                           0x08003903   Data         130  cdc_acm_core.o(.constdata)
     .data                                    0x20000000   Section        2  main.o(.data)
     led_flag_red                             0x20000001   Data           1  main.o(.data)
     .data                                    0x20000004   Section        4  systick.o(.data)
@@ -1812,82 +1812,82 @@ Image Symbol Table
     rcu_usb_clock_config                     0x08001f6d   Thumb Code    18  gd32e10x_rcu.o(i.rcu_usb_clock_config)
     read_adc_value                           0x08001f85   Thumb Code    98  adc.o(i.read_adc_value)
     serial_string_get                        0x08001ffd   Thumb Code    66  usbd_enum.o(i.serial_string_get)
-    systick_config                           0x0800214d   Thumb Code    74  systick.o(i.systick_config)
-    timer_auto_reload_shadow_enable          0x0800219d   Thumb Code    10  gd32e10x_timer.o(i.timer_auto_reload_shadow_enable)
-    timer_disable                            0x080021a7   Thumb Code    10  gd32e10x_timer.o(i.timer_disable)
-    timer_enable                             0x080021b1   Thumb Code    10  gd32e10x_timer.o(i.timer_enable)
-    timer_init                               0x080021bd   Thumb Code   134  gd32e10x_timer.o(i.timer_init)
-    timer_interrupt_disable                  0x08002261   Thumb Code     8  gd32e10x_timer.o(i.timer_interrupt_disable)
-    timer_interrupt_enable                   0x08002269   Thumb Code     8  gd32e10x_timer.o(i.timer_interrupt_enable)
-    timer_interrupt_flag_clear               0x08002271   Thumb Code     6  gd32e10x_timer.o(i.timer_interrupt_flag_clear)
-    timer_interrupt_flag_get                 0x08002277   Thumb Code    24  gd32e10x_timer.o(i.timer_interrupt_flag_get)
-    usart0_init                              0x08002291   Thumb Code    36  uart.o(i.usart0_init)
-    usart0_rx_probe                          0x080022c1   Thumb Code    10  uart.o(i.usart0_rx_probe)
-    usart1_init                              0x080022d1   Thumb Code    36  uart.o(i.usart1_init)
-    usart1_rx_probe                          0x08002301   Thumb Code    10  uart.o(i.usart1_rx_probe)
-    usart_baudrate_set                       0x08002311   Thumb Code   136  gd32e10x_usart.o(i.usart_baudrate_set)
-    usart_deinit                             0x080023a1   Thumb Code   136  gd32e10x_usart.o(i.usart_deinit)
-    usart_dma_receive_config                 0x08002431   Thumb Code    16  gd32e10x_usart.o(i.usart_dma_receive_config)
-    usart_enable                             0x08002441   Thumb Code    10  gd32e10x_usart.o(i.usart_enable)
-    usart_interrupt_enable                   0x0800244b   Thumb Code    26  gd32e10x_usart.o(i.usart_interrupt_enable)
-    usart_interrupt_flag_get                 0x08002465   Thumb Code    56  gd32e10x_usart.o(i.usart_interrupt_flag_get)
-    usart_receive_config                     0x0800249d   Thumb Code    16  gd32e10x_usart.o(i.usart_receive_config)
-    usart_transmit_config                    0x080024ad   Thumb Code    16  gd32e10x_usart.o(i.usart_transmit_config)
-    usb_basic_init                           0x080024bd   Thumb Code   218  drv_usb_core.o(i.usb_basic_init)
-    usb_clock_active                         0x08002597   Thumb Code    32  drv_usb_dev.o(i.usb_clock_active)
-    usb_core_init                            0x080025b9   Thumb Code   146  drv_usb_core.o(i.usb_core_init)
-    usb_ctlep_startout                       0x08002679   Thumb Code     8  drv_usb_dev.o(i.usb_ctlep_startout)
-    usb_curmode_set                          0x08002685   Thumb Code    46  drv_usb_core.o(i.usb_curmode_set)
-    usb_devcore_init                         0x080026b5   Thumb Code   330  drv_usb_dev.o(i.usb_devcore_init)
-    usb_devint_enable                        0x08002805   Thumb Code    56  drv_usb_dev.o(i.usb_devint_enable)
-    usb_iepintr_read                         0x08002845   Thumb Code    42  drv_usb_dev.o(i.usb_iepintr_read)
-    usb_init                                 0x08002871   Thumb Code    50  app.o(i.usb_init)
-    usb_intr_config                          0x080028b1   Thumb Code    68  gd32e10x_hw.o(i.usb_intr_config)
-    usb_mdelay                               0x080028f5   Thumb Code    14  gd32e10x_hw.o(i.usb_mdelay)
-    usb_rcu_config                           0x08002905   Thumb Code   112  gd32e10x_hw.o(i.usb_rcu_config)
-    usb_rxfifo_flush                         0x0800298d   Thumb Code    34  drv_usb_core.o(i.usb_rxfifo_flush)
-    usb_rxfifo_read                          0x080029af   Thumb Code    30  drv_usb_core.o(i.usb_rxfifo_read)
-    usb_send_buffer                          0x080029cd   Thumb Code    22  app.o(i.usb_send_buffer)
-    usb_set_txfifo                           0x080029e3   Thumb Code    72  drv_usb_core.o(i.usb_set_txfifo)
-    usb_timer_init                           0x08002a2b   Thumb Code    30  gd32e10x_hw.o(i.usb_timer_init)
-    usb_timer_irq                            0x08002a49   Thumb Code    46  gd32e10x_hw.o(i.usb_timer_irq)
-    usb_transc_active                        0x08002a81   Thumb Code   142  drv_usb_dev.o(i.usb_transc_active)
-    usb_transc_clrstall                      0x08002b19   Thumb Code    68  drv_usb_dev.o(i.usb_transc_clrstall)
-    usb_transc_deactivate                    0x08002b5d   Thumb Code   100  drv_usb_dev.o(i.usb_transc_deactivate)
-    usb_transc_inxfer                        0x08002bc1   Thumb Code   262  drv_usb_dev.o(i.usb_transc_inxfer)
-    usb_transc_outxfer                       0x08002cc7   Thumb Code   126  drv_usb_dev.o(i.usb_transc_outxfer)
-    usb_transc_stall                         0x08002d45   Thumb Code    66  drv_usb_dev.o(i.usb_transc_stall)
-    usb_txfifo_flush                         0x08002d87   Thumb Code    40  drv_usb_core.o(i.usb_txfifo_flush)
-    usb_txfifo_write                         0x08002daf   Thumb Code    34  drv_usb_core.o(i.usb_txfifo_write)
-    usb_udelay                               0x08002dd1   Thumb Code    14  gd32e10x_hw.o(i.usb_udelay)
-    usbd_class_request                       0x08002ddf   Thumb Code    38  usbd_enum.o(i.usbd_class_request)
-    usbd_connect                             0x08002e05   Thumb Code    28  usbd_core.o(i.usbd_connect)
-    usbd_ctl_recev                           0x08002e21   Thumb Code    46  usbd_transc.o(i.usbd_ctl_recev)
-    usbd_ctl_send                            0x08002e4f   Thumb Code    46  usbd_transc.o(i.usbd_ctl_send)
-    usbd_ctl_status_recev                    0x08002e7d   Thumb Code    32  usbd_transc.o(i.usbd_ctl_status_recev)
-    usbd_ctl_status_send                     0x08002e9d   Thumb Code    32  usbd_transc.o(i.usbd_ctl_status_send)
-    usbd_disconnect                          0x08002ebd   Thumb Code    28  usbd_core.o(i.usbd_disconnect)
-    usbd_enum_error                          0x08002f65   Thumb Code    30  usbd_enum.o(i.usbd_enum_error)
-    usbd_ep_clear                            0x08002f83   Thumb Code    52  usbd_core.o(i.usbd_ep_clear)
-    usbd_ep_recev                            0x08002fb7   Thumb Code    52  usbd_core.o(i.usbd_ep_recev)
-    usbd_ep_send                             0x08002feb   Thumb Code    52  usbd_core.o(i.usbd_ep_send)
-    usbd_ep_setup                            0x08003021   Thumb Code   106  usbd_core.o(i.usbd_ep_setup)
-    usbd_ep_stall                            0x08003091   Thumb Code    58  usbd_core.o(i.usbd_ep_stall)
-    usbd_ep_stall_clear                      0x080030cb   Thumb Code    58  usbd_core.o(i.usbd_ep_stall_clear)
-    usbd_in_transc                           0x08003105   Thumb Code   146  usbd_transc.o(i.usbd_in_transc)
-    usbd_init                                0x08003197   Thumb Code   124  usbd_core.o(i.usbd_init)
-    usbd_isr                                 0x08003561   Thumb Code   222  drv_usbd_int.o(i.usbd_isr)
-    usbd_out_transc                          0x0800363f   Thumb Code   118  usbd_transc.o(i.usbd_out_transc)
-    usbd_setup_transc                        0x080036b5   Thumb Code   132  usbd_transc.o(i.usbd_setup_transc)
-    usbd_standard_request                    0x08003739   Thumb Code    22  usbd_enum.o(i.usbd_standard_request)
-    usbd_vendor_request                      0x08003755   Thumb Code     6  usbd_enum.o(i.usbd_vendor_request)
-    g_can_fdlength_table                     0x0800375c   Data           7  gd32e10x_can.o(.constdata)
-    ep_type                                  0x08003854   Data          16  usbd_core.o(.constdata)
-    cdc_dev_desc                             0x08003864   Data          18  cdc_acm_core.o(.constdata)
-    cdc_config_desc                          0x08003876   Data          67  cdc_acm_core.o(.constdata)
-    usbd_cdc_strings                         0x080039c4   Data          16  cdc_acm_core.o(.constdata)
-    Region$$Table$$Base                      0x080039dc   Number         0  anon$$obj.o(Region$$Table)
-    Region$$Table$$Limit                     0x080039fc   Number         0  anon$$obj.o(Region$$Table)
+    systick_config                           0x08002111   Thumb Code    74  systick.o(i.systick_config)
+    timer_auto_reload_shadow_enable          0x08002161   Thumb Code    10  gd32e10x_timer.o(i.timer_auto_reload_shadow_enable)
+    timer_disable                            0x0800216b   Thumb Code    10  gd32e10x_timer.o(i.timer_disable)
+    timer_enable                             0x08002175   Thumb Code    10  gd32e10x_timer.o(i.timer_enable)
+    timer_init                               0x08002181   Thumb Code   134  gd32e10x_timer.o(i.timer_init)
+    timer_interrupt_disable                  0x08002225   Thumb Code     8  gd32e10x_timer.o(i.timer_interrupt_disable)
+    timer_interrupt_enable                   0x0800222d   Thumb Code     8  gd32e10x_timer.o(i.timer_interrupt_enable)
+    timer_interrupt_flag_clear               0x08002235   Thumb Code     6  gd32e10x_timer.o(i.timer_interrupt_flag_clear)
+    timer_interrupt_flag_get                 0x0800223b   Thumb Code    24  gd32e10x_timer.o(i.timer_interrupt_flag_get)
+    usart0_init                              0x08002255   Thumb Code    36  uart.o(i.usart0_init)
+    usart0_rx_probe                          0x08002285   Thumb Code    10  uart.o(i.usart0_rx_probe)
+    usart1_init                              0x08002295   Thumb Code    36  uart.o(i.usart1_init)
+    usart1_rx_probe                          0x080022c5   Thumb Code    10  uart.o(i.usart1_rx_probe)
+    usart_baudrate_set                       0x080022d5   Thumb Code   136  gd32e10x_usart.o(i.usart_baudrate_set)
+    usart_deinit                             0x08002365   Thumb Code   136  gd32e10x_usart.o(i.usart_deinit)
+    usart_dma_receive_config                 0x080023f5   Thumb Code    16  gd32e10x_usart.o(i.usart_dma_receive_config)
+    usart_enable                             0x08002405   Thumb Code    10  gd32e10x_usart.o(i.usart_enable)
+    usart_interrupt_enable                   0x0800240f   Thumb Code    26  gd32e10x_usart.o(i.usart_interrupt_enable)
+    usart_interrupt_flag_get                 0x08002429   Thumb Code    56  gd32e10x_usart.o(i.usart_interrupt_flag_get)
+    usart_receive_config                     0x08002461   Thumb Code    16  gd32e10x_usart.o(i.usart_receive_config)
+    usart_transmit_config                    0x08002471   Thumb Code    16  gd32e10x_usart.o(i.usart_transmit_config)
+    usb_basic_init                           0x08002481   Thumb Code   218  drv_usb_core.o(i.usb_basic_init)
+    usb_clock_active                         0x0800255b   Thumb Code    32  drv_usb_dev.o(i.usb_clock_active)
+    usb_core_init                            0x0800257d   Thumb Code   146  drv_usb_core.o(i.usb_core_init)
+    usb_ctlep_startout                       0x0800263d   Thumb Code     8  drv_usb_dev.o(i.usb_ctlep_startout)
+    usb_curmode_set                          0x08002649   Thumb Code    46  drv_usb_core.o(i.usb_curmode_set)
+    usb_devcore_init                         0x08002679   Thumb Code   330  drv_usb_dev.o(i.usb_devcore_init)
+    usb_devint_enable                        0x080027c9   Thumb Code    56  drv_usb_dev.o(i.usb_devint_enable)
+    usb_iepintr_read                         0x08002809   Thumb Code    42  drv_usb_dev.o(i.usb_iepintr_read)
+    usb_init                                 0x08002835   Thumb Code    50  app.o(i.usb_init)
+    usb_intr_config                          0x08002875   Thumb Code    68  gd32e10x_hw.o(i.usb_intr_config)
+    usb_mdelay                               0x080028b9   Thumb Code    14  gd32e10x_hw.o(i.usb_mdelay)
+    usb_rcu_config                           0x080028c9   Thumb Code   112  gd32e10x_hw.o(i.usb_rcu_config)
+    usb_rxfifo_flush                         0x08002951   Thumb Code    34  drv_usb_core.o(i.usb_rxfifo_flush)
+    usb_rxfifo_read                          0x08002973   Thumb Code    30  drv_usb_core.o(i.usb_rxfifo_read)
+    usb_send_buffer                          0x08002991   Thumb Code    22  app.o(i.usb_send_buffer)
+    usb_set_txfifo                           0x080029a7   Thumb Code    72  drv_usb_core.o(i.usb_set_txfifo)
+    usb_timer_init                           0x080029ef   Thumb Code    30  gd32e10x_hw.o(i.usb_timer_init)
+    usb_timer_irq                            0x08002a0d   Thumb Code    46  gd32e10x_hw.o(i.usb_timer_irq)
+    usb_transc_active                        0x08002a45   Thumb Code   142  drv_usb_dev.o(i.usb_transc_active)
+    usb_transc_clrstall                      0x08002add   Thumb Code    68  drv_usb_dev.o(i.usb_transc_clrstall)
+    usb_transc_deactivate                    0x08002b21   Thumb Code   100  drv_usb_dev.o(i.usb_transc_deactivate)
+    usb_transc_inxfer                        0x08002b85   Thumb Code   262  drv_usb_dev.o(i.usb_transc_inxfer)
+    usb_transc_outxfer                       0x08002c8b   Thumb Code   126  drv_usb_dev.o(i.usb_transc_outxfer)
+    usb_transc_stall                         0x08002d09   Thumb Code    66  drv_usb_dev.o(i.usb_transc_stall)
+    usb_txfifo_flush                         0x08002d4b   Thumb Code    40  drv_usb_core.o(i.usb_txfifo_flush)
+    usb_txfifo_write                         0x08002d73   Thumb Code    34  drv_usb_core.o(i.usb_txfifo_write)
+    usb_udelay                               0x08002d95   Thumb Code    14  gd32e10x_hw.o(i.usb_udelay)
+    usbd_class_request                       0x08002da3   Thumb Code    38  usbd_enum.o(i.usbd_class_request)
+    usbd_connect                             0x08002dc9   Thumb Code    28  usbd_core.o(i.usbd_connect)
+    usbd_ctl_recev                           0x08002de5   Thumb Code    46  usbd_transc.o(i.usbd_ctl_recev)
+    usbd_ctl_send                            0x08002e13   Thumb Code    46  usbd_transc.o(i.usbd_ctl_send)
+    usbd_ctl_status_recev                    0x08002e41   Thumb Code    32  usbd_transc.o(i.usbd_ctl_status_recev)
+    usbd_ctl_status_send                     0x08002e61   Thumb Code    32  usbd_transc.o(i.usbd_ctl_status_send)
+    usbd_disconnect                          0x08002e81   Thumb Code    28  usbd_core.o(i.usbd_disconnect)
+    usbd_enum_error                          0x08002f29   Thumb Code    30  usbd_enum.o(i.usbd_enum_error)
+    usbd_ep_clear                            0x08002f47   Thumb Code    52  usbd_core.o(i.usbd_ep_clear)
+    usbd_ep_recev                            0x08002f7b   Thumb Code    52  usbd_core.o(i.usbd_ep_recev)
+    usbd_ep_send                             0x08002faf   Thumb Code    52  usbd_core.o(i.usbd_ep_send)
+    usbd_ep_setup                            0x08002fe5   Thumb Code   106  usbd_core.o(i.usbd_ep_setup)
+    usbd_ep_stall                            0x08003055   Thumb Code    58  usbd_core.o(i.usbd_ep_stall)
+    usbd_ep_stall_clear                      0x0800308f   Thumb Code    58  usbd_core.o(i.usbd_ep_stall_clear)
+    usbd_in_transc                           0x080030c9   Thumb Code   146  usbd_transc.o(i.usbd_in_transc)
+    usbd_init                                0x0800315b   Thumb Code   124  usbd_core.o(i.usbd_init)
+    usbd_isr                                 0x08003525   Thumb Code   222  drv_usbd_int.o(i.usbd_isr)
+    usbd_out_transc                          0x08003603   Thumb Code   118  usbd_transc.o(i.usbd_out_transc)
+    usbd_setup_transc                        0x08003679   Thumb Code   132  usbd_transc.o(i.usbd_setup_transc)
+    usbd_standard_request                    0x080036fd   Thumb Code    22  usbd_enum.o(i.usbd_standard_request)
+    usbd_vendor_request                      0x08003719   Thumb Code     6  usbd_enum.o(i.usbd_vendor_request)
+    g_can_fdlength_table                     0x08003720   Data           7  gd32e10x_can.o(.constdata)
+    ep_type                                  0x08003818   Data          16  usbd_core.o(.constdata)
+    cdc_dev_desc                             0x08003828   Data          18  cdc_acm_core.o(.constdata)
+    cdc_config_desc                          0x0800383a   Data          67  cdc_acm_core.o(.constdata)
+    usbd_cdc_strings                         0x08003988   Data          16  cdc_acm_core.o(.constdata)
+    Region$$Table$$Base                      0x080039a0   Number         0  anon$$obj.o(Region$$Table)
+    Region$$Table$$Limit                     0x080039c0   Number         0  anon$$obj.o(Region$$Table)
     timer3_interrupt                         0x20000000   Data           1  main.o(.data)
     SystemCoreClock                          0x20000008   Data           4  system_gd32e10x.o(.data)
     dma_idle                                 0x2000000c   Data           1  uart.o(.data)
@@ -1925,9 +1925,9 @@ Memory Map of the image
 
   Image Entry point : 0x08000151
 
-  Load Region LR_IROM1 (Base: 0x08000000, Size: 0x00003b54, Max: 0x00010000, ABSOLUTE, COMPRESSED[0x00003a80])
+  Load Region LR_IROM1 (Base: 0x08000000, Size: 0x00003b18, Max: 0x00010000, ABSOLUTE, COMPRESSED[0x00003a44])
 
-    Execution Region ER_IROM1 (Exec base: 0x08000000, Load base: 0x08000000, Size: 0x000039fc, Max: 0x00010000, ABSOLUTE)
+    Execution Region ER_IROM1 (Exec base: 0x08000000, Load base: 0x08000000, Size: 0x000039c0, Max: 0x00010000, ABSOLUTE)
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
@@ -2061,106 +2061,106 @@ Memory Map of the image
     0x08001f6c   0x08001f6c   0x00000018   Code   RO         2643    i.rcu_usb_clock_config  gd32e10x_rcu.o
     0x08001f84   0x08001f84   0x00000078   Code   RO         4141    i.read_adc_value    adc.o
     0x08001ffc   0x08001ffc   0x0000004c   Code   RO         5369    i.serial_string_get  cdc_acm.lib(usbd_enum.o)
-    0x08002048   0x08002048   0x000000fc   Code   RO          349    i.system_clock_120m_hxtal  system_gd32e10x.o
-    0x08002144   0x08002144   0x00000008   Code   RO          350    i.system_clock_config  system_gd32e10x.o
-    0x0800214c   0x0800214c   0x00000050   Code   RO          199    i.systick_config    systick.o
-    0x0800219c   0x0800219c   0x0000000a   Code   RO         3243    i.timer_auto_reload_shadow_enable  gd32e10x_timer.o
-    0x080021a6   0x080021a6   0x0000000a   Code   RO         3274    i.timer_disable     gd32e10x_timer.o
-    0x080021b0   0x080021b0   0x0000000a   Code   RO         3278    i.timer_enable      gd32e10x_timer.o
-    0x080021ba   0x080021ba   0x00000002   PAD
-    0x080021bc   0x080021bc   0x000000a4   Code   RO         3288    i.timer_init        gd32e10x_timer.o
-    0x08002260   0x08002260   0x00000008   Code   RO         3294    i.timer_interrupt_disable  gd32e10x_timer.o
-    0x08002268   0x08002268   0x00000008   Code   RO         3295    i.timer_interrupt_enable  gd32e10x_timer.o
-    0x08002270   0x08002270   0x00000006   Code   RO         3296    i.timer_interrupt_flag_clear  gd32e10x_timer.o
-    0x08002276   0x08002276   0x00000018   Code   RO         3297    i.timer_interrupt_flag_get  gd32e10x_timer.o
-    0x0800228e   0x0800228e   0x00000002   PAD
-    0x08002290   0x08002290   0x00000030   Code   RO         4297    i.usart0_init       uart.o
-    0x080022c0   0x080022c0   0x00000010   Code   RO         4298    i.usart0_rx_probe   uart.o
-    0x080022d0   0x080022d0   0x00000030   Code   RO         4301    i.usart1_init       uart.o
-    0x08002300   0x08002300   0x00000010   Code   RO         4302    i.usart1_rx_probe   uart.o
-    0x08002310   0x08002310   0x00000090   Code   RO         3686    i.usart_baudrate_set  gd32e10x_usart.o
-    0x080023a0   0x080023a0   0x00000090   Code   RO         3691    i.usart_deinit      gd32e10x_usart.o
-    0x08002430   0x08002430   0x00000010   Code   RO         3693    i.usart_dma_receive_config  gd32e10x_usart.o
-    0x08002440   0x08002440   0x0000000a   Code   RO         3695    i.usart_enable      gd32e10x_usart.o
-    0x0800244a   0x0800244a   0x0000001a   Code   RO         3705    i.usart_interrupt_enable  gd32e10x_usart.o
-    0x08002464   0x08002464   0x00000038   Code   RO         3707    i.usart_interrupt_flag_get  gd32e10x_usart.o
-    0x0800249c   0x0800249c   0x00000010   Code   RO         3720    i.usart_receive_config  gd32e10x_usart.o
-    0x080024ac   0x080024ac   0x00000010   Code   RO         3734    i.usart_transmit_config  gd32e10x_usart.o
-    0x080024bc   0x080024bc   0x000000da   Code   RO         5278    i.usb_basic_init    cdc_acm.lib(drv_usb_core.o)
-    0x08002596   0x08002596   0x00000020   Code   RO         4943    i.usb_clock_active  cdc_acm.lib(drv_usb_dev.o)
-    0x080025b6   0x080025b6   0x00000002   PAD
-    0x080025b8   0x080025b8   0x00000098   Code   RO         5279    i.usb_core_init     cdc_acm.lib(drv_usb_core.o)
-    0x08002650   0x08002650   0x00000026   Code   RO         5280    i.usb_core_reset    cdc_acm.lib(drv_usb_core.o)
+    0x08002048   0x08002048   0x000000c0   Code   RO          349    i.system_clock_120m_irc8m  system_gd32e10x.o
+    0x08002108   0x08002108   0x00000008   Code   RO          350    i.system_clock_config  system_gd32e10x.o
+    0x08002110   0x08002110   0x00000050   Code   RO          199    i.systick_config    systick.o
+    0x08002160   0x08002160   0x0000000a   Code   RO         3243    i.timer_auto_reload_shadow_enable  gd32e10x_timer.o
+    0x0800216a   0x0800216a   0x0000000a   Code   RO         3274    i.timer_disable     gd32e10x_timer.o
+    0x08002174   0x08002174   0x0000000a   Code   RO         3278    i.timer_enable      gd32e10x_timer.o
+    0x0800217e   0x0800217e   0x00000002   PAD
+    0x08002180   0x08002180   0x000000a4   Code   RO         3288    i.timer_init        gd32e10x_timer.o
+    0x08002224   0x08002224   0x00000008   Code   RO         3294    i.timer_interrupt_disable  gd32e10x_timer.o
+    0x0800222c   0x0800222c   0x00000008   Code   RO         3295    i.timer_interrupt_enable  gd32e10x_timer.o
+    0x08002234   0x08002234   0x00000006   Code   RO         3296    i.timer_interrupt_flag_clear  gd32e10x_timer.o
+    0x0800223a   0x0800223a   0x00000018   Code   RO         3297    i.timer_interrupt_flag_get  gd32e10x_timer.o
+    0x08002252   0x08002252   0x00000002   PAD
+    0x08002254   0x08002254   0x00000030   Code   RO         4297    i.usart0_init       uart.o
+    0x08002284   0x08002284   0x00000010   Code   RO         4298    i.usart0_rx_probe   uart.o
+    0x08002294   0x08002294   0x00000030   Code   RO         4301    i.usart1_init       uart.o
+    0x080022c4   0x080022c4   0x00000010   Code   RO         4302    i.usart1_rx_probe   uart.o
+    0x080022d4   0x080022d4   0x00000090   Code   RO         3686    i.usart_baudrate_set  gd32e10x_usart.o
+    0x08002364   0x08002364   0x00000090   Code   RO         3691    i.usart_deinit      gd32e10x_usart.o
+    0x080023f4   0x080023f4   0x00000010   Code   RO         3693    i.usart_dma_receive_config  gd32e10x_usart.o
+    0x08002404   0x08002404   0x0000000a   Code   RO         3695    i.usart_enable      gd32e10x_usart.o
+    0x0800240e   0x0800240e   0x0000001a   Code   RO         3705    i.usart_interrupt_enable  gd32e10x_usart.o
+    0x08002428   0x08002428   0x00000038   Code   RO         3707    i.usart_interrupt_flag_get  gd32e10x_usart.o
+    0x08002460   0x08002460   0x00000010   Code   RO         3720    i.usart_receive_config  gd32e10x_usart.o
+    0x08002470   0x08002470   0x00000010   Code   RO         3734    i.usart_transmit_config  gd32e10x_usart.o
+    0x08002480   0x08002480   0x000000da   Code   RO         5278    i.usb_basic_init    cdc_acm.lib(drv_usb_core.o)
+    0x0800255a   0x0800255a   0x00000020   Code   RO         4943    i.usb_clock_active  cdc_acm.lib(drv_usb_dev.o)
+    0x0800257a   0x0800257a   0x00000002   PAD
+    0x0800257c   0x0800257c   0x00000098   Code   RO         5279    i.usb_core_init     cdc_acm.lib(drv_usb_core.o)
+    0x08002614   0x08002614   0x00000026   Code   RO         5280    i.usb_core_reset    cdc_acm.lib(drv_usb_core.o)
+    0x0800263a   0x0800263a   0x00000002   PAD
+    0x0800263c   0x0800263c   0x0000000c   Code   RO         4944    i.usb_ctlep_startout  cdc_acm.lib(drv_usb_dev.o)
+    0x08002648   0x08002648   0x0000002e   Code   RO         5281    i.usb_curmode_set   cdc_acm.lib(drv_usb_core.o)
     0x08002676   0x08002676   0x00000002   PAD
-    0x08002678   0x08002678   0x0000000c   Code   RO         4944    i.usb_ctlep_startout  cdc_acm.lib(drv_usb_dev.o)
-    0x08002684   0x08002684   0x0000002e   Code   RO         5281    i.usb_curmode_set   cdc_acm.lib(drv_usb_core.o)
-    0x080026b2   0x080026b2   0x00000002   PAD
-    0x080026b4   0x080026b4   0x00000150   Code   RO         4947    i.usb_devcore_init  cdc_acm.lib(drv_usb_dev.o)
-    0x08002804   0x08002804   0x00000040   Code   RO         4948    i.usb_devint_enable  cdc_acm.lib(drv_usb_dev.o)
-    0x08002844   0x08002844   0x0000002a   Code   RO         4949    i.usb_iepintr_read  cdc_acm.lib(drv_usb_dev.o)
-    0x0800286e   0x0800286e   0x00000002   PAD
-    0x08002870   0x08002870   0x00000040   Code   RO         4674    i.usb_init          cdc_acm.lib(app.o)
-    0x080028b0   0x080028b0   0x00000044   Code   RO         4882    i.usb_intr_config   cdc_acm.lib(gd32e10x_hw.o)
-    0x080028f4   0x080028f4   0x0000000e   Code   RO         4883    i.usb_mdelay        cdc_acm.lib(gd32e10x_hw.o)
-    0x08002902   0x08002902   0x00000002   PAD
-    0x08002904   0x08002904   0x00000088   Code   RO         4884    i.usb_rcu_config    cdc_acm.lib(gd32e10x_hw.o)
-    0x0800298c   0x0800298c   0x00000022   Code   RO         5282    i.usb_rxfifo_flush  cdc_acm.lib(drv_usb_core.o)
-    0x080029ae   0x080029ae   0x0000001e   Code   RO         5283    i.usb_rxfifo_read   cdc_acm.lib(drv_usb_core.o)
-    0x080029cc   0x080029cc   0x00000016   Code   RO         4675    i.usb_send_buffer   cdc_acm.lib(app.o)
-    0x080029e2   0x080029e2   0x00000048   Code   RO         5284    i.usb_set_txfifo    cdc_acm.lib(drv_usb_core.o)
-    0x08002a2a   0x08002a2a   0x0000001e   Code   RO         4885    i.usb_timer_init    cdc_acm.lib(gd32e10x_hw.o)
-    0x08002a48   0x08002a48   0x00000038   Code   RO         4886    i.usb_timer_irq     cdc_acm.lib(gd32e10x_hw.o)
-    0x08002a80   0x08002a80   0x00000098   Code   RO         4952    i.usb_transc_active  cdc_acm.lib(drv_usb_dev.o)
-    0x08002b18   0x08002b18   0x00000044   Code   RO         4953    i.usb_transc_clrstall  cdc_acm.lib(drv_usb_dev.o)
-    0x08002b5c   0x08002b5c   0x00000064   Code   RO         4954    i.usb_transc_deactivate  cdc_acm.lib(drv_usb_dev.o)
-    0x08002bc0   0x08002bc0   0x00000106   Code   RO         4955    i.usb_transc_inxfer  cdc_acm.lib(drv_usb_dev.o)
-    0x08002cc6   0x08002cc6   0x0000007e   Code   RO         4956    i.usb_transc_outxfer  cdc_acm.lib(drv_usb_dev.o)
-    0x08002d44   0x08002d44   0x00000042   Code   RO         4957    i.usb_transc_stall  cdc_acm.lib(drv_usb_dev.o)
-    0x08002d86   0x08002d86   0x00000028   Code   RO         5285    i.usb_txfifo_flush  cdc_acm.lib(drv_usb_core.o)
-    0x08002dae   0x08002dae   0x00000022   Code   RO         5286    i.usb_txfifo_write  cdc_acm.lib(drv_usb_core.o)
-    0x08002dd0   0x08002dd0   0x0000000e   Code   RO         4887    i.usb_udelay        cdc_acm.lib(gd32e10x_hw.o)
-    0x08002dde   0x08002dde   0x00000026   Code   RO         5370    i.usbd_class_request  cdc_acm.lib(usbd_enum.o)
-    0x08002e04   0x08002e04   0x0000001c   Code   RO         5122    i.usbd_connect      cdc_acm.lib(usbd_core.o)
-    0x08002e20   0x08002e20   0x0000002e   Code   RO         5490    i.usbd_ctl_recev    cdc_acm.lib(usbd_transc.o)
-    0x08002e4e   0x08002e4e   0x0000002e   Code   RO         5491    i.usbd_ctl_send     cdc_acm.lib(usbd_transc.o)
-    0x08002e7c   0x08002e7c   0x00000020   Code   RO         5492    i.usbd_ctl_status_recev  cdc_acm.lib(usbd_transc.o)
-    0x08002e9c   0x08002e9c   0x00000020   Code   RO         5493    i.usbd_ctl_status_send  cdc_acm.lib(usbd_transc.o)
-    0x08002ebc   0x08002ebc   0x0000001c   Code   RO         5123    i.usbd_disconnect   cdc_acm.lib(usbd_core.o)
-    0x08002ed8   0x08002ed8   0x0000008c   Code   RO         5056    i.usbd_emptytxfifo_write  cdc_acm.lib(drv_usbd_int.o)
-    0x08002f64   0x08002f64   0x0000001e   Code   RO         5371    i.usbd_enum_error   cdc_acm.lib(usbd_enum.o)
-    0x08002f82   0x08002f82   0x00000034   Code   RO         5124    i.usbd_ep_clear     cdc_acm.lib(usbd_core.o)
-    0x08002fb6   0x08002fb6   0x00000034   Code   RO         5125    i.usbd_ep_recev     cdc_acm.lib(usbd_core.o)
-    0x08002fea   0x08002fea   0x00000034   Code   RO         5126    i.usbd_ep_send      cdc_acm.lib(usbd_core.o)
-    0x0800301e   0x0800301e   0x00000002   PAD
-    0x08003020   0x08003020   0x00000070   Code   RO         5127    i.usbd_ep_setup     cdc_acm.lib(usbd_core.o)
-    0x08003090   0x08003090   0x0000003a   Code   RO         5128    i.usbd_ep_stall     cdc_acm.lib(usbd_core.o)
-    0x080030ca   0x080030ca   0x0000003a   Code   RO         5129    i.usbd_ep_stall_clear  cdc_acm.lib(usbd_core.o)
-    0x08003104   0x08003104   0x00000092   Code   RO         5494    i.usbd_in_transc    cdc_acm.lib(usbd_transc.o)
-    0x08003196   0x08003196   0x0000007c   Code   RO         5131    i.usbd_init         cdc_acm.lib(usbd_core.o)
-    0x08003212   0x08003212   0x00000002   PAD
-    0x08003214   0x08003214   0x00000068   Code   RO         5057    i.usbd_int_enumfinish  cdc_acm.lib(drv_usbd_int.o)
-    0x0800327c   0x0800327c   0x00000074   Code   RO         5058    i.usbd_int_epin     cdc_acm.lib(drv_usbd_int.o)
-    0x080032f0   0x080032f0   0x0000007e   Code   RO         5059    i.usbd_int_epout    cdc_acm.lib(drv_usbd_int.o)
-    0x0800336e   0x0800336e   0x00000002   PAD
-    0x08003370   0x08003370   0x000000d8   Code   RO         5060    i.usbd_int_reset    cdc_acm.lib(drv_usbd_int.o)
-    0x08003448   0x08003448   0x000000b2   Code   RO         5061    i.usbd_int_rxfifo   cdc_acm.lib(drv_usbd_int.o)
-    0x080034fa   0x080034fa   0x00000066   Code   RO         5062    i.usbd_int_suspend  cdc_acm.lib(drv_usbd_int.o)
-    0x08003560   0x08003560   0x000000de   Code   RO         5063    i.usbd_isr          cdc_acm.lib(drv_usbd_int.o)
-    0x0800363e   0x0800363e   0x00000076   Code   RO         5495    i.usbd_out_transc   cdc_acm.lib(usbd_transc.o)
-    0x080036b4   0x080036b4   0x00000084   Code   RO         5496    i.usbd_setup_transc  cdc_acm.lib(usbd_transc.o)
-    0x08003738   0x08003738   0x0000001c   Code   RO         5372    i.usbd_standard_request  cdc_acm.lib(usbd_enum.o)
-    0x08003754   0x08003754   0x00000006   Code   RO         5373    i.usbd_vendor_request  cdc_acm.lib(usbd_enum.o)
-    0x0800375a   0x0800375a   0x00000002   PAD
-    0x0800375c   0x0800375c   0x000000c0   Data   RO          868    .constdata          gd32e10x_can.o
-    0x0800381c   0x0800381c   0x00000004   Data   RO         4958    .constdata          cdc_acm.lib(drv_usb_dev.o)
-    0x08003820   0x08003820   0x00000034   Data   RO         5064    .constdata          cdc_acm.lib(drv_usbd_int.o)
-    0x08003854   0x08003854   0x00000010   Data   RO         5132    .constdata          cdc_acm.lib(usbd_core.o)
-    0x08003864   0x08003864   0x00000177   Data   RO         5218    .constdata          cdc_acm.lib(cdc_acm_core.o)
-    0x080039db   0x080039db   0x00000001   PAD
-    0x080039dc   0x080039dc   0x00000020   Data   RO         5603    Region$$Table       anon$$obj.o
+    0x08002678   0x08002678   0x00000150   Code   RO         4947    i.usb_devcore_init  cdc_acm.lib(drv_usb_dev.o)
+    0x080027c8   0x080027c8   0x00000040   Code   RO         4948    i.usb_devint_enable  cdc_acm.lib(drv_usb_dev.o)
+    0x08002808   0x08002808   0x0000002a   Code   RO         4949    i.usb_iepintr_read  cdc_acm.lib(drv_usb_dev.o)
+    0x08002832   0x08002832   0x00000002   PAD
+    0x08002834   0x08002834   0x00000040   Code   RO         4674    i.usb_init          cdc_acm.lib(app.o)
+    0x08002874   0x08002874   0x00000044   Code   RO         4882    i.usb_intr_config   cdc_acm.lib(gd32e10x_hw.o)
+    0x080028b8   0x080028b8   0x0000000e   Code   RO         4883    i.usb_mdelay        cdc_acm.lib(gd32e10x_hw.o)
+    0x080028c6   0x080028c6   0x00000002   PAD
+    0x080028c8   0x080028c8   0x00000088   Code   RO         4884    i.usb_rcu_config    cdc_acm.lib(gd32e10x_hw.o)
+    0x08002950   0x08002950   0x00000022   Code   RO         5282    i.usb_rxfifo_flush  cdc_acm.lib(drv_usb_core.o)
+    0x08002972   0x08002972   0x0000001e   Code   RO         5283    i.usb_rxfifo_read   cdc_acm.lib(drv_usb_core.o)
+    0x08002990   0x08002990   0x00000016   Code   RO         4675    i.usb_send_buffer   cdc_acm.lib(app.o)
+    0x080029a6   0x080029a6   0x00000048   Code   RO         5284    i.usb_set_txfifo    cdc_acm.lib(drv_usb_core.o)
+    0x080029ee   0x080029ee   0x0000001e   Code   RO         4885    i.usb_timer_init    cdc_acm.lib(gd32e10x_hw.o)
+    0x08002a0c   0x08002a0c   0x00000038   Code   RO         4886    i.usb_timer_irq     cdc_acm.lib(gd32e10x_hw.o)
+    0x08002a44   0x08002a44   0x00000098   Code   RO         4952    i.usb_transc_active  cdc_acm.lib(drv_usb_dev.o)
+    0x08002adc   0x08002adc   0x00000044   Code   RO         4953    i.usb_transc_clrstall  cdc_acm.lib(drv_usb_dev.o)
+    0x08002b20   0x08002b20   0x00000064   Code   RO         4954    i.usb_transc_deactivate  cdc_acm.lib(drv_usb_dev.o)
+    0x08002b84   0x08002b84   0x00000106   Code   RO         4955    i.usb_transc_inxfer  cdc_acm.lib(drv_usb_dev.o)
+    0x08002c8a   0x08002c8a   0x0000007e   Code   RO         4956    i.usb_transc_outxfer  cdc_acm.lib(drv_usb_dev.o)
+    0x08002d08   0x08002d08   0x00000042   Code   RO         4957    i.usb_transc_stall  cdc_acm.lib(drv_usb_dev.o)
+    0x08002d4a   0x08002d4a   0x00000028   Code   RO         5285    i.usb_txfifo_flush  cdc_acm.lib(drv_usb_core.o)
+    0x08002d72   0x08002d72   0x00000022   Code   RO         5286    i.usb_txfifo_write  cdc_acm.lib(drv_usb_core.o)
+    0x08002d94   0x08002d94   0x0000000e   Code   RO         4887    i.usb_udelay        cdc_acm.lib(gd32e10x_hw.o)
+    0x08002da2   0x08002da2   0x00000026   Code   RO         5370    i.usbd_class_request  cdc_acm.lib(usbd_enum.o)
+    0x08002dc8   0x08002dc8   0x0000001c   Code   RO         5122    i.usbd_connect      cdc_acm.lib(usbd_core.o)
+    0x08002de4   0x08002de4   0x0000002e   Code   RO         5490    i.usbd_ctl_recev    cdc_acm.lib(usbd_transc.o)
+    0x08002e12   0x08002e12   0x0000002e   Code   RO         5491    i.usbd_ctl_send     cdc_acm.lib(usbd_transc.o)
+    0x08002e40   0x08002e40   0x00000020   Code   RO         5492    i.usbd_ctl_status_recev  cdc_acm.lib(usbd_transc.o)
+    0x08002e60   0x08002e60   0x00000020   Code   RO         5493    i.usbd_ctl_status_send  cdc_acm.lib(usbd_transc.o)
+    0x08002e80   0x08002e80   0x0000001c   Code   RO         5123    i.usbd_disconnect   cdc_acm.lib(usbd_core.o)
+    0x08002e9c   0x08002e9c   0x0000008c   Code   RO         5056    i.usbd_emptytxfifo_write  cdc_acm.lib(drv_usbd_int.o)
+    0x08002f28   0x08002f28   0x0000001e   Code   RO         5371    i.usbd_enum_error   cdc_acm.lib(usbd_enum.o)
+    0x08002f46   0x08002f46   0x00000034   Code   RO         5124    i.usbd_ep_clear     cdc_acm.lib(usbd_core.o)
+    0x08002f7a   0x08002f7a   0x00000034   Code   RO         5125    i.usbd_ep_recev     cdc_acm.lib(usbd_core.o)
+    0x08002fae   0x08002fae   0x00000034   Code   RO         5126    i.usbd_ep_send      cdc_acm.lib(usbd_core.o)
+    0x08002fe2   0x08002fe2   0x00000002   PAD
+    0x08002fe4   0x08002fe4   0x00000070   Code   RO         5127    i.usbd_ep_setup     cdc_acm.lib(usbd_core.o)
+    0x08003054   0x08003054   0x0000003a   Code   RO         5128    i.usbd_ep_stall     cdc_acm.lib(usbd_core.o)
+    0x0800308e   0x0800308e   0x0000003a   Code   RO         5129    i.usbd_ep_stall_clear  cdc_acm.lib(usbd_core.o)
+    0x080030c8   0x080030c8   0x00000092   Code   RO         5494    i.usbd_in_transc    cdc_acm.lib(usbd_transc.o)
+    0x0800315a   0x0800315a   0x0000007c   Code   RO         5131    i.usbd_init         cdc_acm.lib(usbd_core.o)
+    0x080031d6   0x080031d6   0x00000002   PAD
+    0x080031d8   0x080031d8   0x00000068   Code   RO         5057    i.usbd_int_enumfinish  cdc_acm.lib(drv_usbd_int.o)
+    0x08003240   0x08003240   0x00000074   Code   RO         5058    i.usbd_int_epin     cdc_acm.lib(drv_usbd_int.o)
+    0x080032b4   0x080032b4   0x0000007e   Code   RO         5059    i.usbd_int_epout    cdc_acm.lib(drv_usbd_int.o)
+    0x08003332   0x08003332   0x00000002   PAD
+    0x08003334   0x08003334   0x000000d8   Code   RO         5060    i.usbd_int_reset    cdc_acm.lib(drv_usbd_int.o)
+    0x0800340c   0x0800340c   0x000000b2   Code   RO         5061    i.usbd_int_rxfifo   cdc_acm.lib(drv_usbd_int.o)
+    0x080034be   0x080034be   0x00000066   Code   RO         5062    i.usbd_int_suspend  cdc_acm.lib(drv_usbd_int.o)
+    0x08003524   0x08003524   0x000000de   Code   RO         5063    i.usbd_isr          cdc_acm.lib(drv_usbd_int.o)
+    0x08003602   0x08003602   0x00000076   Code   RO         5495    i.usbd_out_transc   cdc_acm.lib(usbd_transc.o)
+    0x08003678   0x08003678   0x00000084   Code   RO         5496    i.usbd_setup_transc  cdc_acm.lib(usbd_transc.o)
+    0x080036fc   0x080036fc   0x0000001c   Code   RO         5372    i.usbd_standard_request  cdc_acm.lib(usbd_enum.o)
+    0x08003718   0x08003718   0x00000006   Code   RO         5373    i.usbd_vendor_request  cdc_acm.lib(usbd_enum.o)
+    0x0800371e   0x0800371e   0x00000002   PAD
+    0x08003720   0x08003720   0x000000c0   Data   RO          868    .constdata          gd32e10x_can.o
+    0x080037e0   0x080037e0   0x00000004   Data   RO         4958    .constdata          cdc_acm.lib(drv_usb_dev.o)
+    0x080037e4   0x080037e4   0x00000034   Data   RO         5064    .constdata          cdc_acm.lib(drv_usbd_int.o)
+    0x08003818   0x08003818   0x00000010   Data   RO         5132    .constdata          cdc_acm.lib(usbd_core.o)
+    0x08003828   0x08003828   0x00000177   Data   RO         5218    .constdata          cdc_acm.lib(cdc_acm_core.o)
+    0x0800399f   0x0800399f   0x00000001   PAD
+    0x080039a0   0x080039a0   0x00000020   Data   RO         5603    Region$$Table       anon$$obj.o
 
 
-    Execution Region RW_IRAM1 (Exec base: 0x20000000, Load base: 0x080039fc, Size: 0x000045f8, Max: 0x00005000, ABSOLUTE, COMPRESSED[0x00000084])
+    Execution Region RW_IRAM1 (Exec base: 0x20000000, Load base: 0x080039c0, Size: 0x000045f8, Max: 0x00005000, ABSOLUTE, COMPRESSED[0x00000084])
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
@@ -2210,12 +2210,12 @@ Image component sizes
         52         10          0          0          0        559   led.o
        478         34          0          2       3042      53070   main.o
         36          8        336          0       2048        972   startup_gd32e10x.o
-       348         38          0          4          0       2387   system_gd32e10x.o
+       288         30          0          4          0       2367   system_gd32e10x.o
        164         24          0          4          0      27826   systick.o
       1312        214          0         36      12320      14664   uart.o
 
     ----------------------------------------------------------------------
-      6554        542        560         48      17476     219857   Object Totals
+      6494        534        560         48      17476     219837   Object Totals
          0          0         32          0          0          0   (incl. Generated)
         10          0          0          2          2          0   (incl. Padding)
 
@@ -2272,15 +2272,15 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
 
-     13836        774       1008        344      17568     347356   Grand Totals
-     13836        774       1008        132      17568     347356   ELF Image Totals (compressed)
-     13836        774       1008        132          0          0   ROM Totals
+     13776        766       1008        344      17568     347336   Grand Totals
+     13776        766       1008        132      17568     347336   ELF Image Totals (compressed)
+     13776        766       1008        132          0          0   ROM Totals
 
 ==============================================================================
 
-    Total RO  Size (Code + RO Data)                14844 (  14.50kB)
+    Total RO  Size (Code + RO Data)                14784 (  14.44kB)
     Total RW  Size (RW Data + ZI Data)             17912 (  17.49kB)
-    Total ROM Size (Code + RO Data + RW Data)      14976 (  14.63kB)
+    Total ROM Size (Code + RO Data + RW Data)      14916 (  14.57kB)
 
 ==============================================================================
 

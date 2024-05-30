@@ -201,7 +201,7 @@ int main(void)
             serial_frame.len = sizeof(serial_frame) - 2;
             serial_frame.type = 0x01;
 
-            adc_calculation_calibration_once(&process_handle);
+            adc_calculation_calibration_once(&process_handle, 0);
             memcpy((uint8_t *)serial_frame.adc_value, (uint8_t *)process_handle.adc_cali_value, SENSOR_POS_X * SENSOR_POS_Y);
             serial_frame.checksum = CalChecksum((uint8_t *)&serial_frame, sizeof(serial_frame) - 2);
 

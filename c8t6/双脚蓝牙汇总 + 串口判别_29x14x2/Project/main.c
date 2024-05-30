@@ -89,6 +89,7 @@ int main(void)
     void *usb_handle = NULL;
     single_frame_t *single_frame = NULL;
     process_handle.x_max = POS_X;
+	
     process_handle.y_max = POS_Y;
     systick_config();
     led_init();

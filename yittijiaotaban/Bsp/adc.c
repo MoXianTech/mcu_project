@@ -31,7 +31,7 @@ uint16_t mean_filter(volatile uint16_t (*arr)[10], uint8_t index)
             sum += arr[count][index];
         }
     }
-
+//////////////////.//./...///;''/.//‘??
     return sum / ADC_COUNT_NUM;
 }
 

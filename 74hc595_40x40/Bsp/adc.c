@@ -160,11 +160,11 @@ void adc_config(void)
     /* ADC channel length config */
     adc_channel_length_config(ADC0, ADC_REGULAR_CHANNEL, 5);
     /* ADC regular channel config */
-    adc_regular_channel_config(ADC0, 0, ADC_CHANNEL_7, ADC_SAMPLETIME_1POINT5);
-    adc_regular_channel_config(ADC0, 1, ADC_CHANNEL_8, ADC_SAMPLETIME_1POINT5);
-    adc_regular_channel_config(ADC0, 2, ADC_CHANNEL_9, ADC_SAMPLETIME_1POINT5);
-    adc_regular_channel_config(ADC0, 3, ADC_CHANNEL_14, ADC_SAMPLETIME_1POINT5);
-    adc_regular_channel_config(ADC0, 4, ADC_CHANNEL_15, ADC_SAMPLETIME_1POINT5);
+    adc_regular_channel_config(ADC0, 0, ADC_CHANNEL_7, ADC_SAMPLETIME_7POINT5);
+    adc_regular_channel_config(ADC0, 1, ADC_CHANNEL_8, ADC_SAMPLETIME_7POINT5);
+    adc_regular_channel_config(ADC0, 2, ADC_CHANNEL_9, ADC_SAMPLETIME_7POINT5);
+    adc_regular_channel_config(ADC0, 3, ADC_CHANNEL_14, ADC_SAMPLETIME_7POINT5);
+    adc_regular_channel_config(ADC0, 4, ADC_CHANNEL_15, ADC_SAMPLETIME_7POINT5);
 
 
     /* ADC trigger config *///规则通道组， 软件触发

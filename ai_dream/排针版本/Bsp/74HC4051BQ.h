@@ -53,7 +53,7 @@ void Hc4051IoInit(void);
 void select_y_control_volt(process_handle_t *process_handle, uint8_t y_value, ADC_MODE_TYPE_T adc_mode);
 void adc_calculation_calibration(process_handle_t *process_handle);
 void select_x_control(uint8_t x_value);
-void adc_calculation_calibration_once(process_handle_t *process_handle);
+void adc_calculation_calibration_once(process_handle_t *process_handle, uint8_t enable_math);
 
 
 #endif

@@ -11,6 +11,11 @@
     else		\
     gpio_bit_reset(GPIOB, GPIO_PIN_0)						
 
+#define TEST(a)	if (a)	\
+    gpio_bit_set(GPIOB, GPIO_PIN_15);\
+    else		\
+    gpio_bit_reset(GPIOB, GPIO_PIN_15)						
+
 
 
 void ic_74hc595_delay(uint32_t num);

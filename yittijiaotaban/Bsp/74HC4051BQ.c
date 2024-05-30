@@ -7,7 +7,7 @@
 #include "oled.h"
 
 
-#define ADC_DELAY_TIME (1200) //9 ns * 120
+#define ADC_DELAY_TIME (300) //9 ns * 120
 
 inline void rs2251Delay(uint32_t num)
 {
@@ -25,7 +25,6 @@ uint8_t adc_rank_value[10] = {0,  1,  2,  3,
     4,  5,  6,  7,
     8,  9};
 uint8_t rs2251_rank_value[8] = {1, 2, 3, 0, 4, 7, 5, 6};
-//															0, 1, 2, 3, 4, 5, 6, 7
 
 
 void adc_value_read(process_handle_t *process_handle, uint8_t count_y)
