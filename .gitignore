@@ -6,3 +6,5 @@
 *JLink*
 *.bin
 *.uvgui.*
+*.obj
+*.lst
