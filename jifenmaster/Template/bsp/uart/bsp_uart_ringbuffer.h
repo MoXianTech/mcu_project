@@ -10,6 +10,7 @@ uint16_t uart_ringbuffer_pop_data(uart_type_def uart_num, uint8_t *data, uint16_
 uint16_t uart_ringbuffer_push_data(uart_type_def uart_num, uint8_t *data, uint16_t size);
 uint16_t uart_ringbuffer_getused(uart_type_def uart_num);
 void uart_ringbuffer_deinit(uart_type_def uart_num);
-
+uint16_t uart_ringbuffer_read_data(uart_type_def uart_num, uint8_t *data, uint16_t size);
+void uart_ringbuffer_drop_data(uart_type_def uart_num, uint16_t lentodrop);
 
 #endif

@@ -1,10 +1,10 @@
 #include "priv_malloc.h"
 
 //内存池(32字节对齐)
-uint8_t mem1base[MEM1_MAX_SIZE];													//内部SRAM内存池
-uint8_t mem2base[MEM2_MAX_SIZE];													//内部SRAM内存池
-uint16_t mem1mapbase[MEM1_ALLOC_TABLE_SIZE];
-uint16_t mem2mapbase[MEM2_ALLOC_TABLE_SIZE];
+__attribute__((aligned (32))) uint8_t mem1base[MEM1_MAX_SIZE];													//内部SRAM内存池
+__attribute__((aligned (32))) uint8_t mem2base[MEM2_MAX_SIZE];													//内部SRAM内存池
+__attribute__((aligned (32))) uint16_t mem1mapbase[MEM1_ALLOC_TABLE_SIZE];
+__attribute__((aligned (32))) uint16_t mem2mapbase[MEM2_ALLOC_TABLE_SIZE];
 //内存管理参数
 const uint32_t memtblsize[SRAMBANK] = {MEM1_ALLOC_TABLE_SIZE, MEM2_ALLOC_TABLE_SIZE};			//内存表大小
 const uint32_t memblksize[SRAMBANK] = {MEM1_BLOCK_SIZE, MEM2_BLOCK_SIZE};						//内存分块大小

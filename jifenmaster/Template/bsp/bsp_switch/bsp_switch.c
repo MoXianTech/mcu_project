@@ -1,6 +1,7 @@
 #include "bsp_switch.h"
 #include "board.h"
 #include "PID_moto_control.h"
+#include "bsp_encoder.h"
 
 
 uint16_t adc_value[5] = {0};
@@ -214,20 +215,31 @@ void switch_thread_run()
 #else
     uint16_t moto2_switch = 0, moto4_switch = 0;
 
+    int16_t count = get_encoder_currentCount(MOTO_B);
     moto2_switch = get_switch_value(SWITCH_1);
     if (moto2_switch > 2500)
+    {
         set_moto_target(MOTO_2, 100);
+        printf("%d\n", count);
+    }
     else if (moto2_switch > 1900)
-        set_moto_target(MOTO_2, 0);
+    {
+        set_moto_target(MOTO_2, -100);
+        printf("%d\n", count);
+    }
     else {
         set_moto_stop(MOTO_2);
     }
 
     moto4_switch = get_switch_value(SWITCH_0);
     if (moto4_switch > 2500)
+    {
         set_moto_target(MOTO_4, 100);
+    }
     else if (moto4_switch > 1900)
-        set_moto_target(MOTO_4, 0);
+    {
+        set_moto_target(MOTO_4, -100);
+    }
     else {
         set_moto_stop(MOTO_4);
     }

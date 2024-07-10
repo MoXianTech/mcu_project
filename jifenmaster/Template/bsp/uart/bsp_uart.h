@@ -68,7 +68,7 @@ typedef enum
 #define COM_USART2_RX_GPIO_AF              GPIO_AF_7
 #define COM_USART2_RX_PORT                 GPIOC
 #define COM_USART2_RX_PIN                  GPIO_PIN_10
-#define COM_USART2_BAUD                    460800U
+#define COM_USART2_BAUD                    115200U
 #define COM_USART2_DMA_RCU                 RCU_DMA0
 #define COM_USART2_DMA                     DMA0
 #define COM_USART2_TX_DMA_SUBPERI          DMA_SUBPERI4
@@ -90,7 +90,7 @@ typedef enum
 #define COM_USART5_RX_GPIO_AF              GPIO_AF_8
 #define COM_USART5_RX_PORT                 GPIOC
 #define COM_USART5_RX_PIN                  GPIO_PIN_7
-#define COM_USART5_BAUD                    460800U
+#define COM_USART5_BAUD                    115200U
 #define COM_USART5_DMA_RCU                 RCU_DMA1
 #define COM_USART5_DMA                     DMA1
 #define COM_USART5_TX_DMA_SUBPERI          DMA_SUBPERI5

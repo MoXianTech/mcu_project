@@ -6,12 +6,12 @@
 
 // clang-format off
 
-#define USART_TX_BUFFER_SIZE 2
+#define USART_TX_BUFFER_SIZE 8
 #define USART_RX_BUFFER_SIZE 128
-#define USART5_RX_BUFFER_SIZE 32
+#define USART5_RX_BUFFER_SIZE 500 * 3
 uint8_t usart_tx_buffer[COM_UART_MAX_NUM][USART_TX_BUFFER_SIZE] = {0,0};
 uint8_t usart_rx_buffer[COM_UART_MAX_NUM][USART_RX_BUFFER_SIZE] = {0,0};
-uint8_t usart5_rx_buffer[USART5_RX_BUFFER_SIZE] = {0};
+__attribute__((aligned (32)))  uint8_t usart5_rx_buffer[USART5_RX_BUFFER_SIZE] = {0};
 
 static const uint32_t COM_UART[COM_UART_MAX_NUM] =
 {
@@ -424,36 +424,78 @@ void usart_dma_test(uart_type_def uart_num)
 
         /* wait DMA channel transfer complete */
         while(RESET == dma_flag_get(COM_UART_DMA[uart_num], COM_UART_RX_DMA_CHANNEL[uart_num], DMA_FLAG_FTF)){};
-            dma_flag_clear(COM_UART_DMA[uart_num], COM_UART_RX_DMA_CHANNEL[uart_num], DMA_FLAG_FTF);
+        dma_flag_clear(COM_UART_DMA[uart_num], COM_UART_RX_DMA_CHANNEL[uart_num], DMA_FLAG_FTF);
 
         //usart_dma_receive_config(COM_UART[uart_num], USART_RECEIVE_DMA_DISABLE);
         //printf("\n\r%s\n\r", rxbuffer);
     }
 }
 
-uint8_t test_buffer[30] = {0};
+#define MX_SENSOR_SIZE 4
+#pragma pack (1)
+
+typedef struct {
+    uint16_t sof;
+    uint8_t tran_type;
+    uint16_t len;
+    uint8_t type;
+    uint8_t mx_sensor_value[MX_SENSOR_SIZE];
+    uint16_t checksum;
+} serial_frame_t;
+
+
+#pragma pack ()
+
+serial_frame_t serial_frame = {0};
+void mx_sensor_run(void)
+{
+
+    uint16_t data_len = 0;
+
+    if(uart_ringbuffer_read_data(COM_UART_NUM2, (uint8_t *)&serial_frame.sof, 2) == 2)
+    {
+        if(serial_frame.sof == 0x5aa5)
+        {
+            uart_ringbuffer_pop_data(COM_UART_NUM2, (uint8_t *)&serial_frame.sof, 2);
+            uart_ringbuffer_pop_data(COM_UART_NUM2, (uint8_t *)&serial_frame.tran_type,1);
+            uart_ringbuffer_pop_data(COM_UART_NUM2, (uint8_t *)&serial_frame.len,2);
+
+            uart_ringbuffer_pop_data(COM_UART_NUM2, (uint8_t *)&serial_frame.type,1);
+
+            if((serial_frame.len - 8) >= MX_SENSOR_SIZE)	return;
+
+            uart_ringbuffer_pop_data(COM_UART_NUM2, (uint8_t *)&serial_frame.mx_sensor_value,serial_frame.len - 6);
+            uart_ringbuffer_pop_data(COM_UART_NUM2, (uint8_t *)&serial_frame.checksum,2);
+        }
+        else
+            uart_ringbuffer_drop_data(COM_UART_NUM2, 1);
+
+    }
+
+}
+uint8_t test_buffer[64] = {0};
 void usart_thread_run(void)
 {
-#if 0
-    sprintf((char *)test_buffer, "%d %d %d %d %d",
-            get_switch_value(SWITCH_0),
-            get_switch_value(SWITCH_1),
-            get_switch_value(SWITCH_2),
-            get_switch_value(SWITCH_3),
-            get_switch_value(SWITCH_4)
-           );
+#if 1
+    if (uart_ringbuffer_pop_data(COM_UART_NUM2, test_buffer, 64) != 0)
+    {
+        bsp_usart_dma_send_data(COM_UART_NUM2, test_buffer, 64);
+        delay_ms(20);
+        mymemset((void *)test_buffer, 0x00, 64);
+    }
+
+    if (uart_ringbuffer_pop_data(COM_UART_NUM5, test_buffer, 64) != 0)
+    {
+        bsp_usart_dma_send_data(COM_UART_NUM5, test_buffer, 64);
+        delay_ms(20);
+        mymemset((void *)test_buffer, 0x00, 64);
+    }
+
+#else
+
+    mx_sensor_run();
+
 #endif
-    if (uart_ringbuffer_pop_data(COM_UART_NUM2, test_buffer, 30) != 0)
-    {
-        bsp_usart_dma_send_data(COM_UART_NUM2, test_buffer, 30);
-    }
-
-    if (uart_ringbuffer_pop_data(COM_UART_NUM5, test_buffer, 30) != 0)
-    {
-        bsp_usart_dma_send_data(COM_UART_NUM5, test_buffer, 30);
-    }
-
-    //bsp_usart_dma_recv_data(COM_UART_NUM5, test_buffer, 30);
 }
 
 void DMA1_Channel7_IRQHandler()

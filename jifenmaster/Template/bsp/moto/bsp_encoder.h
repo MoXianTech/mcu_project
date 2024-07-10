@@ -59,7 +59,7 @@ typedef enum
 
 
 void encoder_init(void);
-uint32_t get_encoder_currentCount(moto_num encoder);
+int16_t get_encoder_currentCount(moto_num encoder);
 void set_encoder_currentCount(moto_num encoder, int16_t current_count);
 void clear_encoder_currentCount(moto_num encoder);
 uint32_t get_encoder_speed(moto_num encoder);
