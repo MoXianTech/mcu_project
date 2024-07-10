@@ -9,9 +9,9 @@
 
 #define GET_POWER_CHECK_IN	gpio_input_bit_get(PORT_POWER_CHECK, GPIO_POWER_CHECK)
 
-void power_check_init(void);
-void power_check_handle(void);
+void powercheck_thread_init(void);
+void powercheck_thread_run(void);
 
-//#define ENABLE_EXTI_POWERCHECK
+#define ENABLE_EXTI_POWERCHECK
 
 #endif

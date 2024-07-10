@@ -110,7 +110,7 @@ void set_encoder_currentCount(moto_num encoder, int16_t current_count)
  * 作       者：BS
  * 备       注：无
  ******************************************************************/
-uint32_t get_encoder_currentCount(moto_num encoder)
+int16_t get_encoder_currentCount(moto_num encoder)
 {
     uint32_t ret = 0;
     ret = currentCount[encoder];
@@ -206,6 +206,7 @@ void EXTI10_15_IRQHandler(void)
     if (RESET != exti_interrupt_flag_get(EXTI_13))
     {
         exti_interrupt_flag_clear(EXTI_13);
+        lock_encoder_currentCount(MOTO_MAX_NUM);
         bsp_led_on(LED1);
     }
 
@@ -239,69 +240,6 @@ void EXTI5_9_IRQHandler(void)
     }
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 //void ENCODER_TIM_Config(uint16_t pre, uint16_t per)
 //{

@@ -19,14 +19,14 @@ int main(void)
 
     board_init();
     /* 等待上电稳定 */
-    delay_ms(2000);
+    delay_ms(100);
 
     bsp_led_init();
 
     moto_init(10,800);
     encoder_init();
-    power_check_init();
 
+    powercheck_thread_init();
     switch_thread_init();
     PID_thread_init();
     usart_thread_init();
@@ -39,21 +39,20 @@ int main(void)
         time_ms++;
         if(time_ms % 500 == 0)
         {
+					
             //bsp_led_toggle(LED1);
-            //set_moto_target(MOTO_4, wzh_speed_moto);
         }
 
-        if(time_ms % 100 == 0)
+        if(time_ms %  100 == 0)
         {
             switch_thread_run();
             usart_thread_run();
             airsac_thread_run();
-            power_check_handle();
+            powercheck_thread_run();
         }
 
         if (time_ms % 20 == 0)
         {
-            //printf("%lld\n", time_ms);
             moto_PID_thread_run();
         }
         delay_ms(1);

@@ -1,213 +1,286 @@
 #include <stdlib.h>
 #include <string.h>
+#include <limits.h>
 #include "circular_buffer.h"
 #include "priv_malloc.h"
 
 /**
- * @brief     init the circular buffer with a array
+ * @brief     Check if Num is power of 2
  *
- * @param[in] cbuf      the circular buffer to initial
- * @param[in] buff      the buffer for circular buffer to store data
- * @param[in] size      the size of buffer
+ * @param[in] Num   the number to check
  *
- * @return      the round down(power of 2) size that the circular  buffer to be used
+ * @return          1 if Num is power of 2
  */
-int16_t circbuf_init(circbuf_t *cbuf, uint8_t *buff, uint16_t size) {
-    cbuf->buffer = buff;
-
-    cbuf->size = size;
-    cbuf->tailer = 0;
-    cbuf->header = 0;
-
-    return size;
+unsigned long long ispowerof2(unsigned long long num) {
+  return (num > 0 && !(num & (num - 1)));
 }
 
 /**
- * @brief     circular buffer initialization
+ * @brief     calculate the minimum number that round up to the next power of 2
  *
- * @param[in] cbuf      the circular buffer to initialization
- * @param[in] size      size of the circular buffer
+ * @param[in] Num   the number to calculate
+ *
+ * @return          the number that round up to the next power of 2 (0x100 if Num is 0xf0, 0x81, 0xa3 ... )
+ */
+unsigned long roundup_powerof2(unsigned long num) {
+  unsigned long result = 1;
+
+  if (ispowerof2(num) || num == 0)
+    return num;
+  else if (num > LONG_MAX)
+    return (LONG_MAX ^ ULONG_MAX);   // WARN: if Num biger than (LONG_MAX+1) then result will equals to (LONG_MAX+1)
+
+  while (num) {
+    num >>= 1;
+    result <<= 1;
+  }
+
+  return result;
+}
+
+/**
+ * @brief     calculate the minimum number that round down to the next power of 2
+ *
+ * @param[] Num the number to check
+ *
+ * @return    the number that round up to the last power of 2 (4 if Num is 5,6,7, 8 if Num is 9,10,11 ... )
+ */
+unsigned long rounddown_powerof2(unsigned long num) {
+  unsigned long result = 1;
+
+  if (ispowerof2(num) || num == 0)
+    return num;
+  else if (num > LONG_MAX)
+    return (LONG_MAX ^ ULONG_MAX);   // WARN: if Num biger than (LONG_MAX+1) then result will equals to (LONG_MAX+1)
+
+  while (num) {
+    num >>= 1;
+    result <<= 1;
+  }
+
+  return result >> 1;
+}
+
+/**
+ * @brief     Init the Circular buffer with a array
+ *
+ * @param[in] CBuf      The circular buffer to initial
+ * @param[in] Buff      the buffer for circular buffer to store data
+ * @param[in] Size      the size of buffer
+ *
+ * @return      the Round Down(Power Of 2) size that the circular  buffer to be used
+ */
+int circbuf_init(circbuf_t *cbuf, unsigned char *buff, unsigned int size) {
+  cbuf->buffer = buff;
+
+  if(!ispowerof2(size)) {
+    if (size > INT_MAX)
+      size = (INT_MAX ^ UINT_MAX);
+    else
+      size = (int) rounddown_powerof2(size);
+  }
+
+  cbuf->size = size;
+  cbuf->tailer = 0;
+  cbuf->header = 0;
+
+  return size;
+}
+
+/**
+ * @brief     Circular Buffer initialization
+ *
+ * @param[in] CBuf      the circular buffer to initialization
+ * @param[in] Size      size of the circular buffer
  *
  * @return    1 if memery allocation success
  *            0 if fail
  */
-int16_t circbuf_alloc(circbuf_t *cbuf, uint16_t size) {
-    int16_t result = 0;
+int circbuf_alloc(circbuf_t *cbuf, unsigned int size) {
+  int result = 0;
 
-    cbuf->buffer = (uint8_t *) board_calloc(size);    // buffer will set to 0
+  if(!ispowerof2(size)) {
+    if(size > INT_MAX)
+      size = (INT_MAX ^ UINT_MAX);
+    else
+      size = (int)roundup_powerof2(size);
+  }
+  cbuf->buffer = (unsigned char *) board_calloc(size);    // buffer will set to 0
 
-    cbuf->tailer = 0;
-    cbuf->header = 0;
+  cbuf->tailer = 0;
+  cbuf->header = 0;
 
-    if(cbuf->buffer != NULL) {
-        cbuf->size = size;
-        result = 1;
-    }
+  if(cbuf->buffer != NULL) {
+    cbuf->size = size;
+    result = 1;
+  }
 
-    return result;
+  return result;
 }
 
 /**
  * @brief     delete circular buffer and release the memery
  *
- * @param[in] cbuf  the circular buffer to delete
+ * @param[in] CBuf  the circular buffer to delete
  */
 void circbuf_free(circbuf_t *cbuf) {
-    free(cbuf->buffer);
-    cbuf = NULL;
+  board_free(cbuf->buffer);
+  cbuf->tailer = 0;
+  cbuf->header = 0;
+  cbuf = NULL;
 }
 
 /**
  * @brief     put data into the circular buffer
  *
- * @param[in] cbuf      the circular buffer that will store the data
+ * @param[in] CBuf      the circular buffer that will store the data
  * @param[in] data      the data to store into circular buffer
- * @param[in] lentopush  the length of data to store into circular buffer
+ * @param[in] LenToPush  the length of data to store into circular buffer
  *
  * @return      the actual size stored into circular buffer
  */
-uint16_t circbuf_push(circbuf_t *cbuf, uint8_t *data, uint16_t lentopush) {
-    uint16_t len;
+unsigned int circbuf_push(circbuf_t *cbuf, unsigned char *data, unsigned int lentopush) {
+  unsigned int len;
 
-    lentopush = MIN(lentopush, (cbuf->size - (cbuf->header - cbuf->tailer)));
+  lentopush = MIN(lentopush, (cbuf->size - (cbuf->header - cbuf->tailer)));
 
-    len = MIN(lentopush, cbuf->size - (cbuf->header & (cbuf->size - 1)));
+  len = MIN(lentopush, cbuf->size - (cbuf->header & (cbuf->size - 1)));
 
-    memcpy(cbuf->buffer + (cbuf->header & cbuf->size - 1), data, len);
-    memcpy(cbuf->buffer, data + len, lentopush - len);
+  memcpy(cbuf->buffer + (cbuf->header & cbuf->size - 1), data, len);
+  memcpy(cbuf->buffer, data + len, lentopush - len);
 
-    cbuf->header += lentopush;
+  cbuf->header += lentopush;
 
-    return lentopush;
+  return lentopush;
 }
 
 /**
  * @brief     get data from circular buffer
  *
- * @param[in] cbuf      the circular buffer that stored data
+ * @param[in] CBuf      the circular buffer that stored data
  * @param[in] data      target buffer that will store the data that from circular buffer
- * @param[in] lentopop  the length that wan't to get from circular buffer
+ * @param[in] LenToPop  the length that wan't to get from circular buffer
  *
  * @return      actual length that get from circular buffer
  */
-uint16_t circbuf_pop(circbuf_t *cbuf, uint8_t *data, uint16_t lentopop) {
-    uint16_t len;
+unsigned int circbuf_pop(circbuf_t *cbuf, unsigned char *data, unsigned int lentopop) {
+  unsigned int len;
 
-    lentopop = MIN(lentopop, cbuf->header - cbuf->tailer);
+  lentopop = MIN(lentopop, cbuf->header - cbuf->tailer);
 
-    len = MIN(lentopop, cbuf->size - (cbuf->tailer & (cbuf->size - 1)));
+  len = MIN(lentopop, cbuf->size - (cbuf->tailer & (cbuf->size - 1)));
 
-    memcpy(data, cbuf->buffer + (cbuf->tailer & (cbuf->size - 1)), len);
-    memcpy(data + len, cbuf->buffer, lentopop - len);
+  memcpy(data, cbuf->buffer + (cbuf->tailer & (cbuf->size - 1)), len);
+  memcpy(data + len, cbuf->buffer, lentopop - len);
 
-    cbuf->tailer += lentopop;
+  cbuf->tailer += lentopop;
 
-    return lentopop;
+  return lentopop;
 }
 
 /**
  * @brief     get one char from circular buffer
  *
- * @param[in] cbuf      the circular buffer that stored data
+ * @param[in] CBuf      the circular buffer that stored data
  * @param[n] data       target buffer that will store the data that from circular buffer
  *
  * @return              actual length that get from circular buffer
  */
-uint16_t circbuf_poponechar(circbuf_t *cbuf, uint8_t *data) {
-    return circbuf_pop(cbuf, data, 1);
+unsigned int circbuf_poponechar(circbuf_t *cbuf, unsigned char *data) {
+  return circbuf_pop(cbuf, data, 1);
 }
 
 /**
- * @brief     for access data at tailer + offset
+ * @brief     for access data at Tailer + offset
  *
- * @param[in] cbuf      the circular buffer that stored data
- * @param[in] offset    the offset of tailer
+ * @param[in] CBuf      the circular buffer that stored data
+ * @param[in] offset    the offset of Tailer
  *
- * @return              the data at buffer[tailer + offset]
+ * @return              the data at Buffer[Tailer + offset]
  */
-uint8_t circbuf_at(circbuf_t *cbuf, uint16_t offset) {
-    uint16_t index = (cbuf->tailer + offset) & (cbuf->size - 1);
-    return cbuf->buffer[index];
+unsigned char circbuf_at(circbuf_t *cbuf, unsigned int offset) {
+  unsigned int index = (cbuf->tailer + offset) & (cbuf->size - 1);
+  return cbuf->buffer[index];
 }
 
 /**
  * @brief     get data from circular buffer
  *
- * @param[in] cbuf      the circular buffer that stored data
+ * @param[in] CBuf      the circular buffer that stored data
  * @param[in] data      target buffer that will store the data that from circular buffer
- * @param[in] lentoread  the length that wan't to get from circular buffer
+ * @param[in] LenToRead  the length that wan't to get from circular buffer
  *
  * @return      actual length that get from circular buffer
  */
-uint16_t circbuf_read(circbuf_t *cbuf, uint8_t *data, uint16_t lentoread) {
-    uint16_t len;
+unsigned int circbuf_read(circbuf_t *cbuf, unsigned char *data, unsigned int lentoread) {
+  unsigned int len;
 
-    lentoread = MIN(lentoread, cbuf->header - cbuf->tailer);
+  lentoread = MIN(lentoread, cbuf->header - cbuf->tailer);
 
-    len = MIN(lentoread, cbuf->size - (cbuf->tailer & (cbuf->size - 1)));
+  len = MIN(lentoread, cbuf->size - (cbuf->tailer & (cbuf->size - 1)));
 
-    memcpy(data, cbuf->buffer + (cbuf->tailer & (cbuf->size - 1)), len);
-    memcpy(data + len, cbuf->buffer, lentoread - len);
+  memcpy(data, cbuf->buffer + (cbuf->tailer & (cbuf->size - 1)), len);
+  memcpy(data + len, cbuf->buffer, lentoread - len);
 
-    return lentoread;
+  return lentoread;
 }
 
 /**
  * @brief     drop the the size of data at tailer
  *
- * @param[in] cbuf          the circular buffer that stored data
- * @param[in] lentodrop     the size of data at tailer of circular_buffer to drop
+ * @param[in] CBuf          the circular buffer that stored data
+ * @param[in] LenToDrop     the size of data at tailer of circular_buffer to drop
  */
-void circbuf_drop(circbuf_t *cbuf, uint16_t lentodrop) {
-    if((cbuf->tailer + lentodrop) <= cbuf->header )
-        cbuf->tailer += lentodrop;
-    else
-        cbuf->tailer = cbuf->header;
+void circbuf_drop(circbuf_t *cbuf, unsigned int lentodrop) {
+  if((cbuf->tailer + lentodrop) <= cbuf->header )
+    cbuf->tailer += lentodrop;
+  else
+    cbuf->tailer = cbuf->header;
 }
 
 /**
- * @brief     get the available memery size of circular buffer
+ * @brief     get the Available memery size of circular buffer
  *
- * @param[in] cbuf  the circular buffer to get size
+ * @param[in] CBuf  the circular buffer to get size
  *
- * @return          available size of the circular buffer
+ * @return          Available size of the circular buffer
  */
-uint16_t circbuf_getavalaiblesize(circbuf_t *cbuf) {
-    return ((cbuf->size > 0) ? (cbuf->size - (cbuf->header - cbuf->tailer)) : 0);
+unsigned int circbuf_getavalaiblesize(circbuf_t *cbuf) {
+  return ((cbuf->size > 0) ? (cbuf->size - (cbuf->header - cbuf->tailer)) : 0);
 }
 
 /**
- * @brief     get the used memery size of circular buffer
- *
- * @param[in] cbuf  the circular buffer to get size
- *
- * @return          used size of the circular buffer
- */
-uint16_t circbuf_getusedsize(circbuf_t *cbuf) {
-    return (cbuf->header - cbuf->tailer);
+* @brief     get the used memery size of circular buffer
+*
+* @param[in] CBuf  the circular buffer to get size
+*
+* @return          used size of the circular buffer
+*/
+unsigned int circbuf_getusedsize(circbuf_t *cbuf) {
+  return (cbuf->header - cbuf->tailer);
 }
 
 /**
  * @brief     check if the circular buffer is empty
  *
- * @param[in] cbuf  the circular buffer to check
+ * @param[in] CBuf  the circular buffer to check
  *
  * @return          1   if no data stored in the circular buffer
  *                  0   if the size of circular buffer equals to 0
  *                      or some data stored in the circular buffer
  */
-uint16_t circbuf_isempty(circbuf_t *cbuf) {
-    return ((cbuf->size > 0) && (cbuf->header == cbuf->tailer));
+unsigned int circbuf_isempty(circbuf_t *cbuf) {
+  return ((cbuf->size > 0) && (cbuf->header == cbuf->tailer));
 }
 
 /**
  * @brief     check if the circular buffer is full
  *
- * @param[in] cbuf  the circular buffer to check
+ * @param[in] CBuf  the circular buffer to check
  *
  * @return      1 if the size of circular buffer equals to 0
- *                  or no available space of circular buffer
+ *                  or no Available space of circular buffer
  */
-uint16_t circbuf_isfull(circbuf_t *cbuf) {
-    return ((cbuf->size == 0) || (cbuf->size == (cbuf->header - cbuf->tailer)));
+unsigned int circbuf_isfull(circbuf_t *cbuf) {
+  return ((cbuf->size == 0) || (cbuf->size == (cbuf->header - cbuf->tailer)));
 }
