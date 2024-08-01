@@ -174,7 +174,7 @@ void lwip_thread(void *pvparams)
     mqtt_json_param = cJSON_CreateObject();
 
     cJSON_AddItemToObject(mqtt_json_base, "params", mqtt_json_param);
-    cJSON_AddItemToObject(mqtt_json_param, "Temperature", cJSON_CreateNumber(0));
+    cJSON_AddItemToObject(mtt_json_param, "Temperature", cJSON_CreateNumber(0));
     cJSON_AddItemToObject(mqtt_json_param, "Humidity", cJSON_CreateNumber(0));
     cJSON_AddItemToObject(mqtt_json_param, "illumination", cJSON_CreateNumber(0));
 
