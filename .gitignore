@@ -9,3 +9,5 @@
 *.obj
 *.lst
 *.htm
+esp32/driver_code_base
+esp32/**/build

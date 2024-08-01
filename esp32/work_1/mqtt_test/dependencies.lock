@@ -1,0 +1,14 @@
+dependencies:
+  espressif/json_generator:
+    component_hash: 45033e1c199b13f1c8c1b544fb7d4e2df6a8e3071ebdcb1b22582b61a7974ff2
+    source:
+      type: service
+    version: 1.1.2
+  idf:
+    component_hash: null
+    source:
+      type: idf
+    version: 5.2.2
+manifest_hash: f4bc733dd122733d47587fd76e69ee58ad2a39880a30c4bb8d0f33287deafbb8
+target: esp32s3
+version: 1.0.0
