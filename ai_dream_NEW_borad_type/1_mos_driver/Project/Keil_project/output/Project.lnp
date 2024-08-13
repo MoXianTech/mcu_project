@@ -35,7 +35,6 @@
 ".\output\i2c.o"
 ".\output\oled.o"
 ".\output\can.o"
-".\output\math_filter.o"
 ".\output\led.o"
 ".\output\ble_type_e104.o"
 ".\output\aid_agreement.o"
@@ -45,7 +44,7 @@
 ".\output\esp32_wroom_wifi.o"
 ".\output\at_commit_base.o"
 ".\output\ble_bt677c.o"
-".\output\math_cal.o"
+".\output\resi_math_lib.o"
 --library_type=microlib --strict --scatter ".\output\Project.sct"
 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers

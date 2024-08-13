@@ -1,6 +1,6 @@
 Dependencies for Project 'Project', Target 'GD32E10X': (DO NOT MODIFY !)
 CompilerVersion: 5060960::V5.06 update 7 (build 960)::.\ARMCC
-F (..\main.c)(0x66B9A474)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\..\Firmware\CMSIS -I ..\ -I ..\..\Utilities\LCD_Commom -I ..\..\Firmware\CMSIS\GD\GD32E10x\Include -I ..\..\Firmware\GD32E10x_standard_peripheral\Include -I ..\..\Bsp -I ..\..\Imu -I ..\..\Control -I ..\..\Sdk -I ..\..\math-IC:\Users\abbott\AppData\Local\Arm\Packs\GigaDevice\GD32E10x_DFP\1.2.1\Device\Include-D__UVISION_VERSION="538" -DGD32E10x -DUSE_STDPERIPH_DRIVER -DGD32E10X -DGD32E103V_EVAL-o .\output\main.o --omf_browse .\output\main.crf --depend .\output\main.d)
+F (..\main.c)(0x66BAD2A8)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\..\Firmware\CMSIS -I ..\ -I ..\..\Utilities\LCD_Commom -I ..\..\Firmware\CMSIS\GD\GD32E10x\Include -I ..\..\Firmware\GD32E10x_standard_peripheral\Include -I ..\..\Bsp -I ..\..\Imu -I ..\..\Control -I ..\..\Sdk -I ..\..\math-IC:\Users\abbott\AppData\Local\Arm\Packs\GigaDevice\GD32E10x_DFP\1.2.1\Device\Include-D__UVISION_VERSION="538" -DGD32E10x -DUSE_STDPERIPH_DRIVER -DGD32E10X -DGD32E103V_EVAL-o .\output\main.o --omf_browse .\output\main.crf --depend .\output\main.d)
 I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x60252374)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x60252374)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
@@ -40,9 +40,10 @@ I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x6025237E)
 I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x6025237C)
 I (..\..\Bsp\uart.h)(0x66AB8708)
 I (..\..\Bsp\timer.h)(0x66AB8708)
-I (..\..\Bsp\74hc4051bq.h)(0x66B32C85)
+I (..\..\Bsp\74hc4051bq.h)(0x66B9F641)
 I (..\..\Bsp\flash.h)(0x66AB8708)
 I (..\main.h)(0x66AB8708)
+I (..\..\math\resi_math_lib.h)(0x66B9DB3E)
 I (..\..\Bsp\can.h)(0x66AB8708)
 I (..\..\Bsp\i2c.h)(0x66AB8708)
 I (..\..\Bsp\oled.h)(0x66AB8708)
@@ -50,7 +51,7 @@ I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x60252378)
 I (..\..\Bsp\aid_agreement.h)(0x66AB8707)
 I (..\..\Bsp\circular_buffer.h)(0x66AB8708)
 I (..\..\Bsp\ble_bt677c.h)(0x66AB8707)
-I (..\..\Bsp\malloc.h)(0x66B3273C)
+I (..\..\Bsp\malloc.h)(0x66B9B7EB)
 I (..\..\Bsp\ai_json.h)(0x66AB8707)
 I (..\..\Bsp\ESP32_WROOM_WIFI.h)(0x66AB8707)
 F (..\systick.c)(0x66AB8708)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\..\Firmware\CMSIS -I ..\ -I ..\..\Utilities\LCD_Commom -I ..\..\Firmware\CMSIS\GD\GD32E10x\Include -I ..\..\Firmware\GD32E10x_standard_peripheral\Include -I ..\..\Bsp -I ..\..\Imu -I ..\..\Control -I ..\..\Sdk -I ..\..\math-IC:\Users\abbott\AppData\Local\Arm\Packs\GigaDevice\GD32E10x_DFP\1.2.1\Device\Include-D__UVISION_VERSION="538" -DGD32E10x -DUSE_STDPERIPH_DRIVER -DGD32E10X -DGD32E103V_EVAL-o .\output\systick.o --omf_browse .\output\systick.crf --depend .\output\systick.d)
@@ -835,10 +836,10 @@ I (..\..\Firmware\GD32E10x_standard_peripheral\Include\gd32e10x_usart.h)(0x66AB8
 I (..\..\Firmware\GD32E10x_standard_peripheral\Include\gd32e10x_misc.h)(0x66AB8708)
 I (..\..\Firmware\GD32E10x_standard_peripheral\Include\gd32e10x_exmc.h)(0x66AB8708)
 F (..\..\Firmware\CMSIS\GD\GD32E10x\Source\ARM\startup_gd32e10x.s)(0x66AB8708)(--cpu Cortex-M4.fp.sp -g --apcs=interwork --pd "__MICROLIB SETA 1"-IC:\Users\abbott\AppData\Local\Arm\Packs\GigaDevice\GD32E10x_DFP\1.2.1\Device\Include--pd "__UVISION_VERSION SETA 538" --pd "GD32E10x SETA 1"--list .\list\startup_gd32e10x.lst --xref -o .\output\startup_gd32e10x.o --depend .\output\startup_gd32e10x.d)
-F (..\..\Bsp\74HC4051BQ.c)(0x66B9A468)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\..\Firmware\CMSIS -I ..\ -I ..\..\Utilities\LCD_Commom -I ..\..\Firmware\CMSIS\GD\GD32E10x\Include -I ..\..\Firmware\GD32E10x_standard_peripheral\Include -I ..\..\Bsp -I ..\..\Imu -I ..\..\Control -I ..\..\Sdk -I ..\..\math-IC:\Users\abbott\AppData\Local\Arm\Packs\GigaDevice\GD32E10x_DFP\1.2.1\Device\Include-D__UVISION_VERSION="538" -DGD32E10x -DUSE_STDPERIPH_DRIVER -DGD32E10X -DGD32E103V_EVAL-o .\output\74hc4051bq.o --omf_browse .\output\74hc4051bq.crf --depend .\output\74hc4051bq.d)
+F (..\..\Bsp\74HC4051BQ.c)(0x66B9FC50)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\..\Firmware\CMSIS -I ..\ -I ..\..\Utilities\LCD_Commom -I ..\..\Firmware\CMSIS\GD\GD32E10x\Include -I ..\..\Firmware\GD32E10x_standard_peripheral\Include -I ..\..\Bsp -I ..\..\Imu -I ..\..\Control -I ..\..\Sdk -I ..\..\math-IC:\Users\abbott\AppData\Local\Arm\Packs\GigaDevice\GD32E10x_DFP\1.2.1\Device\Include-D__UVISION_VERSION="538" -DGD32E10x -DUSE_STDPERIPH_DRIVER -DGD32E10X -DGD32E103V_EVAL-o .\output\74hc4051bq.o --omf_browse .\output\74hc4051bq.crf --depend .\output\74hc4051bq.d)
 I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x60252374)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x60252374)
-I (..\..\Bsp\74hc4051bq.h)(0x66B32C85)
+I (..\..\Bsp\74hc4051bq.h)(0x66B9F641)
 I (..\..\Firmware\CMSIS\GD\GD32E10x\Include\gd32e10x.h)(0x66AB8708)
 I (..\..\Firmware\CMSIS\core_cm4.h)(0x66AB8708)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
@@ -874,10 +875,10 @@ I (..\systick.h)(0x66AB8708)
 I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x6025237C)
 I (..\..\Bsp\flash.h)(0x66AB8708)
 I (..\main.h)(0x66AB8708)
+I (..\..\math\resi_math_lib.h)(0x66B9DB3E)
 I (..\..\Bsp\adc.h)(0x66AB8707)
 I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x60252378)
 I (..\..\Bsp\oled.h)(0x66AB8708)
-I (..\..\math\math_cal.h)(0x66B5DB1F)
 F (..\..\Bsp\adc.c)(0x66AB8707)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\..\Firmware\CMSIS -I ..\ -I ..\..\Utilities\LCD_Commom -I ..\..\Firmware\CMSIS\GD\GD32E10x\Include -I ..\..\Firmware\GD32E10x_standard_peripheral\Include -I ..\..\Bsp -I ..\..\Imu -I ..\..\Control -I ..\..\Sdk -I ..\..\math-IC:\Users\abbott\AppData\Local\Arm\Packs\GigaDevice\GD32E10x_DFP\1.2.1\Device\Include-D__UVISION_VERSION="538" -DGD32E10x -DUSE_STDPERIPH_DRIVER -DGD32E10X -DGD32E103V_EVAL-o .\output\adc.o --omf_browse .\output\adc.crf --depend .\output\adc.d)
 I (..\..\Bsp\adc.h)(0x66AB8707)
 I (..\..\Firmware\CMSIS\GD\GD32E10x\Include\gd32e10x.h)(0x66AB8708)
@@ -1138,44 +1139,6 @@ I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x6025237E)
 I (..\systick.h)(0x66AB8708)
 I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x6025237C)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x60252374)
-F (..\..\Bsp\math_filter.c)(0x66AB8708)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\..\Firmware\CMSIS -I ..\ -I ..\..\Utilities\LCD_Commom -I ..\..\Firmware\CMSIS\GD\GD32E10x\Include -I ..\..\Firmware\GD32E10x_standard_peripheral\Include -I ..\..\Bsp -I ..\..\Imu -I ..\..\Control -I ..\..\Sdk -I ..\..\math-IC:\Users\abbott\AppData\Local\Arm\Packs\GigaDevice\GD32E10x_DFP\1.2.1\Device\Include-D__UVISION_VERSION="538" -DGD32E10x -DUSE_STDPERIPH_DRIVER -DGD32E10X -DGD32E103V_EVAL-o .\output\math_filter.o --omf_browse .\output\math_filter.crf --depend .\output\math_filter.d)
-I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
-I (..\..\Bsp\math_filter.h)(0x66AB8708)
-I (..\..\Bsp\74HC4051BQ.h)(0x66B32C85)
-I (..\..\Firmware\CMSIS\GD\GD32E10x\Include\gd32e10x.h)(0x66AB8708)
-I (..\..\Firmware\CMSIS\core_cm4.h)(0x66AB8708)
-I (..\..\Firmware\CMSIS\core_cmInstr.h)(0x66AB8708)
-I (..\..\Firmware\CMSIS\core_cmFunc.h)(0x66AB8708)
-I (..\..\Firmware\CMSIS\core_cm4_simd.h)(0x66AB8708)
-I (..\..\Firmware\CMSIS\GD\GD32E10x\Include\system_gd32e10x.h)(0x66AB8708)
-I (..\gd32e10x_libopt.h)(0x66AB8708)
-I (..\..\Firmware\GD32E10x_standard_peripheral\Include\gd32e10x_rcu.h)(0x66AB8708)
-I (..\..\Firmware\GD32E10x_standard_peripheral\Include\gd32e10x_adc.h)(0x66AB8708)
-I (..\..\Firmware\GD32E10x_standard_peripheral\Include\gd32e10x_can.h)(0x66AB8708)
-I (..\..\Firmware\GD32E10x_standard_peripheral\Include\gd32e10x_crc.h)(0x66AB8708)
-I (..\..\Firmware\GD32E10x_standard_peripheral\Include\gd32e10x_ctc.h)(0x66AB8708)
-I (..\..\Firmware\GD32E10x_standard_peripheral\Include\gd32e10x_dac.h)(0x66AB8708)
-I (..\..\Firmware\GD32E10x_standard_peripheral\Include\gd32e10x_dbg.h)(0x66AB8708)
-I (..\..\Firmware\GD32E10x_standard_peripheral\Include\gd32e10x_dma.h)(0x66AB8708)
-I (..\..\Firmware\GD32E10x_standard_peripheral\Include\gd32e10x_exti.h)(0x66AB8708)
-I (..\..\Firmware\GD32E10x_standard_peripheral\Include\gd32e10x_fmc.h)(0x66AB8708)
-I (..\..\Firmware\GD32E10x_standard_peripheral\Include\gd32e10x_fwdgt.h)(0x66AB8708)
-I (..\..\Firmware\GD32E10x_standard_peripheral\Include\gd32e10x_gpio.h)(0x66AB8708)
-I (..\..\Firmware\GD32E10x_standard_peripheral\Include\gd32e10x_i2c.h)(0x66AB8708)
-I (..\..\Firmware\GD32E10x_standard_peripheral\Include\gd32e10x_pmu.h)(0x66AB8708)
-I (..\..\Firmware\GD32E10x_standard_peripheral\Include\gd32e10x_bkp.h)(0x66AB8708)
-I (..\..\Firmware\GD32E10x_standard_peripheral\Include\gd32e10x_rtc.h)(0x66AB8708)
-I (..\..\Firmware\GD32E10x_standard_peripheral\Include\gd32e10x_spi.h)(0x66AB8708)
-I (..\..\Firmware\GD32E10x_standard_peripheral\Include\gd32e10x_timer.h)(0x66AB8708)
-I (..\..\Firmware\GD32E10x_standard_peripheral\Include\gd32e10x_usart.h)(0x66AB8708)
-I (..\..\Firmware\GD32E10x_standard_peripheral\Include\gd32e10x_wwdgt.h)(0x66AB8708)
-I (..\..\Firmware\GD32E10x_standard_peripheral\Include\gd32e10x_misc.h)(0x66AB8708)
-I (..\..\Firmware\GD32E10x_standard_peripheral\Include\gd32e10x_exmc.h)(0x66AB8708)
-I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x6025237E)
-I (..\systick.h)(0x66AB8708)
-I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x6025237C)
-I (..\..\Bsp\flash.h)(0x66AB8708)
-I (..\main.h)(0x66AB8708)
 F (..\..\Bsp\led.c)(0x66AB8708)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\..\Firmware\CMSIS -I ..\ -I ..\..\Utilities\LCD_Commom -I ..\..\Firmware\CMSIS\GD\GD32E10x\Include -I ..\..\Firmware\GD32E10x_standard_peripheral\Include -I ..\..\Bsp -I ..\..\Imu -I ..\..\Control -I ..\..\Sdk -I ..\..\math-IC:\Users\abbott\AppData\Local\Arm\Packs\GigaDevice\GD32E10x_DFP\1.2.1\Device\Include-D__UVISION_VERSION="538" -DGD32E10x -DUSE_STDPERIPH_DRIVER -DGD32E10X -DGD32E103V_EVAL-o .\output\led.o --omf_browse .\output\led.crf --depend .\output\led.d)
 I (..\..\Bsp\led.h)(0x66AB8708)
 I (..\..\Firmware\CMSIS\GD\GD32E10x\Include\gd32e10x.h)(0x66AB8708)
@@ -1293,7 +1256,7 @@ I (C:\Keil_v5\ARM\ARMCC\include\math.h)(0x60252378)
 I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x60252374)
 I (C:\Keil_v5\ARM\ARMCC\include\limits.h)(0x60252376)
 I (C:\Keil_v5\ARM\ARMCC\include\ctype.h)(0x60252376)
-I (..\..\Bsp\malloc.h)(0x66B3273C)
+I (..\..\Bsp\malloc.h)(0x66B9B7EB)
 I (..\..\Firmware\CMSIS\GD\GD32E10x\Include\gd32e10x.h)(0x66AB8708)
 I (..\..\Firmware\CMSIS\core_cm4.h)(0x66AB8708)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
@@ -1327,7 +1290,7 @@ I (..\..\Firmware\GD32E10x_standard_peripheral\Include\gd32e10x_exmc.h)(0x66AB87
 I (..\..\Bsp\cJSON.h)(0x66AB8708)
 I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x6025237E)
 F (..\..\Bsp\malloc.c)(0x66AB8708)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\..\Firmware\CMSIS -I ..\ -I ..\..\Utilities\LCD_Commom -I ..\..\Firmware\CMSIS\GD\GD32E10x\Include -I ..\..\Firmware\GD32E10x_standard_peripheral\Include -I ..\..\Bsp -I ..\..\Imu -I ..\..\Control -I ..\..\Sdk -I ..\..\math-IC:\Users\abbott\AppData\Local\Arm\Packs\GigaDevice\GD32E10x_DFP\1.2.1\Device\Include-D__UVISION_VERSION="538" -DGD32E10x -DUSE_STDPERIPH_DRIVER -DGD32E10X -DGD32E103V_EVAL-o .\output\malloc.o --omf_browse .\output\malloc.crf --depend .\output\malloc.d)
-I (..\..\Bsp\malloc.h)(0x66B3273C)
+I (..\..\Bsp\malloc.h)(0x66B9B7EB)
 I (..\..\Firmware\CMSIS\GD\GD32E10x\Include\gd32e10x.h)(0x66AB8708)
 I (..\..\Firmware\CMSIS\core_cm4.h)(0x66AB8708)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
@@ -1398,7 +1361,7 @@ I (..\..\Firmware\GD32E10x_standard_peripheral\Include\gd32e10x_wwdgt.h)(0x66AB8
 I (..\..\Firmware\GD32E10x_standard_peripheral\Include\gd32e10x_misc.h)(0x66AB8708)
 I (..\..\Firmware\GD32E10x_standard_peripheral\Include\gd32e10x_exmc.h)(0x66AB8708)
 I (..\systick.h)(0x66AB8708)
-I (..\..\Bsp\malloc.h)(0x66B3273C)
+I (..\..\Bsp\malloc.h)(0x66B9B7EB)
 I (..\..\Bsp\aid_agreement.h)(0x66AB8707)
 I (..\..\Bsp\circular_buffer.h)(0x66AB8708)
 F (..\..\Bsp\ESP32_WROOM_WIFI.c)(0x66AB8707)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\..\Firmware\CMSIS -I ..\ -I ..\..\Utilities\LCD_Commom -I ..\..\Firmware\CMSIS\GD\GD32E10x\Include -I ..\..\Firmware\GD32E10x_standard_peripheral\Include -I ..\..\Bsp -I ..\..\Imu -I ..\..\Control -I ..\..\Sdk -I ..\..\math-IC:\Users\abbott\AppData\Local\Arm\Packs\GigaDevice\GD32E10x_DFP\1.2.1\Device\Include-D__UVISION_VERSION="538" -DGD32E10x -DUSE_STDPERIPH_DRIVER -DGD32E10X -DGD32E103V_EVAL-o .\output\esp32_wroom_wifi.o --omf_browse .\output\esp32_wroom_wifi.crf --depend .\output\esp32_wroom_wifi.d)
@@ -1516,12 +1479,13 @@ I (C:\Keil_v5\ARM\ARMCC\include\stdbool.h)(0x6025237C)
 I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x60252374)
 I (..\..\Bsp\ble_bt677c.h)(0x66AB8707)
 I (..\..\Bsp\at_commit_base.h)(0x66AB8707)
-I (..\..\Bsp\74hc4051bq.h)(0x66B32C85)
+I (..\..\Bsp\74hc4051bq.h)(0x66B9F641)
 I (..\..\Bsp\flash.h)(0x66AB8708)
 I (..\main.h)(0x66AB8708)
+I (..\..\math\resi_math_lib.h)(0x66B9DB3E)
 I (..\..\Bsp\aid_agreement.h)(0x66AB8707)
 I (..\..\Bsp\circular_buffer.h)(0x66AB8708)
 I (C:\Keil_v5\ARM\ARMCC\include\stdlib.h)(0x60252374)
-F (..\..\math\math_cal.c)(0x66B5DBB3)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\..\Firmware\CMSIS -I ..\ -I ..\..\Utilities\LCD_Commom -I ..\..\Firmware\CMSIS\GD\GD32E10x\Include -I ..\..\Firmware\GD32E10x_standard_peripheral\Include -I ..\..\Bsp -I ..\..\Imu -I ..\..\Control -I ..\..\Sdk -I ..\..\math-IC:\Users\abbott\AppData\Local\Arm\Packs\GigaDevice\GD32E10x_DFP\1.2.1\Device\Include-D__UVISION_VERSION="538" -DGD32E10x -DUSE_STDPERIPH_DRIVER -DGD32E10X -DGD32E103V_EVAL-o .\output\math_cal.o --omf_browse .\output\math_cal.crf --depend .\output\math_cal.d)
-I (..\..\math\math_cal.h)(0x66B5DB1F)
+F (..\..\math\resi_math_lib.c)(0x66B9FAAE)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I ..\..\Firmware\CMSIS -I ..\ -I ..\..\Utilities\LCD_Commom -I ..\..\Firmware\CMSIS\GD\GD32E10x\Include -I ..\..\Firmware\GD32E10x_standard_peripheral\Include -I ..\..\Bsp -I ..\..\Imu -I ..\..\Control -I ..\..\Sdk -I ..\..\math-IC:\Users\abbott\AppData\Local\Arm\Packs\GigaDevice\GD32E10x_DFP\1.2.1\Device\Include-D__UVISION_VERSION="538" -DGD32E10x -DUSE_STDPERIPH_DRIVER -DGD32E10X -DGD32E103V_EVAL-o .\output\resi_math_lib.o --omf_browse .\output\resi_math_lib.crf --depend .\output\resi_math_lib.d)
+I (..\..\math\resi_math_lib.h)(0x66B9DB3E)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
