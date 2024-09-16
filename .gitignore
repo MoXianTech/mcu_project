@@ -1,0 +1,11 @@
+*.o
+*.crf
+*.d
+*.uvguix.*
+*tags
+*JLink*
+*.bin
+*.uvgui.*
+*.obj
+*.lst
+*.htm
