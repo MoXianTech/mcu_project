@@ -11,23 +11,23 @@
 #define UART_TX(a)	if (a)	\
     gpio_bit_set(GPIOA, GPIO_PIN_9);\
     else		\
-    gpio_bit_reset(GPIOA, GPIO_PIN_9)							
+    gpio_bit_reset(GPIOA, GPIO_PIN_9)
 
 #define XC_A(a)	if (a)	\
     gpio_bit_set(GPIOA, GPIO_PIN_10);\
     else		\
-    gpio_bit_reset(GPIOA, GPIO_PIN_10)				
+    gpio_bit_reset(GPIOA, GPIO_PIN_10)
 
 #define XC_B(a)	if (a)	\
     gpio_bit_set(GPIOA, GPIO_PIN_9);\
     else		\
-    gpio_bit_reset(GPIOA, GPIO_PIN_9)				
+    gpio_bit_reset(GPIOA, GPIO_PIN_9)
 
 #define XC_C(a)	if (a)	\
     gpio_bit_set(GPIOA, GPIO_PIN_8);\
     else		\
-    gpio_bit_reset(GPIOA, GPIO_PIN_8)				
-    
+    gpio_bit_reset(GPIOA, GPIO_PIN_8)
+
 
 #define SENSOR_POS_X 32
 #define SENSOR_POS_Y 64
@@ -46,6 +46,10 @@ typedef struct {
     uint16_t adc_sensor_value[SENSOR_POS_X][SENSOR_POS_Y];
     uint16_t adc_resi_value[SENSOR_POS_Y];
     uint16_t resi_cali_value[SENSOR_POS_X][SENSOR_POS_Y];
+
+    uint8_t matrix_real[SENSOR_POS_X][SENSOR_POS_Y];
+    uint8_t matrix_stab[SENSOR_POS_X][SENSOR_POS_Y];
+
     uint8_t display_matrix[SENSOR_POS_X][SENSOR_POS_Y];
     uint8_t x_max;
     uint8_t y_max;

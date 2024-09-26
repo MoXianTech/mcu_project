@@ -7,7 +7,7 @@
 #include "oled.h"
 
 
-#define ADC_DELAY_TIME (19 * 120) //9 ns * 120
+#define ADC_DELAY_TIME (12 * 120) //9 ns * 120
 
 void Hc4051Delay(uint32_t num)
 {
@@ -17,8 +17,8 @@ void Hc4051Delay(uint32_t num)
 
 void Hc4051IoInit(void)
 {
-    rcu_periph_clock_enable(RCU_GPIOB); 
-    rcu_periph_clock_enable(RCU_GPIOC); 
+    rcu_periph_clock_enable(RCU_GPIOB);
+    rcu_periph_clock_enable(RCU_GPIOC);
     rcu_periph_clock_enable(RCU_GPIOD);
     rcu_periph_clock_enable(RCU_GPIOE);
     rcu_periph_clock_enable(RCU_AF);
@@ -37,7 +37,9 @@ void Hc4051IoInit(void)
     XC_B(0);
     XC_C(1);
 
-    math_resi_init(3000, 20, 255);
+    //math_resi_init(6000, 100, 100, 4096, 255); //tpv8021B damo
+    //math_resi_init(6000, 350, 100, 4096, 255); //tpus8022A test auto
+		math_resi_init(6000, 400, 100, 4096, 255); //tpus919 test auto
 }
 
 uint8_t adc_rank[8] = {0, 3, 2, 1, 5, 6 ,7, 4};
@@ -114,7 +116,7 @@ void select_x_control(uint8_t x_value)
 uint8_t refine_y_pos_normal[32] = {22, 21, 20, 19, 18, 17, 16, 7,
     6,  5,  4,  3, 2, 1,  0,  15,
     //    8, 9,  10,  11,  12,  13, 14,  31,
-    14, 13, 12, 11, 10, 9 , 8, 31, 
+    14, 13, 12, 11, 10, 9 , 8, 31,
     30, 29, 28, 27, 26, 25, 24, 23};
 
 uint8_t refine_y_pos_aosha[32] = {19, 18, 17, 16, 31, 30, 29, 20,
@@ -123,9 +125,9 @@ uint8_t refine_y_pos_aosha[32] = {19, 18, 17, 16, 31, 30, 29, 20,
     26, 27, 28,  3,  4,  5,  6,  7};
 
 void select_y_control_volt(process_handle_t *process_handle,
-                           uint8_t y_value,
-                           ADC_MODE_TYPE_T adc_mode,
-                           SCAN_LEVEL_T scan_mode)
+        uint8_t y_value,
+        ADC_MODE_TYPE_T adc_mode,
+        SCAN_LEVEL_T scan_mode)
 {
     uint32_t y_target_value = 0x01;
     bool enable_negation = false;
@@ -190,8 +192,6 @@ void select_y_control_volt(process_handle_t *process_handle,
 void cal_resi_value(process_handle_t *process_handle, uint8_t y_value, SCAN_LEVEL_T scan_level)
 {
     math_resi_cal_t math_resi_cal = {0};
-    math_resi_cal.resi_value = 100;
-    math_resi_cal.adc_max_value = 4096;
     math_resi_cal.sensor_adc_value = process_handle->adc_sensor_value[y_value];
     math_resi_cal.resi_adc_value = process_handle->adc_resi_value;
 
@@ -201,10 +201,11 @@ void cal_resi_value(process_handle_t *process_handle, uint8_t y_value, SCAN_LEVE
             scan_level);
 
     math_display_resi(process_handle->resi_cali_value[y_value],
-            process_handle->display_matrix[y_value],
-            process_handle->y_max);
+            process_handle->matrix_real[y_value],
+            process_handle->y_max,
+            RESI_BACKWARDS);
 
-    if (1)
+    if (0)
     {
         if (y_value == 0)
             printf("%d/%dresi %d %d\n",
@@ -213,7 +214,19 @@ void cal_resi_value(process_handle_t *process_handle, uint8_t y_value, SCAN_LEVE
                     process_handle->resi_cali_value[0][1],
                     process_handle->display_matrix[0][1]);
     }
-
 }
 
+void cal_creep_resistance(process_handle_t *process_handle)
+{
+    uint16_t count = SENSOR_POS_X * SENSOR_POS_Y;
+    uint8_t *matrix_real = (uint8_t *)process_handle->matrix_real;
+    uint8_t *matrix_stab = (uint8_t *)process_handle->matrix_stab;
+
+    while(count --)
+    {
+        if ((uint8_t *)process_handle->matrix_real)
+            ;
+
+    }
+}
 

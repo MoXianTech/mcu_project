@@ -161,7 +161,7 @@ int main(void)
         }
 
         if (time_1ms % 2000 == 0)
-        {            
+        {
 //            wifi_config_thread(NULL);
         }
 
@@ -212,11 +212,11 @@ int main(void)
             serial_frame.len = sizeof(serial_frame) - 2;
             serial_frame.type = 0x01;
 
-            memcpy((uint8_t *)serial_frame.adc_value, (uint8_t *)process_handle.display_matrix, SENSOR_POS_X * SENSOR_POS_Y);
+            memcpy((uint8_t *)serial_frame.adc_value, (uint8_t *)process_handle.matrix_real, SENSOR_POS_X * SENSOR_POS_Y);
             serial_frame.checksum = CalChecksum((uint8_t *)&serial_frame, sizeof(serial_frame) - 2);
 
 #ifndef DEBUG_MODE
-            if (0)
+            if (1)
             {
                 usart_dma_send_data(USART_2_TR, (uint8_t *)&serial_frame, sizeof(serial_frame));
                 usart_dma_send_data(USART_0_TR, (uint8_t *)&serial_frame, sizeof(serial_frame));

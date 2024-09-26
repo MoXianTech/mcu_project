@@ -1,0 +1,2 @@
+--create ..\output_hex\cdc_acm.lib
+..\output_hex\resi_math_lib.o
