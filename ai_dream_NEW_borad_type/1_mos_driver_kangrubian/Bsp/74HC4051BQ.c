@@ -37,8 +37,11 @@ void Hc4051IoInit(void)
     XC_B(0);
     XC_C(1);
 
-    math_resi_init(6000, 100, 100, 4096, 255); //tpv8021B damo
-    //		math_resi_init(6000, 350, 100, 4096, 255); //tpus8022A test auto
+    //math_resi_init(6000, 100, 100, 4096, 255); //tpv8021B damo
+    //math_resi_init(6000, 350, 100, 4096, 255); //tpus8022A test auto
+		//math_resi_init(6000, 200, 100, 4096, 255); //tpus8022A ¿¹Èä±ä
+		math_resi_init(6000, 200, 100, 4096, 255); //tpus 919 ¿¹Èä±ä
+		
 }
 
 uint8_t adc_rank[8] = {0, 3, 2, 1, 5, 6 ,7, 4};
@@ -216,6 +219,60 @@ void cal_resi_value(process_handle_t *process_handle, uint8_t y_value, SCAN_LEVE
 }
 
 #define CREEP_VALUR 1
+#define CREEP_INTERVAL_FRAME 5
+void cal_creep_resistance(process_handle_t *process_handle)
+{
+    uint16_t count = SENSOR_POS_X * SENSOR_POS_Y;
+    uint8_t *matrix_real = (uint8_t *)process_handle->matrix_real;
+    uint8_t *matrix_stab = (uint8_t *)process_handle->matrix_stab;
+    uint8_t *matrix_creep = (uint8_t *)process_handle->matrix_creep;
+    uint8_t *matrix_display = (uint8_t *)process_handle->matrix_display;
+    int16_t matrix_deviation = 0;
+    static uint64_t frame_count = 0;
+
+    frame_count ++;
+
+    do {
+        count --;
+
+        if (matrix_real[count] < 2)
+        {
+            matrix_display[count] = 0;
+            matrix_creep[count] = 0;
+            continue;
+        }
+
+        //matrix_deviation = (matrix_real[count] > matrix_stab[count]) ? (matrix_real[count] - matrix_stab[count]) : -1;
+
+        if (!(frame_count % CREEP_INTERVAL_FRAME))
+        {
+            matrix_deviation = (matrix_real[count] > matrix_stab[count]) ? (matrix_real[count] - matrix_stab[count]) : (matrix_stab[count] - matrix_real[count]);
+
+            if (matrix_deviation > CREEP_VALUR)
+            {
+
+            } else {
+                matrix_deviation = (matrix_real[count] > matrix_stab[count]) ? matrix_deviation : -matrix_deviation;
+                matrix_creep[count] += matrix_deviation;
+            }
+
+            matrix_stab[count] = matrix_real[count];
+        }
+
+        matrix_display[count] = matrix_real[count] > matrix_creep[count] ? matrix_real[count] - matrix_creep[count] : matrix_real[count];
+
+        if (matrix_real[count] < matrix_creep[count])
+        {
+            matrix_creep[count] = 0;
+        }
+
+
+    } while(count);
+}
+
+#if 0
+
+#define CREEP_VALUR 1
 void cal_creep_resistance(process_handle_t *process_handle)
 {
     uint16_t count = SENSOR_POS_X * SENSOR_POS_Y;
@@ -247,4 +304,5 @@ void cal_creep_resistance(process_handle_t *process_handle)
 
     } while(count);
 }
+#endif
 

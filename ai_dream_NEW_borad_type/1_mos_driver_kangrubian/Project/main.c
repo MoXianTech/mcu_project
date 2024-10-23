@@ -212,8 +212,8 @@ int main(void)
             serial_frame.len = sizeof(serial_frame) - 2;
             serial_frame.type = 0x01;
 
-            //cal_creep_resistance(&process_handle);
-            memcpy((uint8_t *)serial_frame.adc_value, (uint8_t *)process_handle.matrix_real, SENSOR_POS_X * SENSOR_POS_Y);
+            cal_creep_resistance(&process_handle);
+            memcpy((uint8_t *)serial_frame.adc_value, (uint8_t *)process_handle.matrix_display, SENSOR_POS_X * SENSOR_POS_Y);
             serial_frame.checksum = CalChecksum((uint8_t *)&serial_frame, sizeof(serial_frame) - 2);
 
 #ifndef DEBUG_MODE
