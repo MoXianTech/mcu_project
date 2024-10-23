@@ -40,7 +40,7 @@ void Hc4051IoInit(void)
     //math_resi_init(6000, 100, 100, 4096, 255); //tpv8021B damo
     //math_resi_init(6000, 350, 100, 4096, 255); //tpus8022A test auto
 		//math_resi_init(6000, 200, 100, 4096, 255); //tpus8022A øπ»‰±‰
-		math_resi_init(6000, 200, 100, 4096, 255); //tpus 919 øπ»‰±‰
+		math_resi_init(6000, 400, 100, 4096, 255); //tpus 919 øπ»‰±‰
 		
 }
 
