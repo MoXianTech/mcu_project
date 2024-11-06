@@ -116,7 +116,6 @@ unsigned short CalCheckSum(unsigned char * msg, unsigned char len)
     ADC_CLANNEL_0 = 0
 
 void send_message_once(u8 command, u16 *adc_value, u8 adc_num);
-u32 time_1ms = 0, end_time_1ms = 0, new_test_time = 0;
 void set_adc_channel(u8 enable_channel);
 void set_vcc_channel(u8 enable_channel);
 u16 get_once_adc_value(u8 io_channel, u8 adc_channel);
@@ -159,6 +158,16 @@ typedef struct {
     u16 target_end_sum;
 } param_value_t;
 
+//#define READ_TEST_DATA
+
+
+/* 读取测试数据时加快速度 */
+#ifdef  READ_TEST_DATA
+#define TIME_INTERVAL 20
+#else
+#define TIME_INTERVAL 100
+#endif
+
 #define MAX_ADC_VALUE 1024
 #define COUNT_START_VALUE_TRIGGER 0.2
 #define COUNT_END_VALUE_TRIGGER 0.08
@@ -170,6 +179,16 @@ typedef struct {
 #define ADC_RECORD_END_COUNT_NUM 10
 #define ADC_RECORD_START_COUNT_NUM 2
 
+#define ALARM_RECORD_COUNT_NUM 10
+
+#define ALARM_MAX_EXTERM_DIFF_REAL_TIME_SECOND 2
+#define ALARM_MAX_EXTERM_DIFF_MCU_TIME (ALARM_MAX_EXTERM_DIFF_REAL_TIME_SECOND * 1000 / TIME_INTERVAL)
+
+/* 用户跪下太久还没起来太久报警 */
+#define ALARM_START_TIMEOUT_REAL_TIME_SECOND 5
+#define ALARM_START_TIMEOUT_MCU_TIME (ALARM_START_TIMEOUT_REAL_TIME_SECOND * 1000 / TIME_INTERVAL)
+#define ALARM_START_TIMEOUT_NUM 2
+
 u16 get_buffer_sum_value(u16 *buffer, u8 buffer_size)
 {
     u16 sum_value = 0x00;
@@ -180,6 +199,28 @@ u16 get_buffer_sum_value(u16 *buffer, u8 buffer_size)
         sum_value += buffer[buffer_size];
 
     return sum_value;
+}
+
+
+u32 get_buffer_extreme_diff(u32 *buffer, u8 buffer_size)
+{
+    u8 i = 0;
+    u32 max = 0xffffffff, min = 0;
+    for(; i < buffer_size; i++) {
+
+        if (buffer[i] == 0) continue;
+
+        if(buffer[i] > max) {
+            max = buffer[i];
+        }
+        if(buffer[i] < min) {
+            min = buffer[i];
+        }
+    }
+
+    if (max - min == 0xffffffff) return 0;
+
+    return max - min;
 }
 
 void update_start_param_limit(param_value_t *param_value, u16 target_value)
@@ -235,18 +276,18 @@ u8 check_value_limit_range(param_value_t *param_value, u16 *record_buffer, u8 bu
     return rtv;
 }
 
-//#define READ_TEST_DATA
 
 /**********************************************/
 void main(void)
 {
-    u32 timer_1ms = 0, count_number_sum = 0;
+    u32 time_1ms = 0, count_number_sum = 0, count_start_time = 0, count_record_time = 0;
+    u32 alarm_record_time_queue[ALARM_RECORD_COUNT_NUM] = {0};
+    u16 alarm_record_time_count = 0;
+    u8 alarm_start_timeout_count = 0;
+    u8 need_count_once = 0;
     u16 adc_value[ADC_CHANNEL] = { 0 };
     u16 default_value = 0;
     param_value_t param_value = {0};
-
-    u16 target_start_value[ADC_RECORD_START_COUNT_NUM] = {0};
-    u16 target_end_value[ADC_RECORD_START_COUNT_NUM] = {0};
 
     u16 record_start_value[ADC_RECORD_START_COUNT_NUM] = {0};
     u16 record_end_value[ADC_RECORD_END_COUNT_NUM] = {0};
@@ -337,6 +378,7 @@ void main(void)
                 if ((count_flag & 0x01) == 0x01)
                 {
                     count_flag |= 0x04;
+                    count_start_time = time_1ms;
                 }
 
                 count_flag |= 0x02;
@@ -363,7 +405,7 @@ void main(void)
                 if ((count_flag & 0x06) == 0x06)
                 {
                     //如果起来后稳定的数据离原始差太多，则更新稳定的阈值
-                    rtl = check_value_limit_range(&param_value, record_end_value, ADC_RECORD_END_COUNT_NUM, END_TRIGGER); 
+                    rtl = check_value_limit_range(&param_value, record_end_value, ADC_RECORD_END_COUNT_NUM, END_TRIGGER);
 
                     switch (rtl)
                     {
@@ -382,21 +424,50 @@ void main(void)
                                 peripheral_reversal_number(2, 50, PERI_BEEP);
                             break;
                     }
+
+                    if (rtl > 0)
+                    {
+                        alarm_record_time_queue[alarm_record_time_count ++] = time_1ms - count_start_time;
+                        if (alarm_record_time_count >= ALARM_RECORD_COUNT_NUM)  alarm_record_time_count = 0;
+
+                        /* 当计数的极值大于 ALARM_MAX_EXTERM_DIFF_REAL_TIME_SECOND 时, 报警通知用户按键校准 */
+                        if (get_buffer_extreme_diff(alarm_record_time_queue, ALARM_RECORD_COUNT_NUM) > ALARM_MAX_EXTERM_DIFF_MCU_TIME)
+                        {
+                            peripheral_reversal_number(3, 1000, PERI_BEEP);
+                        }
+
+                        need_count_once = 0;
+
+                        if (time_1ms - count_start_time < ALARM_START_TIMEOUT_MCU_TIME)
+                        {
+                            alarm_start_timeout_count = 0;
+                        }
+                    }
+
                     count_flag = 0x00;
                     count_number_sum ++;
+
+
+                } else if ((count_flag & 0x04) && (need_count_once == 0)) {
+                    /* 如果用户跪下之后超过 ALARM_START_TIMEOUT_REAL_TIME_SECOND 秒没有检测到起来的信号
+                     * 并且连续累计 ALARM_START_TIMEOUT_NUM 次后开始提升用户按键校准*/
+                    if (time_1ms - count_start_time > ALARM_START_TIMEOUT_MCU_TIME)
+                    {
+                        need_count_once = 1;
+                        alarm_start_timeout_count ++;
+                        if (alarm_record_time_count >= ALARM_RECORD_COUNT_NUM)
+                            peripheral_reversal_number(5, 1000, PERI_BEEP);
+                    }
                 }
 
                 adc_value[5] = rtl;
+								adc_value[6] = get_buffer_extreme_diff(alarm_record_time_queue, ALARM_RECORD_COUNT_NUM);
+								adc_value[7] = count_number_sum;
                 send_message_once(1, adc_value, ADC_CHANNEL);
             }
         }
 
-#ifdef READ_TEST_DATA
-        //读取数据测试时加快读取速度
-        delay_ms(20);
-#else
-        delay_ms(100);
-#endif
+        delay_ms(TIME_INTERVAL);
     }
 }
 

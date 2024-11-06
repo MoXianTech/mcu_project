@@ -1,4 +1,4 @@
-BL51 BANKED LINKER/LOCATER V6.22.4.0                                                    08/14/2024  10:07:29  PAGE 1
+BL51 BANKED LINKER/LOCATER V6.22.4.0                                                    10/31/2024  11:39:52  PAGE 1
 
 
 BL51 BANKED LINKER/LOCATER V6.22.4.0, INVOKED BY:
@@ -59,7 +59,7 @@ LINK MAP OF MODULE:  .\list\ADC (ADC)
             CODE    0000H     0003H     ABSOLUTE     
             CODE    0003H     001DH     UNIT         ?PR?ADC_CONFIG?MAIN
                     0020H     0003H                  *** GAP ***
-BL51 BANKED LINKER/LOCATER V6.22.4.0                                                  08/14/2024  10:07:29  PAGE 2
+BL51 BANKED LINKER/LOCATER V6.22.4.0                                                  10/31/2024  11:39:52  PAGE 2
 
 
             CODE    0023H     0003H     ABSOLUTE     
@@ -119,7 +119,7 @@ SEGMENT                                    DATA_GROUP
 ?PR?UART_CONFIG?MAIN                     0037H    000DH
   +--> ?PR?_USART_CONFIGURATION?USART1
 
-BL51 BANKED LINKER/LOCATER V6.22.4.0                                                  08/14/2024  10:07:29  PAGE 3
+BL51 BANKED LINKER/LOCATER V6.22.4.0                                                  10/31/2024  11:39:52  PAGE 3
 
 
 ?PR?_USART_CONFIGURATION?USART1          0044H    0007H
@@ -179,7 +179,7 @@ SYMBOL TABLE OF MODULE:  .\list\ADC (ADC)
   -------         PROC          _ADC_INILIZE
   D:0001H         SYMBOL        ADCx
   C:1079H         LINE#         24
-BL51 BANKED LINKER/LOCATER V6.22.4.0                                                  08/14/2024  10:07:29  PAGE 4
+BL51 BANKED LINKER/LOCATER V6.22.4.0                                                  10/31/2024  11:39:52  PAGE 4
 
 
   C:1079H         LINE#         25
@@ -239,7 +239,7 @@ SYMBOL TABLE OF MODULE:  .\list\ADC (ADC)
   -------         PROC          ADC_INT
   C:0026H         LINE#         100
   C:0026H         LINE#         102
-BL51 BANKED LINKER/LOCATER V6.22.4.0                                                  08/14/2024  10:07:29  PAGE 5
+BL51 BANKED LINKER/LOCATER V6.22.4.0                                                  10/31/2024  11:39:52  PAGE 5
 
 
   C:0029H         LINE#         103
@@ -299,7 +299,7 @@ SYMBOL TABLE OF MODULE:  .\list\ADC (ADC)
   D:005EH         PUBLIC        time_1ms
   D:00D8H         PUBLIC        CCON
   C:0692H         PUBLIC        main
-BL51 BANKED LINKER/LOCATER V6.22.4.0                                                  08/14/2024  10:07:29  PAGE 6
+BL51 BANKED LINKER/LOCATER V6.22.4.0                                                  10/31/2024  11:39:52  PAGE 6
 
 
   B:00B0H.2       PUBLIC        BEEP_ENABLE
@@ -359,7 +359,7 @@ SYMBOL TABLE OF MODULE:  .\list\ADC (ADC)
   C:1102H         LINE#         65
   C:1105H         LINE#         66
   -------         ENDPROC       GPIO_INIT
-BL51 BANKED LINKER/LOCATER V6.22.4.0                                                  08/14/2024  10:07:29  PAGE 7
+BL51 BANKED LINKER/LOCATER V6.22.4.0                                                  10/31/2024  11:39:52  PAGE 7
 
 
   -------         PROC          UART_CONFIG
@@ -419,7 +419,7 @@ SYMBOL TABLE OF MODULE:  .\list\ADC (ADC)
   C:06E3H         LINE#         128
   C:06E6H         LINE#         130
   C:06E9H         LINE#         131
-BL51 BANKED LINKER/LOCATER V6.22.4.0                                                  08/14/2024  10:07:29  PAGE 8
+BL51 BANKED LINKER/LOCATER V6.22.4.0                                                  10/31/2024  11:39:52  PAGE 8
 
 
   C:06EBH         LINE#         133
@@ -479,7 +479,7 @@ SYMBOL TABLE OF MODULE:  .\list\ADC (ADC)
   C:08CBH         LINE#         199
   C:08E0H         LINE#         200
   C:08E2H         LINE#         201
-BL51 BANKED LINKER/LOCATER V6.22.4.0                                                  08/14/2024  10:07:29  PAGE 9
+BL51 BANKED LINKER/LOCATER V6.22.4.0                                                  10/31/2024  11:39:52  PAGE 9
 
 
   C:08E2H         LINE#         203
@@ -539,7 +539,7 @@ SYMBOL TABLE OF MODULE:  .\list\ADC (ADC)
   C:1199H         LINE#         243
   C:119EH         LINE#         244
   C:11A7H         LINE#         245
-BL51 BANKED LINKER/LOCATER V6.22.4.0                                                  08/14/2024  10:07:29  PAGE 10
+BL51 BANKED LINKER/LOCATER V6.22.4.0                                                  10/31/2024  11:39:52  PAGE 10
 
 
   C:11B0H         LINE#         246
@@ -599,7 +599,7 @@ SYMBOL TABLE OF MODULE:  .\list\ADC (ADC)
   C:0EA6H         LINE#         291
   C:0EA9H         LINE#         292
   C:0EADH         LINE#         294
-BL51 BANKED LINKER/LOCATER V6.22.4.0                                                  08/14/2024  10:07:29  PAGE 11
+BL51 BANKED LINKER/LOCATER V6.22.4.0                                                  10/31/2024  11:39:52  PAGE 11
 
 
   -------         ENDPROC       _SEND_MESSAGE_ONCE
@@ -659,7 +659,7 @@ SYMBOL TABLE OF MODULE:  .\list\ADC (ADC)
   C:0BBDH         LINE#         23
   C:0BBDH         LINE#         27
   C:0BC5H         LINE#         28
-BL51 BANKED LINKER/LOCATER V6.22.4.0                                                  08/14/2024  10:07:29  PAGE 12
+BL51 BANKED LINKER/LOCATER V6.22.4.0                                                  10/31/2024  11:39:52  PAGE 12
 
 
   C:0BC5H         LINE#         29
@@ -719,7 +719,7 @@ SYMBOL TABLE OF MODULE:  .\list\ADC (ADC)
   C:0D03H         LINE#         84
   C:0D06H         LINE#         85
   C:0D06H         LINE#         86
-BL51 BANKED LINKER/LOCATER V6.22.4.0                                                  08/14/2024  10:07:29  PAGE 13
+BL51 BANKED LINKER/LOCATER V6.22.4.0                                                  10/31/2024  11:39:52  PAGE 13
 
 
   C:0D19H         LINE#         87
@@ -779,7 +779,7 @@ SYMBOL TABLE OF MODULE:  .\list\ADC (ADC)
   C:1042H         LINE#         138
   C:104CH         LINE#         139
   C:104CH         LINE#         140
-BL51 BANKED LINKER/LOCATER V6.22.4.0                                                  08/14/2024  10:07:29  PAGE 14
+BL51 BANKED LINKER/LOCATER V6.22.4.0                                                  10/31/2024  11:39:52  PAGE 14
 
 
   C:104CH         LINE#         142
@@ -839,7 +839,7 @@ SYMBOL TABLE OF MODULE:  .\list\ADC (ADC)
   D:00B2H         PUBLIC        P3M0
   D:0095H         PUBLIC        P2M1
   D:0090H         PUBLIC        P1
-BL51 BANKED LINKER/LOCATER V6.22.4.0                                                  08/14/2024  10:07:29  PAGE 15
+BL51 BANKED LINKER/LOCATER V6.22.4.0                                                  10/31/2024  11:39:52  PAGE 15
 
 
   D:00B4H         PUBLIC        P4M0
@@ -899,7 +899,7 @@ SYMBOL TABLE OF MODULE:  .\list\ADC (ADC)
   C:0A62H         LINE#         50
   C:0A71H         LINE#         51
   C:0A81H         LINE#         52
-BL51 BANKED LINKER/LOCATER V6.22.4.0                                                  08/14/2024  10:07:29  PAGE 16
+BL51 BANKED LINKER/LOCATER V6.22.4.0                                                  10/31/2024  11:39:52  PAGE 16
 
 
   C:0A94H         LINE#         53
@@ -959,7 +959,7 @@ SYMBOL TABLE OF MODULE:  .\list\ADC (ADC)
   C:030AH         PUBLIC        ?C?CASTF
   -------         ENDMOD        ?C?CASTF
 
-BL51 BANKED LINKER/LOCATER V6.22.4.0                                                  08/14/2024  10:07:29  PAGE 17
+BL51 BANKED LINKER/LOCATER V6.22.4.0                                                  10/31/2024  11:39:52  PAGE 17
 
 
   -------         MODULE        ?C?COPY
@@ -1019,7 +1019,7 @@ SYMBOL TABLE OF MODULE:  .\list\ADC (ADC)
   -------         ENDMOD        ?C?LLDCODE0
 
 *** WARNING L16: UNCALLED SEGMENT, IGNORED FOR OVERLAY PROCESS
-BL51 BANKED LINKER/LOCATER V6.22.4.0                                                  08/14/2024  10:07:29  PAGE 18
+BL51 BANKED LINKER/LOCATER V6.22.4.0                                                  10/31/2024  11:39:52  PAGE 18
 
 
     SEGMENT: ?PR?GPIO_INIT?MAIN

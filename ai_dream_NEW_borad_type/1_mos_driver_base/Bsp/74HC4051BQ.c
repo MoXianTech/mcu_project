@@ -14,11 +14,10 @@ void Hc4051Delay(uint32_t num)
     while(num --);
 }
 
-
 void Hc4051IoInit(void)
 {
-    rcu_periph_clock_enable(RCU_GPIOB); 
-    rcu_periph_clock_enable(RCU_GPIOC); 
+    rcu_periph_clock_enable(RCU_GPIOB);
+    rcu_periph_clock_enable(RCU_GPIOC);
     rcu_periph_clock_enable(RCU_GPIOD);
     rcu_periph_clock_enable(RCU_GPIOE);
     rcu_periph_clock_enable(RCU_AF);
@@ -114,7 +113,7 @@ void select_x_control(uint8_t x_value)
 uint8_t refine_y_pos_normal[32] = {22, 21, 20, 19, 18, 17, 16, 7,
     6,  5,  4,  3, 2, 1,  0,  15,
     //    8, 9,  10,  11,  12,  13, 14,  31,
-    14, 13, 12, 11, 10, 9 , 8, 31, 
+    14, 13, 12, 11, 10, 9 , 8, 31,
     30, 29, 28, 27, 26, 25, 24, 23};
 
 uint8_t refine_y_pos_aosha[32] = {19, 18, 17, 16, 31, 30, 29, 20,

@@ -161,7 +161,7 @@ int main(void)
         }
 
         if (time_1ms % 2000 == 0)
-        {            
+        {
 //            wifi_config_thread(NULL);
         }
 
