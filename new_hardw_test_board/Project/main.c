@@ -110,9 +110,8 @@ int main(void)
         if(time_1ms % 500 == 0)
         {
             led_flag = !led_flag;
-            GREEN_LED(1);
+            GREEN_LED(led_flag);
             //i2c_thread_task();
-					
         }
 
         if(time_1ms % 1 == 0)

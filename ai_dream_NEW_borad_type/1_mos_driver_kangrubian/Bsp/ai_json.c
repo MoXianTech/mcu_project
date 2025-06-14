@@ -209,7 +209,7 @@ void aid_paser_json_demo(uint8_t *json_buffer,
     json_size = strlen(aijson_context[1].body);
 
     json_buffer = json_buffer_test;
-    json_size = strlen(json_buffer);
+    json_size = strlen((char *)json_buffer);
     cjson = cJSON_Parse((const char*)json_buffer);
 
     single_json = cJSON_GetObjectItem(cjson, "vendor");

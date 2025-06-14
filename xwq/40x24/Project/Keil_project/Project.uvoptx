@@ -130,7 +130,7 @@
         <SetRegEntry>
           <Number>0</Number>
           <Key>CMSIS_AGDI</Key>
-          <Name>-X"Any" -UAny -O206 -S0 -C0 -P00000000 -N00("ARM CoreSight SW-DP") -D00(2BA01477) -L00(0) -TO65554 -TC10000000 -TT10000000 -TP20 -TDS8004 -TDT0 -TDC1F -TIEFFFFFFFF -TIP8 -FO15 -FD20000000 -FC1000 -FN1 -FF0GD32E10x.FLM -FS08000000 -FL020000 -FP0($$Device:GD32E103CB$Flash\GD32E10x.FLM)</Name>
+          <Name>-X"ATK-HS-V3-CMSIS-DAP" -UATK 20190528 -O206 -S0 -C0 -P00000000 -N00("ARM CoreSight SW-DP") -D00(2BA01477) -L00(0) -TO65554 -TC10000000 -TT10000000 -TP20 -TDS8004 -TDT0 -TDC1F -TIEFFFFFFFF -TIP8 -FO15 -FD20000000 -FC1000 -FN1 -FF0GD32E10x.FLM -FS08000000 -FL020000 -FP0($$Device:GD32E103CB$Flash\GD32E10x.FLM)</Name>
         </SetRegEntry>
         <SetRegEntry>
           <Number>0</Number>
@@ -163,40 +163,25 @@
         <Ww>
           <count>1</count>
           <WinNumber>1</WinNumber>
-          <ItemText>temp_adc_value,0x0A</ItemText>
+          <ItemText>Column_Choose_Array[data]</ItemText>
         </Ww>
         <Ww>
           <count>2</count>
           <WinNumber>1</WinNumber>
-          <ItemText>Column_Choose_Array[data]</ItemText>
+          <ItemText>AY_Choose</ItemText>
         </Ww>
         <Ww>
           <count>3</count>
           <WinNumber>1</WinNumber>
-          <ItemText>AY_Choose</ItemText>
+          <ItemText>system_clock</ItemText>
         </Ww>
         <Ww>
           <count>4</count>
           <WinNumber>1</WinNumber>
-          <ItemText>system_clock</ItemText>
-        </Ww>
-        <Ww>
-          <count>5</count>
-          <WinNumber>1</WinNumber>
-          <ItemText>USART0_TxBuff</ItemText>
-        </Ww>
-        <Ww>
-          <count>6</count>
-          <WinNumber>1</WinNumber>
-          <ItemText>USART2_TxBuff</ItemText>
-        </Ww>
-        <Ww>
-          <count>7</count>
-          <WinNumber>1</WinNumber>
           <ItemText>out</ItemText>
         </Ww>
         <Ww>
-          <count>8</count>
+          <count>5</count>
           <WinNumber>1</WinNumber>
           <ItemText>check,0x0A</ItemText>
         </Ww>
@@ -280,60 +265,45 @@
         <Ww>
           <count>15</count>
           <WinNumber>2</WinNumber>
-          <ItemText>temp_adc_value,0x0A</ItemText>
+          <ItemText>adc_raw_value,0x0A</ItemText>
         </Ww>
         <Ww>
           <count>16</count>
           <WinNumber>2</WinNumber>
-          <ItemText>adc_raw_value,0x0A</ItemText>
+          <ItemText>main_adc_value,0x0A</ItemText>
         </Ww>
         <Ww>
           <count>17</count>
           <WinNumber>2</WinNumber>
-          <ItemText>main_adc_value,0x0A</ItemText>
+          <ItemText>index</ItemText>
         </Ww>
         <Ww>
           <count>18</count>
           <WinNumber>2</WinNumber>
-          <ItemText>adc_v,0x0A</ItemText>
+          <ItemText>C</ItemText>
         </Ww>
         <Ww>
           <count>19</count>
           <WinNumber>2</WinNumber>
-          <ItemText>index</ItemText>
+          <ItemText>\\Project\../../Bsp/scan.c\check[26][23],0x0A</ItemText>
         </Ww>
         <Ww>
           <count>20</count>
           <WinNumber>2</WinNumber>
-          <ItemText>C</ItemText>
+          <ItemText>\\Project\../../Bsp/scan.c\check[27][23],0x0A</ItemText>
         </Ww>
         <Ww>
           <count>21</count>
           <WinNumber>2</WinNumber>
-          <ItemText>dma0_ch1_idle</ItemText>
+          <ItemText>\\Project\../../Bsp/scan.c\check[28][23],0x0A</ItemText>
         </Ww>
         <Ww>
           <count>22</count>
           <WinNumber>2</WinNumber>
-          <ItemText>\\Project\../../Bsp/scan.c\check[26][23],0x0A</ItemText>
-        </Ww>
-        <Ww>
-          <count>23</count>
-          <WinNumber>2</WinNumber>
-          <ItemText>\\Project\../../Bsp/scan.c\check[27][23],0x0A</ItemText>
-        </Ww>
-        <Ww>
-          <count>24</count>
-          <WinNumber>2</WinNumber>
-          <ItemText>\\Project\../../Bsp/scan.c\check[28][23],0x0A</ItemText>
-        </Ww>
-        <Ww>
-          <count>25</count>
-          <WinNumber>2</WinNumber>
           <ItemText>\\Project\../../Bsp/scan.c\check[29][23],0x0A</ItemText>
         </Ww>
         <Ww>
-          <count>26</count>
+          <count>23</count>
           <WinNumber>2</WinNumber>
           <ItemText>\\Project\../../Bsp/scan.c\check[25][23],0x0A</ItemText>
         </Ww>

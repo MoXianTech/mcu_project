@@ -84,7 +84,7 @@ int main(void)
 	  //math_resi_init(5000, 400, 100, 4096, 255);//tpu1207 
 		//math_resi_init(5000, 400, 100, 4096, 255);//tpu919 zhenzhi
 		//math_resi_init(5000, 600, 100, 4096, 255);//tpu919 wufang
-		math_resi_init(5000, 200, 100, 4096, 255);//tpu919 wufang
+		math_resi_init(3000, 120, 100, 4096, 255);//tpu919 wufang
     while(1)
     {
         time_1ms ++;
@@ -129,7 +129,6 @@ int main(void)
 						{
 							send_can0_buffer(DEV_CAN0_ID,(uint8_t *)&serial_frame, sizeof(serial_frame));
 						}
-						
         }
 
        delay_1ms(1);

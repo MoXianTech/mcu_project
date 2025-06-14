@@ -109,6 +109,7 @@ int main(void)
     uint16_t usart0_len = 0;
     uint16_t usart1_len = 0;
     void *usb_handle = NULL;
+	  uint8_t adc_value[] = {"wdsadsadsasad"};
 
     process_handle.x_max = POS_X;
     process_handle.y_max = POS_Y;
@@ -123,11 +124,11 @@ int main(void)
     while( 1 )
     {
         time_1ms ++;
-        if(time_1ms % 5 == 0)
+        if(time_1ms % 1000 == 0)
         {
             led_flag = !led_flag;
             GREEN_LED(led_flag);
-						IO_SET_0(led_flag);
+//						IO_SET_0(led_flag);
         }
 
         if(time_1ms % 1 == 0)
@@ -140,9 +141,9 @@ int main(void)
 
         if(time_1ms % 10 == 0)
         {
-
+					usart0_dma_send_data(adc_value, 10);
         }
-//        delay_1ms(1);
+        delay_1ms(1);
     }
 }
 

@@ -1,6 +1,6 @@
 Dependencies for Project 'cdc_acm', Target 'cdc_acm': (DO NOT MODIFY !)
 CompilerVersion: 5060960::V5.06 update 7 (build 960)::.\ARMCC
-F (..\src\resi_math_lib.c)(0x66BB483F)(-c --cpu Cortex-M4.fp.sp -g -O0 --apcs=interwork --split_sections -I ..\inc -I ..\CMSIS\GD\GD32E10x\Include -I ..\GD32E10x_standard_peripheral\Include -I ..\GD32E10x_usbfs_library\driver\Include -I ..\GD32E10x_usbfs_library\device\core\Include -I ..\GD32E10x_usbfs_library\device\class\cdc\Include -I ..\GD32E10x_usbfs_library\ustd\common -I ..\GD32E10x_usbfs_library\ustd\class\cdc -I ..\Utilities -I ..\CMSIS -I ..\GD32E10x_EVAL --c99-IC:\Users\abbott\AppData\Local\Arm\Packs\GigaDevice\GD32E10x_DFP\1.2.1\Device\Include-D__UVISION_VERSION="538" -DGD32E10x -DUSE_STDPERIPH_DRIVER -DGD32E10X -DUSE_USB_FS -DGD32E103R_START-o ..\output_hex\resi_math_lib.o --omf_browse ..\output_hex\resi_math_lib.crf --depend ..\output_hex\resi_math_lib.d)
-I (..\inc\resi_math_lib.h)(0x66BB4837)
+F (..\src\resi_math_lib.c)(0x672B24F7)(-c --cpu Cortex-M4.fp.sp -g -O0 --apcs=interwork --split_sections -I ..\inc -I ..\CMSIS\GD\GD32E10x\Include -I ..\GD32E10x_standard_peripheral\Include -I ..\GD32E10x_usbfs_library\driver\Include -I ..\GD32E10x_usbfs_library\device\core\Include -I ..\GD32E10x_usbfs_library\device\class\cdc\Include -I ..\GD32E10x_usbfs_library\ustd\common -I ..\GD32E10x_usbfs_library\ustd\class\cdc -I ..\Utilities -I ..\CMSIS -I ..\GD32E10x_EVAL --c99-IC:\Users\abbott\AppData\Local\Arm\Packs\GigaDevice\GD32E10x_DFP\1.2.1\Device\Include-D__UVISION_VERSION="538" -DGD32E10x -DUSE_STDPERIPH_DRIVER -DGD32E10X -DUSE_USB_FS -DGD32E103R_START-o ..\output_hex\resi_math_lib.o --omf_browse ..\output_hex\resi_math_lib.crf --depend ..\output_hex\resi_math_lib.d)
+I (..\inc\resi_math_lib.h)(0x672B24F7)
 I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
-F (..\readme.txt)(0x66AB870A)()
+F (..\readme.txt)(0x672B24F7)()

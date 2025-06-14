@@ -1,0 +1,23 @@
+--create .\object\cdc_acm.lib
+.\object\app.o
+.\object\gd32e10x_hw.o
+.\object\gd32e10x_it.o
+.\object\system_gd32e10x.o
+.\object\gd32e10x_dma.o
+.\object\gd32e10x_exti.o
+.\object\gd32e10x_fmc.o
+.\object\gd32e10x_gpio.o
+.\object\gd32e10x_misc.o
+.\object\gd32e10x_pmu.o
+.\object\gd32e10x_rcu.o
+.\object\gd32e10x_timer.o
+.\object\gd32e10x_usart.o
+.\object\gd32e10x_eval.o
+.\object\drv_usb_core.o
+.\object\drv_usb_dev.o
+.\object\drv_usbd_int.o
+.\object\usbd_core.o
+.\object\usbd_enum.o
+.\object\usbd_transc.o
+.\object\cdc_acm_core.o
+.\object\startup_gd32e10x.o

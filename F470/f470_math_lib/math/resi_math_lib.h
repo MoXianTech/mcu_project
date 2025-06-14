@@ -25,9 +25,10 @@ void math_resi_cali_once(math_resi_cal_t *math_resi_cal,
         SCAN_LEVEL_T scan_level);
 
 void math_display_resi(uint16_t *math_resi_buffer,
-        uint8_t *display_buffer,
-        uint16_t buffer_size,
-        MATH_RESI_DISPLAY_TYPE_T type);
+        void *display_buffer_ptr,
+        uint16_t display_total_num,
+        MATH_RESI_DISPLAY_TYPE_T type,
+        uint8_t display_deadline);
 
 void math_resi_init(uint16_t max_display_resi_cal,
         uint16_t min_display_resi_cal,

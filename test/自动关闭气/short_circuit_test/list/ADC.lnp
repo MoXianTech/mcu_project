@@ -1,0 +1,8 @@
+".\list\ADC.obj",
+".\list\delay.obj",
+".\list\main.obj",
+".\list\USART1.obj",
+".\list\SN74LV4051.obj",
+".\list\STC8G_H_GPIO.obj" 
+TO ".\list\ADC" 
+PRINT(".\list\ADC.m51") RAMSIZE(256) 
