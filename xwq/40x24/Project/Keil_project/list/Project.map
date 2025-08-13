@@ -1773,29 +1773,29 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
 
-       484         28          0         16          0       6380   74hc4051bq.o
-       260         16          0          0          0       2750   74hc595.o
-       522         40          0          0         20       5368   adc.o
-       498         50          0          1        160       5344   can.o
-       280          0          0          0          0       3856   circular_buffer.o
-       656         10          0          0          0       9015   gd32e10x_adc.o
-      2598         44        192          0          0      29151   gd32e10x_can.o
-      1020          6          0          0          0      17070   gd32e10x_dma.o
-       340          6          0          0          0       3328   gd32e10x_gpio.o
-       212         30          0         14          0       6577   gd32e10x_it.o
-       212         28          0          0          0       2312   gd32e10x_misc.o
-       592         70          0          0          0      20655   gd32e10x_rcu.o
-        72          0          0          0          0       2356   gd32e10x_timer.o
-       444         16          0          0          0      13589   gd32e10x_usart.o
-       366         28          0         23       2208      53037   main.o
-       152         10          0         24          0       1097   scan.o
-        36          8        336          0       1024        948   startup_gd32e10x.o
-       348         38          0          4          0       2243   system_gd32e10x.o
-       188         28          0         16          0      28109   systick.o
-      1092        164          0         68       9032      11316   uart.o
+       484         28          0         16          0       5944   74hc4051bq.o
+       260         16          0          0          0       2530   74hc595.o
+       522         40          0          0         20       4932   adc.o
+       498         50          0          1        160       4956   can.o
+       280          0          0          0          0       3600   circular_buffer.o
+       656         10          0          0          0       8491   gd32e10x_adc.o
+      2598         44        192          0          0      28551   gd32e10x_can.o
+      1020          6          0          0          0      16338   gd32e10x_dma.o
+       340          6          0          0          0       3156   gd32e10x_gpio.o
+       212         30          0         14          0       6017   gd32e10x_it.o
+       212         28          0          0          0       2180   gd32e10x_misc.o
+       592         70          0          0          0      20403   gd32e10x_rcu.o
+        72          0          0          0          0       2224   gd32e10x_timer.o
+       444         16          0          0          0      13157   gd32e10x_usart.o
+       366         28          0         23       2208      52525   main.o
+       152         10          0         24          0       1013   scan.o
+        36          8        336          0       1024        904   startup_gd32e10x.o
+       348         38          0          4          0       2067   system_gd32e10x.o
+       188         28          0         16          0      27761   systick.o
+      1092        164          0         68       9032      10584   uart.o
 
     ----------------------------------------------------------------------
-     10394        620        560        172      12444     224501   Object Totals
+     10394        620        560        172      12444     217333   Object Totals
          0          0         32          0          0          0   (incl. Generated)
         22          0          0          6          0          0   (incl. Padding)
 
@@ -1838,8 +1838,8 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
 
-     11024        690        560        188      12444     216607   Grand Totals
-     11024        690        560        188      12444     216607   ELF Image Totals
+     11024        690        560        188      12444     209439   Grand Totals
+     11024        690        560        188      12444     209439   ELF Image Totals
      11024        690        560        188          0          0   ROM Totals
 
 ==============================================================================

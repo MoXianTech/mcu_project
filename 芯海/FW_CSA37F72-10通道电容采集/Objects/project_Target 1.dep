@@ -1,0 +1,630 @@
+Dependencies for Project 'project', Target 'Target 1': (DO NOT MODIFY !)
+CompilerVersion: 5060960::V5.06 update 7 (build 960)::.\ARMCC
+F (.\Src\App\interrupt.c)(0x61449A80)(--c99 --gnu -c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I .\Src\App -I .\Src\FrameWork -I .\Src\Hal-I.\RTE\_Target_1-IC:\Users\ABBOTT\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\HAL_Driver\inc-IC:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\Include-D__UVISION_VERSION="536" -D_RTE_ -DCSA37F72 -D_RTE_-o .\objects\interrupt.o --omf_browse .\objects\interrupt.crf --depend .\objects\interrupt.d)
+I (.\Src\FrameWork\framework_pmu.h)(0x617A88AA)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (.\Src\FrameWork\framework_reg.h)(0x617A89C0)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x6025237E)
+I (.\Src\FrameWork\framework_notify.h)(0x6139C9DE)
+I (.\Src\FrameWork\framework_debug.h)(0x6139C9DE)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x60252374)
+I (.\Src\FrameWork\framework_system.h)(0x6139C9DE)
+I (.\Src\FrameWork\framework_sample_all.h)(0x6139C9DE)
+I (.\Src\Hal\hal_afe.h)(0x617B9826)
+I (.\Src\Hal\hal_tk.h)(0x614D2CDA)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\HAL_Driver\inc\csa37f7x_tk.h)(0x60C99B36)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\Include\csa37f7x.h)(0x60ADA60C)
+I (.\RTE\_Target_1\RTE_Components.h)(0x6887832F)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\core_cm0.h)(0x60D3E8E2)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_version.h)(0x60D3E8E2)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_compiler.h)(0x60D3E8E2)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_armcc.h)(0x60D3E8E2)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\Include\system_csa37f7x.h)(0x602F5E88)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\Include\csa37f7x_reg.h)(0x60F90706)
+I (.\Src\Hal\hal_config.h)(0x6874C9D0)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\HAL_Driver\inc\csa37f7x_afe2.h)(0x60F909A2)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\HAL_Driver\inc\csa37f7x_gpio.h)(0x60D05F2E)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\HAL_Driver\inc\csa37f7x_syscfg.h)(0x60A74BF0)
+I (.\Src\Hal\hal_iic.h)(0x6139C9DE)
+I (.\Src\Hal\hal_gpio.h)(0x617A88AA)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\HAL_Driver\inc\csa37f7x_tim1.h)(0x60C0645E)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\HAL_Driver\inc\csa37f7x_i2c.h)(0x60D05F4C)
+F (.\Src\App\main.c)(0x686A3248)(--c99 --gnu -c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I .\Src\App -I .\Src\FrameWork -I .\Src\Hal-I.\RTE\_Target_1-IC:\Users\ABBOTT\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\HAL_Driver\inc-IC:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\Include-D__UVISION_VERSION="536" -D_RTE_ -DCSA37F72 -D_RTE_-o .\objects\main.o --omf_browse .\objects\main.crf --depend .\objects\main.d)
+I (.\Src\Hal\hal_temperature.h)(0x61454FC8)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (.\Src\Hal\hal_timer.h)(0x6139C9DE)
+I (.\Src\FrameWork\framework_system.h)(0x6139C9DE)
+I (.\Src\FrameWork\framework_debug.h)(0x6139C9DE)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x60252374)
+I (.\Src\FrameWork\framework_notify.h)(0x6139C9DE)
+I (.\Src\FrameWork\framework_pmu.h)(0x617A88AA)
+I (.\Src\FrameWork\framework_reg.h)(0x617A89C0)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x6025237E)
+I (.\Src\FrameWork\framework_sample.h)(0x617A833C)
+I (.\Src\Hal\hal_config.h)(0x6874C9D0)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\Include\csa37f7x.h)(0x60ADA60C)
+I (.\RTE\_Target_1\RTE_Components.h)(0x6887832F)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\core_cm0.h)(0x60D3E8E2)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_version.h)(0x60D3E8E2)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_compiler.h)(0x60D3E8E2)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_armcc.h)(0x60D3E8E2)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\Include\system_csa37f7x.h)(0x602F5E88)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\Include\csa37f7x_reg.h)(0x60F90706)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\HAL_Driver\inc\csa37f7x_afe2.h)(0x60F909A2)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\HAL_Driver\inc\csa37f7x_gpio.h)(0x60D05F2E)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\HAL_Driver\inc\csa37f7x_syscfg.h)(0x60A74BF0)
+I (.\Src\FrameWork\framework_sample_tk.h)(0x6139C9DE)
+I (.\Src\FrameWork\framework_sample_all.h)(0x6139C9DE)
+I (Src\App\absacc.h)(0x5F309B12)
+F (.\Src\FrameWork\framework_debug.c)(0x617B8FA4)(--c99 --gnu -c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I .\Src\App -I .\Src\FrameWork -I .\Src\Hal-I.\RTE\_Target_1-IC:\Users\ABBOTT\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\HAL_Driver\inc-IC:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\Include-D__UVISION_VERSION="536" -D_RTE_ -DCSA37F72 -D_RTE_-o .\objects\framework_debug.o --omf_browse .\objects\framework_debug.crf --depend .\objects\framework_debug.d)
+I (.\Src\Hal\hal_afe.h)(0x617B9826)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (.\Src\Hal\hal_uart.h)(0x6139C9DE)
+I (.\Src\Hal\hal_config.h)(0x6874C9D0)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\Include\csa37f7x.h)(0x60ADA60C)
+I (.\RTE\_Target_1\RTE_Components.h)(0x6887832F)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\core_cm0.h)(0x60D3E8E2)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_version.h)(0x60D3E8E2)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_compiler.h)(0x60D3E8E2)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_armcc.h)(0x60D3E8E2)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\Include\system_csa37f7x.h)(0x602F5E88)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\Include\csa37f7x_reg.h)(0x60F90706)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\HAL_Driver\inc\csa37f7x_afe2.h)(0x60F909A2)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\HAL_Driver\inc\csa37f7x_gpio.h)(0x60D05F2E)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\HAL_Driver\inc\csa37f7x_syscfg.h)(0x60A74BF0)
+I (.\Src\Hal\hal_temperature.h)(0x61454FC8)
+I (Src\FrameWork\framework_debug.h)(0x6139C9DE)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x60252374)
+I (Src\FrameWork\framework_notify.h)(0x6139C9DE)
+I (Src\FrameWork\framework_reg.h)(0x617A89C0)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x6025237E)
+I (Src\FrameWork\framework_sample.h)(0x617A833C)
+I (Src\FrameWork\user_config.h)(0x617F88CA)
+I (Src\FrameWork\framework_sample_tk.h)(0x6139C9DE)
+F (.\Src\FrameWork\framework_notify.c)(0x617A833C)(--c99 --gnu -c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I .\Src\App -I .\Src\FrameWork -I .\Src\Hal-I.\RTE\_Target_1-IC:\Users\ABBOTT\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\HAL_Driver\inc-IC:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\Include-D__UVISION_VERSION="536" -D_RTE_ -DCSA37F72 -D_RTE_-o .\objects\framework_notify.o --omf_browse .\objects\framework_notify.crf --depend .\objects\framework_notify.d)
+I (.\Src\Hal\hal_timer.h)(0x6139C9DE)
+I (.\Src\Hal\hal_gpio.h)(0x617A88AA)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\HAL_Driver\inc\csa37f7x_gpio.h)(0x60D05F2E)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\Include\csa37f7x.h)(0x60ADA60C)
+I (.\RTE\_Target_1\RTE_Components.h)(0x6887832F)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\core_cm0.h)(0x60D3E8E2)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_version.h)(0x60D3E8E2)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_compiler.h)(0x60D3E8E2)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_armcc.h)(0x60D3E8E2)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\Include\system_csa37f7x.h)(0x602F5E88)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\Include\csa37f7x_reg.h)(0x60F90706)
+I (.\Src\Hal\hal_config.h)(0x6874C9D0)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\HAL_Driver\inc\csa37f7x_afe2.h)(0x60F909A2)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\HAL_Driver\inc\csa37f7x_syscfg.h)(0x60A74BF0)
+I (Src\FrameWork\framework_notify.h)(0x6139C9DE)
+I (Src\FrameWork\user_config.h)(0x617F88CA)
+F (.\Src\FrameWork\framework_pmu.c)(0x617B48A4)(--c99 --gnu -c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I .\Src\App -I .\Src\FrameWork -I .\Src\Hal-I.\RTE\_Target_1-IC:\Users\ABBOTT\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\HAL_Driver\inc-IC:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\Include-D__UVISION_VERSION="536" -D_RTE_ -DCSA37F72 -D_RTE_-o .\objects\framework_pmu.o --omf_browse .\objects\framework_pmu.crf --depend .\objects\framework_pmu.d)
+I (.\Src\Hal\hal_pmu.h)(0x61454FC8)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (.\Src\Hal\hal_timer.h)(0x6139C9DE)
+I (.\Src\Hal\hal_gpio.h)(0x617A88AA)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\HAL_Driver\inc\csa37f7x_gpio.h)(0x60D05F2E)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\Include\csa37f7x.h)(0x60ADA60C)
+I (.\RTE\_Target_1\RTE_Components.h)(0x6887832F)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\core_cm0.h)(0x60D3E8E2)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_version.h)(0x60D3E8E2)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_compiler.h)(0x60D3E8E2)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_armcc.h)(0x60D3E8E2)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\Include\system_csa37f7x.h)(0x602F5E88)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\Include\csa37f7x_reg.h)(0x60F90706)
+I (.\Src\Hal\hal_config.h)(0x6874C9D0)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\HAL_Driver\inc\csa37f7x_afe2.h)(0x60F909A2)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\HAL_Driver\inc\csa37f7x_syscfg.h)(0x60A74BF0)
+I (Src\FrameWork\framework_pmu.h)(0x617A88AA)
+I (Src\FrameWork\framework_debug.h)(0x6139C9DE)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x60252374)
+I (Src\FrameWork\user_config.h)(0x617F88CA)
+F (.\Src\FrameWork\framework_reg.c)(0x617F88EC)(--c99 --gnu -c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I .\Src\App -I .\Src\FrameWork -I .\Src\Hal-I.\RTE\_Target_1-IC:\Users\ABBOTT\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\HAL_Driver\inc-IC:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\Include-D__UVISION_VERSION="536" -D_RTE_ -DCSA37F72 -D_RTE_-o .\objects\framework_reg.o --omf_browse .\objects\framework_reg.crf --depend .\objects\framework_reg.d)
+I (.\Src\Hal\hal_iic.h)(0x6139C9DE)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (.\Src\Hal\hal_common.h)(0x61454FC8)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x6025237E)
+I (.\Src\Hal\hal_afe.h)(0x617B9826)
+I (.\Src\Hal\hal_tk.h)(0x614D2CDA)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\HAL_Driver\inc\csa37f7x_tk.h)(0x60C99B36)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\Include\csa37f7x.h)(0x60ADA60C)
+I (.\RTE\_Target_1\RTE_Components.h)(0x6887832F)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\core_cm0.h)(0x60D3E8E2)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_version.h)(0x60D3E8E2)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_compiler.h)(0x60D3E8E2)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_armcc.h)(0x60D3E8E2)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\Include\system_csa37f7x.h)(0x602F5E88)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\Include\csa37f7x_reg.h)(0x60F90706)
+I (.\Src\Hal\hal_config.h)(0x6874C9D0)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\HAL_Driver\inc\csa37f7x_afe2.h)(0x60F909A2)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\HAL_Driver\inc\csa37f7x_gpio.h)(0x60D05F2E)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\HAL_Driver\inc\csa37f7x_syscfg.h)(0x60A74BF0)
+I (Src\FrameWork\framework_reg.h)(0x617A89C0)
+I (Src\FrameWork\framework_sample.h)(0x617A833C)
+I (Src\FrameWork\framework_system.h)(0x6139C9DE)
+I (Src\FrameWork\framework_pmu.h)(0x617A88AA)
+I (Src\FrameWork\framework_notify.h)(0x6139C9DE)
+I (Src\FrameWork\framework_debug.h)(0x6139C9DE)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x60252374)
+I (Src\FrameWork\user_config.h)(0x617F88CA)
+F (.\Src\FrameWork\framework_sample.c)(0x617A88AA)(--c99 --gnu -c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I .\Src\App -I .\Src\FrameWork -I .\Src\Hal-I.\RTE\_Target_1-IC:\Users\ABBOTT\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\HAL_Driver\inc-IC:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\Include-D__UVISION_VERSION="536" -D_RTE_ -DCSA37F72 -D_RTE_-o .\objects\framework_sample.o --omf_browse .\objects\framework_sample.crf --depend .\objects\framework_sample.d)
+I (.\Src\Hal\hal_afe.h)(0x617B9826)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (.\Src\Hal\hal_tk.h)(0x614D2CDA)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\HAL_Driver\inc\csa37f7x_tk.h)(0x60C99B36)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\Include\csa37f7x.h)(0x60ADA60C)
+I (.\RTE\_Target_1\RTE_Components.h)(0x6887832F)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\core_cm0.h)(0x60D3E8E2)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_version.h)(0x60D3E8E2)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_compiler.h)(0x60D3E8E2)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_armcc.h)(0x60D3E8E2)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\Include\system_csa37f7x.h)(0x602F5E88)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\Include\csa37f7x_reg.h)(0x60F90706)
+I (.\Src\Hal\hal_config.h)(0x6874C9D0)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\HAL_Driver\inc\csa37f7x_afe2.h)(0x60F909A2)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\HAL_Driver\inc\csa37f7x_gpio.h)(0x60D05F2E)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\HAL_Driver\inc\csa37f7x_syscfg.h)(0x60A74BF0)
+I (Src\FrameWork\framework_sample.h)(0x617A833C)
+I (Src\FrameWork\framework_debug.h)(0x6139C9DE)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x60252374)
+I (Src\FrameWork\framework_pmu.h)(0x617A88AA)
+I (Src\FrameWork\framework_reg.h)(0x617A89C0)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x6025237E)
+I (Src\FrameWork\user_config.h)(0x617F88CA)
+F (.\Src\FrameWork\framework_sample_all.c)(0x617A8692)(--c99 --gnu -c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I .\Src\App -I .\Src\FrameWork -I .\Src\Hal-I.\RTE\_Target_1-IC:\Users\ABBOTT\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\HAL_Driver\inc-IC:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\Include-D__UVISION_VERSION="536" -D_RTE_ -DCSA37F72 -D_RTE_-o .\objects\framework_sample_all.o --omf_browse .\objects\framework_sample_all.crf --depend .\objects\framework_sample_all.d)
+I (.\Src\Hal\hal_afe.h)(0x617B9826)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (.\Src\Hal\hal_tk.h)(0x614D2CDA)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\HAL_Driver\inc\csa37f7x_tk.h)(0x60C99B36)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\Include\csa37f7x.h)(0x60ADA60C)
+I (.\RTE\_Target_1\RTE_Components.h)(0x6887832F)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\core_cm0.h)(0x60D3E8E2)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_version.h)(0x60D3E8E2)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_compiler.h)(0x60D3E8E2)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_armcc.h)(0x60D3E8E2)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\Include\system_csa37f7x.h)(0x602F5E88)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\Include\csa37f7x_reg.h)(0x60F90706)
+I (.\Src\Hal\hal_config.h)(0x6874C9D0)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\HAL_Driver\inc\csa37f7x_afe2.h)(0x60F909A2)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\HAL_Driver\inc\csa37f7x_gpio.h)(0x60D05F2E)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\HAL_Driver\inc\csa37f7x_syscfg.h)(0x60A74BF0)
+I (.\Src\Hal\hal_pmu.h)(0x61454FC8)
+I (Src\FrameWork\framework_sample.h)(0x617A833C)
+I (Src\FrameWork\framework_debug.h)(0x6139C9DE)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x60252374)
+I (Src\FrameWork\framework_pmu.h)(0x617A88AA)
+I (Src\FrameWork\framework_reg.h)(0x617A89C0)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x6025237E)
+I (Src\FrameWork\framework_sample_tk.h)(0x6139C9DE)
+F (.\Src\FrameWork\framework_sample_tk.c)(0x614AA5E6)(--c99 --gnu -c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I .\Src\App -I .\Src\FrameWork -I .\Src\Hal-I.\RTE\_Target_1-IC:\Users\ABBOTT\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\HAL_Driver\inc-IC:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\Include-D__UVISION_VERSION="536" -D_RTE_ -DCSA37F72 -D_RTE_-o .\objects\framework_sample_tk.o --omf_browse .\objects\framework_sample_tk.crf --depend .\objects\framework_sample_tk.d)
+I (.\Src\Hal\hal_tk.h)(0x614D2CDA)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\HAL_Driver\inc\csa37f7x_tk.h)(0x60C99B36)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\Include\csa37f7x.h)(0x60ADA60C)
+I (.\RTE\_Target_1\RTE_Components.h)(0x6887832F)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\core_cm0.h)(0x60D3E8E2)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_version.h)(0x60D3E8E2)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_compiler.h)(0x60D3E8E2)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_armcc.h)(0x60D3E8E2)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\Include\system_csa37f7x.h)(0x602F5E88)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\Include\csa37f7x_reg.h)(0x60F90706)
+I (.\Src\Hal\hal_config.h)(0x6874C9D0)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\HAL_Driver\inc\csa37f7x_afe2.h)(0x60F909A2)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\HAL_Driver\inc\csa37f7x_gpio.h)(0x60D05F2E)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\HAL_Driver\inc\csa37f7x_syscfg.h)(0x60A74BF0)
+I (Src\FrameWork\framework_sample_tk.h)(0x6139C9DE)
+I (Src\FrameWork\framework_debug.h)(0x6139C9DE)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x60252374)
+I (Src\FrameWork\framework_pmu.h)(0x617A88AA)
+I (Src\FrameWork\framework_reg.h)(0x617A89C0)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x6025237E)
+I (Src\FrameWork\user_config.h)(0x617F88CA)
+F (.\Src\FrameWork\framework_system.c)(0x617B48A4)(--c99 --gnu -c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I .\Src\App -I .\Src\FrameWork -I .\Src\Hal-I.\RTE\_Target_1-IC:\Users\ABBOTT\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\HAL_Driver\inc-IC:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\Include-D__UVISION_VERSION="536" -D_RTE_ -DCSA37F72 -D_RTE_-o .\objects\framework_system.o --omf_browse .\objects\framework_system.crf --depend .\objects\framework_system.d)
+I (.\Src\Hal\hal_temperature.h)(0x61454FC8)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (.\Src\Hal\hal_timer.h)(0x6139C9DE)
+I (.\Src\Hal\hal_gpio.h)(0x617A88AA)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\HAL_Driver\inc\csa37f7x_gpio.h)(0x60D05F2E)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\Include\csa37f7x.h)(0x60ADA60C)
+I (.\RTE\_Target_1\RTE_Components.h)(0x6887832F)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\core_cm0.h)(0x60D3E8E2)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_version.h)(0x60D3E8E2)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_compiler.h)(0x60D3E8E2)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_armcc.h)(0x60D3E8E2)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\Include\system_csa37f7x.h)(0x602F5E88)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\Include\csa37f7x_reg.h)(0x60F90706)
+I (.\Src\Hal\hal_config.h)(0x6874C9D0)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\HAL_Driver\inc\csa37f7x_afe2.h)(0x60F909A2)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\HAL_Driver\inc\csa37f7x_syscfg.h)(0x60A74BF0)
+I (.\Src\Hal\hal_wdt.h)(0x61454FC8)
+I (.\Src\Hal\hal_uart.h)(0x6139C9DE)
+I (.\Src\Hal\hal_iic.h)(0x6139C9DE)
+I (.\Src\Hal\hal_afe.h)(0x617B9826)
+I (.\Src\Hal\hal_storage.h)(0x61454FC8)
+I (Src\FrameWork\framework_system.h)(0x6139C9DE)
+I (Src\FrameWork\framework_debug.h)(0x6139C9DE)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x60252374)
+I (Src\FrameWork\framework_notify.h)(0x6139C9DE)
+I (Src\FrameWork\framework_pmu.h)(0x617A88AA)
+I (Src\FrameWork\framework_reg.h)(0x617A89C0)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x6025237E)
+I (Src\FrameWork\framework_sample.h)(0x617A833C)
+I (Src\FrameWork\framework_sample_tk.h)(0x6139C9DE)
+I (Src\FrameWork\framework_sample_all.h)(0x6139C9DE)
+I (Src\FrameWork\user_config.h)(0x617F88CA)
+F (.\Src\Hal\hal_afe.c)(0x68674DC9)(--c99 --gnu -c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I .\Src\App -I .\Src\FrameWork -I .\Src\Hal-I.\RTE\_Target_1-IC:\Users\ABBOTT\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\HAL_Driver\inc-IC:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\Include-D__UVISION_VERSION="536" -D_RTE_ -DCSA37F72 -D_RTE_-o .\objects\hal_afe.o --omf_browse .\objects\hal_afe.crf --depend .\objects\hal_afe.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x6025237E)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\Include\csa37f7x.h)(0x60ADA60C)
+I (.\RTE\_Target_1\RTE_Components.h)(0x6887832F)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\core_cm0.h)(0x60D3E8E2)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_version.h)(0x60D3E8E2)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_compiler.h)(0x60D3E8E2)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_armcc.h)(0x60D3E8E2)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\Include\system_csa37f7x.h)(0x602F5E88)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\Include\csa37f7x_reg.h)(0x60F90706)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\HAL_Driver\inc\csa37f7x_rcc.h)(0x60C9C31C)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\HAL_Driver\inc\csa37f7x_afe2.h)(0x60F909A2)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\HAL_Driver\inc\csa37f7x_i2c.h)(0x60D05F4C)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\HAL_Driver\inc\csa37f7x_syscfg.h)(0x60A74BF0)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\HAL_Driver\inc\csa37f7x_misc.h)(0x60A5CFA4)
+I (Src\Hal\hal_afe.h)(0x617B9826)
+I (Src\Hal\hal_wdt.h)(0x61454FC8)
+I (Src\Hal\hal_pmu.h)(0x61454FC8)
+I (Src\Hal\hal_timer.h)(0x6139C9DE)
+I (Src\Hal\hal_uart.h)(0x6139C9DE)
+I (.\Src\FrameWork\framework_sample.h)(0x617A833C)
+I (.\Src\Hal\hal_config.h)(0x6874C9D0)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\HAL_Driver\inc\csa37f7x_gpio.h)(0x60D05F2E)
+I (.\Src\FrameWork\framework_debug.h)(0x6139C9DE)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x60252374)
+F (.\Src\Hal\hal_common.c)(0x617A88AA)(--c99 --gnu -c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I .\Src\App -I .\Src\FrameWork -I .\Src\Hal-I.\RTE\_Target_1-IC:\Users\ABBOTT\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\HAL_Driver\inc-IC:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\Include-D__UVISION_VERSION="536" -D_RTE_ -DCSA37F72 -D_RTE_-o .\objects\hal_common.o --omf_browse .\objects\hal_common.crf --depend .\objects\hal_common.d)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\Include\csa37f7x.h)(0x60ADA60C)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (.\RTE\_Target_1\RTE_Components.h)(0x6887832F)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\core_cm0.h)(0x60D3E8E2)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_version.h)(0x60D3E8E2)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_compiler.h)(0x60D3E8E2)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_armcc.h)(0x60D3E8E2)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\Include\system_csa37f7x.h)(0x602F5E88)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\Include\csa37f7x_reg.h)(0x60F90706)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\HAL_Driver\inc\csa37f7x_rcc.h)(0x60C9C31C)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\HAL_Driver\inc\csa37f7x_syscfg.h)(0x60A74BF0)
+I (Src\Hal\hal_common.h)(0x61454FC8)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x6025237E)
+F (.\Src\Hal\hal_gpio.c)(0x617B45E2)(--c99 --gnu -c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I .\Src\App -I .\Src\FrameWork -I .\Src\Hal-I.\RTE\_Target_1-IC:\Users\ABBOTT\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\HAL_Driver\inc-IC:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\Include-D__UVISION_VERSION="536" -D_RTE_ -DCSA37F72 -D_RTE_-o .\objects\hal_gpio.o --omf_browse .\objects\hal_gpio.crf --depend .\objects\hal_gpio.d)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\Include\csa37f7x.h)(0x60ADA60C)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (.\RTE\_Target_1\RTE_Components.h)(0x6887832F)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\core_cm0.h)(0x60D3E8E2)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_version.h)(0x60D3E8E2)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_compiler.h)(0x60D3E8E2)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_armcc.h)(0x60D3E8E2)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\Include\system_csa37f7x.h)(0x602F5E88)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\Include\csa37f7x_reg.h)(0x60F90706)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\HAL_Driver\inc\csa37f7x_rcc.h)(0x60C9C31C)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\HAL_Driver\inc\csa37f7x_gpio.h)(0x60D05F2E)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\HAL_Driver\inc\csa37f7x_misc.h)(0x60A5CFA4)
+I (Src\Hal\hal_gpio.h)(0x617A88AA)
+I (Src\Hal\hal_config.h)(0x6874C9D0)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\HAL_Driver\inc\csa37f7x_afe2.h)(0x60F909A2)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\HAL_Driver\inc\csa37f7x_syscfg.h)(0x60A74BF0)
+F (.\Src\Hal\hal_iic.c)(0x61693790)(--c99 --gnu -c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I .\Src\App -I .\Src\FrameWork -I .\Src\Hal-I.\RTE\_Target_1-IC:\Users\ABBOTT\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\HAL_Driver\inc-IC:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\Include-D__UVISION_VERSION="536" -D_RTE_ -DCSA37F72 -D_RTE_-o .\objects\hal_iic.o --omf_browse .\objects\hal_iic.crf --depend .\objects\hal_iic.d)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\Include\csa37f7x.h)(0x60ADA60C)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (.\RTE\_Target_1\RTE_Components.h)(0x6887832F)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\core_cm0.h)(0x60D3E8E2)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_version.h)(0x60D3E8E2)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_compiler.h)(0x60D3E8E2)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_armcc.h)(0x60D3E8E2)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\Include\system_csa37f7x.h)(0x602F5E88)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\Include\csa37f7x_reg.h)(0x60F90706)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\HAL_Driver\inc\csa37f7x_rcc.h)(0x60C9C31C)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\HAL_Driver\inc\csa37f7x_gpio.h)(0x60D05F2E)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\HAL_Driver\inc\csa37f7x_i2c.h)(0x60D05F4C)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\HAL_Driver\inc\csa37f7x_syscfg.h)(0x60A74BF0)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\HAL_Driver\inc\csa37f7x_misc.h)(0x60A5CFA4)
+I (Src\Hal\hal_iic.h)(0x6139C9DE)
+F (.\Src\Hal\hal_pmu.c)(0x6139C9DE)(--c99 --gnu -c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I .\Src\App -I .\Src\FrameWork -I .\Src\Hal-I.\RTE\_Target_1-IC:\Users\ABBOTT\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\HAL_Driver\inc-IC:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\Include-D__UVISION_VERSION="536" -D_RTE_ -DCSA37F72 -D_RTE_-o .\objects\hal_pmu.o --omf_browse .\objects\hal_pmu.crf --depend .\objects\hal_pmu.d)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\Include\csa37f7x.h)(0x60ADA60C)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (.\RTE\_Target_1\RTE_Components.h)(0x6887832F)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\core_cm0.h)(0x60D3E8E2)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_version.h)(0x60D3E8E2)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_compiler.h)(0x60D3E8E2)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_armcc.h)(0x60D3E8E2)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\Include\system_csa37f7x.h)(0x602F5E88)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\Include\csa37f7x_reg.h)(0x60F90706)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\HAL_Driver\inc\csa37f7x_rcc.h)(0x60C9C31C)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\HAL_Driver\inc\csa37f7x_hdiv.h)(0x60A35A4E)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\HAL_Driver\inc\csa37f7x_gpio.h)(0x60D05F2E)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\HAL_Driver\inc\csa37f7x_syscfg.h)(0x60A74BF0)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\HAL_Driver\inc\csa37f7x_pwr.h)(0x60A5D14C)
+I (Src\Hal\hal_pmu.h)(0x61454FC8)
+F (.\Src\Hal\hal_soft_iic.c)(0x6139C9DE)(--c99 --gnu -c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I .\Src\App -I .\Src\FrameWork -I .\Src\Hal-I.\RTE\_Target_1-IC:\Users\ABBOTT\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\HAL_Driver\inc-IC:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\Include-D__UVISION_VERSION="536" -D_RTE_ -DCSA37F72 -D_RTE_-o .\objects\hal_soft_iic.o --omf_browse .\objects\hal_soft_iic.crf --depend .\objects\hal_soft_iic.d)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\Include\csa37f7x.h)(0x60ADA60C)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (.\RTE\_Target_1\RTE_Components.h)(0x6887832F)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\core_cm0.h)(0x60D3E8E2)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_version.h)(0x60D3E8E2)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_compiler.h)(0x60D3E8E2)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_armcc.h)(0x60D3E8E2)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\Include\system_csa37f7x.h)(0x602F5E88)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\Include\csa37f7x_reg.h)(0x60F90706)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\HAL_Driver\inc\csa37f7x_rcc.h)(0x60C9C31C)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\HAL_Driver\inc\csa37f7x_gpio.h)(0x60D05F2E)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\HAL_Driver\inc\csa37f7x_i2c.h)(0x60D05F4C)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\HAL_Driver\inc\csa37f7x_syscfg.h)(0x60A74BF0)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\HAL_Driver\inc\csa37f7x_misc.h)(0x60A5CFA4)
+I (.\Src\FrameWork\framework_debug.h)(0x6139C9DE)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x60252374)
+I (.\Src\FrameWork\user_config.h)(0x617F88CA)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\HAL_Driver\inc\csa37f7x_afe2.h)(0x60F909A2)
+I (Src\Hal\hal_soft_iic.h)(0x6139C9DE)
+I (Src\Hal\hal_timer.h)(0x6139C9DE)
+F (.\Src\Hal\hal_storage.c)(0x617A88AA)(--c99 --gnu -c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I .\Src\App -I .\Src\FrameWork -I .\Src\Hal-I.\RTE\_Target_1-IC:\Users\ABBOTT\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\HAL_Driver\inc-IC:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\Include-D__UVISION_VERSION="536" -D_RTE_ -DCSA37F72 -D_RTE_-o .\objects\hal_storage.o --omf_browse .\objects\hal_storage.crf --depend .\objects\hal_storage.d)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x6025237E)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\HAL_Driver\inc\csa37f7x_rcc.h)(0x60C9C31C)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\Include\csa37f7x.h)(0x60ADA60C)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (.\RTE\_Target_1\RTE_Components.h)(0x6887832F)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\core_cm0.h)(0x60D3E8E2)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_version.h)(0x60D3E8E2)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_compiler.h)(0x60D3E8E2)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_armcc.h)(0x60D3E8E2)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\Include\system_csa37f7x.h)(0x602F5E88)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\Include\csa37f7x_reg.h)(0x60F90706)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\HAL_Driver\inc\csa37f7x_flash.h)(0x60BD97CA)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\HAL_Driver\inc\csa37f7x_syscfg.h)(0x60A74BF0)
+I (Src\Hal\hal_storage.h)(0x61454FC8)
+I (Src\Hal\hal_common.h)(0x61454FC8)
+I (.\Src\FrameWork\user_config.h)(0x617F88CA)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\HAL_Driver\inc\csa37f7x_afe2.h)(0x60F909A2)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\HAL_Driver\inc\csa37f7x_gpio.h)(0x60D05F2E)
+I (.\Src\FrameWork\framework_debug.h)(0x6139C9DE)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x60252374)
+F (.\Src\Hal\hal_temperature.c)(0x617A88AA)(--c99 --gnu -c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I .\Src\App -I .\Src\FrameWork -I .\Src\Hal-I.\RTE\_Target_1-IC:\Users\ABBOTT\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\HAL_Driver\inc-IC:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\Include-D__UVISION_VERSION="536" -D_RTE_ -DCSA37F72 -D_RTE_-o .\objects\hal_temperature.o --omf_browse .\objects\hal_temperature.crf --depend .\objects\hal_temperature.d)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\Include\csa37f7x.h)(0x60ADA60C)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (.\RTE\_Target_1\RTE_Components.h)(0x6887832F)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\core_cm0.h)(0x60D3E8E2)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_version.h)(0x60D3E8E2)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_compiler.h)(0x60D3E8E2)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_armcc.h)(0x60D3E8E2)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\Include\system_csa37f7x.h)(0x602F5E88)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\Include\csa37f7x_reg.h)(0x60F90706)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\HAL_Driver\inc\csa37f7x_rcc.h)(0x60C9C31C)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\HAL_Driver\inc\csa37f7x_flash.h)(0x60BD97CA)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\HAL_Driver\inc\csa37f7x_syscfg.h)(0x60A74BF0)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\HAL_Driver\inc\csa37f7x_afe2.h)(0x60F909A2)
+I (Src\Hal\hal_config.h)(0x6874C9D0)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\HAL_Driver\inc\csa37f7x_gpio.h)(0x60D05F2E)
+I (Src\Hal\hal_afe.h)(0x617B9826)
+I (Src\Hal\hal_timer.h)(0x6139C9DE)
+I (Src\Hal\hal_temperature.h)(0x61454FC8)
+F (.\Src\Hal\hal_timer.c)(0x6139C9DE)(--c99 --gnu -c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I .\Src\App -I .\Src\FrameWork -I .\Src\Hal-I.\RTE\_Target_1-IC:\Users\ABBOTT\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\HAL_Driver\inc-IC:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\Include-D__UVISION_VERSION="536" -D_RTE_ -DCSA37F72 -D_RTE_-o .\objects\hal_timer.o --omf_browse .\objects\hal_timer.crf --depend .\objects\hal_timer.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\Include\csa37f7x.h)(0x60ADA60C)
+I (.\RTE\_Target_1\RTE_Components.h)(0x6887832F)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\core_cm0.h)(0x60D3E8E2)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_version.h)(0x60D3E8E2)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_compiler.h)(0x60D3E8E2)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_armcc.h)(0x60D3E8E2)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\Include\system_csa37f7x.h)(0x602F5E88)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\Include\csa37f7x_reg.h)(0x60F90706)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\HAL_Driver\inc\csa37f7x_rcc.h)(0x60C9C31C)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\HAL_Driver\inc\csa37f7x_tim1.h)(0x60C0645E)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\HAL_Driver\inc\csa37f7x_syscfg.h)(0x60A74BF0)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\HAL_Driver\inc\csa37f7x_misc.h)(0x60A5CFA4)
+I (Src\Hal\hal_timer.h)(0x6139C9DE)
+F (.\Src\Hal\hal_tk.c)(0x614D7140)(--c99 --gnu -c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I .\Src\App -I .\Src\FrameWork -I .\Src\Hal-I.\RTE\_Target_1-IC:\Users\ABBOTT\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\HAL_Driver\inc-IC:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\Include-D__UVISION_VERSION="536" -D_RTE_ -DCSA37F72 -D_RTE_-o .\objects\hal_tk.o --omf_browse .\objects\hal_tk.crf --depend .\objects\hal_tk.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (C:\Keil_v5\ARM\ARMCC\include\string.h)(0x6025237E)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\Include\csa37f7x.h)(0x60ADA60C)
+I (.\RTE\_Target_1\RTE_Components.h)(0x6887832F)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\core_cm0.h)(0x60D3E8E2)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_version.h)(0x60D3E8E2)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_compiler.h)(0x60D3E8E2)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_armcc.h)(0x60D3E8E2)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\Include\system_csa37f7x.h)(0x602F5E88)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\Include\csa37f7x_reg.h)(0x60F90706)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\HAL_Driver\inc\csa37f7x_rcc.h)(0x60C9C31C)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\HAL_Driver\inc\csa37f7x_tk.h)(0x60C99B36)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\HAL_Driver\inc\csa37f7x_syscfg.h)(0x60A74BF0)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\HAL_Driver\inc\csa37f7x_misc.h)(0x60A5CFA4)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\HAL_Driver\inc\csa37f7x_pwr.h)(0x60A5D14C)
+I (Src\Hal\hal_tk.h)(0x614D2CDA)
+I (Src\Hal\hal_config.h)(0x6874C9D0)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\HAL_Driver\inc\csa37f7x_afe2.h)(0x60F909A2)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\HAL_Driver\inc\csa37f7x_gpio.h)(0x60D05F2E)
+I (Src\Hal\hal_afe.h)(0x617B9826)
+I (Src\Hal\hal_timer.h)(0x6139C9DE)
+I (Src\Hal\hal_pmu.h)(0x61454FC8)
+I (Src\Hal\hal_gpio.h)(0x617A88AA)
+I (.\Src\FrameWork\framework_debug.h)(0x6139C9DE)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x60252374)
+I (.\Src\FrameWork\framework_pmu.h)(0x617A88AA)
+F (.\Src\Hal\hal_uart.c)(0x617A88AA)(--c99 --gnu -c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I .\Src\App -I .\Src\FrameWork -I .\Src\Hal-I.\RTE\_Target_1-IC:\Users\ABBOTT\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\HAL_Driver\inc-IC:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\Include-D__UVISION_VERSION="536" -D_RTE_ -DCSA37F72 -D_RTE_-o .\objects\hal_uart.o --omf_browse .\objects\hal_uart.crf --depend .\objects\hal_uart.d)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\Include\csa37f7x.h)(0x60ADA60C)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (.\RTE\_Target_1\RTE_Components.h)(0x6887832F)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\core_cm0.h)(0x60D3E8E2)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_version.h)(0x60D3E8E2)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_compiler.h)(0x60D3E8E2)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_armcc.h)(0x60D3E8E2)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\Include\system_csa37f7x.h)(0x602F5E88)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\Include\csa37f7x_reg.h)(0x60F90706)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\HAL_Driver\inc\csa37f7x_rcc.h)(0x60C9C31C)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\HAL_Driver\inc\csa37f7x_syscfg.h)(0x60A74BF0)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\HAL_Driver\inc\csa37f7x_usart.h)(0x60D05F1E)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\HAL_Driver\inc\csa37f7x_gpio.h)(0x60D05F2E)
+I (Src\Hal\hal_uart.h)(0x6139C9DE)
+F (.\Src\Hal\hal_wdt.c)(0x6139C9DE)(--c99 --gnu -c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I .\Src\App -I .\Src\FrameWork -I .\Src\Hal-I.\RTE\_Target_1-IC:\Users\ABBOTT\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\HAL_Driver\inc-IC:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\Include-D__UVISION_VERSION="536" -D_RTE_ -DCSA37F72 -D_RTE_-o .\objects\hal_wdt.o --omf_browse .\objects\hal_wdt.crf --depend .\objects\hal_wdt.d)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\Include\csa37f7x.h)(0x60ADA60C)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (.\RTE\_Target_1\RTE_Components.h)(0x6887832F)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\core_cm0.h)(0x60D3E8E2)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_version.h)(0x60D3E8E2)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_compiler.h)(0x60D3E8E2)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_armcc.h)(0x60D3E8E2)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\Include\system_csa37f7x.h)(0x602F5E88)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\Include\csa37f7x_reg.h)(0x60F90706)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\HAL_Driver\inc\csa37f7x_rcc.h)(0x60C9C31C)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\HAL_Driver\inc\csa37f7x_iwdt.h)(0x60D05F40)
+I (Src\Hal\hal_wdt.h)(0x61454FC8)
+F (RTE\Device\CSA37F72\csa37f7x_conf.h)(0x602F61D8)()
+F (RTE\Device\CSA37F72\startup_csa37f72.S)(0x602F6D68)(--cpu Cortex-M0 -g --apcs=interwork -I .\Src\App -I .\Src\FrameWork -I .\Src\Hal-I.\RTE\_Target_1-IC:\Users\ABBOTT\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\HAL_Driver\inc-IC:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\Include--pd "__UVISION_VERSION SETA 536" --pd "_RTE_ SETA 1" --pd "CSA37F72 SETA 1" --pd "_RTE_ SETA 1"--list .\listings\startup_csa37f72.lst --xref -o .\objects\startup_csa37f72.o --depend .\objects\startup_csa37f72.d)
+F (RTE\Device\CSA37F72\system_csa37f7x.c)(0x60BD8BEA)(--c99 --gnu -c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I .\Src\App -I .\Src\FrameWork -I .\Src\Hal-I.\RTE\_Target_1-IC:\Users\ABBOTT\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\HAL_Driver\inc-IC:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\Include-D__UVISION_VERSION="536" -D_RTE_ -DCSA37F72 -D_RTE_-o .\objects\system_csa37f7x.o --omf_browse .\objects\system_csa37f7x.crf --depend .\objects\system_csa37f7x.d)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\Include\csa37f7x.h)(0x60ADA60C)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (.\RTE\_Target_1\RTE_Components.h)(0x6887832F)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\core_cm0.h)(0x60D3E8E2)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_version.h)(0x60D3E8E2)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_compiler.h)(0x60D3E8E2)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_armcc.h)(0x60D3E8E2)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\Include\system_csa37f7x.h)(0x602F5E88)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\Include\csa37f7x_reg.h)(0x60F90706)
+F (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\HAL_Driver\src\csa37f7x_afe2.lib)(0x60F90B44)()
+F (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\HAL_Driver\src\csa37f7x_flash.c)(0x60C025DC)(--c99 --gnu -c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I .\Src\App -I .\Src\FrameWork -I .\Src\Hal-I.\RTE\_Target_1-IC:\Users\ABBOTT\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\HAL_Driver\inc-IC:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\Include-D__UVISION_VERSION="536" -D_RTE_ -DCSA37F72 -D_RTE_-o .\objects\csa37f7x_flash.o --omf_browse .\objects\csa37f7x_flash.crf --depend .\objects\csa37f7x_flash.d)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\HAL_Driver\inc\csa37f7x_flash.h)(0x60BD97CA)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\Include\csa37f7x.h)(0x60ADA60C)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (.\RTE\_Target_1\RTE_Components.h)(0x6887832F)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\core_cm0.h)(0x60D3E8E2)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_version.h)(0x60D3E8E2)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_compiler.h)(0x60D3E8E2)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_armcc.h)(0x60D3E8E2)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\Include\system_csa37f7x.h)(0x602F5E88)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\Include\csa37f7x_reg.h)(0x60F90706)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\HAL_Driver\inc\csa37f7x_syscfg.h)(0x60A74BF0)
+F (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\HAL_Driver\src\csa37f7x_gpio.c)(0x60D05F34)(--c99 --gnu -c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I .\Src\App -I .\Src\FrameWork -I .\Src\Hal-I.\RTE\_Target_1-IC:\Users\ABBOTT\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\HAL_Driver\inc-IC:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\Include-D__UVISION_VERSION="536" -D_RTE_ -DCSA37F72 -D_RTE_-o .\objects\csa37f7x_gpio.o --omf_browse .\objects\csa37f7x_gpio.crf --depend .\objects\csa37f7x_gpio.d)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\HAL_Driver\inc\csa37f7x_gpio.h)(0x60D05F2E)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\Include\csa37f7x.h)(0x60ADA60C)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (.\RTE\_Target_1\RTE_Components.h)(0x6887832F)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\core_cm0.h)(0x60D3E8E2)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_version.h)(0x60D3E8E2)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_compiler.h)(0x60D3E8E2)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_armcc.h)(0x60D3E8E2)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\Include\system_csa37f7x.h)(0x602F5E88)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\Include\csa37f7x_reg.h)(0x60F90706)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\HAL_Driver\inc\csa37f7x_rcc.h)(0x60C9C31C)
+F (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\HAL_Driver\src\csa37f7x_i2c.c)(0x60D05F50)(--c99 --gnu -c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I .\Src\App -I .\Src\FrameWork -I .\Src\Hal-I.\RTE\_Target_1-IC:\Users\ABBOTT\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\HAL_Driver\inc-IC:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\Include-D__UVISION_VERSION="536" -D_RTE_ -DCSA37F72 -D_RTE_-o .\objects\csa37f7x_i2c.o --omf_browse .\objects\csa37f7x_i2c.crf --depend .\objects\csa37f7x_i2c.d)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\HAL_Driver\inc\csa37f7x_i2c.h)(0x60D05F4C)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\Include\csa37f7x.h)(0x60ADA60C)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (.\RTE\_Target_1\RTE_Components.h)(0x6887832F)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\core_cm0.h)(0x60D3E8E2)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_version.h)(0x60D3E8E2)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_compiler.h)(0x60D3E8E2)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_armcc.h)(0x60D3E8E2)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\Include\system_csa37f7x.h)(0x602F5E88)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\Include\csa37f7x_reg.h)(0x60F90706)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\HAL_Driver\inc\csa37f7x_rcc.h)(0x60C9C31C)
+F (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\HAL_Driver\src\csa37f7x_iwdt.c)(0x60D05F3C)(--c99 --gnu -c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I .\Src\App -I .\Src\FrameWork -I .\Src\Hal-I.\RTE\_Target_1-IC:\Users\ABBOTT\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\HAL_Driver\inc-IC:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\Include-D__UVISION_VERSION="536" -D_RTE_ -DCSA37F72 -D_RTE_-o .\objects\csa37f7x_iwdt.o --omf_browse .\objects\csa37f7x_iwdt.crf --depend .\objects\csa37f7x_iwdt.d)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\HAL_Driver\inc\csa37f7x_iwdt.h)(0x60D05F40)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\Include\csa37f7x.h)(0x60ADA60C)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (.\RTE\_Target_1\RTE_Components.h)(0x6887832F)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\core_cm0.h)(0x60D3E8E2)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_version.h)(0x60D3E8E2)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_compiler.h)(0x60D3E8E2)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_armcc.h)(0x60D3E8E2)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\Include\system_csa37f7x.h)(0x602F5E88)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\Include\csa37f7x_reg.h)(0x60F90706)
+F (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\HAL_Driver\src\csa37f7x_misc.c)(0x60A5CEFC)(--c99 --gnu -c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I .\Src\App -I .\Src\FrameWork -I .\Src\Hal-I.\RTE\_Target_1-IC:\Users\ABBOTT\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\HAL_Driver\inc-IC:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\Include-D__UVISION_VERSION="536" -D_RTE_ -DCSA37F72 -D_RTE_-o .\objects\csa37f7x_misc.o --omf_browse .\objects\csa37f7x_misc.crf --depend .\objects\csa37f7x_misc.d)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\HAL_Driver\inc\csa37f7x_misc.h)(0x60A5CFA4)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\Include\csa37f7x.h)(0x60ADA60C)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (.\RTE\_Target_1\RTE_Components.h)(0x6887832F)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\core_cm0.h)(0x60D3E8E2)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_version.h)(0x60D3E8E2)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_compiler.h)(0x60D3E8E2)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_armcc.h)(0x60D3E8E2)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\Include\system_csa37f7x.h)(0x602F5E88)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\Include\csa37f7x_reg.h)(0x60F90706)
+F (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\HAL_Driver\src\csa37f7x_pwr.c)(0x60BF1488)(--c99 --gnu -c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I .\Src\App -I .\Src\FrameWork -I .\Src\Hal-I.\RTE\_Target_1-IC:\Users\ABBOTT\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\HAL_Driver\inc-IC:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\Include-D__UVISION_VERSION="536" -D_RTE_ -DCSA37F72 -D_RTE_-o .\objects\csa37f7x_pwr.o --omf_browse .\objects\csa37f7x_pwr.crf --depend .\objects\csa37f7x_pwr.d)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\HAL_Driver\inc\csa37f7x_pwr.h)(0x60A5D14C)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\Include\csa37f7x.h)(0x60ADA60C)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (.\RTE\_Target_1\RTE_Components.h)(0x6887832F)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\core_cm0.h)(0x60D3E8E2)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_version.h)(0x60D3E8E2)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_compiler.h)(0x60D3E8E2)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_armcc.h)(0x60D3E8E2)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\Include\system_csa37f7x.h)(0x602F5E88)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\Include\csa37f7x_reg.h)(0x60F90706)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\HAL_Driver\inc\csa37f7x_syscfg.h)(0x60A74BF0)
+F (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\HAL_Driver\src\csa37f7x_rcc.c)(0x60BD90F6)(--c99 --gnu -c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I .\Src\App -I .\Src\FrameWork -I .\Src\Hal-I.\RTE\_Target_1-IC:\Users\ABBOTT\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\HAL_Driver\inc-IC:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\Include-D__UVISION_VERSION="536" -D_RTE_ -DCSA37F72 -D_RTE_-o .\objects\csa37f7x_rcc.o --omf_browse .\objects\csa37f7x_rcc.crf --depend .\objects\csa37f7x_rcc.d)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\HAL_Driver\inc\csa37f7x_rcc.h)(0x60C9C31C)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\Include\csa37f7x.h)(0x60ADA60C)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (.\RTE\_Target_1\RTE_Components.h)(0x6887832F)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\core_cm0.h)(0x60D3E8E2)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_version.h)(0x60D3E8E2)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_compiler.h)(0x60D3E8E2)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_armcc.h)(0x60D3E8E2)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\Include\system_csa37f7x.h)(0x602F5E88)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\Include\csa37f7x_reg.h)(0x60F90706)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\HAL_Driver\inc\csa37f7x_syscfg.h)(0x60A74BF0)
+F (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\HAL_Driver\src\csa37f7x_syscfg.c)(0x60A74C40)(--c99 --gnu -c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I .\Src\App -I .\Src\FrameWork -I .\Src\Hal-I.\RTE\_Target_1-IC:\Users\ABBOTT\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\HAL_Driver\inc-IC:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\Include-D__UVISION_VERSION="536" -D_RTE_ -DCSA37F72 -D_RTE_-o .\objects\csa37f7x_syscfg.o --omf_browse .\objects\csa37f7x_syscfg.crf --depend .\objects\csa37f7x_syscfg.d)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\HAL_Driver\inc\csa37f7x_syscfg.h)(0x60A74BF0)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\Include\csa37f7x.h)(0x60ADA60C)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (.\RTE\_Target_1\RTE_Components.h)(0x6887832F)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\core_cm0.h)(0x60D3E8E2)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_version.h)(0x60D3E8E2)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_compiler.h)(0x60D3E8E2)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_armcc.h)(0x60D3E8E2)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\Include\system_csa37f7x.h)(0x602F5E88)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\Include\csa37f7x_reg.h)(0x60F90706)
+F (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\HAL_Driver\src\csa37f7x_tim.c)(0x60A5F904)(--c99 --gnu -c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I .\Src\App -I .\Src\FrameWork -I .\Src\Hal-I.\RTE\_Target_1-IC:\Users\ABBOTT\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\HAL_Driver\inc-IC:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\Include-D__UVISION_VERSION="536" -D_RTE_ -DCSA37F72 -D_RTE_-o .\objects\csa37f7x_tim.o --omf_browse .\objects\csa37f7x_tim.crf --depend .\objects\csa37f7x_tim.d)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\HAL_Driver\inc\csa37f7x_tim.h)(0x60A5F912)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\Include\csa37f7x.h)(0x60ADA60C)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (.\RTE\_Target_1\RTE_Components.h)(0x6887832F)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\core_cm0.h)(0x60D3E8E2)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_version.h)(0x60D3E8E2)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_compiler.h)(0x60D3E8E2)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_armcc.h)(0x60D3E8E2)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\Include\system_csa37f7x.h)(0x602F5E88)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\Include\csa37f7x_reg.h)(0x60F90706)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\HAL_Driver\inc\csa37f7x_rcc.h)(0x60C9C31C)
+F (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\HAL_Driver\src\csa37f7x_tim1.c)(0x60C0649A)(--c99 --gnu -c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I .\Src\App -I .\Src\FrameWork -I .\Src\Hal-I.\RTE\_Target_1-IC:\Users\ABBOTT\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\HAL_Driver\inc-IC:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\Include-D__UVISION_VERSION="536" -D_RTE_ -DCSA37F72 -D_RTE_-o .\objects\csa37f7x_tim1.o --omf_browse .\objects\csa37f7x_tim1.crf --depend .\objects\csa37f7x_tim1.d)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\HAL_Driver\inc\csa37f7x_tim1.h)(0x60C0645E)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\Include\csa37f7x.h)(0x60ADA60C)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (.\RTE\_Target_1\RTE_Components.h)(0x6887832F)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\core_cm0.h)(0x60D3E8E2)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_version.h)(0x60D3E8E2)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_compiler.h)(0x60D3E8E2)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_armcc.h)(0x60D3E8E2)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\Include\system_csa37f7x.h)(0x602F5E88)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\Include\csa37f7x_reg.h)(0x60F90706)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\HAL_Driver\inc\csa37f7x_rcc.h)(0x60C9C31C)
+F (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\HAL_Driver\src\csa37f7x_tk.lib)(0x60F90BC2)()
+F (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\HAL_Driver\src\csa37f7x_usart.c)(0x60D05F18)(--c99 --gnu -c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I .\Src\App -I .\Src\FrameWork -I .\Src\Hal-I.\RTE\_Target_1-IC:\Users\ABBOTT\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\HAL_Driver\inc-IC:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\Include-D__UVISION_VERSION="536" -D_RTE_ -DCSA37F72 -D_RTE_-o .\objects\csa37f7x_usart.o --omf_browse .\objects\csa37f7x_usart.crf --depend .\objects\csa37f7x_usart.d)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\HAL_Driver\inc\csa37f7x_usart.h)(0x60D05F1E)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\Include\csa37f7x.h)(0x60ADA60C)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (.\RTE\_Target_1\RTE_Components.h)(0x6887832F)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\core_cm0.h)(0x60D3E8E2)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_version.h)(0x60D3E8E2)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_compiler.h)(0x60D3E8E2)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_armcc.h)(0x60D3E8E2)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\Include\system_csa37f7x.h)(0x602F5E88)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\Include\csa37f7x_reg.h)(0x60F90706)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\HAL_Driver\inc\csa37f7x_rcc.h)(0x60C9C31C)
+F (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\HAL_Driver\src\csa37f7x_wwdt.c)(0x60B47DCE)(--c99 --gnu -c --cpu Cortex-M0 -g -O0 --apcs=interwork --split_sections -I .\Src\App -I .\Src\FrameWork -I .\Src\Hal-I.\RTE\_Target_1-IC:\Users\ABBOTT\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include-IC:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\HAL_Driver\inc-IC:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\Include-D__UVISION_VERSION="536" -D_RTE_ -DCSA37F72 -D_RTE_-o .\objects\csa37f7x_wwdt.o --omf_browse .\objects\csa37f7x_wwdt.crf --depend .\objects\csa37f7x_wwdt.d)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\HAL_Driver\inc\csa37f7x_wwdt.h)(0x60A6256C)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\Include\csa37f7x.h)(0x60ADA60C)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x6025237E)
+I (.\RTE\_Target_1\RTE_Components.h)(0x6887832F)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\core_cm0.h)(0x60D3E8E2)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_version.h)(0x60D3E8E2)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_compiler.h)(0x60D3E8E2)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\ARM\CMSIS\5.8.0\CMSIS\Core\Include\cmsis_armcc.h)(0x60D3E8E2)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\Include\system_csa37f7x.h)(0x602F5E88)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\Include\csa37f7x_reg.h)(0x60F90706)
+I (C:\Users\ABBOTT\AppData\Local\Arm\Packs\Chipsea\CSA37F7x_DFP\2.0.1\Device\HAL_Driver\inc\csa37f7x_rcc.h)(0x60C9C31C)

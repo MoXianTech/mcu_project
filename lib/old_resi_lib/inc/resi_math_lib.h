@@ -3,8 +3,6 @@
 
 #include "stdint.h"
 
-
-
 typedef enum {
     SCAN_HIGH_LEVEL_DOUBLE_SWEEP,
     SCAN_LOW_LEVEL_DOUBLE_SWEEP,

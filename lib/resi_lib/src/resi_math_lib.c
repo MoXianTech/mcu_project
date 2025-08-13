@@ -18,9 +18,9 @@ void math_resi_init(uint16_t max_display_resi_cal,
 {
     g_max_resi_cal = max_display_resi_cal;
     g_min_resi_cal = min_display_resi_cal;
+	  g_resi_ref_cal = resi_ref_value;
     g_amplify_value = max_display / ((float)g_resi_ref_cal / g_min_resi_cal - (float)g_resi_ref_cal/ g_max_resi_cal);
     g_min_display_value = g_amplify_value * g_resi_ref_cal / g_max_resi_cal;
-    g_resi_ref_cal = resi_ref_value;
     g_adc_max_value = adc_max_value;
 }
 

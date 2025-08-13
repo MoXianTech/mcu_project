@@ -243,8 +243,6 @@ void cal_creep_resistance(process_handle_t *process_handle)
             continue;
         }
 
-        //matrix_deviation = (matrix_real[count] > matrix_stab[count]) ? (matrix_real[count] - matrix_stab[count]) : -1;
-
         if (!(frame_count % CREEP_INTERVAL_FRAME))
         {
             matrix_deviation = (matrix_real[count] > matrix_stab[count]) ? (matrix_real[count] - matrix_stab[count]) : (matrix_stab[count] - matrix_real[count]);
